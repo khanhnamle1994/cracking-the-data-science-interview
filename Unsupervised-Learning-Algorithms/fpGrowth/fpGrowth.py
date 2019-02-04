@@ -69,3 +69,37 @@ def updateHeader(nodeToTest, targetNode):
     while (nodeToTest.nodeLink != None):
         nodeToTest = nodeToTest.nodeLink
     nodeToTest.nodeLink = targetNode
+
+# Function to ascend from leaf node to root
+def ascendTree(leafNode, prefixPath):
+    if leafNode.parent != None:
+        prefixPath.append(leafNode.name) # collect the names of items encountered
+        ascendTree(leafNode.parent, prefixPath)
+
+# Function to iterate through the linked list until it hits the end
+def findPrefixPath(basePat, treeNode): # treeNode comes from header table
+    condPats = {}
+    while treeNode != None:
+        prefixPath = []
+        ascendTree(treeNode, prefixPath)
+        if len(prefixPath) > 1:
+            condPats[frozenset(prefixPath[1:])] = treeNode.count
+        treeNode = treeNode.nodeLink
+    return condPats
+
+# Function to recursively find frequent itemsets
+def mineTree(inTree, headerTable, minSup, preFix, freqItemList):
+    # sort the items in the headerTable by frequency of occurrence
+    bigL = [v[0] for v in sorted(headerTable.items(), key=lambda p: p[1])]
+    for basePat in bigL:  # start from bottom of header table
+        newFreqSet = preFix.copy()
+        newFreqSet.add(basePat)
+        # add each frequent item to the list of frequent itemsets
+        freqItemList.append(newFreqSet)
+        # recursively call findPrefixPath() to create a conditional base
+        condPattBases = findPrefixPath(basePat, headerTable[basePat][1])
+        # construct cond FP-tree from conditional pattern base
+        myCondTree, myHead = createTree(condPattBases, minSup)
+        if myHead != None: # if the tree has any items in it
+            # recursively call mineTree()
+            mineTree(myCondTree, myHead, minSup, newFreqSet, freqItemList)
