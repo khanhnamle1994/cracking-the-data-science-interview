@@ -33,3 +33,41 @@ plot(log(bk.sale$gross.sqft), log(bk.sale$SALE.PRICE.N))
 bk.homes <- bk.sale[which(grepl("FAMILY",
                                 bk.sale$BUILDING.CLASS.CATEGORY)),]
 plot(log(bk.homes$gross.sqft), log(bk.homes$SALE.PRICE.N))
+
+# Linear Regression on the housing dataset
+model1 <- lm(log(SALE.PRICE.N) ~ log(gross.sqft), data = bk.homes)
+
+## what's going on here?
+bk.homes[which(bk.homes$gross.sqft==0),]
+
+bk.homes <- bk.homes[which(bk.homes$gross.sqft>0 & bk.homes$land.sqft>0),]
+model1 <- lm(log(SALE.PRICE.N) ~ log(gross.sqft), data = bk.homes)
+summary(model1)
+
+plot(log(bk.homes$gross.sqft), log(bk.homes$SALE.PRICE.N))
+abline(model1, col="red", lwd=2)
+plot(resid(model1))
+
+model2 <- lm(log(SALE.PRICE.N) ~ log(gross.sqft) + 
+               log(land.sqft) + factor(NEIGHBORHOOD), data = bk.homes)
+summary(model2)
+plot(resid(model2))
+
+## leave out intercept for ease of interpretability
+model2a <- lm(log(SALE.PRICE.N) ~ 0 + log(gross.sqft) + 
+                log(land.sqft) + factor(NEIGHBORHOOD), data = bk.homes)
+summary(model2a)
+plot(resid(model2a))
+
+## add building type
+model3 <- lm(log(SALE.PRICE.N) ~ log(gross.sqft) + 
+               log(land.sqft) + factor(NEIGHBORHOOD) + 
+               factor(BUILDING.CLASS.CATEGORY), data = bk.homes)
+summary(model3)
+plot(resid(model3))
+
+## interact neighborhood and building type
+model4 <- lm(log(SALE.PRICE.N) ~ log(gross.sqft) + log(land.sqft) + 
+               factor(NEIGHBORHOOD) * factor(BUILDING.CLASS.CATEGORY), data = bk.homes)
+summary(model4)
+plot(resid(model4))
