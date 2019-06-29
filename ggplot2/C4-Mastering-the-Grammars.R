@@ -3,6 +3,7 @@ library(ggplot2)
 # Building a scatterplot
 ggplot(mpg, aes(displ, hwy, colour = factor(cyl))) + geom_point()
 
+## Mapping Aesthetics to Data
 ggplot(mpg, aes(displ, hwy, colour = factor(cyl))) + 
   geom_line() + theme(legend.position = "none")
 
