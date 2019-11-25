@@ -3,7 +3,7 @@ This document comes from an article at Elite Data Science: https://elitedatascie
 # 21 Machine Learning Interview Questions and Answers
 
 ## 1. The Big Picture
-**Essential ML theory, such as the Bias-Variance tradeoff**
+*Essential ML theory, such as the Bias-Variance tradeoff*
 
 ### 1.1 - What are parametric models? Give an example.
 Parametric models are those with a finite number of parameters. To predict new data, you only need to know the parameters of the model. Examples include linear regression, logistic regression, and linear SVMs.
@@ -23,3 +23,20 @@ Simpler models are stable (low variance) but they don't get close to the truth (
 More complex models are more prone to being overfit (high variance) but they are expressive enough to get close to the truth (low bias).
 
 The best model for a given problem usually lies somewhere in the middle.
+
+## 2. Optimization
+*Algorithms for finding the best parameters for a model*.
+
+### 2.1 - What is the difference between stochastic gradient descent (SGD) and gradient descent (GD)?
+Both algorithms are methods for finding a set of parameters that minimize a loss function by evaluating parameters against data and then making adjustments.
+
+In standard gradient descent, you'll evaluate all training samples for each set of parameters. This is akin to taking big, slow steps toward the solution.
+
+In stochastic gradient descent, you'll evaluate only 1 training sample for the set of parameters before updating them. This is akin to taking small, quick steps toward the solution.
+
+### 2.2 - When would you use GD over SDG, and vice-versa?
+GD theoretically minimizes the error function better than SGD. However, SGD converges much faster once the dataset becomes large.
+
+That means GD is preferable for small datasets while SGD is preferable for larger ones.
+
+In practice, however, SGD is used for most applications because it minimizes the error function well enough while being much faster and more memory efficient for large datasets.
