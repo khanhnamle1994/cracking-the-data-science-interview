@@ -40,3 +40,23 @@ GD theoretically minimizes the error function better than SGD. However, SGD conv
 That means GD is preferable for small datasets while SGD is preferable for larger ones.
 
 In practice, however, SGD is used for most applications because it minimizes the error function well enough while being much faster and more memory efficient for large datasets.
+
+## 3. Data Preprocessing
+*Dealing with missing data, skewed distributions, outliers, etc*.
+
+### 3.1 - What is the Box-Cox transformation used for?
+The Box-Cox transformation is a generalized "power transformation" that transforms data to make the distribution more normal.
+
+For example, when its lambda parameter is 0, it's equivalent to the log-transformation.
+
+It's used to stabilize the variance (eliminate heteroskedasticity) and normalize the distribution.
+
+### 3.2 - What are 3 data preprocessing techniques to handle outliers?
+* Winsorize (cap at threshold).
+* Transform to reduce skew (using Box-Cox or similar).
+* Remove outliers if you're certain they are anomalies or measurement errors.
+
+### 3.3 - What are 3 ways of reducing dimensionality?
+* Removing collinear features.
+* Performing PCA, ICA, or other forms of algorithmic dimensionality reduction.
+* Combining features with feature engineering.
