@@ -110,3 +110,19 @@ PCA is a method for transforming features in a dataset by combining them into un
 These new features, or principal components, sequentially maximize the variance represented (i.e. the first principal component has the most variance, the second principal component has the second most, and so on).
 
 As a result, PCA is useful for dimensionality reduction because you can set an arbitrary variance cutoff.
+
+## 7. Model Evaluation
+*Making decisions based on various performance metrics*.
+
+### 7.1 - What is the ROC Curve and what is AUC (a.k.a. AUROC)?
+The ROC (receiver operating characteristic) the performance plot for binary classifiers of True Positive Rate (y-axis) vs. False Positive Rate (x-
+axis).
+
+AUC is area under the ROC curve, and it's a common performance metric for evaluating binary classification models.
+
+It's equivalent to the expected probability that a uniformly drawn random positive is ranked before a uniformly drawn random negative.
+
+### 7.2 - Why is Area Under ROC Curve (AUROC) better than raw accuracy as an out-of- sample evaluation metric?
+AUROC is robust to class imbalance, unlike raw accuracy.
+
+For example, if you want to detect a type of cancer that's prevalent in only 1% of the population, you can build a model that achieves 99% accuracy by simply classifying everyone has cancer-free.
