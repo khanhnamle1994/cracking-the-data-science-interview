@@ -143,3 +143,22 @@ Bagging, or Bootstrap Aggregating, is an ensemble method in which the dataset is
 Then, each subset is used to train a model, and the final predictions are made through voting or averaging the component models.
 
 Bagging is performed in parallel.
+
+## 9. Business Applications
+*How machine learning can help different types of businesses*.
+
+### 9.1 - What are some key business metrics for (S-a-a-S startup | Retail bank | e-Commerce site)?
+Thinking about key business metrics, often shortened as KPI's (Key Performance Indicators), is an essential part of a data scientist's job. Here are a few examples, but you should practice brainstorming your own.
+
+*Tip: When in doubt, start with the easier question of "how does this business make money?"*
+
+* S-a-a-S startup: Customer lifetime value, new accounts, account lifetime, churn rate, usage rate, social share rate
+* Retail bank: Offline leads, online leads, new accounts (segmented by account type), risk factors, product affinities
+* e-Commerce: Product sales, average cart value, cart abandonment rate, email leads, conversion rate
+
+### 9.2 - How can you help our marketing team be more efficient?
+The answer will depend on the type of company. Here are some examples.
+
+* Clustering algorithms to build custom customer segments for each type of marketing campaign.
+* Natural language processing for headlines to predict performance before running ad spend.
+* Predict conversion probability based on a user's website behavior in order to create better re-targeting campaigns.
