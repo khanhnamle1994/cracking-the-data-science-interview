@@ -126,3 +126,20 @@ It's equivalent to the expected probability that a uniformly drawn random positi
 AUROC is robust to class imbalance, unlike raw accuracy.
 
 For example, if you want to detect a type of cancer that's prevalent in only 1% of the population, you can build a model that achieves 99% accuracy by simply classifying everyone has cancer-free.
+
+## 8. Ensemble Learning
+*Combining multiple models for better performance*.
+
+### 8.1 - Why are ensemble methods superior to individual models?
+They average out biases, reduce variance, and are less likely to overfit.
+
+There's a common line in machine learning which is: "ensemble and get 2%."
+
+This implies that you can build your models as usual and typically expect a small performance boost from ensembling.
+
+### 8.2 - Explain bagging.
+Bagging, or Bootstrap Aggregating, is an ensemble method in which the dataset is first divided into multiple subsets through resampling.
+
+Then, each subset is used to train a model, and the final predictions are made through voting or averaging the component models.
+
+Bagging is performed in parallel.
