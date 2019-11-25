@@ -93,3 +93,20 @@ Disadvantages: However, they require a large amount of training data to converge
 If training set is small, high bias / low variance models (e.g. Naive Bayes) tend to perform better because they are less likely to be overfit.
 
 If training set is large, low bias / high variance models (e.g. Logistic Regression) tend to perform better because they can reflect more complex relationships.
+
+## 6. Unsupervised Learning
+*Learning from unlabeled data using factor and cluster analysis models*.
+
+### 6.1 - Explain Latent Dirichlet Allocation (LDA).
+Latent Dirichlet Allocation (LDA) is a common method of topic modeling, or classifying documents by subject matter.
+
+LDA is a generative model that represents documents as a mixture of topics that each have their own probability distribution of possible words.
+
+The "Dirichlet" distribution is simply a distribution of distributions. In LDA, documents are distributions of topics that are distributions of words.
+
+### 6.2 - Explain Principle Component Analysis (PCA).
+PCA is a method for transforming features in a dataset by combining them into uncorrelated linear combinations.
+
+These new features, or principal components, sequentially maximize the variance represented (i.e. the first principal component has the most variance, the second principal component has the second most, and so on).
+
+As a result, PCA is useful for dimensionality reduction because you can set an arbitrary variance cutoff.
