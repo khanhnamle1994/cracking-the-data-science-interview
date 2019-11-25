@@ -60,3 +60,18 @@ It's used to stabilize the variance (eliminate heteroskedasticity) and normalize
 * Removing collinear features.
 * Performing PCA, ICA, or other forms of algorithmic dimensionality reduction.
 * Combining features with feature engineering.
+
+## 4. Sampling & Splitting
+*How to split your datasets to tune parameters and avoid overfitting*.
+
+### 4.1 - How much data should you allocate for your training, validation, and test sets?
+You have to find a balance, and there's no right answer for every problem.
+
+If your test set is too small, you'll have an unreliable estimation of model performance (performance statistic will have high variance). If your training set is too small, your actual model parameters will have high variance.
+
+A good rule of thumb is to use an 80/20 train/test split. Then, your train set can be further split into train/validation or into partitions for cross-validation.
+
+### 4.2 - If you split your data into train/test splits, is it still possible to overfit your model?
+Yes, it's definitely possible. One common beginner mistake is re-tuning a model or training new models with different parameters after seeing its performance on the test set.
+
+In this case, its the model selection process that causes the overfitting. The test set should not be tainted until you're ready to make your final selection.
