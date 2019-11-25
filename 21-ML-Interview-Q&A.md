@@ -75,3 +75,21 @@ A good rule of thumb is to use an 80/20 train/test split. Then, your train set c
 Yes, it's definitely possible. One common beginner mistake is re-tuning a model or training new models with different parameters after seeing its performance on the test set.
 
 In this case, its the model selection process that causes the overfitting. The test set should not be tainted until you're ready to make your final selection.
+
+## 5. Supervised Learning
+*Learning from labeled data using classification and regression models*.
+
+### 5.1 - What are the advantages and disadvantages of decision trees?
+Advantages: Decision trees are easy to interpret, nonparametric (which means they are robust to outliers), and there are relatively few parameters to tune.
+
+Disadvantages: Decision trees are prone to be overfit. However, this can be addressed by ensemble methods like random forests or boosted trees.
+
+### 5.2 - What are the advantages and disadvantages of neural networks?
+Advantages: Neural networks (specifically deep NNs) have led to performance breakthroughs for unstructured datasets such as images, audio, and video. Their incredible flexibility allows them to learn patterns that no other ML algorithm can learn.
+
+Disadvantages: However, they require a large amount of training data to converge. It's also difficult to pick the right architecture, and the internal "hidden" layers are incomprehensible.
+
+### 5.3 - How can you choose a classifier based on training set size?
+If training set is small, high bias / low variance models (e.g. Naive Bayes) tend to perform better because they are less likely to be overfit.
+
+If training set is large, low bias / high variance models (e.g. Logistic Regression) tend to perform better because they can reflect more complex relationships.
