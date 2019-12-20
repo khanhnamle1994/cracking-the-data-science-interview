@@ -2,6 +2,7 @@
 This question was asked by: Facebook
 
 **`users` table**
+
 |  columns  |   type   |
 |:---------:|:--------:|
 |     id    |    int   |
@@ -11,6 +12,7 @@ This question was asked by: Facebook
 |   device  |    int   |
 
 **`user_comments` table**
+
 |   columns  |   type   |
 |:----------:|:--------:|
 |   user_id  |    int   |
