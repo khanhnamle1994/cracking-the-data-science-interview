@@ -12,6 +12,7 @@ A "loyal" customer is defined as
 You have a table showing all transactions made in 2017. The schema of the table is below:
 
 Table: **customer_transactions**
+
 |    Column Name   | Data Type |                         Description                        |
 |:----------------:|:---------:|:----------------------------------------------------------:|
 |    customer_id   |     id    |                     id of the customer                     |
