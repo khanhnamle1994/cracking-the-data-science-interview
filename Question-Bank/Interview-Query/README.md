@@ -6,3 +6,4 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [Rejection Reason](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Interview-Questions-and-Answers/Interview-Query/Rejection-Reason.md) (by Affirm)
 * [Closest SAT Scores](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Interview-Questions-and-Answers/Interview-Query/Closest-SAT-Scores.md) (by Dropbox)
 * [Random Number](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Interview-Questions-and-Answers/Interview-Query/Random-Number.md) (by Facebook)
+* [Four Person Elevator](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Interview-Questions-and-Answers/Interview-Query/Four-Person-Elevator.md) (by Postmates)

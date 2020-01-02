@@ -2,9 +2,6 @@
 
 A quick reminder of all relevant SQL queries and examples on how to use them.
 
-This repository is constantly being updated and added to by the community.
-Pull requests are welcome. Enjoy!
-
 # Table of Contents
 1. [ Finding Data Queries. ](#find)
 2. [ Data Modification Queries. ](#modify)
