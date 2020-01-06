@@ -436,6 +436,16 @@ Here is a visual explanation of PCA:
 
 [back to current section](#natural-language-processing)
 
+### Stemming and lemmatization
+
+* The goal of both stemming and lemmatization is to reduce inflectional forms and sometimes derivationally related forms of a word to a common base form.
+* Stemming usually refers to a crude heuristic process that chops off the ends of words.
+* Lemmatization usually refers to doing things properly with the use of a vocabulary and morphological analysis of words.
+* If confronted with the token `saw`, stemming might return just `s`, whereas lemmatization would attempt to return either `see` or `saw` depending on whether the use of the token was as a verb or a noun.
+* For a more detailed treatment please check [here](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html).
+
+[back to current section](#natural-language-processing)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
