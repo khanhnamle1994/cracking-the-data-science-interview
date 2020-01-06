@@ -17,6 +17,7 @@ Here are the categories:
 * [Finding Data Queries](#finding-data-queries)
 * [Data Modification Queries](#data-modification-queries)
 * [Reporting Queries](#reporting-queries)
+* [Join Queries](#join-queries)
 
 ### Finding Data Queries
 
