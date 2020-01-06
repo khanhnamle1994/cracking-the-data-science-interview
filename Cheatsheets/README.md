@@ -8,8 +8,10 @@ Here are the categories:
 
 * [SQL](#sql)
 * [Statistics](#statistics)
+* [Machine Learning Concepts](#machine-learning-concepts)
 * [Supervised Learning](#supervised-learning)
 * [Unsupervised Learning](#unsupervised-learning)
+* [Natural Language Processing](#natural-language-processing)
 * [Stanford Materials](#stanford-materials)
 
 ## SQL
@@ -200,6 +202,8 @@ Here are the categories:
 [back to top](#data-science-cheatsheets)
 
 ## Statistics
+
+## Machine Learning Concepts
 
 ## Supervised Learning
 
@@ -411,6 +415,26 @@ Here is a visual explanation of PCA:
 ![gan](assets/gan.jpg)
 
 [back to current section](#unsupervised-learning)
+
+[back to top](#data-science-cheatsheets)
+
+## Natural Language Processing
+
+* [Tokenization](#tokenization)
+* [Stemming and lemmatization](#stemming-and-lemmatization)
+* [N-gram](#ngram)
+* [Bag of Words](#bag-of-words)
+* [word2vec](#word2vec)
+
+### Tokenization
+
+* Tokenization is the process of converting a sequence of characters into a sequence of tokens.
+* Consider this example: `The quick brown fox jumped over the lazy dog`. In this case each word (separated by space) would be a token.
+* Sometimes tokenization doesn't have a definitive answer. For instance, `O'Neill` can be tokenized to `o` and `neill`, `oneill`, or `o'neill`.
+* In some cases tokenization requires language-specific knowledge. For example, it doesn't make sense to tokenize `aren't` into `aren` and `t`.
+* For a more detailed treatment of tokenization please check [here](https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html).
+
+[back to current section](#natural-language-processing)
 
 [back to top](#data-science-cheatsheets)
 
