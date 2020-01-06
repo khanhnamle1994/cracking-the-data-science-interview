@@ -249,6 +249,17 @@ Here are the categories:
 
 [back to current section](#supervised-learning)
 
+### KNN
+
+* Given a data point, we compute the K nearest data points (neighbors) using certain distance metric (e.g., Euclidean metric). For classification, we take the majority label of neighbors; for regression, we take the mean of the label values.
+* Note for KNN we don't train a model; we simply compute during inference time. This can be computationally expensive since each of the test example need to be compared with every training example to see how close they are.
+* There are approximation methods can have faster inference time by partitioning the training data into regions.
+* When K equals 1 or other small number the model is prone to over-fitting (high variance), while when K equals number of data points or other large number the model is prone to under-fitting (high bias)
+
+![KNN](assets/knn.png)
+
+[back to current section](#supervised-learning)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
