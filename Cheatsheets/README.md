@@ -313,6 +313,14 @@ Boosting builds on weak learners, and in an iterative fashion. In each iteration
 
 [back to current section](#supervised-learning)
 
+### MLP
+
+A feedforward neural network of multiple layers. In each layer we can have multiple neurons, and each of the neuron in the next layer is a linear/nonlinear combination of the all the neurons in the previous layer. In order to train the network we back propagate the errors layer by layer. In theory MLP can approximate any functions.
+
+![mlp](assets/mlp.jpg)
+
+[back to current section](#supervised-learning)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
