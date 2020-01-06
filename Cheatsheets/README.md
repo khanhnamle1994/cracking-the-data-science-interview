@@ -16,6 +16,7 @@ Here are the categories:
 
 * [Finding Data Queries](#finding-data-queries)
 * [Data Modification Queries](#data-modification-queries)
+* [Reporting Queries](#reporting-queries)
 
 ### Finding Data Queries
 
@@ -112,6 +113,21 @@ Here are the categories:
 #### **DELETE**: used to delete existing records/rows in a table
 * `DELETE FROM` table_name `WHERE` condition;
 * `DELETE` * `FROM` table_name;
+
+### Reporting Queries
+
+#### **COUNT**: returns the # of occurrences
+* `SELECT COUNT (DISTINCT` column_name`)`;
+
+#### **MIN() and MAX()**: returns the smallest/largest value of the selected column
+* `SELECT MIN (`column_names`) FROM` table_name `WHERE` condition;
+* `SELECT MAX (`column_names`) FROM` table_name `WHERE` condition;
+
+#### **AVG()**: returns the average value of a numeric column
+* `SELECT AVG (`column_name`) FROM` table_name `WHERE` condition;
+
+#### **SUM()**: returns the total sum of a numeric column
+* `SELECT SUM (`column_name`) FROM` table_name `WHERE` condition;
 
 [back to top](#data-science-cheatsheets)
 
