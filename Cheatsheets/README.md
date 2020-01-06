@@ -446,6 +446,20 @@ Here is a visual explanation of PCA:
 
 [back to current section](#natural-language-processing)
 
+### N gram
+
+* n-gram is a contiguous sequence of n items from a given sample of text or speech.
+* An n-gram of size 1 is referred to as a "unigram"; size 2 is a "bigram" size 3 is a "trigram". Larger sizes are sometimes referred to by the value of n in modern language, e.g., "four-gram", "five-gram", and so on.
+* Consider this example: `The quick brown fox jumped over the lazy dog.`
+  - bigram would be `the quick`, `quick brown`, `brown fox`, ..., i.e, every two consecutive words (or tokens).
+  - trigram would be `the quick brown`, `quick brown fox`, `brown fox jumped`, ..., i.e., every three consecutive words (or tokens).
+* ngram model models sequence, i.e., predicts next word (n) given previous words (1, 2, 3, ..., n-1).
+* multiple gram (bigram and above) captures **context**.
+* to choose n in n-gram requires experiments and making tradeoff between stability of the estimate against its appropriateness. Rule of thumb: trigram is a common choice with large training corpora (millions of words), whereas a bigram is often used with smaller ones.
+* n-gram can be used as features for machine learning and downstream NLP tasks.
+
+[back to current section](#natural-language-processing)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
