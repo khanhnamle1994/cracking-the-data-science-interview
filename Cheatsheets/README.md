@@ -217,14 +217,14 @@ Here are the categories:
 
 ### Linear regression
 
-* How to learn the parameter: minimize the cost function
-* How to minimize cost function: gradient descent
+* How to learn the parameter: minimize the cost function.
+* How to minimize cost function: gradient descent.
 * Regularization:
-    - L1 (Lasso): can shrink certain coef to zero, thus performing feature selection
-    - L2 (Ridge): shrink all coef with the same proportion; almost always outperforms L1
-    - Elastic Net: combined L1 and L2 priors as regularizer
-* Assumes linear relationship between features and the label
-* Can add polynomial and interaction features to add non-linearity
+    - L1 (Lasso): can shrink certain coef to zero, thus performing feature selection.
+    - L2 (Ridge): shrink all coef with the same proportion; almost always outperforms L1.
+    - Elastic Net: combined L1 and L2 priors as regularizer.
+* Assumes linear relationship between features and the label.
+* Can add polynomial and interaction features to add non-linearity.
 
 ![lr](assets/lr.png)
 
@@ -232,29 +232,29 @@ Here are the categories:
 
 ### Logistic regression
 
-* Generalized linear model (GLM) for binary classification problems
-* Apply the sigmoid function to the output of linear models, squeezing the target to range [0, 1]
-* Threshold to make prediction: usually if the output > .5, prediction 1; otherwise prediction 0
-* A special case of softmax function, which deals with multi-class problems
+* Generalized linear model (GLM) for binary classification problems.
+* Apply the sigmoid function to the output of linear models, squeezing the target to range [0, 1].
+* Threshold to make prediction: usually if the output > .5, prediction 1; otherwise prediction 0.
+* A special case of softmax function, which deals with multi-class problems.
 
 [back to current section](#supervised-learning)
 
 ### Naive Bayes
 
-* Naive Bayes (NB) is a supervised learning algorithm based on applying [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem)
-* It is called naive because it builds the naive assumption that each feature are independent of each other
-* NB can make different assumptions (i.e., data distributions, such as Gaussian, Multinomial, Bernoulli)
-* Despite the over-simplified assumptions, NB classifier works quite well in real-world applications, especially for text classification (e.g., spam filtering)
-* NB can be extremely fast compared to more sophisticated methods
+* Naive Bayes (NB) is a supervised learning algorithm based on applying [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem).
+* It is called naive because it builds the naive assumption that each feature are independent of each other.
+* NB can make different assumptions (i.e., data distributions, such as Gaussian, Multinomial, Bernoulli).
+* Despite the over-simplified assumptions, NB classifier works quite well in real-world applications, especially for text classification (e.g., spam filtering).
+* NB can be extremely fast compared to more sophisticated methods.
 
 [back to current section](#supervised-learning)
 
 ### KNN
 
-* Given a data point, we compute the K nearest data points (neighbors) using certain distance metric (e.g., Euclidean metric). For classification, we take the majority label of neighbors; for regression, we take the mean of the label values
-* Note for KNN we don't train a model; we simply compute during inference time. This can be computationally expensive since each of the test example need to be compared with every training example to see how close they are
+* Given a data point, we compute the K nearest data points (neighbors) using certain distance metric (e.g., Euclidean metric). For classification, we take the majority label of neighbors; for regression, we take the mean of the label values.
+* Note for KNN we don't train a model; we simply compute during inference time. This can be computationally expensive since each of the test example need to be compared with every training example to see how close they are.
 * There are approximation methods can have faster inference time by partitioning the training data into regions.
-* When K equals 1 or other small number the model is prone to over-fitting (high variance), while when K equals number of data points or other large number the model is prone to under-fitting (high bias)
+* When K equals 1 or other small number the model is prone to over-fitting (high variance), while when K equals number of data points or other large number the model is prone to under-fitting (high bias).
 
 ![KNN](assets/knn.png)
 
@@ -262,10 +262,10 @@ Here are the categories:
 
 ### SVM
 
-* Can perform linear, nonlinear, or outlier detection (unsupervised)
-* Large margin classifier: using SVM we not only have a decision boundary, but want the boundary to be as far from the closest training point as possible
-* The closest training examples are called support vectors, since they are the points based on which the decision boundary is drawn
-* SVMs are sensitive to feature scaling
+* Can perform linear, nonlinear, or outlier detection (unsupervised).
+* Large margin classifier: using SVM we not only have a decision boundary, but want the boundary to be as far from the closest training point as possible.
+* The closest training examples are called support vectors, since they are the points based on which the decision boundary is drawn.
+* SVMs are sensitive to feature scaling.
 
 ![svm](assets/svm.png)
 
@@ -273,14 +273,14 @@ Here are the categories:
 
 ### Decision Trees
 
-* Non-parametric, supervised learning algorithms
-* Given the training data, a decision tree algorithm divides the feature space into regions. For inference, we first see which region does the test data point fall in, and take the mean label values (regression) or the majority label value (classification)
-* **Construction**: top-down, chooses a variable to split the data such that the target variables within each region are as homogeneous as possible. Two common metrics: gini impurity or information gain, won't matter much in practice
-* Advantage: simple to understand & interpret, mirrors human decision making
+* Non-parametric, supervised learning algorithms.
+* Given the training data, a decision tree algorithm divides the feature space into regions. For inference, we first see which region does the test data point fall in, and take the mean label values (regression) or the majority label value (classification).
+* **Construction**: top-down, chooses a variable to split the data such that the target variables within each region are as homogeneous as possible. Two common metrics: gini impurity or information gain, won't matter much in practice.
+* Advantage: simple to understand & interpret, mirrors human decision making.
 * Disadvantage:
-    - can overfit easily (and generalize poorly) if we don't limit the depth of the tree
-    - can be non-robust: A small change in the training data can lead to a totally different tree
-    - instability: sensitive to training set rotation due to its orthogonal decision boundaries
+    - can overfit easily (and generalize poorly) if we don't limit the depth of the tree.
+    - can be non-robust: A small change in the training data can lead to a totally different tree.
+    - instability: sensitive to training set rotation due to its orthogonal decision boundaries.
 
 ![decision tree](assets/tree.gif)
 
@@ -309,7 +309,7 @@ Boosting builds on weak learners, and in an iterative fashion. In each iteration
 
 **XGBoost (Extreme Gradient Boosting)**
 
-* XGBoost uses a more regularized model formalization to control overfitting, which gives it better performance
+* XGBoost uses a more regularized model formalization to control overfitting, which gives it better performance.
 
 [back to current section](#supervised-learning)
 
@@ -328,6 +328,24 @@ The Conv layer is the building block of a Convolutional Network. The Conv layer 
 Initial layers capture low-level features such as angle and edges, while later layers learn a combination of the low-level features and in the previous layers and can therefore represent higher level feature, such as shape and object parts.
 
 ![CNN](assets/cnn.jpg)
+
+[back to current section](#supervised-learning)
+
+### RNN and LSTM
+
+RNN is another paradigm of neural network where we have difference layers of cells, and each cell not only takes as input the cell from the previous layer, but also the previous cell within the same layer. This gives RNN the power to model sequence.
+
+![RNN](assets/rnn.jpeg)
+
+This seems great, but in practice RNN barely works due to exploding/vanishing gradient, which is cause by a series of multiplication of the same matrix. To solve this, we can use a variation of RNN, called long short-term memory (LSTM), which is capable of learning long-term dependencies.
+
+The math behind LSTM can be pretty complicated, but intuitively LSTM introduce: (1) an input gate, (2) an output gate, (3) a forget gate, and (4) a memory cell (internal state).
+
+LSTM resembles human memory: it forgets old stuff (old internal state * forget gate) and learns from new input (input node * input gate).
+
+![lstm](assets/lstm.png)
+
+[back to current section](#supervised-learning)
 
 [back to top](#data-science-cheatsheets)
 
