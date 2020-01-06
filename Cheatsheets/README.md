@@ -460,6 +460,17 @@ Here is a visual explanation of PCA:
 
 [back to current section](#natural-language-processing)
 
+### Bag of Words
+
+* Why? Machine learning models cannot work with raw text directly; rather, they take numerical values as input.
+* Bag of words (BoW) builds a **vocabulary** of all the unique words in our dataset, and associate a unique index to each word in the vocabulary.
+* It is called a "bag" of words, because it is a representation that completely ignores the order of words.
+* Consider this example of two sentences: (1) `John likes to watch movies, especially horor movies.` and (2) `Mary likes movies too.` We would first build a vocabulary of unique words (all lower cases and ignoring punctuations): `[john, likes, to, watch, movies, especially, horor, mary, too]`. Then we can represent each sentence using term frequency, i.e, the number of times a term appears. So (1) would be `[1, 1, 1, 1, 2, 1, 1, 0, 0]`, and (2) would be `[0, 1, 0, 0, 1, 0, 0, 1, 1]`.
+* A common alternative to the use of dictionaries is the [hashing trick](https://en.wikipedia.org/wiki/Feature_hashing), where words are directly mapped to indices with a hashing function.
+* As the vocabulary grows bigger (tens of thousand), the vector to represent short sentences / document becomes sparse (almost all zeros).
+
+[back to current section](#natural-language-processing)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
