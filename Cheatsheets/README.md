@@ -241,6 +241,14 @@ Given a data science / machine learning project, what steps should we follow?
 
 [back to current section](#machine-learning-concepts)
 
+### Cross Validation
+
+Cross-validation is a technique to evaluate predictive models by partitioning the original sample into a training set to train the model, and a validation set to evaluate it. For example, a k-fold cross validation divides the data into k folds (or partitions), trains on each k-1 fold, and evaluate on the remaining 1 fold. This results to k models/evaluations, which can be averaged to get a overall model performance.
+
+![](assets/cv.png)
+
+[back to current section](#machine-learning-concepts)
+
 [back to top](#data-science-cheatsheets)
 
 ## Supervised Learning
