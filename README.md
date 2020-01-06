@@ -13,7 +13,7 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
 
 - ### Machine Learning
 
-    - [Trip Optimizer](https://github.com/khanhnamle1994/trip-optimizer/blob/master/Final-Report.pdf): Used XGBoost and evolutionary algorithms to optimize the travel time for taxi vehicles in New York City.
+    - [Trip Optimizer](https://github.com/khanhnamle1994/trip-optimizer/): Used XGBoost and evolutionary algorithms to optimize the travel time for taxi vehicles in New York City.
 
     - [Instacart Market Basket Analysis](https://github.com/khanhnamle1994/instacart-orders): Tackled the Instacart Market Basket Analysis challenge to predict which products will be in a user's next order.
 
