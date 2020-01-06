@@ -321,6 +321,14 @@ A feedforward neural network of multiple layers. In each layer we can have multi
 
 [back to current section](#supervised-learning)
 
+### CNN
+
+The Conv layer is the building block of a Convolutional Network. The Conv layer consists of a set of learnable filters (such as 5 * 5 * 3, width * height * depth). During the forward pass, we slide (or more precisely, convolve) the filter across the input and compute the dot product. Learning again happens when the network back propagate the error layer by layer.
+
+Initial layers capture low-level features such as angle and edges, while later layers learn a combination of the low-level features and in the previous layers and can therefore represent higher level feature, such as shape and object parts.
+
+![CNN](assets/cnn.jpg)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
