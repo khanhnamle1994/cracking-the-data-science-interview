@@ -392,6 +392,26 @@ Here is a visual explanation of PCA:
 
 [back to current section](#unsupervised-learning)
 
+### Generative Adversarial Network
+
+* Generative Adversarial Network (GAN) is an unsupervised learning algorithm that also has supervised flavor: using supervised loss as part of training.
+* GAN typically has two major components: the **generator** and the **discriminator**. The generator tries to generate "fake" data (e.g, images or sentences) that fool the discriminator into thinking that they're real, while the discriminator tries to distinguish between real and generated data. It's a fight between the two players thus the name adversarial, and this fight drives both sides to improve until "fake" data are indistinguishable from the real data.
+* How does it work, intuitively:
+	- The generator takes a **random** input and generates a sample of data.
+	- The discriminator then either takes the generated sample or a real data sample, and tries to predict whether the input is real or generated (i.e., solving a binary classification problem).
+	- Given a truth score range of [0, 1], ideally the we'd love to see discriminator give low score to generated data but high score to real data. On the other hand, we also wanna see the generated data fool the discriminator. And this paradox drives both sides become stronger.
+* How does it work, from a training perspective:
+	- Without training, the generator creates 'garbage' data only while the discriminator is too 'innocent' to tell the difference between fake and real data.
+	- Usually we would first train the discriminator with both real (label 1) and generated data (label 0) for N epochs so it would have a good judgement of what is real vs. fake.
+	- Then we **set the discriminator non-trainable**, and train the generator. Even though the discriminator is non-trainable at this stage, we still use it as a classifier so that **error signals can be back propagated and therefore enable the generator to learn**.
+	- The above two steps would continue in turn until both sides cannot be improved further.
+* Here are some [tips and tricks to make GANs work](https://github.com/soumith/ganhacks)
+* One Caveat is that the **adversarial part is only auxiliary: The end goal of using GAN is to generate data that even experts cannot tell if it's real or fake**.
+
+![gan](assets/gan.jpg)
+
+[back to current section](#unsupervised-learning)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
