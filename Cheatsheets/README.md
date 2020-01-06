@@ -104,6 +104,8 @@ Here are the categories:
 #### **HAVING**: this clause was added to SQL because the WHERE keyword could not be used with aggregate functions
 * `SELECT` `COUNT`(column_name1), column_name2 `FROM` table `GROUP BY` column_name2 `HAVING` `COUNT(`column_name1`)` > 5;
 
+[back to current section](#sql)
+
 ### Data Modification Queries
 
 #### **INSERT INTO**: used to insert new records/rows in a table
@@ -117,6 +119,8 @@ Here are the categories:
 #### **DELETE**: used to delete existing records/rows in a table
 * `DELETE FROM` table_name `WHERE` condition;
 * `DELETE` * `FROM` table_name;
+
+[back to current section](#sql)
 
 ### Reporting Queries
 
@@ -132,6 +136,8 @@ Here are the categories:
 
 #### **SUM()**: returns the total sum of a numeric column
 * `SELECT SUM (`column_name`) FROM` table_name `WHERE` condition;
+
+[back to current section](#sql)
 
 ### Join Queries
 
@@ -151,6 +157,8 @@ Here are the categories:
 #### **Self JOIN**: a regular join, but the table is joined with itself
 * `SELECT` column_names `FROM` table1 T1, table1 T2 `WHERE` condition;
 
+[back to current section](#sql)
+
 ### View Queries
 
 #### **CREATE**: create a view
@@ -161,6 +169,8 @@ Here are the categories:
 
 #### **DROP**: drop a view
 * `DROP VIEW` view_name;
+
+[back to current section](#sql)
 
 ### Altering Table Queries
 
@@ -173,6 +183,8 @@ Here are the categories:
 #### **DROP**: delete a column
 * `ALTER TABLE` table_name `DROP COLUMN` column_name;
 
+[back to current section](#sql)
+
 ### Creating Table Query
 
 ### **CREATE**: create a table
@@ -182,6 +194,41 @@ Here are the categories:
    `column3` `datatype`, <br />
    `column4` `datatype`, <br />
    `);`
+
+[back to current section](#sql)
+
+[back to top](#data-science-cheatsheets)
+
+## Statistics
+
+## Supervised Learning
+
+* [Linear regression](#linear-regression)
+* [Logistic regression](#logistic-regression)
+* [Naive Bayes](#naive-bayes)
+* [KNN](#knn)
+* [SVM](#svm)
+* [Decision tree](#decision-tree)
+* [Random forest](#random-forest)
+* [Boosting Tree](#boosting-tree)
+* [MLP](#mlp)
+* [CNN](#cnn)
+* [RNN and LSTM](#rnn-and-lstm)
+
+### Linear regression
+
+* How to learn the parameter: minimize the cost function
+* How to minimize cost function: gradient descent
+* Regularization:
+    - L1 (Lasso): can shrink certain coef to zero, thus performing feature selection
+    - L2 (Ridge): shrink all coef with the same proportion; almost always outperforms L1
+    - Elastic Net: combined L1 and L2 priors as regularizer
+* Assumes linear relationship between features and the label
+* Can add polynomial and interaction features to add non-linearity
+
+![lr](assets/lr.png)
+
+[back to current section](#supervised-learning)
 
 [back to top](#data-science-cheatsheets)
 
