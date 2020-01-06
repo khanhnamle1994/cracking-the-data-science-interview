@@ -256,6 +256,14 @@ Cross-validation is a technique to evaluate predictive models by partitioning th
 
 [back to current section](#machine-learning-concepts)
 
+### Mean Squared Error vs. Mean Absolute Error
+
+* **Similarity**: both measure the average model prediction error; range from 0 to infinity; the lower the better.
+* Mean Squared Error (MSE) gives higher weights to large error (e.g., being off by 10 just MORE THAN TWICE as bad as being off by 5), whereas Mean Absolute Error (MAE) assign equal weights (being off by 10 is just twice as bad as being off by 5).
+* MSE is continuously differentiable, MAE is not (where y_pred == y_true).
+
+[back to current section](#machine-learning-concepts)
+
 [back to top](#data-science-cheatsheets)
 
 ## Supervised Learning
