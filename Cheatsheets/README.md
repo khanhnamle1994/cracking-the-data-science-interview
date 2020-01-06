@@ -471,6 +471,19 @@ Here is a visual explanation of PCA:
 
 [back to current section](#natural-language-processing)
 
+### word2vec
+
+* Shallow, two-layer neural networks that are trained to construct linguistic context of words.
+* Takes as input a large corpus, and produce a vector space, typically of several hundred dimension, and each word in the corpus is assigned a vector in the space.
+* The key idea is **context**: words that occur often in the same context should have same/opposite meanings.
+* Two flavors:
+    - continuous bag of words (CBOW): the model predicts the current word given a window of surrounding context words.
+    - skip gram: predicts the surrounding context words using the current word.
+
+![](assets/w2v.png)
+
+[back to current section](#natural-language-processing)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
