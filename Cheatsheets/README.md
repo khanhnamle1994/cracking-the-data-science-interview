@@ -239,6 +239,16 @@ Here are the categories:
 
 [back to current section](#supervised-learning)
 
+### Naive Bayes
+
+* Naive Bayes (NB) is a supervised learning algorithm based on applying [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem)
+* It is called naive because it builds the naive assumption that each feature are independent of each other
+* NB can make different assumptions (i.e., data distributions, such as Gaussian, Multinomial, Bernoulli)
+* Despite the over-simplified assumptions, NB classifier works quite well in real-world applications, especially for text classification (e.g., spam filtering)
+* NB can be extremely fast compared to more sophisticated methods
+
+[back to current section](#supervised-learning)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
