@@ -349,6 +349,26 @@ LSTM resembles human memory: it forgets old stuff (old internal state * forget g
 
 [back to top](#data-science-cheatsheets)
 
+## Unsupervised Learning
+
+* [Clustering](#clustering)
+* [Principal Component Analysis](#principal-component-analysis)
+* [Autoencoder](#autoencoder)
+* [Generative Adversarial Network](#generative-adversarial-network)
+
+### Clustering
+
+* Clustering is a unsupervised learning algorithm that groups data in such a way that data points in the same group are more similar to each other than to those from other groups.
+* Similarity is usually defined using a distance measure (e.g, Euclidean, Cosine, Jaccard, etc.).
+* The goal is usually to discover the underlying structure within the data (usually high dimensional).
+* The most common clustering algorithm is K-means, where we define K (the number of clusters) and the algorithm iteratively finds the cluster each data point belongs to.
+
+[scikit-learn](http://scikit-learn.org/stable/modules/clustering.html) implements many clustering algorithms. Below is a comparison adopted from its page.
+
+![clustering](assets/clustering.png)
+
+[back to current section](#unsupervised-learning)
+
 ## Stanford Materials
 
 The Stanford cheatsheets are collected from [Shervine Amidi's teaching materials](https://stanford.edu/~shervine/teaching/):
