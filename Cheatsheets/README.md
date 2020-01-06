@@ -243,9 +243,16 @@ Given a data science / machine learning project, what steps should we follow?
 
 ### Cross Validation
 
-Cross-validation is a technique to evaluate predictive models by partitioning the original sample into a training set to train the model, and a validation set to evaluate it. For example, a k-fold cross validation divides the data into k folds (or partitions), trains on each k-1 fold, and evaluate on the remaining 1 fold. This results to k models/evaluations, which can be averaged to get a overall model performance.
+Cross-validation is a technique to evaluate predictive models by partitioning the original sample into a training set to train the model, and a validation set to evaluate it. For example, a k-fold cross validation divides the data into k folds (or partitions), trains on each k-1 fold, and evaluate on the remaining 1 fold. This results to k models/evaluations, which can be averaged to get an overall model performance.
 
 ![](assets/cv.png)
+
+[back to current section](#machine-learning-concepts)
+
+### Feature Importance
+
+* In linear models, feature importance can be calculated by the scale of the coefficients.
+* In tree-based methods (such as random forest), important features are likely to appear closer to the root of the tree.  We can get a feature's importance for random forest by computing the averaging depth at which it appears across all trees in the forest.
 
 [back to current section](#machine-learning-concepts)
 
