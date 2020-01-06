@@ -380,6 +380,18 @@ Here is a visual explanation of PCA:
 
 ![pca](assets/pca.gif)
 
+[back to current section](#unsupervised-learning)
+
+### Autoencoder
+
+* The aim of an autoencoder is to learn a representation (encoding) for a set of data.
+* An autoencoder always consists of two parts, the encoder and the decoder. The encoder would find a lower dimension representation (latent variable) of the original input, while the decoder is used to reconstruct from the lower-dimension vector such that the distance between the original and reconstruction is minimized
+* Can be used for data denoising and dimensionality reduction.
+
+![](assets/autoencoder.png)
+
+[back to current section](#unsupervised-learning)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
