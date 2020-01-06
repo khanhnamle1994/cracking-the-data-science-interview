@@ -230,6 +230,15 @@ Here are the categories:
 
 [back to current section](#supervised-learning)
 
+### Logistic regression
+
+* Generalized linear model (GLM) for binary classification problems
+* Apply the sigmoid function to the output of linear models, squeezing the target to range [0, 1]
+* Threshold to make prediction: usually if the output > .5, prediction 1; otherwise prediction 0
+* A special case of softmax function, which deals with multi-class problems
+
+[back to current section](#supervised-learning)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
