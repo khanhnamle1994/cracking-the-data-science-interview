@@ -208,9 +208,9 @@ Here are the categories:
 * [Naive Bayes](#naive-bayes)
 * [KNN](#knn)
 * [SVM](#svm)
-* [Decision tree](#decision-tree)
-* [Random forest](#random-forest)
-* [Boosting Tree](#boosting-tree)
+* [Decision Trees](#decision-trees)
+* [Random Forest](#random-forest)
+* [Boosting Trees](#boosting-trees)
 * [MLP](#mlp)
 * [CNN](#cnn)
 * [RNN and LSTM](#rnn-and-lstm)
@@ -271,7 +271,7 @@ Here are the categories:
 
 [back to current section](#supervised-learning)
 
-### Decision tree
+### Decision Trees
 
 * Non-parametric, supervised learning algorithms
 * Given the training data, a decision tree algorithm divides the feature space into regions. For inference, we first see which region does the test data point fall in, and take the mean label values (regression) or the majority label value (classification)
@@ -283,6 +283,16 @@ Here are the categories:
     - instability: sensitive to training set rotation due to its orthogonal decision boundaries
 
 ![decision tree](assets/tree.gif)
+
+[back to current section](#supervised-learning)
+
+### Random Forest
+
+Random forest improves bagging further by adding some randomness. In random forest, only a subset of features are selected at random to construct a tree (while often not subsample instances). The benefit is that random forest **decorrelates** the trees.
+
+For example, suppose we have a dataset. There is one very predicative feature, and a couple of moderately predicative features. In bagging trees, most of the trees will use this very predicative feature in the top split, and therefore making most of the trees look similar, **and highly correlated**. Averaging many highly correlated results won't lead to a large reduction in variance compared with uncorrelated results.
+
+In random forest, for each split, we only consider a subset of the features and therefore reduce the variance even further by introducing more uncorrelated trees. In practice, tuning random forest entails having a large number of trees (the more the better, but always consider computation constraint). Also, `min_samples_leaf` (The minimum number of samples at the leaf node)to control the tree size and overfitting. Always cross validate the parameters.
 
 [back to current section](#supervised-learning)
 
