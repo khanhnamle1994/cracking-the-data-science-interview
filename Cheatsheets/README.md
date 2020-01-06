@@ -18,6 +18,7 @@ Here are the categories:
 * [Data Modification Queries](#data-modification-queries)
 * [Reporting Queries](#reporting-queries)
 * [Join Queries](#join-queries)
+* [View Queries](#view-queries)
 
 ### Finding Data Queries
 
@@ -129,6 +130,35 @@ Here are the categories:
 
 #### **SUM()**: returns the total sum of a numeric column
 * `SELECT SUM (`column_name`) FROM` table_name `WHERE` condition;
+
+### Join Queries
+
+####  **INNER JOIN**: returns records that have matching value in both tables
+* `SELECT` column_names `FROM` table1 `INNER JOIN` table2 `ON` table1.column_name=table2.column_name;
+* `SELECT` table1.column_name1, table2.column_name2, table3.column_name3 `FROM` ((table1 `INNER JOIN` table2 `ON` relationship) `INNER JOIN` table3 `ON` relationship);
+
+#### **LEFT (OUTER) JOIN**: returns all records from the left table (table1), and the matched records from the right table (table2)
+* `SELECT` column_names `FROM` table1 `LEFT JOIN` table2 `ON` table1.column_name=table2.column_name;
+
+### **RIGHT (OUTER) JOIN**: returns all records from the right table (table2), and the matched records from the left table (table1)
+* `SELECT` column_names `FROM` table1 `RIGHT JOIN` table2 `ON` table1.column_name=table2.column_name;
+
+#### **FULL (OUTER) JOIN**: returns all records when there is a match in either left or right table
+* `SELECT` column_names `FROM` table1 ``FULL OUTER JOIN`` table2 `ON` table1.column_name=table2.column_name;
+
+#### **Self JOIN**: a regular join, but the table is joined with itself
+* `SELECT` column_names `FROM` table1 T1, table1 T2 `WHERE` condition;
+
+### View Queries
+
+#### **CREATE**: create a view
+* `CREATE VIEW` view_name `AS SELECT` column1, column2 `FROM` table_name `WHERE` condition;
+
+#### **SELECT**: retrieve a view
+* `SELECT` * `FROM` view_name;
+
+#### **DROP**: drop a view
+* `DROP VIEW` view_name;
 
 [back to top](#data-science-cheatsheets)
 
