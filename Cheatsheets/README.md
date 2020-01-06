@@ -19,6 +19,8 @@ Here are the categories:
 * [Reporting Queries](#reporting-queries)
 * [Join Queries](#join-queries)
 * [View Queries](#view-queries)
+* [Altering Table Queries](#altering-table-queries)
+* [Creating Table Query](#creating-table-query)
 
 ### Finding Data Queries
 
@@ -159,6 +161,27 @@ Here are the categories:
 
 #### **DROP**: drop a view
 * `DROP VIEW` view_name;
+
+### Altering Table Queries
+
+#### **ADD**: add a column
+* `ALTER TABLE` table_name `ADD` column_name column_definition;
+
+#### **MODIFY**: change data type of column
+* `ALTER TABLE` table_name `MODIFY` column_name column_type;
+
+#### **DROP**: delete a column
+* `ALTER TABLE` table_name `DROP COLUMN` column_name;
+
+### Creating Table Query
+
+### **CREATE**: create a table
+* `CREATE TABLE` table_name `(` <br />
+   `column1` `datatype`, <br />
+   `column2` `datatype`, <br />
+   `column3` `datatype`, <br />
+   `column4` `datatype`, <br />
+   `);`
 
 [back to top](#data-science-cheatsheets)
 
