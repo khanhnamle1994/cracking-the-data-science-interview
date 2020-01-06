@@ -296,6 +296,23 @@ In random forest, for each split, we only consider a subset of the features and 
 
 [back to current section](#supervised-learning)
 
+### Boosting Trees
+
+**How it works**
+
+Boosting builds on weak learners, and in an iterative fashion. In each iteration, a new learner is added, while all existing learners are kept unchanged. All learners are weighted based on their performance (e.g., accuracy), and after a weak learner is added, the data are re-weighted: examples that are misclassified gain more weights, while examples that are correctly classified lose weights. Thus, future weak learners focus more on examples that previous weak learners misclassified.
+
+**Difference from random forest (RF)**
+
+* RF grows trees **in parallel**, while Boosting is sequential
+* RF reduces variance, while Boosting reduces errors by reducing bias
+
+**XGBoost (Extreme Gradient Boosting)**
+
+* XGBoost uses a more regularized model formalization to control overfitting, which gives it better performance
+
+[back to current section](#supervised-learning)
+
 [back to top](#data-science-cheatsheets)
 
 ## Stanford Materials
