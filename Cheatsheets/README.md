@@ -251,12 +251,23 @@ Here are the categories:
 
 ### KNN
 
-* Given a data point, we compute the K nearest data points (neighbors) using certain distance metric (e.g., Euclidean metric). For classification, we take the majority label of neighbors; for regression, we take the mean of the label values.
-* Note for KNN we don't train a model; we simply compute during inference time. This can be computationally expensive since each of the test example need to be compared with every training example to see how close they are.
+* Given a data point, we compute the K nearest data points (neighbors) using certain distance metric (e.g., Euclidean metric). For classification, we take the majority label of neighbors; for regression, we take the mean of the label values
+* Note for KNN we don't train a model; we simply compute during inference time. This can be computationally expensive since each of the test example need to be compared with every training example to see how close they are
 * There are approximation methods can have faster inference time by partitioning the training data into regions.
 * When K equals 1 or other small number the model is prone to over-fitting (high variance), while when K equals number of data points or other large number the model is prone to under-fitting (high bias)
 
 ![KNN](assets/knn.png)
+
+[back to current section](#supervised-learning)
+
+### SVM
+
+* Can perform linear, nonlinear, or outlier detection (unsupervised)
+* Large margin classifier: using SVM we not only have a decision boundary, but want the boundary to be as far from the closest training point as possible
+* The closest training examples are called support vectors, since they are the points based on which the decision boundary is drawn
+* SVMs are sensitive to feature scaling
+
+![svm](assets/svm.png)
 
 [back to current section](#supervised-learning)
 
