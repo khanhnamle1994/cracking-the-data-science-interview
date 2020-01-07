@@ -335,6 +335,13 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 
 [back to current section](#machine-learning-concepts)
 
+### Parametric vs Nonparametric
+
+* A learning model that summarizes data with a set of parameters of fixed size (independent of the number of training examples) is called a parametric model.
+* A model where the number of parameters is not determined prior to training. Nonparametric does not mean that they have no parameters. On the contrary, nonparametric models (can) become more and more complex with an increasing amount of data.
+
+[back to current section](#machine-learning-concepts)
+
 [back to top](#data-science-cheatsheets)
 
 ## Supervised Learning
