@@ -284,6 +284,23 @@ Cross-validation is a technique to evaluate predictive models by partitioning th
 
 [back to current section](#machine-learning-concepts)
 
+### Would adding more data address underfitting
+
+Underfitting happens when a model is not complex enough to learn well from the data. It is the problem of model rather than data size. So a potential way to address underfitting is to increase the model complexity (e.g., to add higher order coefficients for linear model, increase depth for tree-based methods, add more layers / number of neurons for neural networks etc.).
+
+[back to current section](#machine-learning-concepts)
+
+### Activation Function
+
+For neural networks:
+
+* Non-linearity: ReLU is often used. Use Leaky ReLU (a small positive gradient for negative input, say, `y = 0.01x` when x < 0) to address dead ReLU issue.
+* Multi-class: softmax.
+* Binary: sigmoid.
+* Regression: linear.
+
+[back to current section](#machine-learning-concepts)
+
 [back to top](#data-science-cheatsheets)
 
 ## Supervised Learning
