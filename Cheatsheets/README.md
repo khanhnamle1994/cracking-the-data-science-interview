@@ -275,6 +275,15 @@ Cross-validation is a technique to evaluate predictive models by partitioning th
 
 [back to current section](#machine-learning-concepts)
 
+### Correlation vs Covariance
+
+* Both determine the relationship and measure the dependency between two random variables.
+* Correlation is when the change in one item may result in the change in the another item, while covariance is when two items vary together (joint variability).
+* Covariance is nothing but a measure of correlation. On the contrary, correlation refers to the scaled form of covariance.
+* Range: correlation is between -1 and +1, while covariance lies between negative infinity and infinity.
+
+[back to current section](#machine-learning-concepts)
+
 [back to top](#data-science-cheatsheets)
 
 ## Supervised Learning
