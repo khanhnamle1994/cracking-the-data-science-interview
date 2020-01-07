@@ -301,6 +301,33 @@ For neural networks:
 
 [back to current section](#machine-learning-concepts)
 
+### Bagging
+
+To address overfitting, we can use an ensemble method called bagging (bootstrap aggregating), which reduces the variance of the meta learning algorithm. Bagging can be applied to decision tree or other algorithms.
+
+Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ensemble/plot_bias_variance.html#sphx-glr-auto-examples-ensemble-plot-bias-variance-py) of a single estimator vs. bagging.
+
+![](assets/bagging.png)
+
+* Bagging is when sampling is performed *with* replacement. When sampling is performed *without* replacement, it's called pasting.
+* Bagging is popular due to its boost for performance, but also due to that individual learners can be trained in parallel and scale well.
+* Ensemble methods work best when the learners are as independent from one another as possible.
+* Voting: soft voting (predict probability and average over all individual learners) often works better than hard voting.
+* out-of-bag instances can act validation set for bagging.
+
+[back to current section](#machine-learning-concepts)
+
+### Stacking
+
+* Instead of using trivial functions (such as hard voting) to aggregate the predictions from individual learners, train a model to perform this aggregation.
+* First split the training set into two subsets: the first subset is used to train the learners in the first layer.
+* Next the first layer learners are used to make predictions (meta features) on the second subset, and those predictions are used to train another models (to obtain the weights of different learners) in the second layer.
+* We can train multiple models in the second layer, but this entails subsetting the original dataset into 3 parts.
+
+![stacking](assets/stacking.jpg)
+
+[back to current section](#machine-learning-concepts)
+
 [back to top](#data-science-cheatsheets)
 
 ## Supervised Learning
