@@ -7,3 +7,4 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [A hotel chain's loyal customers](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Loyal-Customers.md)
 * [Finding the perimeter of a river](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Finding-The-Perimeter-Of-A-River.md)
 * [Relationship between fitness and smoking](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Relationship-Fitness-Smoking.md)
+* [Time to response on messaging app](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Response-on-Messaging-App.md)
