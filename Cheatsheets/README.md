@@ -328,6 +328,13 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 
 [back to current section](#machine-learning-concepts)
 
+### Generative vs discriminative
+
+* Discriminative algorithms model *p(y|x; w)*, that is, given the dataset and learned parameter, what is the probability of y belonging to a specific class. A discriminative algorithm doesn't care about how the data was generated, it simply categorizes a given example
+* Generative algorithms try to model *p(x|y)*, that is, the distribution of features given that it belongs to a certain class. A generative algorithm models how the data was generated.
+
+[back to current section](#machine-learning-concepts)
+
 [back to top](#data-science-cheatsheets)
 
 ## Supervised Learning
