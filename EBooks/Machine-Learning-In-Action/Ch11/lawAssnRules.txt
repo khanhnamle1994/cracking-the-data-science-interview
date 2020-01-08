@@ -1,0 +1,3792 @@
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+confidence: 0.961538
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Nay
+           -------->
+Democratic
+confidence: 0.951351
+
+Mine Safety Act -- Yea
+           -------->
+Democratic
+confidence: 0.981308
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Nay
+           -------->
+Repealing the Health Care Bill -- Nay
+confidence: 0.962162
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Mine Safety Act -- Yea
+           -------->
+Science and Technology Funding -- Yea
+confidence: 0.962617
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973684
+
+Repealing the Health Care Bill -- Yea
+           -------->
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.963265
+
+Repealing the Health Care Bill -- Nay
+           -------->
+Democratic
+confidence: 0.978836
+
+Unemployment Benefits Extension -- Yea
+           -------->
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.962963
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964912
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.950000
+
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Nay
+           -------->
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+confidence: 0.953608
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+confidence: 0.954167
+
+Science and Technology Funding -- Yea
+           -------->
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.961832
+
+Mine Safety Act -- Nay
+           -------->
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+confidence: 0.963351
+
+Repealing the Health Care Bill -- Yea
+           -------->
+Republican
+confidence: 0.983673
+
+Mine Safety Act -- Yea
+           -------->
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.985981
+
+Repealing the Health Care Bill -- Nay
+           -------->
+Prohibiting Federal Funding of National Public Radio -- Nay
+confidence: 0.962963
+
+Mine Safety Act -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+confidence: 0.957944
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+confidence: 0.995614
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+confidence: 0.970833
+
+Repealing the Health Care Bill -- Yea
+           -------->
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.951020
+
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.957265
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995614
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964912
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Nay
+           -------->
+Repealing the Health Care Bill -- Nay
+Democratic
+confidence: 0.951351
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.960526
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973684
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.969298
+
+Repealing the Health Care Bill -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.951020
+
+Mine Safety Act -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.967290
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.954167
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.969298
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995495
+
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973568
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.969298
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.952153
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972093
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.951111
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995349
+
+Republican
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.968326
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.967442
+
+Mine Safety Act -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.964467
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968468
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.977273
+
+Unemployment Benefits Extension -- Yea
+Mine Safety Act -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.965854
+
+Repealing the Health Care Bill -- Nay
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+Science and Technology Funding -- Yea
+confidence: 0.955056
+
+Repealing the Health Care Bill -- Nay
+Science and Technology Funding -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.971429
+
+Repealing the Health Care Bill -- Nay
+Unemployment Benefits Extension -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.965909
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.960526
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995455
+
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.956332
+
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964758
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.960526
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964824
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.954774
+
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.974490
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.963964
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972727
+
+Unemployment Benefits Extension -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.954128
+
+Mine Safety Act -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.964467
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.957547
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.971292
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.952174
+
+Repealing the Health Care Bill -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.956332
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973333
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.969849
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.961373
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.982456
+
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.978166
+
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.961373
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.962791
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.976744
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.950893
+
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.954955
+
+Repealing the Health Care Bill -- Nay
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+           -------->
+Democratic
+Unemployment Benefits Extension -- Yea
+confidence: 0.955056
+
+Repealing the Health Care Bill -- Nay
+Unemployment Benefits Extension -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.965909
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.954774
+
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.954082
+
+Mine Safety Act -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.969543
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.958140
+
+Unemployment Benefits Extension -- Yea
+Mine Safety Act -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.951220
+
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.957143
+
+Science and Technology Funding -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.954955
+
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.952381
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.956938
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.956938
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.959821
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.955556
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.960000
+
+Republican
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.977376
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964824
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.967442
+
+Repealing the Health Care Bill -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Nay
+           -------->
+Democratic
+Prohibiting Federal Funding of National Public Radio -- Nay
+confidence: 0.955056
+
+Prohibiting Federal Funding of National Public Radio -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Nay
+           -------->
+Repealing the Health Care Bill -- Nay
+Democratic
+confidence: 0.982659
+
+Democratic
+Prohibiting Use of Federal Funds For Planned Parenthood -- Nay
+           -------->
+Repealing the Health Care Bill -- Nay
+Prohibiting Federal Funding of National Public Radio -- Nay
+confidence: 0.965909
+
+Unemployment Benefits Extension -- Yea
+Mine Safety Act -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.951220
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972093
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995349
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.951111
+
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.959459
+
+Republican
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.963801
+
+Science and Technology Funding -- Yea
+Mine Safety Act -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.970874
+
+Democratic
+Mine Safety Act -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.952381
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.969849
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.962791
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.963134
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.981221
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.954338
+
+Republican
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.981221
+
+Republican
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.967593
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995169
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.958140
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.958140
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.962617
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.958140
+
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.966667
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.975248
+
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+Science and Technology Funding -- Yea
+confidence: 0.950000
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.959596
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.959596
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.974359
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.958549
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973684
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.967914
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.954774
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.964467
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.969388
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.959596
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.954774
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.974359
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.954774
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.954774
+
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.966667
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.952607
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995050
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.971014
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.960396
+
+Repealing the Health Care Bill -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.958904
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.981308
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.976744
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.958904
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.957346
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.975845
+
+Unemployment Benefits Extension -- Yea
+Mine Safety Act -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.963158
+
+Mine Safety Act -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.963918
+
+Science and Technology Funding -- Yea
+Mine Safety Act -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.968912
+
+Democratic
+Mine Safety Act -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.963918
+
+Science and Technology Funding -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.978723
+
+Democratic
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.953368
+
+Unemployment Benefits Extension -- Yea
+Mine Safety Act -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.963158
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.951872
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.967914
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.951872
+
+Unemployment Benefits Extension -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.952381
+
+Science and Technology Funding -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Democratic
+Unemployment Benefits Extension -- Yea
+confidence: 0.957447
+
+Unemployment Benefits Extension -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.952381
+
+Science and Technology Funding -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.957447
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.967442
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995215
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.971963
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.967442
+
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Unemployment Benefits Extension -- Yea
+confidence: 0.961111
+
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.951456
+
+Science and Technology Funding -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.965517
+
+Democratic
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.965517
+
+Unemployment Benefits Extension -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.960199
+
+Science and Technology Funding -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.950739
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.975845
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966507
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.953052
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.975962
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966667
+
+Republican
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.953052
+
+Unemployment Benefits Extension -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.950249
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.954338
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972093
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995238
+
+Republican
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.967593
+
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.976636
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972093
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.962567
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.963918
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.954082
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964824
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.960000
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964824
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964824
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.958333
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968421
+
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.961111
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.961165
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.970297
+
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+Mine Safety Act -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.950495
+
+Unemployment Benefits Extension -- Yea
+Science and Technology Funding -- Yea
+Mine Safety Act -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.969697
+
+Democratic
+Mine Safety Act -- Yea
+Unemployment Benefits Extension -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.955224
+
+Unemployment Benefits Extension -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.973545
+
+Democratic
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.953368
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972727
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995349
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.963964
+
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.955357
+
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.977169
+
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968326
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972727
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.963964
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.965347
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.962567
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.954082
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.959184
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964103
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.958333
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968421
+
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.953052
+
+Unemployment Benefits Extension -- Yea
+Science and Technology Funding -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.957547
+
+Democratic
+Unemployment Benefits Extension -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.957547
+
+Unemployment Benefits Extension -- Yea
+Mine Safety Act -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.968421
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.971014
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.961722
+
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.977778
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.957746
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.980769
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.971429
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.953917
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995192
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.962791
+
+Republican
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.971831
+
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.967290
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.962791
+
+Unemployment Benefits Extension -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.960199
+
+Democratic
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.950739
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.966019
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.961353
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973958
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968912
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.960591
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.984848
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.951220
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.975000
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.960591
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.969849
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.950739
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.969849
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.969849
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.958549
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973684
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973958
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968912
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.956098
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.970297
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.994924
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.970297
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.975124
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.970297
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.963542
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.958549
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973684
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.973684
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.958549
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973684
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.958549
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973684
+
+Unemployment Benefits Extension -- Yea
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.977143
+
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Unemployment Benefits Extension -- Yea
+confidence: 0.960674
+
+Democratic
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.960674
+
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+Unemployment Benefits Extension -- Yea
+confidence: 0.950000
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.962567
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.962567
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.978261
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.972973
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.957447
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.957895
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.983784
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973262
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.957895
+
+Unemployment Benefits Extension -- Yea
+Mine Safety Act -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.962567
+
+Unemployment Benefits Extension -- Yea
+Science and Technology Funding -- Yea
+Mine Safety Act -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.967742
+
+Democratic
+Unemployment Benefits Extension -- Yea
+Mine Safety Act -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.962567
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.967914
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.952632
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.967914
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.967914
+
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.966292
+
+Science and Technology Funding -- Yea
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.977273
+
+Democratic
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.966292
+
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.955556
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.955801
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.971910
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972222
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966851
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.950276
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.955556
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966292
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.962162
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.951872
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.978022
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.951872
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.951872
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.971014
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995050
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.961722
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.957143
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.975728
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966346
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.971014
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.961722
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.954774
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.974359
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964467
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.954774
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.956757
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.961957
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972527
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.962567
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.962567
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.962567
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.962567
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.962567
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.962567
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.978261
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.972973
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.960591
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.979899
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.951220
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.979899
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.965347
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.959799
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.979487
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.969543
+
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.955665
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.994872
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.960396
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.974874
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.965174
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.960396
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.950276
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.955556
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966292
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.963351
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.958333
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968421
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.978723
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.958333
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968421
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.958333
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968421
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.963351
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.983957
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.958333
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.978723
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968421
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972222
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966851
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.957547
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.975962
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.995098
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966667
+
+Republican
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.953052
+
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.971292
+
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.980676
+
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.971292
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.953052
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.975962
+
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966667
+
+Republican
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.953052
+
+Unemployment Benefits Extension -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.954545
+
+Unemployment Benefits Extension -- Yea
+Science and Technology Funding -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.969231
+
+Democratic
+Unemployment Benefits Extension -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.964286
+
+Democratic
+Science and Technology Funding -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Repealing "Don't Ask, Don't Tell" After Military Review and Certification -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.954545
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.966851
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.961538
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973958
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968912
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.958974
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973958
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968912
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.973958
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.968912
+
+Unemployment Benefits Extension -- Yea
+Mine Safety Act -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+           -------->
+Democratic
+Science and Technology Funding -- Yea
+confidence: 0.951872
+
+Unemployment Benefits Extension -- Yea
+Science and Technology Funding -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Democratic
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.978022
+
+Science and Technology Funding -- Yea
+Mine Safety Act -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+           -------->
+Democratic
+Unemployment Benefits Extension -- Yea
+confidence: 0.956989
+
+Democratic
+Mine Safety Act -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Unemployment Benefits Extension -- Yea
+           -------->
+Science and Technology Funding -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.956989
+
+Democratic
+Science and Technology Funding -- Yea
+Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea
+Mine Safety Act -- Yea
+           -------->
+Unemployment Benefits Extension -- Yea
+"Whistleblower Protection" for Offshore Oil Workers -- Yea
+confidence: 0.956989
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.955801
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.971910
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+           -------->
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.950549
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.955801
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.951087
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972222
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966851
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.961538
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972222
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966851
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.972222
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966851
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.966292
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.955556
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966292
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.982857
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.955556
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966292
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.950276
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.955556
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966292
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.967742
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.962567
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.978261
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.972973
+
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.957447
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.978261
+
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.962567
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.978261
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.972973
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.962567
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.962567
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.978261
+
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.972973
+
+Republican
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.957447
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.959596
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.974359
+
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.994764
+
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964467
+
+Republican
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.954774
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.974359
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.979381
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.969388
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.954774
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.974359
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.964467
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.954774
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.960674
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 0.982759
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.955307
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.977143
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Use of Federal Funds For Planned Parenthood -- Yea
+confidence: 0.966102
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.966480
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Removing Troops from Afghanistan -- Nay
+confidence: 0.955801
+
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Republican
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.971910
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+confidence: 1.000000
+
+Republican
+Repealing the Health Care Bill -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Reducing Federal Funding of the US Institute of Peace -- Yea
+           -------->
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.950549
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+confidence: 0.977401
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.955801
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.971910
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Removing Troops from Afghanistan -- Nay
+confidence: 0.955801
+
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Prohibiting Federal Funding of National Public Radio -- Yea
+Removing Troops from Afghanistan -- Nay
+           -------->
+Republican
+Repealing the Health Care Bill -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.971910
+
+Republican
+Reducing Federal Funding of the US Institute of Peace -- Yea
+Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay
+Removing Troops from Afghanistan -- Nay
+           -------->
+Repealing the Health Care Bill -- Yea
+Prohibiting Federal Funding of National Public Radio -- Yea
+Terminating the Home Affordable Modification Program -- Yea
+confidence: 0.950549
+

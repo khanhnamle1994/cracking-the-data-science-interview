@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title> Errata for Machine Learning in Action</title>
+    <style>
+      body {
+        font-size: 10pt;
+        margin: 1.5em;
+        background-color: lightblue;
+        color: darkblue;
+        font-family: Verdana,sans-serif;
+      }
+      h1 {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 2em;
+      }
+      h2 {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+      fieldset {
+        width: 740px;
+        margin-bottom: 12px;
+        border-color: #00457b;
+        background-color: #cfeace;
+      }
+
+      fieldset div {
+        margin-bottom: 6px;
+        font-weight: normal;
+      }
+
+      legend {
+        border: 2px ridge #00457b;
+        font-size: 1.2em;
+        font-weight: bold;
+        background-color: #e36a51;
+        color: white;
+        padding: 8px 16px;
+      }
+    </style>
+  </head>
+<body>
+  <fieldset>
+    <legend>Errata for Machine Learning in Action by Peter Harrington</legend>
+<p>
+Hi thanks for taking a look at <a href="http://www.manning.com/pharrington"><b>Machine Learning in Action</b></a>.  If you find any errors that are not published below please submit them to the book's 
+<a href="http://www.manning-sandbox.com/forum.jspa?forumID=728" target="_blank">
+Author Online Forum</a>. 
+</p>
+
+<p>
+<h2>On page 17: (not in a code listing)</h2>
+The line: </br>
+myEye = randMat*invRandMat </br>
+
+should appear above the line:</br>
+>>> myEye – eye(4)</br>
+</p>
+
+
+
+<h2>Listing 2.2 bottom of page 25-page26</h2>
+A better version of the function file2matrix() is given below.  The code in the book will work. 
+<pre>
+def file2matrix(filename):
+    fr = open(filename)
+    arrayOLines = fr.readlines()
+    numberOfLines = len(arrayOLines)            
+    returnMat = zeros((numberOfLines,3))       
+    classLabelVector = [] 
+    index = 0
+    for line in arrayOLines:
+        line = line.strip()                     
+        listFromLine = line.split('\t')         
+        returnMat[index,:] = listFromLine[0:3]  
+        classLabelVector.append(int(listFromLine[-1]))
+        index += 1
+    return returnMat,classLabelVector
+</pre>
+
+
+<p>
+<h2>Page 26:</h2>
+datingDataMat, datingLabels = kNN.file2matrix('datingTestSet.txt') </br>
+should be:</br>
+datingDataMat, datingLabels = kNN.file2matrix('datingTestSet2.txt') </br>
+</p>
+
+<p>
+>>> datingLabels[0:20]</br>
+[‘didntLike’, ‘smallDoses’,……</br>
+
+should be:</br>
+
+>>> datingLabels[0:20]</br>
+[3, 2, 1, 1, 1, 1, 3, 3, 1, 3, 1, 1, 2, 1, 1, 1, 1, 1, 2, 3]</br>
+</p>
+
+<h2>Listing 2.5 page 32</h2> 
+datingDataMat, datingLabels = file2matrix('datingTestSet.txt')</br>
+should be:</br>
+datingDataMat, datingLabels = file2matrix('datingTestSet2.txt')</br>
+
+<p>
+<h2>Page 41 (not a code listing)</h2>
+l(x<sub>i</sub>) = log<sub>2</sub>p(x<sub>i</sub>)</br> 
+Should be:</br>
+l(x<sub>i</sub>) = -log<sub>2</sub>p(x<sub>i</sub>) </br>
+</p>
+
+<p>
+<h2>Page 42: Listing 3.1</h2>
+The line:</br>
+labelCounts[currentLabel] = 0</br>
+should be indented from the lines above and below it.  The code in the repo is correct.
+</p>
+
+
+
+<h2>Listing 3.3 page 45</h2>
+bestFeature = I </br>
+should be:</br>
+bestFeature = i</br>
+
+<h2>Page 52 (not a code listing)</h2>
+>>> treePlotter.retrieveTree(1)</br>
+should return:</br>
+{'no surfacing': {0: 'no', 1: {'flippers': {0: {'head': {0: 'no', 1: 'yes'}}, 1: 'no'}}}}</br>
+
+<h2>Page 92</h2>
+Before the line:</br>
+>>> reload(logRegres)</br>
+add the line:</br>
+>>> from numpy import * </br>
+At the beginning of the book I mention that this should be added to every interactive session, but it will be helpful for people to see this line here if they don’t remember that.  
+
+<h2>page 104 (not a code listing)</h2>
+ |wTx+b|/ ||w||</br>
+should be:</br>
+|wTA+b|/||w||</br>
+
+
+<h2>Listing 8.4 page 168</h2>
+The line:</br>
+returnMat = zeros((numIt,n)) </br>
+Should be added before the line: </br>
+ws = zeros((n,1)); wsTest = ws.copy(); wsMax = ws.copy()</br>
+
+<h2>Listing 9.5 page 195 </h2>
+yHat = mat((m,1))</br>
+Should be:</br>
+yHat = mat(zeros((m,1)))</br>
+</fieldset>
+</body>   
+</html>

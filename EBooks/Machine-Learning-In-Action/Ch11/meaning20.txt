@@ -1,0 +1,62 @@
+(lp0
+S'Republican'
+p1
+aS'Democratic'
+p2
+aS'Prohibiting Federal Funding of National Public Radio -- Nay'
+p3
+aS'Prohibiting Federal Funding of National Public Radio -- Yea'
+p4
+aS'Removing Troops from Afghanistan -- Nay'
+p5
+aS'Removing Troops from Afghanistan -- Yea'
+p6
+aS'Terminating the Home Affordable Modification Program -- Nay'
+p7
+aS'Terminating the Home Affordable Modification Program -- Yea'
+p8
+aS'Repealing the Health Care Bill -- Nay'
+p9
+aS'Repealing the Health Care Bill -- Yea'
+p10
+aS'Science and Technology Funding -- Nay'
+p11
+aS'Science and Technology Funding -- Yea'
+p12
+aS'"Whistleblower Protection" for Offshore Oil Workers -- Nay'
+p13
+aS'"Whistleblower Protection" for Offshore Oil Workers -- Yea'
+p14
+aS'Repealing "Don\'t Ask, Don\'t Tell" After Military Review and Certification -- Nay'
+p15
+aS'Repealing "Don\'t Ask, Don\'t Tell" After Military Review and Certification -- Yea'
+p16
+aS'Unemployment Benefits Extension -- Nay'
+p17
+aS'Unemployment Benefits Extension -- Yea'
+p18
+aS'Unemployment Benefits Extension -- Nay'
+p19
+aS'Unemployment Benefits Extension -- Yea'
+p20
+aS'Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Nay'
+p21
+aS'Prohibiting 2010- 2011 Congressional Cost-of-Living Pay Increase -- Yea'
+p22
+aS'Prohibiting Use of Federal Funds For Planned Parenthood -- Nay'
+p23
+aS'Prohibiting Use of Federal Funds For Planned Parenthood -- Yea'
+p24
+aS'Reducing Federal Funding of the US Institute of Peace -- Nay'
+p25
+aS'Reducing Federal Funding of the US Institute of Peace -- Yea'
+p26
+aS'Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Nay'
+p27
+aS'Prohibiting the Use of Federal Funds for NASCAR Sponsorships -- Yea'
+p28
+aS'Mine Safety Act -- Nay'
+p29
+aS'Mine Safety Act -- Yea'
+p30
+a.
