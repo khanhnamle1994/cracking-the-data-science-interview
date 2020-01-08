@@ -1,4 +1,17 @@
+## Data Science Cheatsheets
+
+[This section](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets) contains cheatsheets of basic concepts in data science that will be asked in interviews:
+
+* [SQL](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#sql)
+* [Statistics](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#statistics)
+* [Machine Learning Concepts](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#machine-learning-concepts)
+* [Supervised Learning](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#supervised-learning)
+* [Unsupervised Learning](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#unsupervised-learning)
+* [Natural Language Processing](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#natural-language-processing)
+* [Stanford Materials](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#stanford-materials)
+
 ## Data Science Portfolio
+
 This section contains portfolio of data science projects completed by me for academic, self learning, and hobby purposes.
 
 For a more visually pleasant experience for browsing the portfolio, check out [jameskle.com/data-portfolio](https://jameskle.com/data-portfolio)
@@ -13,7 +26,7 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
 
 - ### Machine Learning
 
-    - [Trip Optimizer](https://github.com/khanhnamle1994/trip-optimizer/): Used XGBoost and evolutionary algorithms to optimize the travel time for taxi vehicles in New York City.
+    - [Trip Optimizer](https://github.com/khanhnamle1994/trip-optimizer): Used XGBoost and evolutionary algorithms to optimize the travel time for taxi vehicles in New York City.
 
     - [Instacart Market Basket Analysis](https://github.com/khanhnamle1994/instacart-orders): Tackled the Instacart Market Basket Analysis challenge to predict which products will be in a user's next order.
 
@@ -40,6 +53,7 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
     _Tools: Pandas, NumPy, Matplotlib, Rspotify, httr, dplyr, tidyr, radarchart, ggplot2_
 
 ## Data Journalism Portfolio
+
 This section contains portfolio of data journalism articles completed by me for freelance clients and self-learning purposes.
 
 For a more visually pleasant experience for browsing the portfolio, check out [jameskle.com/data-journalism](https://jameskle.com/data-journalism)
@@ -61,6 +75,8 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
     - [12 Useful Things to Know About Machine Learning](https://www.kdnuggets.com/2018/04/12-useful-things-know-about-machine-learning.html)
 
     - [A Tour of The Top 10 Algorithms for Machine Learning Newbie](https://builtin.com/data-science/tour-top-10-algorithms-machine-learning-newbies)
+
+    - [The 10 Data Mining Techniques Data Scientists Need For Their Toolbox](https://builtin.com/data-science/10-data-mining-techniques-data-scientists-need-their-toolbox)
 
     - [Clustering and Classification in E-Commerce](https://lucidworks.com/2019/01/24/clustering-classification-supervised-unsupervised-learning-ecommerce/)
 
@@ -93,3 +109,14 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
     - [The 4 Research Techniques to Train Deep Neural Network Models More Efficiently](https://heartbeat.fritz.ai/the-4-research-techniques-to-train-deep-neural-network-models-more-efficiently-810ea2886205)
 
     - [The 2 Hardware Architectures for Efficient Training and Inference of Deep Nets](https://heartbeat.fritz.ai/the-2-types-of-hardware-architectures-for-efficient-training-and-inference-of-deep-neural-networks-a034850e26dd)
+
+## Data Science E-Books
+
+[This section](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks) contains books that I have read about data science and machine learning:
+
+* [Intro To Machine Learning with Python](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Intro-To-ML-with-Python)
+* [Machine Learning In Action](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-In-Action)
+* [Python Data Science Handbook](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Python-DataScience-Handbook)
+* [Doing Data Science - Straight Talk From The Front Line](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Doing-Data-Science-Straight-Talk-From-The-Front-Line)
+* [Machine Learning For Finance](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-For-Finance)
+* Deep Learning with Python
