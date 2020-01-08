@@ -9,3 +9,4 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [Relationship between fitness and smoking](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Relationship-Fitness-Smoking.md)
 * [Time for a response on a messaging application](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Response-on-Messaging-App.md)
 * [Filtering Grades by City Avg](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Filtering-Grades-by-City-Avg.md)
+* [Average Lifetime Value of a Customer](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Average-Customer-Lifetime-Value.md)
