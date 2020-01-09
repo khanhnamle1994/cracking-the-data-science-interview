@@ -28,15 +28,6 @@ All the code examples were working on Python 2.6, there shouldn't be any problem
 
 ### Chapter 2 - Classifying with k-Nearest Neighbors
 
-k-Nearest Neighbors (kNN) works like this:
-
-* We have an existing set of example data, our training set.
-* We have labels for all of this data—we know what class each piece of the data should fall into.
-* When we’re given a new piece of data without a label, we compare that new piece of data to the existing data, every piece of existing data.
-* We then take the most similar pieces of data (the nearest neighbors) and look at their labels.
-* We look at the top k most similar pieces of data from our known dataset; this is where the k comes from (k is an integer and it’s usually less than 20).
-* Lastly, we take a majority vote from the k most similar pieces of data, and the majority is the new class we assign to the data we were asked to classify.
-
 **Pros:** High accuracy, insensitive to outliers, no assumptions about data.
 
 **Cons:** Computationally expensive, requires a lot of memory.
@@ -49,9 +40,31 @@ General Approach to kNN:
 3. Analyze: Any method.
 4. Train: Does not apply to the kNN algorithm.
 5. Test: Calculate the error rate.
-6. Use: This application needs to get some input data and output structured numeric values. Next, the application runs the kNN algorithm on this input data and determines which class the input data should belong to. The application then takes some action on the calculated class. 
+6. Use: This application needs to get some input data and output structured numeric values. Next, the application runs the kNN algorithm on this input data and determines which class the input data should belong to. The application then takes some action on the calculated class.
+
+The k-Nearest Neighbors algorithm is a simple and effective way to classify data. kNN is an example of instance-based learning, where you need to have instances of data close at hand to perform the machine learning algorithm. The algorithm has to carry around the full dataset; for large datasets, this implies a large amount of storage. In addition, you need to calculate the distance measurement for every piece of data in the database, and this can be cumbersome.
+
+An additional drawback is that kNN doesn’t give you any idea of the underlying structure of the data; you have no idea what an “average” or “exemplar” instance from each class looks like.
 
 ### Chapter 3 - Splitting datasets one feature at a time: Decision Trees
+
+**Pros:** Computationally cheap to use, easy for humans to understand learned results, missing values OK, can deal with irrelevant features.
+
+**Cons:** Prone to overfitting.
+
+**Works with:** Numeric values, nominal values.
+
+General Approach to Decision Trees:
+1. Collect: Any method.
+2. Prepare: This tree-building algorithm works only on nominal values, so any continuous values will need to be quantized.
+3. Analyze: Any method. You should visually inspect the tree after it is built.
+4. Train: Construct a tree data structure.
+5. Test: Calculate the error rate with the learned tree.
+6. Use: This can be used in any supervised learning task. Often, trees are used to better understand the data.
+
+A decision tree classifier is just like a work-flow diagram with the terminating blocks representing classification decisions. Starting with a dataset, you can measure the inconsistency of a set or the entropy to find a way to split the set until all the data belongs to the same class. The ID3 algorithm can split nominal-valued datasets. Recursion is used in tree-building algorithms to turn a dataset into a decision tree. The tree is easily represented in a Python dictionary rather than a special data structure.
+
+Cleverly applying Matplotlib’s annotations, you can turn our tree data into an easily understood chart. The Python Pickle module can be used for persisting our tree. The contact lens data showed that decision trees can try too hard and overfit a dataset. This overfitting can be removed by pruning the decision tree, combining adjacent leaf nodes that don’t provide a large amount of information gain.
 
 ### Chapter 4 - Classifying with probability theory: Naive Bayes
 
