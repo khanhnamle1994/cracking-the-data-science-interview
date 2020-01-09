@@ -9,3 +9,4 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [Four Person Elevator](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Four-Person-Elevator.md) (by Postmates)
 * [First Touch Attribution](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/First-Touch-Attribution.md) (by Google)
 * [One Million Lyft Rides](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/One-Million-Lyft-Rides.md) (by Lyft)
+* [Swipe Precision](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Swipe-Precision.md) (by Tinder)
