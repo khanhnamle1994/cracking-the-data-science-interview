@@ -1,13 +1,10 @@
 # Machine Learning in Action
-==========================
 
 This is the source code to go with "Machine Learning in Action"
 by Peter Harrington published by Manning Inc.
 The official page for this book can be found here: http://manning.com/pharrington/
 
-All the code examples were working on Python 2.6, there shouldn't be any problems with the 2.7.  NumPy will be needed for most examples.  If you have trouble running any of the examples us know on the Forum for this book: http://www.manning-sandbox.com/forum.jspa?forumID=728.  
-
-If you want to run these on some other version of Python say--3.0 or IronPython, feel free to fork the code.   
+All the code examples were working on Python 2.6, there shouldn't be any problems with the 2.7.  NumPy will be needed for most examples.  
 
 ## Part 1 - Classification
 
@@ -28,3 +25,60 @@ If you want to run these on some other version of Python say--3.0 or IronPython,
 6. *Test the algorithm.* This is where the information learned in the previous step is put to use. When you’re evaluating an algorithm, you’ll test it to see how well it does. In the case of supervised learning, you have some known values you can use to evaluate the algorithm. In unsupervised learning, you may have to use some other metrics to evaluate the success. In either case, if you’re not satisfied, you can go back to step 4, change some things, and try testing again. Often the collection or preparation of the data may have been the problem, and you’ll have to go back to step 1.
 
 7. *Use it.* Here you make a real program to do some task, and once again you see if all the previous steps worked as you expected. You might encounter some new data and have to revisit steps 1–5.
+
+### Chapter 2 - Classifying with k-Nearest Neighbors
+
+k-Nearest Neighbors (kNN) works like this:
+
+* We have an existing set of example data, our training set.
+* We have labels for all of this data—we know what class each piece of the data should fall into.
+* When we’re given a new piece of data without a label, we compare that new piece of data to the existing data, every piece of existing data.
+* We then take the most similar pieces of data (the nearest neighbors) and look at their labels.
+* We look at the top k most similar pieces of data from our known dataset; this is where the k comes from (k is an integer and it’s usually less than 20).
+* Lastly, we take a majority vote from the k most similar pieces of data, and the majority is the new class we assign to the data we were asked to classify.
+
+**Pros:** High accuracy, insensitive to outliers, no assumptions about data.
+
+**Cons:** Computationally expensive, requires a lot of memory.
+
+**Works with:** Numeric values, nominal values.
+
+General Approach to kNN:
+1. Collect: Any method.
+2. Prepare: Numeric values are needed for a distance calculation. A structured data format is best.
+3. Analyze: Any method.
+4. Train: Does not apply to the kNN algorithm.
+5. Test: Calculate the error rate.
+6. Use: This application needs to get some input data and output structured numeric values. Next, the application runs the kNN algorithm on this input data and determines which class the input data should belong to. The application then takes some action on the calculated class. 
+
+### Chapter 3 - Splitting datasets one feature at a time: Decision Trees
+
+### Chapter 4 - Classifying with probability theory: Naive Bayes
+
+### Chapter 5 - Logistic Regression
+
+### Chapter 6 - Support Vector Machines
+
+### Chapter 7 - Improving classification with the Ada-Boost Meta-Algorithm
+
+## Part 2 - Forecasting numeric values with Regression
+
+### Chapter 8 - Predicting numeric values: Regression
+
+### Chapter 9 - Tree-based Regression
+
+## Part 3 - Unsupervised Learning
+
+### Chapter 10 - Grouping unlabeled items using k-Means Clustering
+
+### Chapter 11 - Association analysis with the Apriori algorithm
+
+### Chapter 12 - Efficiently finding frequent itemsets with FP-growth
+
+## Part 4 - Additional Tools
+
+### Chapter 13 - Using Principal Component Analysis to simplify data
+
+### Chapter 14 - Simplifying data with the Singular Value Decomposition
+
+### Chapter 15 - Big Data and MapReduce
