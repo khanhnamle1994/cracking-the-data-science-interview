@@ -42,6 +42,8 @@ General Approach to kNN:
 5. Test: Calculate the error rate.
 6. Use: This application needs to get some input data and output structured numeric values. Next, the application runs the kNN algorithm on this input data and determines which class the input data should belong to. The application then takes some action on the calculated class.
 
+**Summary**
+
 The k-Nearest Neighbors algorithm is a simple and effective way to classify data. kNN is an example of instance-based learning, where you need to have instances of data close at hand to perform the machine learning algorithm. The algorithm has to carry around the full dataset; for large datasets, this implies a large amount of storage. In addition, you need to calculate the distance measurement for every piece of data in the database, and this can be cumbersome.
 
 An additional drawback is that kNN doesn’t give you any idea of the underlying structure of the data; you have no idea what an “average” or “exemplar” instance from each class looks like.
@@ -62,11 +64,35 @@ General Approach to Decision Trees:
 5. Test: Calculate the error rate with the learned tree.
 6. Use: This can be used in any supervised learning task. Often, trees are used to better understand the data.
 
+**Summary**
+
 A decision tree classifier is just like a work-flow diagram with the terminating blocks representing classification decisions. Starting with a dataset, you can measure the inconsistency of a set or the entropy to find a way to split the set until all the data belongs to the same class. The ID3 algorithm can split nominal-valued datasets. Recursion is used in tree-building algorithms to turn a dataset into a decision tree. The tree is easily represented in a Python dictionary rather than a special data structure.
 
 Cleverly applying Matplotlib’s annotations, you can turn our tree data into an easily understood chart. The Python Pickle module can be used for persisting our tree. The contact lens data showed that decision trees can try too hard and overfit a dataset. This overfitting can be removed by pruning the decision tree, combining adjacent leaf nodes that don’t provide a large amount of information gain.
 
 ### Chapter 4 - Classifying with probability theory: Naive Bayes
+
+**Pros:** Works with a small amount of data, handles multiple classes.
+
+**Cons:** Sensitive to how the input data is prepared.
+
+**Works with:** Nominal values.
+
+General Approach to naïve Bayes:
+1. Collect: Any method.
+2. Prepare: Numeric or Boolean values are needed.
+3. Analyze: With many features, plotting features isn’t helpful. Looking at histograms is a better idea.
+4. Train: Calculate the conditional probabilities of the independent features.
+5. Test: Calculate the error rate.
+6. Use: One common application of naïve Bayes is document classification. You can use naïve Bayes in any classification setting. It doesn’t have to be text.
+
+**Summary**
+
+Using probabilities can sometimes be more effective than using hard rules for classification. Bayesian probability and Bayes’ rule gives us a way to estimate unknown probabilities from known values.
+
+You can reduce the need for a lot of data by assuming conditional independence among the features in your data. The assumption we make is that the probability of one word doesn’t depend on any other words in the document. We know this assumption is a little simple. That’s why it’s known as naïve Bayes. Despite its incorrect assumptions, naïve Bayes is effective at classification.
+
+There are a number of practical considerations when implementing naïve Bayes in a modern programming language. Underflow is one problem that can be addressed by using the logarithm of probabilities in your calculations. The bag-of-words model is an improvement on the set-of-words model when approaching document classification. There are a number of other improvements, such as removing stop words, and you can spend a long time optimizing a tokenizer.
 
 ### Chapter 5 - Logistic Regression
 
