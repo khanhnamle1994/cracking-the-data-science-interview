@@ -266,7 +266,7 @@ General Approach to the Apriori algorithm:
 
 **Summary**
 
-Association analysis is a set of tools used to find interesting relationships in a large set of data. There are two ways you can quantify the interesting relationships. The first way is a frequent itemset, which shows items that commonly appear in the data together. The second way of measuring interesting relationships is association rules. Association rules imply an if..then relationship between items.
+Association analysis is a set of tools used to find interesting relationships in a large set of data. There are two ways you can quantify the interesting relationships. The first way is a frequent itemset, which shows items that commonly appear in the data together. The second way of measuring interesting relationships is association rules. Association rules imply an `if..then` relationship between items.
 
 Finding different combinations of items can be a time-consuming task and prohibitively expensive in terms of computing power. More intelligent approaches are needed to find frequent itemsets in a reasonable amount of time. One such approach is the Apriori algorithm, which uses the Apriori principle to reduce the number of sets that are checked against the database. The Apriori principle states that if an item is infrequent, then supersets containing that item will also be infrequent. The Apriori algorithm starts from single itemsets and creates larger sets by combining sets that meet the minimum support measure. Support is used to measure how often a set appears in the original data.
 
@@ -275,6 +275,24 @@ Once frequent itemsets have been found, you can use the frequent itemsets to gen
 Association analysis can be performed on many different items. Some common examples are items in a store and pages visited on a website. Association analysis has also been used to look at the voting history of elected officials and judges.
 
 ### Chapter 12 - Efficiently finding frequent itemsets with FP-growth
+
+**Pros:** Usually faster than Apriori.
+
+**Cons:** Difficult to implement; certain datasets degrade the performance.
+
+**Works with:** Nominal values.
+
+General Approach to FP-growth:
+1. Collect: Any method.
+2. Prepare: Discrete data is needed because we’re storing sets. If you have continuous data, it will need to be quantized into discrete values.
+3. Analyze: Any method.
+4. Train: Build an FP-tree and mine the tree.
+5. Test: Doesn’t apply.
+6. Use: This can be used to identify commonly occurring items that can be used to make decisions, suggest items, make forecasts, and so on.
+
+**Summary**
+
+The FP-growth algorithm is an efficient way of finding frequent patterns in a dataset. The FP-growth algorithm works with the Apriori principle but is much faster. The Apriori algorithm generates candidate itemsets and then scans the dataset to see if they’re frequent. FP-growth is faster because it goes over the dataset only twice. The dataset is stored in a structure called an FP-tree. After the FP-tree is built, you can find frequent itemsets by finding conditional bases for an item and building a conditional FP-tree. This process is repeated, conditioning on more items until the conditional FP-tree has only one item.
 
 ## Part 4 - Additional Tools
 
