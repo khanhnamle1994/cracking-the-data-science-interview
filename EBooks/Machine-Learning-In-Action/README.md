@@ -118,11 +118,11 @@ Stochastic gradient ascent can do as well as gradient ascent using far fewer com
 
 ### Chapter 6 - Support Vector Machines
 
-**Pros:** Low generalization error, computationally inexpensive, easy to interpret results
+**Pros:** Low generalization error, computationally inexpensive, easy to interpret results.
 
-**Cons:** Sensitive to tuning parameters and kernel choice; natively only handles binary classification
+**Cons:** Sensitive to tuning parameters and kernel choice; natively only handles binary classification.
 
-**Works with:** Numeric values, nominal values”
+**Works with:** Numeric values, nominal values.
 
 General Approach to SVMs:
 1. Collect: Any method.
@@ -144,11 +144,11 @@ Support vector machines are a binary classifier and additional methods can be ex
 
 ### Chapter 7 - Improving classification with the Ada-Boost Meta-Algorithm
 
-**Pros:** Low generalization error, easy to code, works with most classifiers, no parameters to adjust
+**Pros:** Low generalization error, easy to code, works with most classifiers, no parameters to adjust.
 
-**Cons:** Sensitive to outliers
+**Cons:** Sensitive to outliers.
 
-**Works with:** Numeric values, nominal values
+**Works with:** Numeric values, nominal values.
 
 General Approach to AdaBoost
 1. Collect: Any method.
@@ -177,6 +177,30 @@ We introduced oversampling and undersampling as ways to adjust the positive and 
 ## Part 2 - Forecasting numeric values with Regression
 
 ### Chapter 8 - Predicting numeric values: Regression
+
+**Pros:** Easy to interpret results, computationally inexpensive.
+
+**Cons:** Poorly models nonlinear data.
+
+**Works with:** Numeric values, nominal values.
+
+General Approach to Regression:
+1. Collect: Any method.
+2. Prepare: We’ll need numeric values for regression. Nominal values should be mapped to binary values.
+3. Analyze: It’s helpful to visualized 2D plots. Also, we can visualize the regression weights if we apply shrinkage methods.
+4. Train: Find the regression weights.
+5. Test: We can measure the R^2, or correlation of the predicted value and data, to measure the success of our models.
+5. Use: With regression, we can forecast a numeric value for a number of inputs. This is an improvement over classification because we’re predicting a continuous value rather than a discrete category.
+
+**Summary**
+
+Regression is the process of predicting a target value similar to classification. The difference between regression and classification is that the variable forecasted in regression is continuous, whereas it’s discrete in classification. Regression is one of the most useful tools in statistics. Minimizing the sum-of-squares error is used to find the best weights for the input features in a regression equation. Regression can be done on any set of data provided that for an input matrix X, you can compute the inverse of X^T * X. Just because you can compute a regression equation for a set of data doesn’t mean that the results are very good. One test of how “good” or significant the results are is the correlation between the predicted values yHat and the original data y.
+
+When you have more features than data points, you can’t compute the inverse of X^T * X. If you have more data points than features, you still may not be able to compute X^T * X if the features are highly correlated. Ridge regression is a regression method that allows you to compute regression coefficients despite being unable to compute the inverse of X^T * X.
+
+Ridge regression is an example of a shrinkage method. Shrinkage methods impose a constraint on the size of the regression coefficients. Another shrinkage method that’s powerful is the lasso. The lasso is difficult to compute, but stagewise linear regression is easy to compute and gives results close to those of the lasso.
+
+Shrinkage methods can also be viewed as adding bias to a model and reducing the variance. The bias/variance tradeoff is a powerful concept in understanding how altering a model impacts the success of a model.   
 
 ### Chapter 9 - Tree-based Regression
 
