@@ -228,6 +228,26 @@ The CART algorithm builds binary trees and can handle discrete as well as contin
 
 ### Chapter 10 - Grouping unlabeled items using k-Means Clustering
 
+**Pros:** Easy to implement.
+
+**Cons:** Can converge at local minima; slow on very large datasets.
+
+**Works with:** Numeric values.
+
+General Approach to k-Means Clustering:
+1. Collect: Any method.
+2. Prepare: Numeric values are needed for a distance calculation, and nominal values can be mapped into binary values for distance calculations.
+3. Analyze: Any method.
+4. Train: Doesn’t apply to unsupervised learning.
+5. Test: Apply the clustering algorithm and inspect the results. Quantitative error measurements such as sum of squared error (introduced later) can be used.
+6. Use: Anything you wish. Often, the clusters centers can be treated as representative data of the whole cluster to make decisions.
+
+**Summary**
+
+Clustering is a technique used in unsupervised learning. With unsupervised learning you don’t know what you’re looking for, that is, there are no target variables. Clustering groups data points together, with similar data points in one cluster and dissimilar points in a different group. A number of different measurements can be used to measure similarity.
+
+One widely used clustering algorithm is k-means, where k is a user-specified number of clusters to create. The k-means clustering algorithm starts with k-random cluster centers known as centroids. Next, the algorithm computes the distance from every point to the cluster centers. Each point is assigned to the closest cluster center. The cluster centers are then recalculated based on the new points in the cluster. This process is repeated until the cluster centers no longer move. This simple algorithm is quite effective but is sensitive to the initial cluster placement. To provide better clustering, a second algorithm called bisecting k-means can be used. Bisecting k-means starts with all the points in one cluster and then splits the clusters using k-means with a k of 2. In the next iteration, the cluster with the largest error is chosen to be split. This process is repeated until k clusters have been created. Bisecting k-means creates better clusters than k-means.
+
 ### Chapter 11 - Association analysis with the Apriori algorithm
 
 ### Chapter 12 - Efficiently finding frequent itemsets with FP-growth
