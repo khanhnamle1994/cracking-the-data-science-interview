@@ -298,6 +298,18 @@ The FP-growth algorithm is an efficient way of finding frequent patterns in a da
 
 ### Chapter 13 - Using Principal Component Analysis to simplify data
 
+**Pros:** Reduces complexity of data, identifies most important features.
+
+**Cons:** May not be needed, could throw away useful information.
+
+**Works with:** Numerical values.
+
+**Summary**
+
+Dimensionality reduction techniques allow us to make data easier to use and often remove noise to make other machine learning tasks more accurate. It’s often a preprocessing step that can be done to clean up data before applying it to some other algorithm. A number of techniques can be used to reduce the dimensionality of our data. Among these, independent component analysis, factor analysis, and principal component analysis are popular methods. The most widely used method is principal component analysis.
+
+Principal component analysis allows the data to identify the important features. It does this by rotating the axes to align with the largest variance in the data. Other axes are chosen orthogonal to the first axis in the direction of largest variance. Eigenvalue analysis on the covariance matrix can be used to give us a set of orthogonal axes.
+
 ### Chapter 14 - Simplifying data with the Singular Value Decomposition
 
 ### Chapter 15 - Big Data and MapReduce
