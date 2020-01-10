@@ -204,6 +204,26 @@ Shrinkage methods can also be viewed as adding bias to a model and reducing the 
 
 ### Chapter 9 - Tree-based Regression
 
+**Pros:** Fits complex, nonlinear data.
+
+**Cons:** Difficult to interpret results.
+
+**Works with:** Numeric values, nominal values.
+
+General Approach to Tree-based Regression:
+1. Collect: Any method.
+2. Prepare: Numeric values are needed. If you have nominal values, it’s a good idea to map them into binary values.
+3. Analyze: We’ll visualize the data in two-dimensional plots and generate trees as dictionaries.
+4. Train: The majority of the time will be spent building trees with models at the leaf nodes.
+5. Test: We’ll use the R^2 value with test data to determine the quality of our models.
+6. Use: We’ll use our trees to make forecasts. We can do almost anything with these results.
+
+**Summary**
+
+Oftentimes your data contains complex interactions that lead to nonlinear relationships between the input data and the target variables. One method to model these complex relationships is to use a tree to break up the predicted value into piecewise constant segments or piecewise linear segments. A tree structure modeling the data with piecewise constant segments is known as a regression tree. When the models are linear regression equations, the tree is known as a model tree.
+
+The CART algorithm builds binary trees and can handle discrete as well as continuous split values. Model trees and regression trees can be built with the CART algorithm as long as you use the right error measurements. When building a tree, there’s a tendency for the tree-building algorithm to build the tree too closely to the data, resulting in an overfit model. An overfit tree is often more complex that it needs to be. To make the tree less complex, a process of pruning is applied to the tree. Two methods of pruning are prepruning, which prunes the tree as it’s being built, and postpruning, which prunes the tree after it’s built. Prepruning is more effective but requires user-defined parameters.
+
 ## Part 3 - Unsupervised Learning
 
 ### Chapter 10 - Grouping unlabeled items using k-Means Clustering
