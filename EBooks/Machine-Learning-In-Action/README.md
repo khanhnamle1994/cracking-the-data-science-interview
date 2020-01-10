@@ -102,7 +102,7 @@ There are a number of practical considerations when implementing naïve Bayes in
 
 **Works with:** Numeric values, nominal values
 
-General approach to logistic regression
+General Approach to Logistic Regression:
 1. Collect: Any method.
 2. Prepare: Numeric values are needed for a distance calculation. A structured data format is best.
 3. Analyze: Any method.
@@ -117,6 +117,30 @@ Logistic regression is finding best-fit parameters to a nonlinear function calle
 Stochastic gradient ascent can do as well as gradient ascent using far fewer computing resources. In addition, stochastic gradient ascent is an online algorithm; it can update what it has learned as new data comes in rather than reloading all of the data as in batch processing.
 
 ### Chapter 6 - Support Vector Machines
+
+**Pros:** Low generalization error, computationally inexpensive, easy to interpret results
+
+**Cons:** Sensitive to tuning parameters and kernel choice; natively only handles binary classification
+
+**Works with:** Numeric values, nominal values”
+
+General Approach to SVMs:
+1. Collect: Any method.
+2. Prepare: Numeric values are needed.
+3. Analyze: It helps to visualize the separating hyperplane.
+4. Train: The majority of the time will be spent here. Two parameters can be adjusted during this phase.
+5. Test: Very simple calculation.
+6. Use: You can use an SVM in almost any classification problem. One thing to note is that SVMs are binary classifiers. You’ll need to write a little more code to use an SVM on a problem with more than two classes.
+
+**Summary**
+
+Support vector machines are a type of classifier. They’re called machines because they generate a binary decision; they’re decision machines. Support vectors have good generalization error: they do a good job of learning and generalizing on what they’ve learned. These benefits have made support vector machines popular, and they’re considered by some to be the best stock algorithm in unsupervised learning.
+
+Support vector machines try to maximize margin by solving a quadratic optimization problem. In the past, complex, slow quadratic solvers were used to train support vector machines. John Platt introduced the SMO algorithm, which allowed fast training of SVMs by optimizing only two alphas at one time.
+
+Kernel methods, or the kernel trick, map data (sometimes nonlinear data) from a low-dimensional space to a high-dimensional space. In a higher dimension, you can solve a linear problem that’s nonlinear in lower-dimensional space. Kernel methods can be used in other algorithms than just SVM. The radial-bias function is a popular kernel that measures the distance between two vectors.
+
+Support vector machines are a binary classifier and additional methods can be extended to classification of classes greater than two. The performance of an SVM is also sensitive to optimization parameters and parameters of the kernel used.
 
 ### Chapter 7 - Improving classification with the Ada-Boost Meta-Algorithm
 
