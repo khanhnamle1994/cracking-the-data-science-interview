@@ -96,6 +96,26 @@ There are a number of practical considerations when implementing naïve Bayes in
 
 ### Chapter 5 - Logistic Regression
 
+**Pros:** Computationally inexpensive, easy to implement, knowledge representation easy to interpret
+
+**Cons:** Prone to underfitting, may have low accuracy
+
+**Works with:** Numeric values, nominal values
+
+General approach to logistic regression
+1. Collect: Any method.
+2. Prepare: Numeric values are needed for a distance calculation. A structured data format is best.
+3. Analyze: Any method.
+4. Train: We’ll spend most of the time training, where we try to find optimal coefficients to classify our data.
+5. Test: Classification is quick and easy once the training step is done.
+6. Use: This application needs to get some input data and output structured numeric values. Next, the application applies the simple regression calculation on this input data and determines which class the input data should belong to. The application then takes some action on the calculated class.
+
+**Summary**
+
+Logistic regression is finding best-fit parameters to a nonlinear function called the sigmoid. Methods of optimization can be used to find the best-fit parameters. Among the optimization algorithms, one of the most common algorithms is gradient ascent. Gradient ascent can be simplified with stochastic gradient ascent.
+
+Stochastic gradient ascent can do as well as gradient ascent using far fewer computing resources. In addition, stochastic gradient ascent is an online algorithm; it can update what it has learned as new data comes in rather than reloading all of the data as in batch processing.
+
 ### Chapter 6 - Support Vector Machines
 
 ### Chapter 7 - Improving classification with the Ada-Boost Meta-Algorithm
