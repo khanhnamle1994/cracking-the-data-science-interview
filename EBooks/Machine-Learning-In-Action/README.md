@@ -250,6 +250,30 @@ One widely used clustering algorithm is k-means, where k is a user-specified num
 
 ### Chapter 11 - Association analysis with the Apriori algorithm
 
+**Pros:** Easy to code up.
+
+**Cons:** May be slow on large datasets.
+
+**Works with:** Numeric values, nominal values.
+
+General Approach to the Apriori algorithm:
+1. Collect: Any method.
+2. Prepare: Any data type will work as we’re storing sets.
+3. Analyze: Any method.
+4. Train: Use the Apriori algorithm to find frequent itemsets.
+5. Test: Doesn’t apply.
+6. Use: This will be used to find frequent itemsets and association rules between items.
+
+**Summary**
+
+Association analysis is a set of tools used to find interesting relationships in a large set of data. There are two ways you can quantify the interesting relationships. The first way is a frequent itemset, which shows items that commonly appear in the data together. The second way of measuring interesting relationships is association rules. Association rules imply an if..then relationship between items.
+
+Finding different combinations of items can be a time-consuming task and prohibitively expensive in terms of computing power. More intelligent approaches are needed to find frequent itemsets in a reasonable amount of time. One such approach is the Apriori algorithm, which uses the Apriori principle to reduce the number of sets that are checked against the database. The Apriori principle states that if an item is infrequent, then supersets containing that item will also be infrequent. The Apriori algorithm starts from single itemsets and creates larger sets by combining sets that meet the minimum support measure. Support is used to measure how often a set appears in the original data.
+
+Once frequent itemsets have been found, you can use the frequent itemsets to generate association rules. The significance of an association rule is measured by confidence. Confidence tells you how many times this rule applies to the frequent itemsets.
+
+Association analysis can be performed on many different items. Some common examples are items in a store and pages visited on a website. Association analysis has also been used to look at the voting history of elected officials and judges.
+
 ### Chapter 12 - Efficiently finding frequent itemsets with FP-growth
 
 ## Part 4 - Additional Tools
