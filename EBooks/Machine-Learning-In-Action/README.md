@@ -144,6 +144,36 @@ Support vector machines are a binary classifier and additional methods can be ex
 
 ### Chapter 7 - Improving classification with the Ada-Boost Meta-Algorithm
 
+**Pros:** Low generalization error, easy to code, works with most classifiers, no parameters to adjust
+
+**Cons:** Sensitive to outliers
+
+**Works with:** Numeric values, nominal values
+
+General Approach to AdaBoost
+1. Collect: Any method.
+2. Prepare: It depends on which type of weak learner you’re going to use. In this chapter, we’ll use decision stumps, which can take any type of data. You could use any classifier, so any of the classifiers from chapters 2–6 would work. Simple classifiers work better for a weak learner.
+3. Analyze: Any method.
+4. Train: The majority of the time will be spent here. The classifier will train the weak learner multiple times over the same dataset.
+5. Test: Calculate the error rate.
+6. Use: Like support vector machines, AdaBoost predicts one of two classes. If you want to use it for classification involving more than two classes, then you’ll need to apply some of the same methods as for support vector machines.
+
+**Summary**
+
+Ensemble methods are a way of combining the predictions of multiple classifiers to get a better answer than simply using one classifier. There are ensemble methods that use different types of classifiers, but we chose to look at methods using only one type of classifier.
+
+Combining multiple classifiers exploits the shortcomings of single classifiers, such as overfitting. Combining multiple classifiers can help, as long as the classifiers are significantly different from each other. This difference can be in the algorithm or in the data applied to that algorithm.
+
+The two types of ensemble methods we discussed are bagging and boosting. In bagging, datasets the same size as the original dataset are built by randomly sampling examples for the dataset with replacement. Boosting takes the idea of bagging a step further by applying a different classifier sequentially to a dataset. An additional ensemble method that has shown to be successful is random forests. Random forests aren’t as popular as AdaBoost, so they aren’t discussed in this book.
+
+We discussed the most popular variant of boosting, called AdaBoost. AdaBoost uses a weak learner as the base classifier with the input data weighted by a weight vector. In the first iteration the data is equally weighted. But in subsequent iterations the data is weighted more strongly if it was incorrectly classified previously. This adapting to the errors is the strength of AdaBoost.
+
+We built functions to create a classifier using AdaBoost and the weak learner, decision stumps. The AdaBoost functions can be applied to any classifier, as long as the classifier can deal with weighted data. The AdaBoost algorithm is powerful, and it quickly handled datasets that were difficult using other classifiers.
+
+The classification imbalance problem is training a classifier with data that doesn’t have an equal number of positive and negative examples. The problem also exists when the costs for misclassification are different from positive and negative examples. We looked at ROC curves as a way to evaluate different classifiers. We introduced precision and recall as metrics to measure the performance classifiers when classification of one class is more important than classification of the other class.
+
+We introduced oversampling and undersampling as ways to adjust the positive and negative examples in a dataset. Another, perhaps better, technique was introduced for dealing with classifiers with unbalanced objectives. This method takes the costs of mis-classification into account when training a classifier.
+
 ## Part 2 - Forecasting numeric values with Regression
 
 ### Chapter 8 - Predicting numeric values: Regression
