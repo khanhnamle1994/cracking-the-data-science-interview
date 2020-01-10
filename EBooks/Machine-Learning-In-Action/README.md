@@ -312,4 +312,18 @@ Principal component analysis allows the data to identify the important features.
 
 ### Chapter 14 - Simplifying data with the Singular Value Decomposition
 
+**Pros:** Simplifies data, removes noise, may improve algorithm results.
+
+**Cons:** Transformed data may be difficult to understand.
+
+**Works with:** Numeric values.
+
+**Summary**
+
+The singular value decomposition (SVD) is a powerful tool for dimensionality reduction. You can use the SVD to approximate a matrix and get out the important features. By taking only the top 80% or 90% of the energy in the matrix, you get the important features and throw out the noise. The SVD is employed in a number of applications today. One successful application is in recommendation engines.
+
+Recommendations engines recommend an item to a user. Collaborative filtering is one way of creating recommendations based on data of users’ preferences or actions. At the heart of collaborative filtering is a similarity metric. A number of similarity metrics can be used to calculate the similarity between items or users. The SVD can be used to improve recommendation engines by calculating similarities in a reduced number of dimensions.
+
+Calculating the SVD and recommendations can be a difficult engineering problem on massive datasets. Taking the SVD and similarity calculations offline is one method of reducing redundant calculations and reducing the time required to produce a recommendation.  
+
 ### Chapter 15 - Big Data and MapReduce
