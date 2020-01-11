@@ -163,6 +163,27 @@ linear_svm = LinearSVC().fit(X, y)
 
 [back to current section](#supervised-learning)
 
+### Decision Trees
+
+```
+from sklearn.tree import DecisionTreeClassifier
+tree = DecisionTreeClassifier(max_depth=4, random_state=0)
+tree.fit(X_train, y_train)
+tree.feature_importances_
+
+from sklearn.tree import DecisionTreeRegressor
+tree = DecisionTreeRegressor(max_depth=3).fit(X_train, y_train)
+```
+
+* The parameters that control model complexity in decision trees
+are the pre-pruning parameters that stop the building of the tree before it is fully developed. Usually, picking one of the pre-pruning strategies—setting either `max_depth`, `max_leaf_nodes`, or `min_samples_leaf`—is sufficient to prevent overfitting.
+* Decision trees have two advantages over many of the algorithms we’ve discussed so far: the resulting model can easily be visualized and understood by nonexperts (at least for smaller trees), and the algorithms are completely invariant to scaling of the data. As each feature is processed separately, and the possible splits of the data don’t depend on scaling, no preprocessing like normalization or standardization of features is needed for decision tree algorithms. In particular, decision trees work well when you have features that are on completely different scales, or a mix of binary and continuous features.
+* The main downside of decision trees is that even with the use of pre-pruning, they tend to overfit and provide poor generalization performance. Therefore, in most applications, the ensemble methods we discuss next are usually used in place of a single decision tree.
+
+![decision-trees](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/decision-trees.svg)
+
+[back to current section](#supervised-learning)
+
 [back to top](#introduction-to-machine-learning-with-python)
 
 ## Unsupervised Learning and Preprocessing
