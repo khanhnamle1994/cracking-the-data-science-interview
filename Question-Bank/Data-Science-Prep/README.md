@@ -7,4 +7,4 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 * [Is the Coin Biased](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Is-The-Coin-Biased.md) (by Google)
 * [Classification Metrics](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Classification-Metrics.md) (by Uber)
 * [Social Graph Comparison](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Social-Graph-Comparison.md) (by Facebook)
-* [Unbiased and consistent estimators](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Estimation-of-Fraud.md) (by Affirm)
+* [Estimation of Fraud](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Estimation-of-Fraud.md) (by Affirm)
