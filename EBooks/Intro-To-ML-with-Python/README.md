@@ -79,6 +79,24 @@ The code in this chapter can be accessed in [this notebook](https://github.com/k
 
 ## Supervised Learning
 
+The code in this chapter can be accessed in [this notebook](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/02-supervised-learning.ipynb).
+
+* [Classification and Regression](#classification-and-regression)
+* [Generalization, Overfitting, and Underfitting](#generalization-overfitting-underfitting)
+* [k-Nearest-Neighbors](#k-Nearest-Neighbors)
+* [Linear Models](#linear-models)
+* [Naive Bayes](#naive-bayes)
+* [Decision Trees](#decision-trees)
+* [Random Forests](#random-forests)
+* [Gradient Boosting Machines](#gradient-boosting-machines)
+
+### Classification and Regression
+
+* In classification, the goal is to predict a class label, which is a choice from a predefined list of possibilities. Classification is sometimes separated into binary classification, which is the special case of distinguishing between exactly two classes, and multiclass classification, which is classification between more than two classes.
+* For regression tasks, the goal is to predict a continuous number, or a floating-point number in programming terms (or real number in mathematical terms). Predicting a person’s annual income from their education, their age, and where they live is an example of a regression task. When predicting income, the predicted value is an amount, and can be any number in a given range. Another example of a regression task is predicting the yield of a corn farm given attributes such as previous yields, weather, and number of employees working on the farm. The yield again can be an arbitrary number.
+
+[back to current section](#supervised-learning)
+
 [back to top](#introduction-to-machine-learning-with-python)
 
 ## Unsupervised Learning and Preprocessing
