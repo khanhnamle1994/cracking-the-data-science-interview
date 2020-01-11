@@ -27,22 +27,31 @@ ReBl = LinearSegmentedColormap("ReBl", cdict)
 def discrete_scatter(x1, x2, y=None, markers=None, s=10, ax=None,
                      labels=None, padding=.2, alpha=1, c=None, markeredgewidth=None):
     """Adaption of matplotlib.pyplot.scatter to plot classes or clusters.
+
     Parameters
     ----------
+
     x1 : nd-array
         input data, first axis
+
     x2 : nd-array
         input data, second axis
+
     y : nd-array
         input data, discrete labels
+
     cmap : colormap
         Colormap to use.
+
     markers : list of string
         List of markers to use, or None (which defaults to 'o').
+
     s : int or float
         Size of the marker
+
     padding : float
         Fraction of the dataset range to use for padding the axes.
+
     alpha : float
         Alpha value for all points.
     """

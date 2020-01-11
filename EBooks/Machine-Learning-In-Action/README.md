@@ -1,10 +1,8 @@
 # Machine Learning in Action
 
-This is the source code to go with "Machine Learning in Action"
-by Peter Harrington published by Manning Inc.
-The official page for this book can be found here: http://manning.com/pharrington/
+This is the source code to go with "Machine Learning in Action" by Peter Harrington published by Manning Inc. The official page for this book can be found here: http://manning.com/pharrington/
 
-All the code examples were working on Python 2.6, there shouldn't be any problems with the 2.7.  NumPy will be needed for most examples.  
+All the code examples were working on Python 2.6, there shouldn't be any problems with the 2.7.  NumPy will be needed for most examples.
 
 ## Part 1 - Classification
 

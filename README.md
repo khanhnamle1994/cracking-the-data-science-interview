@@ -115,7 +115,7 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
 [This section](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks) contains books that I have read about data science and machine learning:
 
 * [Intro To Machine Learning with Python](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Intro-To-ML-with-Python)
-* [Machine Learning In Action](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-In-Action)
+* [Machine Learning In Action](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-In-Action): An unique book that blends the foundational theories of machine learning with the practical realities of building tools for everyday data analysis. You'll use the flexible Python programming language to build programs that implement algorithms for data classification, forecasting, recommendations, and higher-level features like summarization and simplification.
 * [Python Data Science Handbook](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Python-DataScience-Handbook)
 * [Doing Data Science - Straight Talk From The Front Line](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Doing-Data-Science-Straight-Talk-From-The-Front-Line)
 * [Machine Learning For Finance](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-For-Finance)

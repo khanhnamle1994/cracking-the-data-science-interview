@@ -9,12 +9,15 @@ from .plot_helpers import cm2 as cm, discrete_scatter
 
 def visualize_coefficients(coefficients, feature_names, n_top_features=25):
     """Visualize coefficients of a linear model.
+
     Parameters
     ----------
     coefficients : nd-array, shape (n_features,)
         Model coefficients.
+
     feature_names : list or nd-array of strings, shape (n_features,)
         Feature names for labeling the coefficients.
+
     n_top_features : int, default=25
         How many features to show. The function will show the largest (most
         positive) and smallest (most negative)  n_top_features coefficients,
