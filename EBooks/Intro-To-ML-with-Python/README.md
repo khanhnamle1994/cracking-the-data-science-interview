@@ -4,16 +4,110 @@ This repository holds the code for the book "Introduction to Machine Learning wi
 
 The books requires the current stable version of scikit-learn. Most of the book can also be used with previous versions of scikit-learn, though you need to adjust the import for everything from the ``model_selection`` module, mostly ``cross_val_score``, ``train_test_split`` and ``GridSearchCV``.
 
-
 This repository provides the notebooks from which the book is created, together with the ``mglearn`` library of helper functions to create figures and datasets.
 
 All datasets are included in the repository, with the exception of the aclImdb dataset, which you can download from the page of [Andrew Maas](http://ai.stanford.edu/~amaas/data/sentiment/). See the book for details.
 
 If you get ``ImportError: No module named mglearn`` you can try to install mglearn into your python environment using the command ``pip install mglearn`` in your terminal or ``!pip install mglearn`` in Jupyter Notebook.
 
+Here are the chapters:
+
+* [Introduction](#introduction)
+* [Supervised Learning](#supervised-learning)
+* [Unsupervised Learning and Preprocessing](#unsupervised-learning-and-preprocessing)
+* [Representing Data and Engineering Features](#representing-data-and-engineering-features)
+* [Model Evaluation and Improvement](#model-evaluation-and-improvement)
+* [Algorithm Chains and Pipelines](#algorithm-chains-and-pipelines)
+* [Working with Text Data](#working-with-text-data)
+* [Wrapping Up](#wrapping-up)
+
+## Introduction
+
+The code in this chapter can be accessed in [this notebook](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/01-introduction.ipynb).
+
+* [scikit-learn](#scikitlearn)
+* [Jupyter Notebook](#jupyter-notebook)
+* [NumPy](#numpy)
+* [SciPy](#scipy)
+* [Matplotlib](#matplotlib)
+* [Pandas](#pandas)
+
+### ScikitLearn
+
+* scikit-learn is an open source project, meaning that it is free to use and distribute, and anyone can easily obtain the source code to see what is going on behind the scenes. The scikit-learn project is constantly being developed and improved, and it has a very active user community. It contains a number of state-of-the-art machine learning algorithms, as well as comprehensive documentation about each algorithm.
+* scikit-learn is a very popular tool, and the most prominent Python library for machine learning. It is widely used in industry and academia, and a wealth of tutorials and code snippets are available online. scikit-learn works well with a number of other scientific Python tools.
+
+[back to current section](#introduction)
+
+### Jupyter Notebook
+
+* Jupyter Notebook is an interactive environment for running code in the browser. It is a great tool for exploratory data analysis and is widely used by data scientists.
+* While the Jupyter Notebook supports many programming languages, we only need the Python support. The Jupyter Notebook makes it easy to incorporate code, text, and images, and all of this book was in fact written as a Jupyter Notebook.
+
+[back to current section](#introduction)
+
+### NumPy
+
+* NumPy is one of the fundamental packages for scientific computing in Python. It contains functionality for multidimensional arrays, high-level mathematical functions such as linear algebra operations and the Fourier transform, and pseudorandom number generators.
+* In scikit-learn, the NumPy array is the fundamental data structure. scikit-learn takes in data in the form of NumPy arrays. Any data you’re using will have to be converted to a NumPy array. The core functionality of NumPy is the `ndarray` class, a multidimensional (n-dimensional) array. All elements of the array must be of the same type.
+
+[back to current section](#introduction)
+
+### SciPy
+
+* SciPy is a collection of functions for scientific computing in Python. It provides, among other functionality, advanced linear algebra routines, mathematical function optimization, signal processing, special mathematical functions, and statistical distributions.
+* scikit-learn draws from SciPy’s collection of functions for implementing its algorithms. The most important part of SciPy for us is `scipy.sparse`: this provides sparse matrices, which are another representation that is used for data in scikitlearn.
+
+[back to current section](#introduction)
+
+### Matplotlib
+
+* matplotlib is the primary scientific plotting library in Python. It provides functions for making publication-quality visualizations such as line charts, histograms, scatter plots, and so on. Visualizing your data and different aspects of your analysis can give you important insights.
+* When working inside the Jupyter Notebook, you can show figures directly in the browser by using the `%matplotlib notebook` and `%matplotlib inline` commands.
+
+[back to current section](#introduction)
+
+### Pandas
+
+* pandas is a Python library for data wrangling and analysis. It is built around a data structure called the `DataFrame` that is modeled after the R DataFrame. Simply put, a pandas DataFrame is a table, similar to an Excel spreadsheet.
+* pandas provides a great range of methods to modify and operate on this table; in particular, it allows SQL-like queries and joins of tables. In contrast to NumPy, which requires that all entries in an array be of the same type, pandas allows each column to have a separate type (for example, integers, dates, floating-point numbers, and strings).
+* Another valuable tool provided by pandas is its ability to ingest from a great variety of file formats and databases, like SQL, Excel files, and comma-separated values (CSV) files.
+
+[back to current section](#introduction)
+
+[back to top](#introduction-to-machine-learning-with-python)
+
+## Supervised Learning
+
+[back to top](#introduction-to-machine-learning-with-python)
+
+## Unsupervised Learning and Preprocessing
+
+[back to top](#introduction-to-machine-learning-with-python)
+
+## Representing Data and Engineering Features
+
+[back to top](#introduction-to-machine-learning-with-python)
+
+## Model Evaluation and Improvement
+
+[back to top](#introduction-to-machine-learning-with-python)
+
+## Algorithm Chains and Pipelines
+
+[back to top](#introduction-to-machine-learning-with-python)
+
+## Working with Text Data
+
+[back to top](#introduction-to-machine-learning-with-python)
+
+## Wrapping Up
+
+[back to top](#introduction-to-machine-learning-with-python)
+
 ## Setup
 
-To run the code, you need the packages ``numpy``, ``scipy``, ``scikit-learn``, ``matplotlib``, ``pandas`` and ``pillow``. Some of the visualizations of decision trees and neural networks structures also require ``graphviz``. The chapter on text processing also requirs ``nltk`` and ``spacy``.
+To run the code, you need the packages ``numpy``, ``scipy``, ``scikit-learn``, ``matplotlib``, ``pandas`` and ``pillow``. Some of the visualizations of decision trees and neural networks structures also require ``graphviz``. The chapter on text processing also requires ``nltk`` and ``spacy``.
 
 The easiest way to set up an environment is by installing [Anaconda](https://www.continuum.io/downloads).
 
@@ -25,7 +119,6 @@ If you already have a Python environment set up, and you are using the ``conda``
 For the chapter on text processing you also need to install ``nltk`` and ``spacy``:
 
     conda install nltk spacy
-
 
 ### Installing packages with pip
 If you already have a Python environment and are using pip to install packages, you need to run
