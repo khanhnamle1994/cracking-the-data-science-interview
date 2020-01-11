@@ -324,6 +324,4 @@ The singular value decomposition (SVD) is a powerful tool for dimensionality red
 
 Recommendations engines recommend an item to a user. Collaborative filtering is one way of creating recommendations based on data of users’ preferences or actions. At the heart of collaborative filtering is a similarity metric. A number of similarity metrics can be used to calculate the similarity between items or users. The SVD can be used to improve recommendation engines by calculating similarities in a reduced number of dimensions.
 
-Calculating the SVD and recommendations can be a difficult engineering problem on massive datasets. Taking the SVD and similarity calculations offline is one method of reducing redundant calculations and reducing the time required to produce a recommendation.  
-
-### Chapter 15 - Big Data and MapReduce
+Calculating the SVD and recommendations can be a difficult engineering problem on massive datasets. Taking the SVD and similarity calculations offline is one method of reducing redundant calculations and reducing the time required to produce a recommendation.
