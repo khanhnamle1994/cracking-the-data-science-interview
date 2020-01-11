@@ -203,6 +203,22 @@ forest.fit(X_train, y_train)
 
 [back to current section](#supervised-learning)
 
+### Gradient Boosting Machines
+
+```
+from sklearn.ensemble import GradientBoostingClassifier
+gbrt = GradientBoostingClassifier(random_state=0, max_depth=1, learning_rate=0.01)
+gbrt.fit(X_train, y_train)
+```
+
+* Gradient boosted decision trees are among the most powerful and widely used models for supervised learning. Their main drawback is that they require careful tuning of the parameters and may take a long time to train. Similarly to other tree-based models, the algorithm works well without scaling and on a mixture of binary and continuous features. As with other tree-based models, it also often does not work well on high-dimensional sparse data.
+* The main parameters of gradient boosted tree models are the number of trees, `n_estimators`, and the `learning_rate`, which controls the degree to which each tree is allowed to correct the mistakes of the previous trees. These two parameters are highly interconnected, as a lower `learning_rate` means that more trees are needed to build a model of similar complexity. In contrast to random forests, where a higher `n_estimators` value is always better, increasing `n_estimators` in gradient boosting leads to a more complex model, which may lead to overfitting. A common practice is to fit `n_estimators` depending on the time and memory budget, and then search over different `learning_rates`.
+* Another important parameter is `max_depth` (or alternatively `max_leaf_nodes`), to reduce the complexity of each tree. Usually `max_depth` is set very low for gradient boosted models, often not deeper than five splits.
+
+![gradient-boosting-machines](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/gbm_fi.png)
+
+[back to current section](#supervised-learning)
+
 [back to top](#introduction-to-machine-learning-with-python)
 
 ## Unsupervised Learning and Preprocessing
