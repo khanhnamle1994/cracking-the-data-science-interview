@@ -119,6 +119,42 @@ clf = KNeighborsClassifier/KNeighborsRegressor(n_neighbors=3)
 * When using the k-NN algorithm, it’s important to preprocess your data. This approach often does not perform well on datasets with many features (hundreds or more), and it does particularly badly with datasets where most features are 0 most of the time (so-called sparse datasets).
 * So, while the nearest k-neighbors algorithm is easy to understand, it is not often used in practice, due to prediction being slow and its inability to handle many features.
 
+![kNN](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/kNN.png)
+
+[back to current section](#supervised-learning)
+
+### Linear Models
+
+```
+# Linear models for regression
+from sklearn.linear_model import LinearRegression
+lr = LinearRegression().fit(X_train, y_train)
+
+from sklearn.linear_model import Ridge
+ridge = Ridge().fit(X_train, y_train)
+
+from sklearn.linear_model import Lasso
+lasso = Lasso().fit(X_train, y_train)
+
+# Linear models for classification
+from sklearn.linear_model import LogisticRegression
+logreg = LogisticRegression().fit(X_train, y_train)
+
+from sklearn.svm import LinearSVC
+linear_svm = LinearSVC().fit(X, y)
+```
+
+* The main parameter of linear models is the regularization parameter, called `alpha` in the regression models and `C` in `LinearSVC` and `LogisticRegression`. Large values for alpha or small values for C mean simple models. In particular for the regression models, tuning these parameters is quite important. Usually C and alpha are searched for on a logarithmic scale.
+* The other decision you have to make is whether you want to use L1 regularization or L2 regularization. If you assume that only a few of your features are actually important, you should use L1. Otherwise, you should default to L2.
+* L1 can also be useful if interpretability of the model is important. As L1 will use only a few features, it is easier to explain which features are important to the model, and what the effects of these features are.
+* Linear models are very fast to train, and also fast to predict. They scale to very large datasets and work well with sparse data. If your data consists of hundreds of thousands or millions of samples, you might want to investigate using the `solver='sag'` option in `LogisticRegression` and `Ridge`, which can be faster than the default on large datasets. Other options are the `SGDClassifier` class and the `SGDRegressor` class, which implement even more scalable versions of the linear models described here.
+* Another strength of linear models is that they make it relatively easy to understand how a prediction is made. Unfortunately, it is often not entirely clear why coefficients are the way they are. This is particularly true if your dataset has highly correlated features; in these cases, the coefficients might be hard to interpret.
+* Linear models often perform well when the number of features is large compared to the number of samples. They are also often used on very large datasets, simply because it’s not feasible to train other models. However, in lower-dimensional spaces, other models might yield better generalization performance.
+
+![linear-models](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/linear-models.png)
+
+[back to current section](#supervised-learning)
+
 [back to top](#introduction-to-machine-learning-with-python)
 
 ## Unsupervised Learning and Preprocessing
