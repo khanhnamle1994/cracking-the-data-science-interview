@@ -82,7 +82,7 @@ The code in this chapter can be accessed in [this notebook](https://github.com/k
 The code in this chapter can be accessed in [this notebook](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/02-supervised-learning.ipynb).
 
 * [Classification and Regression](#classification-and-regression)
-* [Generalization, Overfitting, and Underfitting](#generalization-overfitting-underfitting)
+* [Generalization, Overfitting, and Underfitting](#generalization-overfitting-and-underfitting)
 * [k-Nearest-Neighbors](#k-Nearest-Neighbors)
 * [Linear Models](#linear-models)
 * [Naive Bayes](#naive-bayes)
@@ -92,8 +92,18 @@ The code in this chapter can be accessed in [this notebook](https://github.com/k
 
 ### Classification and Regression
 
-* In classification, the goal is to predict a class label, which is a choice from a predefined list of possibilities. Classification is sometimes separated into binary classification, which is the special case of distinguishing between exactly two classes, and multiclass classification, which is classification between more than two classes.
-* For regression tasks, the goal is to predict a continuous number, or a floating-point number in programming terms (or real number in mathematical terms). Predicting a person’s annual income from their education, their age, and where they live is an example of a regression task. When predicting income, the predicted value is an amount, and can be any number in a given range. Another example of a regression task is predicting the yield of a corn farm given attributes such as previous yields, weather, and number of employees working on the farm. The yield again can be an arbitrary number.
+* In **classification**, the goal is to predict a class label, which is a choice from a predefined list of possibilities. Classification is sometimes separated into binary classification, which is the special case of distinguishing between exactly two classes, and multiclass classification, which is classification between more than two classes.
+* For **regression** tasks, the goal is to predict a continuous number, or a floating-point number in programming terms (or real number in mathematical terms). Predicting a person’s annual income from their education, their age, and where they live is an example of a regression task. When predicting income, the predicted value is an amount, and can be any number in a given range. Another example of a regression task is predicting the yield of a corn farm given attributes such as previous yields, weather, and number of employees working on the farm. The yield again can be an arbitrary number.
+
+[back to current section](#supervised-learning)
+
+### Generalization, Overfitting, and Underfitting
+
+* In supervised learning, we want to build a model on the training data and then be able to make accurate predictions on new, unseen data that has the same characteristics as the training set that we used. If a model is able to make accurate predictions on unseen data, we say it is able to **generalize** from the training set to the test set. We want to build a model that is able to generalize as accurately as possible.
+* Building a model that is too complex for the amount of information we have is called **overfitting**. Overfitting occurs when you fit a model too closely to the particularities of the training set and obtain a model that works well on the training set but is not able to generalize to new data. On the other hand, if your model is too simple, then you might not be able to capture all the aspects of and variability in the data, and your model will do badly even on the training set. Choosing too simple a model is called **underfitting**.
+* The tradeoff between over and under-fitting is illustrated below:
+
+![overfitting-underfitting](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/overfitting_underfitting_cartoon.png)
 
 [back to current section](#supervised-learning)
 
