@@ -155,6 +155,14 @@ linear_svm = LinearSVC().fit(X, y)
 
 [back to current section](#supervised-learning)
 
+### Naive Bayes
+
+* `MultinomialNB` and `BernoulliNB` have a single parameter, alpha, which controls model complexity. The way alpha works is that the algorithm adds to the data alpha many virtual data points that have positive values for all the features. This results in a “smoothing” of the statistics. A large alpha means more smoothing, resulting in less complex models. The algorithm’s performance is relatively robust to the setting of alpha, meaning that setting alpha is not critical for good performance. However, tuning it usually improves accuracy somewhat.
+* `GaussianNB` is mostly used on very high-dimensional data, while the other two variants of naive Bayes are widely used for sparse count data such as text. `MultinomialNB` usually performs better than `BinaryNB`, particularly on datasets with a relatively large number of nonzero features (i.e., large documents).
+* The naive Bayes models share many of the strengths and weaknesses of the linear models. They are very fast to train and to predict, and the training procedure is easy to understand. The models work very well with high-dimensional sparse data and are relatively robust to the parameters. Naive Bayes models are great baseline models and are often used on very large datasets, where training even a linear model might take too long.
+
+[back to current section](#supervised-learning)
+
 [back to top](#introduction-to-machine-learning-with-python)
 
 ## Unsupervised Learning and Preprocessing
