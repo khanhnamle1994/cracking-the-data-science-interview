@@ -266,7 +266,54 @@ When working with a new dataset, it is in general a good idea to start with a si
 
 [back to top](#introduction-to-machine-learning-with-python)
 
-## Unsupervised Learning and Preprocessing
+## Unsupervised Learning
+
+The code in this chapter can be accessed in [this notebook](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/03-unsupervised-learning.ipynb).
+
+* [Types of Unsupervised Learning](#types-of-unsupervised-learning)
+* [Challenges in Unsupervised Learning](#challenges-in-unsupervised-learning)
+* [Principal Component Analysis](#principal-component-analysis)
+* [Non Negative Matrix Factorization](#non-negative-matrix-factorization)
+* [Manifold Learning with tSNE](#manifold-learning-with-tSNE)
+* [k Means Clustering](#k-means-clustering)
+* [Agglomerative Clustering](#agglomerative-clustering)
+* [DBSCAN](#dbscan)
+
+### Types of Unsupervised Learning
+
+* *Unsupervised transformations* of a dataset are algorithms that create a new representation of the data which might be easier for humans or other machine learning algorithms to understand compared to the original representation of the data. A common application of unsupervised transformations is dimensionality reduction, which takes a high-dimensional representation of the data, consisting of many features, and finds a new way to represent this data that summarizes the essential characteristics with fewer features. A common application for dimensionality reduction is reduction to two dimensions for visualization purposes.
+* Another application for unsupervised transformations is finding the parts or components that “make up” the data. An example of this is topic extraction on collections of text documents. Here, the task is to find the unknown topics that are talked about in each document, and to learn what topics appear in each document. This can be useful for tracking the discussion of themes like elections, gun control, or pop stars on social media.
+* *Clustering algorithms*, on the other hand, partition data into distinct groups of similar items. Consider the example of uploading photos to a social media site. To allow you to organize your pictures, the site might want to group together pictures that show the same person. However, the site doesn’t know which pictures show whom, and it doesn’t know how many different people appear in your photo collection. A sensible approach would be to extract all the faces and divide them into groups of faces that look similar. Hopefully, these correspond to the same person, and the images can be grouped together for you.
+
+[back to current section](#unsupervised-learning)
+
+### Challenges in Unsupervised Learning
+
+[back to current section](#unsupervised-learning)
+
+### Principal Component Analysis
+
+[back to current section](#unsupervised-learning)
+
+### Non Negative Matrix Factorization
+
+[back to current section](#unsupervised-learning)
+
+### Manifold Learning with tSNE
+
+[back to current section](#unsupervised-learning)
+
+### k Means Clustering
+
+[back to current section](#unsupervised-learning)
+
+### Agglomerative Clustering
+
+[back to current section](#unsupervised-learning)
+
+### DBSCAN
+
+[back to current section](#unsupervised-learning)
 
 [back to top](#introduction-to-machine-learning-with-python)
 
