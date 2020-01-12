@@ -8,6 +8,7 @@ Here are the categories:
 
 * [SQL](#sql)
 * [Statistics](#statistics)
+* [Mathematics](#mathematics)
 * [Machine Learning Concepts](#machine-learning-concepts)
 * [Supervised Learning](#supervised-learning)
 * [Unsupervised Learning](#unsupervised-learning)
@@ -202,6 +203,54 @@ Here are the categories:
 [back to top](#data-science-cheatsheets)
 
 ## Statistics
+
+## Mathematics
+
+* [Finding the eigenvectors of a matrix](#finding-the-eigenvectors-of-a-matrix)
+* [Finding the eigenvalues of a matrix](#finding-the-eigenvalues-of-a-matrix)
+* [Understanding the properties of a matrix's inverse](#understanding-the-properties-of-a-matrix-inverse)
+* [Performing a matrix or vector multiplication](#performing-a-matrix-or-vector-multiplication)
+* [Taking the integral of a function](#taking-the-integral-of-a-function)
+* [Taking the sigmoid of a vector](#taking-the-sigmoid-of-a-vector)
+* [Taking the softmax of a vector](#taking-the-softmax-of-a-vector)
+* [Understanding the difference between sigmoid and softmax functions](#understanding-the-difference-between-sigmoid-and-softmax-functions)
+* [Evaluating the argmax of a function](#evaluating-the-argmax-of-a-function)
+
+### Finding the eigenvectors of a matrix
+
+For a review of eigenvectors, check out [the Stanford CS229 lecture notes (Part 3.12)](http://cs229.stanford.edu/summer2019/cs229-linalg.pdf).
+
+### Understanding the properties of a matrix inverse
+
+Learn about the properties of a matrix inverse in [this lecture video](https://www.coursera.org/lecture/machine-learning/inverse-and-transpose-FuSWY), or read the [Wikipedia paragraph](https://en.wikipedia.org/wiki/Invertible_matrix#Properties) on the properties of an invertible matrix.
+
+### Performing a matrix or vector multiplication
+
+Learn about matrix/vector multiplications in [this lecture video](https://www.coursera.org/lecture/machine-learning/matrix-vector-multiplication-aQDta), or read the [Stanford CS229 lecture note (part 2.2)](http://cs229.stanford.edu/summer2019/cs229-linalg.pdf) on matrix-vector product. You can also watch [this follow-up lecture](https://www.coursera.org/lecture/machine-learning/matrix-multiplication-properties-W1LNU) on matrix multiplications properties, or read [the Wikipedia page](https://en.wikipedia.org/wiki/Matrix_multiplication).
+
+### Finding the eigenvalues of a matrix
+
+For a review of eigenvalues, check out [the Stanford CS229 lecture notes (Part 3.12)](http://cs229.stanford.edu/summer2019/cs229-linalg.pdf).
+
+### Taking the integral of a function
+
+Although it isn't required for all roles (only for MLE/DS/MLR), integration (just as differentiation) is an important operation to have in your machine learning toolkit. Check out [this integral cheat sheet](http://tutorial.math.lamar.edu/pdf/calculus_cheat_sheet_integrals.pdf) to review the integral of major functions.
+
+### Taking the sigmoid of a vector
+
+Sigmoid is applied elementwise to a vector's entries.
+
+### Taking the softmax of a vector
+
+From the Wikipedia page on sofmax functions: "[Sofmax] takes as input a vector of K real numbers, and normalizes it into a probability distribution consisting of K probabilities proportional to the exponentials of the input numbers." You can learn more about softmax in [this lecture](https://www.coursera.org/lecture/deep-neural-network/softmax-regression-HRy7y).
+
+### Understanding the difference between sigmoid and softmax functions
+
+Sigmoid outputs a number (or a vector with entries) between 0 and 1. Softmax outputs a vector with entries summing up to 1. Thus, softmax is often used for multi-class classification, while sigmoid is usually used for binary classification. Watch this [softmax regression lecture](https://www.coursera.org/lecture/deep-neural-network/softmax-regression-HRy7y).
+
+### Evaluating the argmax of a function
+
+Review the definition of argmax and examples of applications in [this wikipedia page](https://en.wikipedia.org/wiki/Arg_max).
 
 ## Machine Learning Concepts
 
