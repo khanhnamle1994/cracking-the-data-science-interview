@@ -83,13 +83,14 @@ The code in this chapter can be accessed in [this notebook](https://github.com/k
 
 * [Classification and Regression](#classification-and-regression)
 * [Generalization, Overfitting, and Underfitting](#generalization-overfitting-and-underfitting)
-* [k-Nearest-Neighbors](#k-Nearest-Neighbors)
-* [Linear Models](#linear-models)
-* [Naive Bayes](#naive-bayes)
-* [Decision Trees](#decision-trees)
-* [Random Forests](#random-forests)
-* [Gradient Boosting Machines](#gradient-boosting-machines)
-* [Kernelized Support Vector Machines](#kernelized-support-vector-machines)
+* [k-Nearest-Neighbors](#k-Nearest-Neighbors): For small datasets, good as a baseline, easy to explain.
+* [Linear Models](#linear-models): Go-to as a first algorithm to try, good for very large datasets, good for very highdimensional data.
+* [Naive Bayes](#naive-bayes): Only for classification. Even faster than linear models, good for very large datasets and high-dimensional data. Often less accurate than linear models.
+* [Decision Trees](#decision-trees): Very fast, don’t need scaling of the data, can be visualized and easily explained.
+* [Random Forests](#random-forests): Nearly always perform better than a single decision tree, very robust and powerful. Don’t need scaling of data. Not good for very high-dimensional sparse data.
+* [Gradient Boosting Machines](#gradient-boosting-machines): Often slightly more accurate than random forests. Slower to train but faster to predict than random forests, and smaller in memory. Need more parameter tuning than random forests.
+* [Kernelized Support Vector Machines](#kernelized-support-vector-machines): Powerful for medium-sized datasets of features with similar meaning. Require scaling of data, sensitive to parameters.
+* [Neural Networks](#neural-networks): Can build very complex models, particularly for large datasets. Sensitive to scaling of the data and to the choice of parameters. Large models need a long time to train.
 
 ### Classification and Regression
 
@@ -241,6 +242,27 @@ sv = svm.support_vectors_
 ![svm](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/svm.png)
 
 [back to current section](#supervised-learning)
+
+### Neural Networks
+
+```
+from sklearn.neural_network import MLPClassifier
+mlp = MLPClassifier(solver='lbfgs', activation='tanh', random_state=0, hidden_layer_sizes=[n_hidden_nodes, n_hidden_nodes], alpha=alpha)
+```
+
+* Neural networks have reemerged as state-of-the-art models in many applications of machine learning. One of their main advantages is that they are able to capture information contained in large amounts of data and build incredibly complex models. Given enough computation time, data, and careful tuning of the parameters, neural networks often beat other machine learning algorithms (for classification and regression tasks).
+* This brings us to the downsides. Neural networks—particularly the large and powerful ones—often take a long time to train. They also require careful preprocessing of the data, as we saw here. Similarly to SVMs, they work best with “homogeneous” data, where all the features have similar meanings. For data that has very different kinds of features, tree-based models might work better. Tuning neural network parameters is also an art unto itself. In our experiments, we barely scratched the surface of possible ways to adjust neural network models and how to train them.
+* The most important parameters are the number of layers and the number of hidden units per layer. You should start with one or two hidden layers, and possibly expand from there. The number of nodes per hidden layer is often similar to the number of input features, but rarely higher than in the low to mid-thousands.
+* A helpful measure when thinking about the model complexity of a neural network is the number of weights or coefficients that are learned. If you have a binary classification dataset with 100 features, and you have 100 hidden units, then there are 100 * 100 = 10,000 weights between the input and the first hidden layer. There are also 100 * 1 = 100 weights between the hidden layer and the output layer, for a total of around 10,100 weights. If you add a second hidden layer with 100 hidden units, there will be another 100 * 100 = 10,000 weights from the first hidden layer to the second hidden layer, resulting in a total of 20,100 weights. If instead you use one layer with 1,000 hidden units, you are learning 100 * 1,000 = 100,000 weights from the input to the hidden layer and 1,000 x 1 weights from the hidden layer to the output layer, for a total of 101,000. If you add a second hidden layer you add 1,000 * 1,000 = 1,000,000 weights, for a whopping total of 1,101,000—50 times larger than the model with two hidden layers of size 100.
+* A common way to adjust parameters in a neural network is to first create a network that is large enough to overfit, making sure that the task can actually be learned by the network. Then, once you know the training data can be learned, either shrink the network or increase alpha to add regularization, which will improve generalization performance.
+
+![mlp](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/mlp.png)
+
+[back to current section](#supervised-learning)
+
+When working with a new dataset, it is in general a good idea to start with a simple model, such as a linear model or a naive Bayes or nearest neighbors classifier, and see how far you can get. After understanding more about the data, you can consider moving to an algorithm that can build more complex models, such as random forests, gradient boosted decision trees, SVMs, or neural networks.
+
+![comparison](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/classifier_comparison.png)
 
 [back to top](#introduction-to-machine-learning-with-python)
 
