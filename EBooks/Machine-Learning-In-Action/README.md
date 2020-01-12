@@ -4,9 +4,24 @@ This is the source code to go with "Machine Learning in Action" by Peter Harring
 
 All the code examples were working on Python 2.6, there shouldn't be any problems with the 2.7.  NumPy will be needed for most examples.
 
-## Part 1 - Classification
+Here are the chapters:
 
-### Chapter 1 - Machine Learning Basics
+* [Machine Learning Basics](#machine-learning-basics)
+* [k-Nearest Neighbors](#k-nearest-neighbors)
+* [Decision Trees](#decision-trees)
+* [Naive Bayes](#naive-bayes)
+* [Logistic Regression](#logistic-regression)
+* [Support Vector Machines](#support-vector-machines)
+* [AdaBoost](#adaboost)
+* [Linear Regression](#linear-regression)
+* [Tree Regression](#tree-regression)
+* [k-Means Clustering](#k-means-clustering)
+* [Apriori](#apriori)
+* [FP-growth](#fp-growth)
+* [Principal Component Analysis](#principal-component-analysis)
+* [Singular Value Decomposition](#singular-value-decomposition)
+
+## Machine Learning Basics
 
 7 Steps to develop a Machine Learning application:
 
@@ -24,7 +39,9 @@ All the code examples were working on Python 2.6, there shouldn't be any problem
 
 7. *Use it.* Here you make a real program to do some task, and once again you see if all the previous steps worked as you expected. You might encounter some new data and have to revisit steps 1–5.
 
-### Chapter 2 - Classifying with k-Nearest Neighbors
+[back to top](#machine-learning-in-action)
+
+## k-Nearest Neighbors
 
 **Pros:** High accuracy, insensitive to outliers, no assumptions about data.
 
@@ -46,7 +63,9 @@ The k-Nearest Neighbors algorithm is a simple and effective way to classify data
 
 An additional drawback is that kNN doesn’t give you any idea of the underlying structure of the data; you have no idea what an “average” or “exemplar” instance from each class looks like.
 
-### Chapter 3 - Splitting datasets one feature at a time: Decision Trees
+[back to top](#machine-learning-in-action)
+
+## Decision Trees
 
 **Pros:** Computationally cheap to use, easy for humans to understand learned results, missing values OK, can deal with irrelevant features.
 
@@ -68,7 +87,9 @@ A decision tree classifier is just like a work-flow diagram with the terminating
 
 Cleverly applying Matplotlib’s annotations, you can turn our tree data into an easily understood chart. The Python Pickle module can be used for persisting our tree. The contact lens data showed that decision trees can try too hard and overfit a dataset. This overfitting can be removed by pruning the decision tree, combining adjacent leaf nodes that don’t provide a large amount of information gain.
 
-### Chapter 4 - Classifying with probability theory: Naive Bayes
+[back to top](#machine-learning-in-action)
+
+## Naive Bayes
 
 **Pros:** Works with a small amount of data, handles multiple classes.
 
@@ -92,13 +113,15 @@ You can reduce the need for a lot of data by assuming conditional independence a
 
 There are a number of practical considerations when implementing naïve Bayes in a modern programming language. Underflow is one problem that can be addressed by using the logarithm of probabilities in your calculations. The bag-of-words model is an improvement on the set-of-words model when approaching document classification. There are a number of other improvements, such as removing stop words, and you can spend a long time optimizing a tokenizer.
 
-### Chapter 5 - Logistic Regression
+[back to top](#machine-learning-in-action)
 
-**Pros:** Computationally inexpensive, easy to implement, knowledge representation easy to interpret
+## Logistic Regression
 
-**Cons:** Prone to underfitting, may have low accuracy
+**Pros:** Computationally inexpensive, easy to implement, knowledge representation easy to interpret.
 
-**Works with:** Numeric values, nominal values
+**Cons:** Prone to underfitting, may have low accuracy.
+
+**Works with:** Numeric values, nominal values.
 
 General Approach to Logistic Regression:
 1. Collect: Any method.
@@ -114,7 +137,9 @@ Logistic regression is finding best-fit parameters to a nonlinear function calle
 
 Stochastic gradient ascent can do as well as gradient ascent using far fewer computing resources. In addition, stochastic gradient ascent is an online algorithm; it can update what it has learned as new data comes in rather than reloading all of the data as in batch processing.
 
-### Chapter 6 - Support Vector Machines
+[back to top](#machine-learning-in-action)
+
+## Support Vector Machines
 
 **Pros:** Low generalization error, computationally inexpensive, easy to interpret results.
 
@@ -140,7 +165,9 @@ Kernel methods, or the kernel trick, map data (sometimes nonlinear data) from a 
 
 Support vector machines are a binary classifier and additional methods can be extended to classification of classes greater than two. The performance of an SVM is also sensitive to optimization parameters and parameters of the kernel used.
 
-### Chapter 7 - Improving classification with the Ada-Boost Meta-Algorithm
+[back to top](#machine-learning-in-action)
+
+## AdaBoost
 
 **Pros:** Low generalization error, easy to code, works with most classifiers, no parameters to adjust.
 
@@ -172,9 +199,9 @@ The classification imbalance problem is training a classifier with data that doe
 
 We introduced oversampling and undersampling as ways to adjust the positive and negative examples in a dataset. Another, perhaps better, technique was introduced for dealing with classifiers with unbalanced objectives. This method takes the costs of mis-classification into account when training a classifier.
 
-## Part 2 - Forecasting numeric values with Regression
+[back to top](#machine-learning-in-action)
 
-### Chapter 8 - Predicting numeric values: Regression
+## Linear Regression
 
 **Pros:** Easy to interpret results, computationally inexpensive.
 
@@ -200,7 +227,9 @@ Ridge regression is an example of a shrinkage method. Shrinkage methods impose a
 
 Shrinkage methods can also be viewed as adding bias to a model and reducing the variance. The bias/variance tradeoff is a powerful concept in understanding how altering a model impacts the success of a model.   
 
-### Chapter 9 - Tree-based Regression
+[back to top](#machine-learning-in-action)
+
+## Tree Regression
 
 **Pros:** Fits complex, nonlinear data.
 
@@ -222,9 +251,9 @@ Oftentimes your data contains complex interactions that lead to nonlinear relati
 
 The CART algorithm builds binary trees and can handle discrete as well as continuous split values. Model trees and regression trees can be built with the CART algorithm as long as you use the right error measurements. When building a tree, there’s a tendency for the tree-building algorithm to build the tree too closely to the data, resulting in an overfit model. An overfit tree is often more complex that it needs to be. To make the tree less complex, a process of pruning is applied to the tree. Two methods of pruning are prepruning, which prunes the tree as it’s being built, and postpruning, which prunes the tree after it’s built. Prepruning is more effective but requires user-defined parameters.
 
-## Part 3 - Unsupervised Learning
+[back to top](#machine-learning-in-action)
 
-### Chapter 10 - Grouping unlabeled items using k-Means Clustering
+## k-Means Clustering
 
 **Pros:** Easy to implement.
 
@@ -246,7 +275,9 @@ Clustering is a technique used in unsupervised learning. With unsupervised learn
 
 One widely used clustering algorithm is k-means, where k is a user-specified number of clusters to create. The k-means clustering algorithm starts with k-random cluster centers known as centroids. Next, the algorithm computes the distance from every point to the cluster centers. Each point is assigned to the closest cluster center. The cluster centers are then recalculated based on the new points in the cluster. This process is repeated until the cluster centers no longer move. This simple algorithm is quite effective but is sensitive to the initial cluster placement. To provide better clustering, a second algorithm called bisecting k-means can be used. Bisecting k-means starts with all the points in one cluster and then splits the clusters using k-means with a k of 2. In the next iteration, the cluster with the largest error is chosen to be split. This process is repeated until k clusters have been created. Bisecting k-means creates better clusters than k-means.
 
-### Chapter 11 - Association analysis with the Apriori algorithm
+[back to top](#machine-learning-in-action)
+
+## Apriori
 
 **Pros:** Easy to code up.
 
@@ -272,7 +303,9 @@ Once frequent itemsets have been found, you can use the frequent itemsets to gen
 
 Association analysis can be performed on many different items. Some common examples are items in a store and pages visited on a website. Association analysis has also been used to look at the voting history of elected officials and judges.
 
-### Chapter 12 - Efficiently finding frequent itemsets with FP-growth
+[back to top](#machine-learning-in-action)
+
+## FP-growth
 
 **Pros:** Usually faster than Apriori.
 
@@ -292,9 +325,9 @@ General Approach to FP-growth:
 
 The FP-growth algorithm is an efficient way of finding frequent patterns in a dataset. The FP-growth algorithm works with the Apriori principle but is much faster. The Apriori algorithm generates candidate itemsets and then scans the dataset to see if they’re frequent. FP-growth is faster because it goes over the dataset only twice. The dataset is stored in a structure called an FP-tree. After the FP-tree is built, you can find frequent itemsets by finding conditional bases for an item and building a conditional FP-tree. This process is repeated, conditioning on more items until the conditional FP-tree has only one item.
 
-## Part 4 - Additional Tools
+[back to top](#machine-learning-in-action)
 
-### Chapter 13 - Using Principal Component Analysis to simplify data
+## Principal Component Analysis
 
 **Pros:** Reduces complexity of data, identifies most important features.
 
@@ -308,7 +341,9 @@ Dimensionality reduction techniques allow us to make data easier to use and ofte
 
 Principal component analysis allows the data to identify the important features. It does this by rotating the axes to align with the largest variance in the data. Other axes are chosen orthogonal to the first axis in the direction of largest variance. Eigenvalue analysis on the covariance matrix can be used to give us a set of orthogonal axes.
 
-### Chapter 14 - Simplifying data with the Singular Value Decomposition
+[back to top](#machine-learning-in-action)
+
+## Singular Value Decomposition
 
 **Pros:** Simplifies data, removes noise, may improve algorithm results.
 
@@ -323,3 +358,5 @@ The singular value decomposition (SVD) is a powerful tool for dimensionality red
 Recommendations engines recommend an item to a user. Collaborative filtering is one way of creating recommendations based on data of users’ preferences or actions. At the heart of collaborative filtering is a similarity metric. A number of similarity metrics can be used to calculate the similarity between items or users. The SVD can be used to improve recommendation engines by calculating similarities in a reduced number of dimensions.
 
 Calculating the SVD and recommendations can be a difficult engineering problem on massive datasets. Taking the SVD and similarity calculations offline is one method of reducing redundant calculations and reducing the time required to produce a recommendation.
+
+[back to top](#machine-learning-in-action)
