@@ -10,3 +10,4 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [First Touch Attribution](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/First-Touch-Attribution.md) (by Google)
 * [One Million Lyft Rides](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/One-Million-Lyft-Rides.md) (by Lyft)
 * [Swipe Precision](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Swipe-Precision.md) (by Tinder)
+* [Samples Size Bias](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Sample-Size-Bias.md) (by Airbnb)
