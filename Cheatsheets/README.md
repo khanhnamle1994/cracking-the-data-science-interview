@@ -13,6 +13,7 @@ Here are the categories:
 * [Supervised Learning](#supervised-learning)
 * [Unsupervised Learning](#unsupervised-learning)
 * [Natural Language Processing](#natural-language-processing)
+* [Software Engineering](#software-engineering)
 * [Stanford Materials](#stanford-materials)
 
 ## SQL
@@ -204,6 +205,39 @@ Here are the categories:
 
 ## Statistics
 
+* [Enunciating the Central Limit Theorem](#enunciating-the-Central-Limit-Theorem)
+* [Defining good hypotheses in a hypothesis test](#defining-good-hypotheses-in-a-hypothesis-test)
+* [Calculating the probability of a sum of random variables](#calculating-the-probability-of-a-sum-of-random-variables)
+* [Calculating the probability of an intersection of events](#calculating-the-probability-of-an-intersection-of-events)
+* [Analyzing a residuals plot](#analyzing-a-residuals-plot)
+* [Calculating conditional probabilities using the Bayes rule](#calculating-conditional-probabilities-using-the-Bayes-rule)
+
+### Enunciating the Central Limit Theorem
+
+The CTL is enunciated in a comprehensible way in [this lecture video](https://www.coursera.org/lecture/inferential-statistics-intro/clt-for-the-mean-examples-XhkI6). If you're looking for more content on the CTL, [here](https://www.coursera.org/lecture/six-sigma-define-measure-advanced/the-central-limit-theorem-clt-VLACz) is another video about the CTL. It is followed by [practical examples](https://www.coursera.org/lecture/six-sigma-define-measure-advanced/the-central-limit-theorem-clt-applications-SSvkU) applying the CTL. If you prefer reading, check out [this wikipedia page](https://en.wikipedia.org/wiki/Central_limit_theorem).
+
+### Defining good hypotheses in a hypothesis test
+
+If you are carrying-out a statistical test, it is important to define good hypotheses. [These slides](http://www.sci.utah.edu/~arpaiva/classes/UT_ece3530/hypothesis_testing.pdf) contain several case studies to build intuition on choosing good hypotheses for your statistical test.
+
+### Calculating the probability of a sum of random variables
+
+[These lectures notes](https://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter7.pdf) define and give practice exercises to compute the probability of a sum of random variables. If you'd like to go further, [this series of videos](https://www.khanacademy.org/math/ap-statistics/random-variables-ap/combining-random-variables/v/mean-of-sum-and-difference-of-random-variables) explains how to compute the mean and the variance for a sum of random variables.
+
+### Calculating the probability of an intersection of events
+
+[These course notes](https://math.la.asu.edu/~garcia/3.6reading.pdf) (pages 675-681) offer exercises to practice problems involving the intersection of probabilistic events and recalls the use of conditional probabilities. To review the basic definitions and rules of probabilities (including the intersection and union of events), you can also watch [this video](https://www.coursera.org/lecture/introductiontoprobability/definition-and-rules-k3RwU).
+
+### Analyzing a residuals plot
+
+[This video](https://www.coursera.org/lecture/linear-models/fitted-values-and-residuals-t1VJ9) explains how to analyze a residual plot. If you're looking for more advanced readings on residuals, check [these lecture notes](http://www-personal.umich.edu/~gonzo/coursenotes/file7.pdf) and [these slides](https://courses.washington.edu/b515/l7.pdf).
+
+### Calculating conditional probabilities using the Bayes rule
+
+The Bayes rule is a common interview topic for machine learning and data science roles. [These course notes](https://math.la.asu.edu/~surgent/mat142/Sect_8_5.pdf) (pages 381-388) show techniques to solve problems involving conditional probabilities. Also, [these course notes](http://faculty.washington.edu/tamre/BayesTheorem.pdf) (pages 7-9) offer examples and practice exercises. If you prefer watching videos, [this lecture](https://www.coursera.org/lecture/probability-intro/conditional-probability-fN6Kh) is an intuitive explanation on conditional probabilities.
+
+[back to top](#data-science-cheatsheets)
+
 ## Mathematics
 
 * [Finding the eigenvectors of a matrix](#finding-the-eigenvectors-of-a-matrix)
@@ -251,6 +285,8 @@ Sigmoid outputs a number (or a vector with entries) between 0 and 1. Softmax out
 ### Evaluating the argmax of a function
 
 Review the definition of argmax and examples of applications in [this wikipedia page](https://en.wikipedia.org/wiki/Arg_max).
+
+[back to top](#data-science-cheatsheets)
 
 ## Machine Learning Concepts
 
@@ -671,6 +707,10 @@ Here is a visual explanation of PCA:
 ![](assets/w2v.png)
 
 [back to current section](#natural-language-processing)
+
+[back to top](#data-science-cheatsheets)
+
+## Software Engineering
 
 [back to top](#data-science-cheatsheets)
 
