@@ -89,6 +89,7 @@ The code in this chapter can be accessed in [this notebook](https://github.com/k
 * [Decision Trees](#decision-trees)
 * [Random Forests](#random-forests)
 * [Gradient Boosting Machines](#gradient-boosting-machines)
+* [Kernelized Support Vector Machines](#kernelized-support-vector-machines)
 
 ### Classification and Regression
 
@@ -216,6 +217,28 @@ gbrt.fit(X_train, y_train)
 * Another important parameter is `max_depth` (or alternatively `max_leaf_nodes`), to reduce the complexity of each tree. Usually `max_depth` is set very low for gradient boosted models, often not deeper than five splits.
 
 ![gradient-boosting-machines](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/gbm_fi.png)
+
+[back to current section](#supervised-learning)
+
+### Kernelized Support Vector Machines
+
+```
+# Linear Models and Non-linear Features
+from sklearn.svm import LinearSVC
+linear_svm = LinearSVC().fit(X, y)
+
+# Kernel Trick
+from sklearn.svm import SVC
+svm = SVC(kernel='rbf', C=10, gamma=0.1).fit(X, y)
+sv = svm.support_vectors_
+```
+
+* Kernelized support vector machines are powerful models and perform well on a variety of datasets. SVMs allow for complex decision boundaries, even if the data has only a few features. They work well on low-dimensional and high-dimensional data (i.e., few and many features), but don’t scale very well with the number of samples. Running an SVM on data with up to 10,000 samples might work well, but working with datasets of size 100,000 or more can become challenging in terms of runtime and memory usage.
+* Another downside of SVMs is that they require careful preprocessing of the data and tuning of the parameters. This is why, these days, most people instead use tree-based models such as random forests or gradient boosting (which require little or no preprocessing) in many applications. Furthermore, SVM models are hard to inspect; it can be difficult to understand why a particular prediction was made, and it might be tricky to explain the model to a nonexpert.
+* Still, it might be worth trying SVMs, particularly if all of your features represent measurements in similar units (e.g., all are pixel intensities) and they are on similar scales.
+* The important parameters in kernel SVMs are the regularization parameter `C`, the choice of the kernel, and the kernel-specific parameters. Although we primarily focused on the RBF kernel, other choices are available in `scikit-learn`. The RBF kernel has only one parameter, `gamma`, which is the inverse of the width of the Gaussian kernel. `gamma` and `C` both control the complexity of the model, with large values in either resulting in a more complex model. Therefore, good settings for the two parameters are usually strongly correlated, and `C` and `gamma` should be adjusted together.
+
+![svm](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/svm.png)
 
 [back to current section](#supervised-learning)
 
