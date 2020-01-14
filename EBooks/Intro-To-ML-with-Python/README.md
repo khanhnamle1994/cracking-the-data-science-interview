@@ -404,6 +404,18 @@ The following plot illustrates the progression of agglomerative clustering on a 
 
 ### DBSCAN
 
+```
+from sklearn.cluster import DBSCAN
+dbscan = DBSCAN()
+clusters = dbscan.fit_predict(X)
+```
+
+* Another very useful clustering algorithm is DBSCAN (which stands for “density-based spatial clustering of applications with noise”). The main benefits of DBSCAN are that it does not require the user to set the number of clusters a priori, it can capture clusters of complex shapes, and it can identify points that are not part of any cluster.
+* DBSCAN is somewhat slower than agglomerative clustering and k-means, but still scales to relatively large datasets.
+* DBSCAN works by identifying points that are in “crowded” regions of the feature space, where many data points are close together. These regions are referred to as dense regions in feature space. The idea behind DBSCAN is that clusters form dense regions of data, separated by regions that are relatively empty.
+
+![DBSCAN](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/DBSCAN.png)
+
 [back to current section](#unsupervised-learning)
 
 [back to top](#introduction-to-machine-learning-with-python)
