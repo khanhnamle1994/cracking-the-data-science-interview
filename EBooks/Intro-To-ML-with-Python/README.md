@@ -361,6 +361,27 @@ digits_tsne = tsne.fit_transform(digits.data)
 
 ### k Means Clustering
 
+```
+from sklearn.cluster import KMeans
+# build the clustering model
+kmeans = KMeans(n_clusters=3)
+kmeans.fit(X)
+kmeans.predict(X)
+```
+
+* k-means clustering is one of the simplest and most commonly used clustering algorithms.
+* It tries to find cluster centers that are representative of certain regions of the data.
+* The algorithm alternates between two steps: assigning each data point to the closest cluster center, and then setting each cluster center as the mean of the data points that are assigned to it.
+* The algorithm is finished when the assignment of instances to clusters no longer changes.
+
+The following example illustrates the algorithm on a synthetic dataset:
+
+![k-Means](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/k-Means.png)
+
+* k-means is a very popular algorithm for clustering, not only because it is relatively easy to understand and implement, but also because it runs relatively quickly. k-means scales easily to large datasets, and scikit-learn even includes a more scalable variant in the MiniBatchKMeans class, which can handle very large datasets.
+* One of the drawbacks of k-means is that it relies on a random initialization, which means the outcome of the algorithm depends on a random seed. By default, scikit-learn runs the algorithm 10 times with 10 different random initializations, and returns the best result.
+* Further downsides of k-means are the relatively restrictive assumptions made on the shape of clusters, and the requirement to specify the number of clusters you are looking for (which might not be known in a real-world application).
+
 [back to current section](#unsupervised-learning)
 
 ### Agglomerative Clustering
