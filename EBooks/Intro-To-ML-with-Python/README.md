@@ -386,6 +386,20 @@ The following example illustrates the algorithm on a synthetic dataset:
 
 ### Agglomerative Clustering
 
+```
+from sklearn.cluster import AgglomerativeClustering
+agg = AgglomerativeClustering(n_clusters=3)
+assignment = agg.fit_predict(X)
+```
+
+* Agglomerative clustering refers to a collection of clustering algorithms that all build upon the same principles: the algorithm starts by declaring each point its own cluster, and then merges the two most similar clusters until some stopping criterion is satisfied.
+* The stopping criterion implemented in scikit-learn is the number of clusters, so similar clusters are merged until only the specified number of clusters are left.
+* There are several linkage criteria that specify how exactly the “most similar cluster” is measured. This measure is always defined between two existing clusters.
+
+The following plot illustrates the progression of agglomerative clustering on a two-dimensional dataset, looking for three clusters:
+
+![agglomerative-clustering](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/agglomerative-clustering.png)
+
 [back to current section](#unsupervised-learning)
 
 ### DBSCAN
