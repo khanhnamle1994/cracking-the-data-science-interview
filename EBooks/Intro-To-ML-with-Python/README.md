@@ -14,7 +14,7 @@ Here are the chapters:
 
 * [Introduction](#introduction)
 * [Supervised Learning](#supervised-learning)
-* [Unsupervised Learning and Preprocessing](#unsupervised-learning-and-preprocessing)
+* [Unsupervised Learning](#unsupervised-learning)
 * [Representing Data and Engineering Features](#representing-data-and-engineering-features)
 * [Model Evaluation and Improvement](#model-evaluation-and-improvement)
 * [Algorithm Chains and Pipelines](#algorithm-chains-and-pipelines)
@@ -343,6 +343,19 @@ The following example shows the results of NMF on the two-dimensional toy data:
 [back to current section](#unsupervised-learning)
 
 ### Manifold Learning with tSNE
+
+```
+from sklearn.manifold import TSNE
+tsne = TSNE(random_state=42)
+# use fit_transform instead of fit, as TSNE has no transform method
+digits_tsne = tsne.fit_transform(digits.data)
+```
+
+* Manifold learning algorithms are mainly aimed at visualization, and so are rarely used to generate more than two new features. Some of them, including t-SNE, compute a new representation of the training data, but don’t allow transformations of new data. This means these algorithms cannot be applied to a test set: rather, they can only transform the data they were trained for. Manifold learning can be useful for exploratory data analysis, but is rarely used if the final goal is supervised learning.
+* The idea behind t-SNE is to find a two-dimensional representation of the data that preserves the distances between points as best as possible. t-SNE starts with a random two-dimensional representation for each data point, and then tries to make points that are close in the original feature space closer, and points that are far apart in the original feature space farther apart.
+* t-SNE puts more emphasis on points that are close by, rather than preserving distances between far-apart points. In other words, it tries to preserve the information indicating which points are neighbors to each other.
+
+![t-SNE](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/t-SNE.png)
 
 [back to current section](#unsupervised-learning)
 
