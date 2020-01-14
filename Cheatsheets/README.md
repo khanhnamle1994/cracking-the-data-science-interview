@@ -12,6 +12,7 @@ Here are the categories:
 * [Machine Learning Concepts](#machine-learning-concepts)
 * [Supervised Learning](#supervised-learning)
 * [Unsupervised Learning](#unsupervised-learning)
+* [Deep Learning Concepts](#deep-learning-concepts)
 * [Natural Language Processing](#natural-language-processing)
 * [Software Engineering](#software-engineering)
 * [Stanford Materials](#stanford-materials)
@@ -292,11 +293,13 @@ Review the definition of argmax and examples of applications in [this wikipedia 
 
 * [Project Workflow](#project-workflow)
 * [Cross Validation](#cross-validation)
+* [Distribution Mismatch](#distribution-mismatch)
 * [Feature Importance](#feature-importance)
 * [Mean Squared Error vs. Mean Absolute Error](#mean-squared-error-vs.-mean-absolute-error)
 * [L1 vs L2 regularization](#l1-vs-l2-regularization)
 * [Correlation vs Covariance](#correlation-vs-covariance)
 * [Would adding more data address underfitting](#would-adding-more-data-address-underfitting)
+* [Reducing Avoidable Bias](#reducing-avoidable-bias)
 * [Activation Function](#activation-function)
 * [Bagging](#bagging)
 * [Stacking](#stacking)
@@ -331,6 +334,12 @@ Given a data science / machine learning project, what steps should we follow?
 Cross-validation is a technique to evaluate predictive models by partitioning the original sample into a training set to train the model, and a validation set to evaluate it. For example, a k-fold cross validation divides the data into k folds (or partitions), trains on each k-1 fold, and evaluate on the remaining 1 fold. This results to k models/evaluations, which can be averaged to get an overall model performance.
 
 ![](assets/cv.png)
+
+[back to current section](#machine-learning-concepts)
+
+### Distribution Mismatch
+
+Learn how to identify and address data distribution mismatch in this series of videos: [1](https://www.coursera.org/lecture/machine-learning-projects/training-and-testing-on-different-distributions-Xs9IV), [2](https://www.coursera.org/lecture/machine-learning-projects/bias-and-variance-with-mismatched-data-distributions-ht85t), [3](https://www.coursera.org/lecture/machine-learning-projects/addressing-data-mismatch-biLiy).
 
 [back to current section](#machine-learning-concepts)
 
@@ -372,6 +381,12 @@ Cross-validation is a technique to evaluate predictive models by partitioning th
 ### Would adding more data address underfitting
 
 Underfitting happens when a model is not complex enough to learn well from the data. It is the problem of model rather than data size. So a potential way to address underfitting is to increase the model complexity (e.g., to add higher order coefficients for linear model, increase depth for tree-based methods, add more layers / number of neurons for neural networks etc.).
+
+[back to current section](#machine-learning-concepts)
+
+### Reducing Avoidable Bias
+
+Learn how to reduce avoidable bias in [this video](https://www.coursera.org/lecture/machine-learning-projects/avoidable-bias-LG12R).
 
 [back to current section](#machine-learning-concepts)
 
@@ -639,6 +654,37 @@ Here is a visual explanation of PCA:
 ![gan](assets/gan.jpg)
 
 [back to current section](#unsupervised-learning)
+
+[back to top](#data-science-cheatsheets)
+
+## Deep Learning Concepts
+
+* [Backpropagation with ReLU](#backpropagation-with-ReLU)
+* [Transfer Learning](#transfer-learning)
+* [Convolutional Filters](#convolutional-filers)
+* [Forward Propagation](#forward-propagation)
+
+### Backpropagation with ReLU
+
+Watch Stanford's CS230 [lecture 7](https://youtu.be/gCJCgQW_LKc?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb&t=4592) from 1:16:32 to 1:20:30.
+
+[back to current section](#deep-learning-concepts)
+
+### Transfer Learning
+
+Review transfer learning in [this lecture video](https://www.coursera.org/lecture/machine-learning-projects/transfer-learning-WNPap). Learn about the hyperparameters involved when applying transfer learning in [Stanford CS230's lecture 5](https://youtu.be/IM9ANAbufYM?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb&t=3783) from 1:03:03 to 1:10:22.
+
+[back to current section](#deep-learning-concepts)
+
+### Convolutional Filters
+
+Review the role of filters in a convolutional layer in [this lecture](https://www.coursera.org/lecture/convolutional-neural-networks/one-layer-of-a-convolutional-network-nsiuW).
+
+[back to current section](#deep-learning-concepts)
+
+### Forward Propagation
+
+Review the forward propagation of convolutional layer in [this lecture](https://www.coursera.org/lecture/convolutional-neural-networks/one-layer-of-a-convolutional-network-nsiuW).
 
 [back to top](#data-science-cheatsheets)
 
