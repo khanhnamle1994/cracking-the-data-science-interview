@@ -429,10 +429,8 @@ clusters = dbscan.fit_predict(X)
 The code in this chapter can be accessed in [this notebook](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/05-model-evaluation-and-improvement.ipynb).
 
 * [Cross Validation](#cross-validation)
-* [Grid Search](#grid-search)
 * [Metrics for Binary Classification](#metrics-for-binary-classification)
 * [Metrics for Multiclass Classification](#metrics-for-multiclass-classification)
-* [Metrics for Regression](#metrics-for-regression)
 * [Metrics in Model Selection](#metrics-in-model-selection)
 * [Key Takeaways](#key-takeaways)
 
@@ -459,6 +457,18 @@ Benefits of Cross-Validation:
 * First, remember that `train_test_split` performs a random split of the data. Imagine that we are “lucky” when randomly splitting the data, and all examples that are hard to classify end up in the training set. In that case, the test set will only contain “easy” examples, and our test set accuracy will be unrealistically high. Conversely, if we are “unlucky,” we might have randomly put all the hard-to-classify examples in the test set and consequently obtain an unrealistically low score. However, when using cross-validation, each example will be in the training set exactly once: each example is in one of the folds, and each fold is the test set once. Therefore, the model needs to generalize well to all of the samples in the dataset for all of the cross-validation scores (and their mean) to be high.
 * Another benefit of cross-validation as compared to using a single split of the data is that we use our data more effectively. When using `train_test_split`, we usually use 75% of the data for training and 25% of the data for evaluation. When using five-fold cross-validation, in each iteration we can use four-fifths of the data (80%) to fit the model. When using 10-fold cross-validation, we can use nine-tenths of the data (90%) to fit the model. More data will usually result in more accurate models.
 * The main disadvantage of cross-validation is increased computational cost. As we are now training k models instead of a single model, cross-validation will be roughly k times slower than doing a single split of the data.
+
+[back to current section](#model-evaluation-and-improvement)
+
+### Metrics in Model Selection
+
+```
+explicit_accuracy =  cross_val_score(SVC(), digits.data, digits.target == 9, scoring="accuracy", cv=5)
+roc_auc =  cross_val_score(SVC(), digits.data, digits.target == 9, scoring="roc_auc", cv=5)
+```
+
+* We often want to use metrics like AUC in model selection using `GridSearchCV` or `cross_val_score`. Luckily `scikit-learn` provides a very simple way to achieve this, via the scoring argument that can be used in both `GridSearchCV` and `cross_val_score`. You can simply provide a string describing the evaluation metric you want to use.
+* The most important values for the `scoring` parameter for classification are `accuracy` (the default); `roc_auc` for the area under the ROC curve; `average_precision` for the area under the precision-recall curve; `f1`, `f1_macro`, `f1_micro`, and `f1_weighted` for the binary f1-score and the different weighted variants. For regression, the most commonly used values are `r2` for the R^2 score, `mean_squared_error` for mean squared error, and `mean_absolute_error` for mean absolute error.
 
 [back to current section](#model-evaluation-and-improvement)
 
