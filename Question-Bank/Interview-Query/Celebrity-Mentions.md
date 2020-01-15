@@ -8,11 +8,11 @@ How would you measure the health of the Mentions app? And if a celebrity starts 
 ## Solution
 Let's first break down some structure on what the interviewer is looking for. Whenever we're given these open-ended product questions, it makes sense to think about structuring the questions with well-defined objectives so we're not switching between different answers.
 
-*1. Did you begin by stating what the goals of the feature are before jumping into defining metrics? What is the point of the Mentions feature?
+*1. Did you begin by stating what the goals of the feature are before jumping into defining metrics? What is the point of the Mentions feature?*
 
-2. Are your answers structured or do you tend to talk about random points?
+*2. Are your answers structured or do you tend to talk about random points?*
 
-3. Are the metrics definitions specific or are they generalized in an example like “I would find out if people used Mentions frequently.”*
+*3. Are the metrics definitions specific or are they generalized in an example like “I would find out if people used Mentions frequently.”*
 
 Let's start with the first question. We shouldn't be jumping into metrics but thoughtfully thinking about what metrics matter when analyzing the goal of the new feature rollout by Facebook. Let's think about what happens when a celebrity starts using Mentions.
 

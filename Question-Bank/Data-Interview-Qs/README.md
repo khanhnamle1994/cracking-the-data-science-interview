@@ -11,3 +11,4 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [Filtering Grades by City Avg](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Filtering-Grades-by-City-Avg.md)
 * [Average Lifetime Value of a Customer](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Average-Customer-Lifetime-Value.md)
 * [Ads In A Newfeed](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Ads-in-a-Newfeed.md)
+* [Parking Space Probabilities](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Parking-Space-Probabilities.md)
