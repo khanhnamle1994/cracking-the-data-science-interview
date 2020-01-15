@@ -426,6 +426,23 @@ clusters = dbscan.fit_predict(X)
 
 ## Model Evaluation and Improvement
 
+The code in this chapter can be accessed in [this notebook](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/05-model-evaluation-and-improvement.ipynb).
+
+* [Cross Validation](#cross-validation)
+* [Grid Search](#grid-search)
+* [Metrics for Binary Classification](#metrics-for-binary-classification)
+* [Metrics for Multiclass Classification](#metrics-for-multiclass-classification)
+* [Metrics for Regression](#metrics-for-regression)
+* [Metrics in Model Selection](#metrics-in-model-selection)
+* [Key Takeaways](#key-takeaways)
+
+### Key Takeaways
+
+* **Cross-validation** or the use of a test set allow us to evaluate a machine learning model as it will perform in the future. However, if we use the test set or cross-validation to select a model or select model parameters, we “use up” the test data, and using the same data to evaluate how well our model will do in the future will lead to overly optimistic estimates. We therefore need to resort to a split into training data for model building, validation data for model and parameter selection, and test data for model evaluation. Instead of a simple split, we can replace each of these splits with cross-validation. The most commonly used form is a training/test split for evaluation, and using cross-validation on the training set for model and parameter selection.
+* It is rarely the case that the end goal of a machine learning task is building a model with a high accuracy. Make sure that the **metric** you choose to evaluate and select a model for is a good stand-in for what the model will actually be used for. In reality, classification problems rarely have balanced classes, and often false positives and false negatives have very different  consequences. Make sure you understand what these consequences are, and pick an evaluation metric accordingly.
+
+[back to current section](#model-evaluation-and-improvement)
+
 [back to top](#introduction-to-machine-learning-with-python)
 
 ## Algorithm Chains and Pipelines
