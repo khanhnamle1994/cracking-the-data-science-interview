@@ -436,6 +436,32 @@ The code in this chapter can be accessed in [this notebook](https://github.com/k
 * [Metrics in Model Selection](#metrics-in-model-selection)
 * [Key Takeaways](#key-takeaways)
 
+### Cross Validation
+
+```
+from sklearn.model_selection import cross_val_score
+scores = cross_val_score(logreg, iris.data, iris.target)
+```
+
+* Cross-validation is a statistical method of evaluating generalization performance that is more stable and thorough than using a split into a training and a test set. In cross-validation, the data is instead split repeatedly and multiple models are trained.
+* The most commonly used version of cross-validation is k-fold cross-validation, where k is a user-specified number, usually 5 or 10.
+* When performing five-fold cross-validation, the data is first partitioned into five parts of (approximately) equal size, called folds.
+* Next, a sequence of models is trained. The first model is trained using the first fold as the test set, and the remaining folds (2–5) are used as the training set. The model is built using the data in folds 2–5, and then the accuracy is evaluated on fold 1.
+* Then another model is built, this time using fold 2 as the test set and the data in folds 1, 3, 4, and 5 as the training set. This process is repeated using folds 3, 4, and 5 as test sets.
+* For each of these five splits of the data into training and test sets, we compute the accuracy. In the end, we have collected five accuracy values.
+
+The process is illustrated below:
+
+![cross-validation](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/cross-validation.png)
+
+Benefits of Cross-Validation:
+
+* First, remember that `train_test_split` performs a random split of the data. Imagine that we are “lucky” when randomly splitting the data, and all examples that are hard to classify end up in the training set. In that case, the test set will only contain “easy” examples, and our test set accuracy will be unrealistically high. Conversely, if we are “unlucky,” we might have randomly put all the hard-to-classify examples in the test set and consequently obtain an unrealistically low score. However, when using cross-validation, each example will be in the training set exactly once: each example is in one of the folds, and each fold is the test set once. Therefore, the model needs to generalize well to all of the samples in the dataset for all of the cross-validation scores (and their mean) to be high.
+* Another benefit of cross-validation as compared to using a single split of the data is that we use our data more effectively. When using `train_test_split`, we usually use 75% of the data for training and 25% of the data for evaluation. When using five-fold cross-validation, in each iteration we can use four-fifths of the data (80%) to fit the model. When using 10-fold cross-validation, we can use nine-tenths of the data (90%) to fit the model. More data will usually result in more accurate models.
+* The main disadvantage of cross-validation is increased computational cost. As we are now training k models instead of a single model, cross-validation will be roughly k times slower than doing a single split of the data.
+
+[back to current section](#model-evaluation-and-improvement)
+
 ### Key Takeaways
 
 * **Cross-validation** or the use of a test set allow us to evaluate a machine learning model as it will perform in the future. However, if we use the test set or cross-validation to select a model or select model parameters, we “use up” the test data, and using the same data to evaluate how well our model will do in the future will lead to overly optimistic estimates. We therefore need to resort to a split into training data for model building, validation data for model and parameter selection, and test data for model evaluation. Instead of a simple split, we can replace each of these splits with cross-validation. The most commonly used form is a training/test split for evaluation, and using cross-validation on the training set for model and parameter selection.
