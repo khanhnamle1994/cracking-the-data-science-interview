@@ -422,6 +422,56 @@ clusters = dbscan.fit_predict(X)
 
 ## Representing Data and Engineering Features
 
+The code in this chapter can be accessed in [this notebook](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/04-representing-data-feature-engineering.ipynb).
+
+* [Categorical Variables](#categorical-variables)
+* [Binning, Discretization, Linear Models, and Trees](#binning-discretization-linear-models-trees)
+* [Interactions and Polynomials](#interactions-and-polynomials)
+* [Univariate Nonlinear Transformations](#univariate-nonlinear-transformations)
+* [Automatic Feature Selection](#automatic-feature-selection)
+
+### Categorical Variables
+
+* By far the most common way to represent categorical variables is using the *one-hot-encoding* or *one-out-of-N encoding*, also known as *dummy variables*. The idea behind dummy variables is to replace a categorical variable with one or more new features that can have the values 0 and 1. The values 0 and 1 make sense in the formula for linear binary classification, and we can represent any number of categories by introducing one new feature per category.
+* The `get_dummies` function automatically transform all columns that have object type or are categorical.
+
+```
+data_dummies = pd.get_dummies(data)
+```
+
+### Automatic Feature Selection
+
+* In *univariate statistics*, we compute whether there is a statistically significant relationship between each feature and the target. Then the features that are related with the highest confidence are selected. In the case of classification, this is also known as *analysis of variance* (ANOVA). A key property of these tests is that they are *univariate*, meaning that they only consider each feature individually. Consequently, a feature will be discarded if it is only informative when combined with another feature. Univariate tests are often very fast to compute, and don’t require building a model. On the other hand, they are completely independent of the model that you might want to apply after the feature selection.
+
+```
+from sklearn.feature_selection import SelectPercentile
+# use f_classif (the default) and SelectPercentile to select 50% of features
+select = SelectPercentile(percentile=50)
+select.fit(X_train, y_train)
+# transform training set
+X_train_selected = select.transform(X_train)
+```
+
+* *Model-based feature selection* uses a supervised machine learning model to judge the importance of each feature, and keeps only the most important ones. The supervised model that is used for feature selection doesn’t need to be the same model that is used for the final supervised modeling. The feature selection model needs to provide some measure of importance for each feature, so that they can be ranked by this measure.
+
+```
+from sklearn.feature_selection import SelectFromModel
+from sklearn.ensemble import RandomForestClassifier
+select = SelectFromModel(RandomForestClassifier(n_estimators=100, random_state=42), threshold="median")
+select.fit(X_train, y_train)
+X_train_l1 = select.transform(X_train)
+```
+
+* In *iterative feature selection*, a series of models are built, with varying numbers of features. There are two basic methods: starting with no features and adding features one by one until some stopping criterion is reached, or starting with all features and removing features one by one until some stopping criterion is reached. Because a series of models are built, these methods are much more computationally expensive than the methods we discussed previously. One particular method of this kind is *recursive feature elimination* (RFE), which starts with all features, builds a model, and discards the least important feature according to the model. Then a new model is built using all but the discarded feature, and so on until only a pre-specified number of features are left. For this to work, the model used for selection needs to provide some way to determine feature importance, as was the case for the model-based selection.
+
+```
+from sklearn.feature_selection import RFE
+select = RFE(RandomForestClassifier(n_estimators=100, random_state=42), n_features_to_select=40)
+select.fit(X_train, y_train)
+X_train_rfe = select.transform(X_train)
+X_test_rfe = select.transform(X_test)
+```
+
 [back to top](#introduction-to-machine-learning-with-python)
 
 ## Model Evaluation and Improvement
