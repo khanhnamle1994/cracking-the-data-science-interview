@@ -425,8 +425,6 @@ clusters = dbscan.fit_predict(X)
 The code in this chapter can be accessed in [this notebook](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/04-representing-data-feature-engineering.ipynb).
 
 * [Categorical Variables](#categorical-variables)
-* [Binning, Discretization, Linear Models, and Trees](#binning-discretization-linear-models-trees)
-* [Interactions and Polynomials](#interactions-and-polynomials)
 * [Univariate Nonlinear Transformations](#univariate-nonlinear-transformations)
 * [Automatic Feature Selection](#automatic-feature-selection)
 
@@ -439,10 +437,14 @@ The code in this chapter can be accessed in [this notebook](https://github.com/k
 data_dummies = pd.get_dummies(data)
 ```
 
+[back to current section](#representing-data-and-engineering-features)
+
 ### Univariate Nonlinear Transformations
 
 * Adding squared or cubed features can help linear models for regression. There are other transformations that often prove useful for transforming certain features: in particular, applying mathematical functions like log, exp, or sin. While tree-based models only care about the ordering of the features, linear models and neural networks are very tied to the scale and distribution of each feature, and if there is a nonlinear relation between the feature and the target, that becomes hard to model — particularly in regression. The functions log and exp can help by adjusting the relative scales in the data so that they can be captured better by a linear model or neural network.
 * Most models work best when each feature (and in regression also the target) is loosely Gaussian distributed—that is, a histogram of each feature should have something resembling the familiar “bell curve” shape. Using transformations like log and exp is a hacky but simple and efficient way to achieve this. A particularly common case when such a transformation can be helpful is when dealing with integer count data. By count data, we mean features like “how often did user A log in?” Counts are never negative, and often follow particular statistical patterns.
+
+[back to current section](#representing-data-and-engineering-features)
 
 ### Automatic Feature Selection
 
@@ -476,6 +478,8 @@ select.fit(X_train, y_train)
 X_train_rfe = select.transform(X_train)
 X_test_rfe = select.transform(X_test)
 ```
+
+[back to current section](#representing-data-and-engineering-features)
 
 [back to top](#introduction-to-machine-learning-with-python)
 
@@ -537,6 +541,14 @@ roc_auc =  cross_val_score(SVC(), digits.data, digits.target == 9, scoring="roc_
 [back to top](#introduction-to-machine-learning-with-python)
 
 ## Algorithm Chains and Pipelines
+
+The code in this chapter can be accessed in [this notebook](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/06-algorithm-chains-and-pipelines.ipynb).
+
+* The *Pipeline* class is a general-purpose tool to chain together multiple processing steps in a machine learning workflow. Using pipelines allows us to encapsulate multiple steps into a single Python object that adheres to the familiar `scikit-learn` interface of `fit`, `predict`, and `transform`.
+* In particular when doing model evaluation using cross-validation
+and parameter selection using grid search, using the *Pipeline* class to capture all the processing steps is essential for proper evaluation. The *Pipeline* class also allows writing more succinct code, and reduces the likelihood of mistakes that can happen when building processing chains without the pipeline class (like forgetting to apply all transformers on the test set, or not applying them in the right order).
+
+![pipeline](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/EBooks/Intro-To-ML-with-Python/images/pipeline.png)
 
 [back to top](#introduction-to-machine-learning-with-python)
 
