@@ -558,6 +558,49 @@ and parameter selection using grid search, using the *Pipeline* class to capture
 * [Testing Production Systems](#testing-production-systems)
 * [Building Your Own Estimator](#building-your-own-estimator)
 
+### Approaching a Machine Learning Problem
+
+* To make effective use of machine learning, we need to take a step back and consider the problem at large. First, you should think about what kind of question you want to answer. Do you want to do exploratory analysis and just see if you find something interesting in the data? Or do you already have a particular goal in mind? If you have such goal, before building a system to achieve it, you should first think about how to define and measure success, and what the impact of a successful solution would be to your overall business or research goals.
+* The next steps are usually acquiring the data and building a working prototype. While trying out models, keep in mind that this is only a small part of a larger data science workflow, and model building is often part of a feedback circle of collecting new data, cleaning data, building models, and analyzing the models. Analyzing the mistakes a model makes can often be informative about what is missing in the data, what additional data could be collected, or how the task could be reformulated to make machine learning more effective. Collecting more or different data or changing the task formulation slightly might provide a much higher payoff than running endless grid searches to tune parameters.
+
+### From Prototype to Production
+
+* Many companies have complex infrastructure, and it is not always easy to include Python in these systems. That is not necessarily a problem. In many companies, the data analytics teams work with languages like Python and R that allow the quick testing of ideas, while production teams work with languages like Go, Scala, C++, and Java to build robust, scalable systems. Data analysis has different requirements from building live services, and so using different languages for these tasks makes sense. A relatively common solution is to reimplement the solution that was found by the analytics team inside the larger framework, using a high-performance language. This can be easier than embedding a whole library or programming language and converting from and to the different data formats.
+* Regardless of whether you can use scikit-learn in a production system or not, it is important to keep in mind that production systems have different requirements from one-off analysis scripts. If an algorithm is deployed into a larger system, software engineering aspects like reliability, predictability, runtime, and memory requirements gain relevance. Simplicity is key in providing machine learning systems that perform well in these areas. Critically inspect each part of your data processing and prediction pipeline and ask yourself how much complexity each step creates, how robust each component is to changes in the data or compute infrastructure, and if the benefit of each component warrants the complexity.
+
+### Testing Production Systems
+
+* In this book, we covered how to evaluate algorithmic predictions based on a test set that we collected beforehand. This is known as *offline evaluation*. If your machine learning system is user-facing, this is only the first step in evaluating an algorithm, though. The next step is usually *online testing* or *live testing*, where the consequences of employing the algorithm in the overall system are evaluated. Changing the recommendations or search results users are shown by a website can drastically change their behavior and lead to unexpected consequences.
+* To protect against these surprises, most user-facing services employ *A/B testing*, a form of blind user study. In A/B testing, without their knowledge a selected portion of users will be provided with a website or service using algorithm A, while the rest of the users will be provided with algorithm B. For both groups, relevant success metrics will be recorded for a set period of time. Then, the metrics of algorithm A and algorithm B will be compared, and a selection between the two approaches will be made according to these metrics. Using A/B testing enables us to evaluate the algorithms “in the wild,” which might help us to discover unexpected consequences when users are interacting with our model. Often A is a new model, while B is the established system.
+
+### Building Your Own Estimator
+
+```
+from sklearn.base import BaseEstimator, TransformerMixin
+
+class MyTransformer(BaseEstimator, TransformerMixin):
+    def __init__(self, first_paramter=1, second_parameter=2):
+        # all parameters must be specified in the __init__ function
+        self.first_paramter = 1
+        self.second_parameter = 2
+
+    def fit(self, X, y=None):
+        # fit should only take X and y as parameters
+        # even if your model is unsupervised, you need to accept a y argument!
+
+        # Model fitting code goes here
+        print("fitting the model right here")
+        # fit returns self
+        return self
+
+    def transform(self, X):
+        # transform takes as parameter only X
+
+        # apply some transformation to X:
+        X_transformed = X + 1
+        return X_transformed
+```
+
 [back to top](#introduction-to-machine-learning-with-python)
 
 ## Setup
