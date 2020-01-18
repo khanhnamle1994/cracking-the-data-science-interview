@@ -14,3 +14,18 @@ Can you write a SQL query to summarize the BroadBeanOrigin for US manufactured c
 |              Rating              |        Rating       |     int     |                             Expert rating for the bar.                             |
 |             Bean Type            |       BeanType      |    string   |                   The variety (breed) of bean used, if provided.                   |
 |         Broad Bean Origin        |   BroadBeanOrigin   |    string   |                    The broad geo-region of origin for the bean.                    |
+
+## Solution
+
+```
+SELECT
+    BroadBeanOrigin,
+    COUNT(1) as num_reviewers,
+    AVG(Rating) as average_rating,
+    AVG(CocoaPercent) as average_cocoa_percent
+    RANK() OVER(PARTITION BY Rating DESC) as rank
+FROM InternationalChocolateRatings
+WHERE CompnayLocation = "U.S.A"
+GROUP BY 1
+ORDER BY 3 DESC
+```
