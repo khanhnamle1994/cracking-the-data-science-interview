@@ -18,7 +18,6 @@ Here are the chapters:
 * [Representing Data and Engineering Features](#representing-data-and-engineering-features)
 * [Model Evaluation and Improvement](#model-evaluation-and-improvement)
 * [Algorithm Chains and Pipelines](#algorithm-chains-and-pipelines)
-* [Working with Text Data](#working-with-text-data)
 * [Wrapping Up](#wrapping-up)
 
 ## Introduction
@@ -552,11 +551,12 @@ and parameter selection using grid search, using the *Pipeline* class to capture
 
 [back to top](#introduction-to-machine-learning-with-python)
 
-## Working with Text Data
-
-[back to top](#introduction-to-machine-learning-with-python)
-
 ## Wrapping Up
+
+* [Approaching a Machine Learning Problem](#approaching-a-machine-learning-problem)
+* [From Prototype to Production](#from-prototype-to-production)
+* [Testing Production Systems](#testing-production-systems)
+* [Building Your Own Estimator](#building-your-own-estimator)
 
 [back to top](#introduction-to-machine-learning-with-python)
 
