@@ -10,3 +10,4 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 * [Estimation of Fraud](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Estimation-of-Fraud.md) (by Affirm)
 * [Cities with The Most User Orders](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Cities-with-Most-User-Orders.md) (by Robinhood)
 * [Forming A Triangle](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Forming-a-Triangle.md) (by Google)
+* [Sampling With Weights](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Sampling-with-Weights.md) (by Lyft)
