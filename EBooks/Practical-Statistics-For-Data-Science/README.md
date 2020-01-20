@@ -96,6 +96,80 @@ Here are the sections:
 
 ## Data and Sampling Distributions
 
+Here are the sections:
+
+* [Random Sampling and Sample Bias](#random-sampling-and-sample-bias)
+* [Selection Bias](#selection-bias)
+* [Sampling Distribution of a Statistic](#sampling-distribution-of-a-statistic)
+* [The Bootstrap](#the-bootstrap)
+* [Confidence Intervals](#confidence-intervals)
+* [Normal Distribution](#normal-distribution)
+* [Long Tailed Distribution](#long-tailed-distribution)
+* [Student t-Distribution](#student-t-distribution)
+* [Binomial Distribution](#binomial-distribution)
+* [Poisson and Related Distributions](#poisson-and-related-distributions)
+
+### Random Sampling and Sample Bias
+
+* Even in the era of big data, random sampling remains an important arrow in the data scientist's quiver.
+* Bias occurs when measurements or observations are systematically in error because they are not representative of the full population.
+* Data quality is often more important than data quantity, and random sampling can reduce bias and facilitate quality improvement that would be prohibitively expensive.
+
+### Selection Bias
+
+* Specifying a hypothesis, then collecting data following randomization and random sampling principles, ensures against bias.
+* All other forms of data analysis run the risk of bias resulting from the data collection/analysis process (repeated running of models in data mining, data snooping in research, and after-the-fact selection of interesting events).
+
+### Sampling Distribution of a Statistic
+
+* The frequency distribution of a sample statistic tells us how that metric would turn out differently from sample to sample.
+* This sampling distribution can be estimated via the bootstrap, or via formulas that rely on the central limit theorem.
+* A key metric that sums up the variability of a sample statistic is its standard error.
+
+### The Bootstrap
+
+* The bootstrap (sampling with replacement from a data set) is a powerful tool for assessing the variability of a sample statistic.
+* The bootstrap can be applied in similar fashion in a wide variety of circumstances, without extensive study of mathematical approximations to sampling distributions.
+* It also allows us to estimate sampling distributions for statistics where no mathematical approximation has been developed.
+* When applied to predictive models, aggregating multiple bootstrap sample predictions (bagging) outperforms the use of a single model.
+
+### Confidence Intervals
+
+* Confidence intervals are the typical way to present estimates as an interval range.
+* The more data you have, the less variable a sample estimate will be.
+* The lower the level of confidence you can tolerate, the narrower the confidence interval will be.
+* The bootstrap is an effective way to construct confidence intervals.
+
+### Normal Distribution
+
+* The normal distribution was essential to the historical development of statistics, as it permitted mathematical approximation of uncertainty and variability.
+* While raw data is typically not normally distributed, errors often are, as are averages and totals in large samples.
+* To convert data to z-scores, you subtract the mean of the data and divide by the standard deviation; you can then compare the data to a normal distribution.
+
+### Long Tailed Distribution
+
+* Most data is not normally distributed.
+* Assuming a normal distribution can lead to under-estimation of extreme events ("black swans").
+
+### Student t-Distribution
+
+* The t-distribution is actually a family of distributions resembling the normal distribution, but with thicker tails.
+* It is widely used as a reference basis for the distribution of sample means, differences between two sample means, regression parameters, and more.
+
+### Binomial Distribution
+
+* Binomial outcomes are important to model, since they represent, among other things, fundamental decision (buy or don't buy, click or don't click, survive or die...)
+* A binomial trial is an experiment with two possible outcomes: one with probability p and the other with probability 1 - p.
+* With large n, and provided p is not too close to 0 or 1, the binomial distribution can be approximated by the normal distribution.
+
+### Poisson and Related Distributions
+
+* For events that occur at a constant rate, the number of events per unit of time or space can be modeled as a Poisson distribution.
+* In this scenario, you can also model the time or distance between one event and the next as an exponential distribution.
+* A changing event rate over time can be modeled with the Weibull distribution.
+
+[back to top](#practical-statistics-for-data-scientists)
+
 ## Statistical Experiments and Significance Testing
 
 ## Regression and Prediction
