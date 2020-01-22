@@ -661,12 +661,12 @@ Here is a visual explanation of PCA:
 
 * [Backpropagation with ReLU](#backpropagation-with-ReLU)
 * [Transfer Learning](#transfer-learning)
-* [Convolutional Filters](#convolutional-filers)
+* [Convolutional Filters](#convolutional-filters)
 * [Forward Propagation](#forward-propagation)
 
 ### Backpropagation with ReLU
 
-Watch Stanford's CS230 [lecture 7](https://youtu.be/gCJCgQW_LKc?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb&t=4592) from 1:16:32 to 1:20:30.
+![Backprop ReLU](assets/Backprop-RELU.png)
 
 [back to current section](#deep-learning-concepts)
 
@@ -678,13 +678,26 @@ Review transfer learning in [this lecture video](https://www.coursera.org/lectur
 
 ### Convolutional Filters
 
-Review the role of filters in a convolutional layer in [this lecture](https://www.coursera.org/lecture/convolutional-neural-networks/one-layer-of-a-convolutional-network-nsiuW).
+* A convolutional neural network (CNN) applies a filter to an image in a very tricky way. When you use a CNN you have to be aware of the relationship between the image size, the filter size, the size of the padding around the image, and the distance the filter moves (the stride) during convolution.
+* Without image padding, the pixels on the edge of the image are only partially processed (which may be OK), and the result of convolution will be smaller than the original image size (usually not good).
+
+![Convolution Math](assets/convolution_math.jpg)
+
+Suppose an image has size W x W, the filter has size F x F, the padding is P, and the stride is S. Then:
+
+1. The result size of a convolution will be (W – F + 2P) / S + 1. For example, if an image is 100×100, a filter is 6×6, the padding is 7, and the stride is 4, the result of convolution will be (100 – 6 + (2)(7)) / 4 + 1 = 28×28.
+
+2. Therefore, the quantity (W – F + 2P) / S + 1 should be an integer, and so (W – F + 2P) should be evenly divisible by S. This will never be a problem if S = 1 but could be a problem if S is greater than 1.
+
+3. If you set S = 1 (very common), then by setting P = (F – 1) / 2 the result size of convolution will be the same as the image size (which is usually what you want). If S is greater than 1, then you need to adjust P and/or F if you want to retain the original image size.
 
 [back to current section](#deep-learning-concepts)
 
 ### Forward Propagation
 
-Review the forward propagation of convolutional layer in [this lecture](https://www.coursera.org/lecture/convolutional-neural-networks/one-layer-of-a-convolutional-network-nsiuW).
+* If you have 10 filters that are 3 x 3 x 3 in one layer of a neural network, how many parameters does that layer have?
+
+=> We have 280 parameters: 3 * 3 * 3 (27 params) + 1 bias param = 28 for one filter. For 10 filters, we have 28 * 10 = 280
 
 [back to top](#data-science-cheatsheets)
 
