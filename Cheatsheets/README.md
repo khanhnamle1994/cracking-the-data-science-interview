@@ -10,9 +10,9 @@ Here are the categories:
 * [Statistics](#statistics)
 * [Mathematics](#mathematics)
 * [Machine Learning Concepts](#machine-learning-concepts)
+* [Deep Learning Concepts](#deep-learning-concepts)
 * [Supervised Learning](#supervised-learning)
 * [Unsupervised Learning](#unsupervised-learning)
-* [Deep Learning Concepts](#deep-learning-concepts)
 * [Natural Language Processing](#natural-language-processing)
 * [Software Engineering](#software-engineering)
 * [Stanford Materials](#stanford-materials)
@@ -444,6 +444,70 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 
 [back to top](#data-science-cheatsheets)
 
+## Deep Learning Concepts
+
+* [Neural Networks From Scratch](#neural-networks-from-scratch)
+* [Backpropagation with ReLU](#backpropagation-with-ReLU)
+* [Transfer Learning](#transfer-learning)
+* [Convolutional Filters](#convolutional-filters)
+* [Forward Propagation](#forward-propagation)
+
+### Neural Networks From Scratch
+
+[back to current section](#deep-learning-concepts)
+
+### Backpropagation with ReLU
+
+* Watch Stanford's CS230 [lecture 7](https://youtu.be/gCJCgQW_LKc?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb&t=4592) from 1:16:32 to 1:20:30.
+
+![Backprop ReLU](assets/Backprop-RELU.png)
+
+[back to current section](#deep-learning-concepts)
+
+### Transfer Learning
+
+* Review transfer learning in [this lecture video](https://www.coursera.org/lecture/machine-learning-projects/transfer-learning-WNPap).
+* Assuming that both tasks have the same input, transfer learning makes sense when you have a lot of data from the problem you are transferring from and usually relatively less data for the problem you are transferring to. It doesn't make sense if the opposite happens.
+* Examples: Image Recognition (1M images) -> Radiology Diagnosis (100 images), Speech Recognition (10,000 hours) -> Wakeword/Triggered Detection (1 hour). Low level features from task A could be helpful for learning task B.
+* Learn about the hyperparameters involved when applying transfer learning in [Stanford CS230's lecture 5](https://youtu.be/IM9ANAbufYM?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb&t=3783) from 1:03:03 to 1:10:22: There are 3 hyperparameters we need to take care of - the number of pretrained layers, the number of randomly initialized weights for the fine-tuning task, and the number of frozen layers.
+
+[This tutorial](https://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/5.3-using-a-pretrained-convnet.ipynb) from Francis Chollet is very handy. There are two ways to leverage a pre-trained network: feature extraction and fine-tuning.
+* **Feature extraction** consists of using the representations learned by a previous network to extract interesting features from new samples. These features are then run through a new classifier, which is trained from scratch.
+
+![Feature Extraction](assets/swapping_fc_classifier.png)
+
+* **Fine-tuning** consists in unfreezing a few of the top layers of a frozen model base used for feature extraction, and jointly training both the newly added part of the model (in our case, the fully-connected classifier) and these top layers. This is called "fine-tuning" because it slightly adjusts the more abstract representations of the model being reused, in order to make them more relevant for the problem at hand.
+
+![Fine-Tuning](assets/vgg16_fine_tuning.png)
+
+[back to current section](#deep-learning-concepts)
+
+### Convolutional Filters
+
+* Review the role of filters in a convolutional layer in [this lecture](https://www.coursera.org/lecture/convolutional-neural-networks/one-layer-of-a-convolutional-network-nsiuW).
+* A convolutional neural network (CNN) applies a filter to an image in a very tricky way. When you use a CNN you have to be aware of the relationship between the image size, the filter size, the size of the padding around the image, and the distance the filter moves (the stride) during convolution.
+* Without image padding, the pixels on the edge of the image are only partially processed (which may be OK), and the result of convolution will be smaller than the original image size (usually not good).
+
+![Convolution Math](assets/convolution_math.jpg)
+
+Suppose an image has size W x W, the filter has size F x F, the padding is P, and the stride is S. Then:
+
+1. The result size of a convolution will be (W – F + 2P) / S + 1. For example, if an image is 100×100, a filter is 6×6, the padding is 7, and the stride is 4, the result of convolution will be (100 – 6 + (2)(7)) / 4 + 1 = 28×28.
+
+2. Therefore, the quantity (W – F + 2P) / S + 1 should be an integer, and so (W – F + 2P) should be evenly divisible by S. This will never be a problem if S = 1 but could be a problem if S is greater than 1.
+
+3. If you set S = 1 (very common), then by setting P = (F – 1) / 2 the result size of convolution will be the same as the image size (which is usually what you want). If S is greater than 1, then you need to adjust P and/or F if you want to retain the original image size.
+
+[back to current section](#deep-learning-concepts)
+
+### Forward Propagation
+
+* Review the forward propagation of convolutional layer in [this lecture](https://www.coursera.org/lecture/convolutional-neural-networks/one-layer-of-a-convolutional-network-nsiuW).
+* If you have 10 filters that are 3 x 3 x 3 in one layer of a neural network, how many parameters does that layer have?
+=> We have 280 parameters: 3 * 3 * 3 (27 params) + 1 bias param = 28 for one filter. For 10 filters, we have 28 * 10 = 280
+
+[back to top](#data-science-cheatsheets)
+
 ## Supervised Learning
 
 * [Linear regression](#linear-regression)
@@ -654,50 +718,6 @@ Here is a visual explanation of PCA:
 ![gan](assets/gan.jpg)
 
 [back to current section](#unsupervised-learning)
-
-[back to top](#data-science-cheatsheets)
-
-## Deep Learning Concepts
-
-* [Backpropagation with ReLU](#backpropagation-with-ReLU)
-* [Transfer Learning](#transfer-learning)
-* [Convolutional Filters](#convolutional-filters)
-* [Forward Propagation](#forward-propagation)
-
-### Backpropagation with ReLU
-
-![Backprop ReLU](assets/Backprop-RELU.png)
-
-[back to current section](#deep-learning-concepts)
-
-### Transfer Learning
-
-Review transfer learning in [this lecture video](https://www.coursera.org/lecture/machine-learning-projects/transfer-learning-WNPap). Learn about the hyperparameters involved when applying transfer learning in [Stanford CS230's lecture 5](https://youtu.be/IM9ANAbufYM?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb&t=3783) from 1:03:03 to 1:10:22.
-
-[back to current section](#deep-learning-concepts)
-
-### Convolutional Filters
-
-* A convolutional neural network (CNN) applies a filter to an image in a very tricky way. When you use a CNN you have to be aware of the relationship between the image size, the filter size, the size of the padding around the image, and the distance the filter moves (the stride) during convolution.
-* Without image padding, the pixels on the edge of the image are only partially processed (which may be OK), and the result of convolution will be smaller than the original image size (usually not good).
-
-![Convolution Math](assets/convolution_math.jpg)
-
-Suppose an image has size W x W, the filter has size F x F, the padding is P, and the stride is S. Then:
-
-1. The result size of a convolution will be (W – F + 2P) / S + 1. For example, if an image is 100×100, a filter is 6×6, the padding is 7, and the stride is 4, the result of convolution will be (100 – 6 + (2)(7)) / 4 + 1 = 28×28.
-
-2. Therefore, the quantity (W – F + 2P) / S + 1 should be an integer, and so (W – F + 2P) should be evenly divisible by S. This will never be a problem if S = 1 but could be a problem if S is greater than 1.
-
-3. If you set S = 1 (very common), then by setting P = (F – 1) / 2 the result size of convolution will be the same as the image size (which is usually what you want). If S is greater than 1, then you need to adjust P and/or F if you want to retain the original image size.
-
-[back to current section](#deep-learning-concepts)
-
-### Forward Propagation
-
-* If you have 10 filters that are 3 x 3 x 3 in one layer of a neural network, how many parameters does that layer have?
-
-=> We have 280 parameters: 3 * 3 * 3 (27 params) + 1 bias param = 28 for one filter. For 10 filters, we have 28 * 10 = 280
 
 [back to top](#data-science-cheatsheets)
 
