@@ -16,6 +16,7 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [Samples Size Bias](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Sample-Size-Bias.md) (by Airbnb)
 * [Celebrity Mentions](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Celebrity-Mentions.md) (by Facebook)
 * [Upsell Transactions](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Upsell-Transactions.md) (by Coinbase)
+* [Is it raining in Seattle?](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Is-It-Raining-in-Seattle.md) (by Facebook)
 
 ## Hard
 
