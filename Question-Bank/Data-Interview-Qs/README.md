@@ -22,3 +22,4 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [Biased coin toss](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Biased-Coin-Toss.md)
 * [Relationship between fitness and smoking](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Relationship-Fitness-Smoking.md)
 * [Ads In A Newfeed](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Ads-in-a-Newfeed.md)
+* [Student intelligence](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Student-Intelligence.md)
