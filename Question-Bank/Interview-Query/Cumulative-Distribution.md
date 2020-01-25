@@ -48,19 +48,19 @@ WITH freq AS (
 
 Now that we have our histogram, how do we get a cumulative distribution? Specifically we want to see our frequency table go from:
 
-frequency | count
-----------+------
-0         |  10
-1         |  15
-2         |  12
+| frequency | count |
+|:---------:|:-----:|
+|     0     |   10  |
+|     1     |   15  |
+|     2     |   12  |
 
 to:
 
-frequency | cumulative
-----------+-----------
-0         |  10
-1         |  25
-2         |  27
+| frequency | count |
+|:---------:|:-----:|
+|     0     |   10  |
+|     1     |   25  |
+|     2     |   27  |
 
 Let's see if we can find a pattern and logical grouping that gets us what we want. The constraints given to us are that we will probably have to self-join since we can compute the cumulative total from the data in the existing histogram table.
 
