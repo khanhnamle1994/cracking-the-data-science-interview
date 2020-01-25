@@ -164,9 +164,20 @@ Here are the sections:
 
 ### Binomial Distribution
 
-* Binomial outcomes are important to model, since they represent, among other things, fundamental decision (buy or don't buy, click or don't click, survive or die...)
-* A binomial trial is an experiment with two possible outcomes: one with probability p and the other with probability 1 - p.
-* With large n, and provided p is not too close to 0 or 1, the binomial distribution can be approximated by the normal distribution.
+* **Trial**: An event with a discrete outcome (e.g., a coin flip).
+* **Success**: The outcome of interest for a trial. Synonyms “1” (as opposed to “0”).
+* **Binomial**: Having two outcomes. Synonyms yes/no, 0/1, binary.
+* **Binomial trial**: A trial with two outcomes. Synonym Bernoulli trial.
+* **Binomial distribution**: Distribution of number of successes in x trials. Synonym Bernoulli distribution.
+
+The binomial distribution is the frequency distribution of the number of successes (x) in a given number of trials (n) with specified probability (p) of success in each trial. There is a family of binomial distributions, depending on the values of x, n, and p. The binomial distribution would answer a question like: If the probability of a click converting to a sale is 0.02, what is the probability of observing 0 sales in 200 clicks?
+
+* Mean: `n * p`
+* Variance: `n * p(1 - p)`
+
+With large n, and provided p is not too close to 0 or 1, the binomial distribution can be approximated by the normal distribution.
+
+[back to current section](#data-and-sampling-distributions)
 
 ### Poisson and Related Distributions
 
