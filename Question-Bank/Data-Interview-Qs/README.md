@@ -16,6 +16,7 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [Average Lifetime Value of a Customer](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Average-Customer-Lifetime-Value.md)
 * [Parking Space Probabilities](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Parking-Space-Probabilities.md)
 * [Calculating earnings with Python](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Calculating-Earnings-with-Python.md)
+* [Price per calorie of McDonald's menu items](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Price-Per-Calorie-McDonald-Items.md)
 
 ## Statistics
 
