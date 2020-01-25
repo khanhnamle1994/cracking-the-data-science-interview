@@ -6,6 +6,7 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [A hotel chain's loyal customers](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Loyal-Customers.md)
 * [Filtering Grades by City Avg](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Filtering-Grades-by-City-Avg.md)
 * [Chocolate Bar Reviews](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Chocolate-Bar-Reviews.md)
+* [Top Earners](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Top-Earners.md)
 
 ## Python
 
