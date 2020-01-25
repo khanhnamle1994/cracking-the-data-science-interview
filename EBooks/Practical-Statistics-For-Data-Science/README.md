@@ -121,16 +121,26 @@ Here are the sections:
 * Bias occurs when measurements or observations are systematically in error because they are not representative of the full population.
 * Data quality is often more important than data quantity, and random sampling can reduce bias and facilitate quality improvement that would be prohibitively expensive.
 
+[back to current section](#data-and-sampling-distributions)
+
 ### Selection Bias
 
-* Specifying a hypothesis, then collecting data following randomization and random sampling principles, ensures against bias.
-* All other forms of data analysis run the risk of bias resulting from the data collection/analysis process (repeated running of models in data mining, data snooping in research, and after-the-fact selection of interesting events).
+To paraphrase Yogi Berra, “If you don’t know what you’re looking for, look hard enough and you’ll find it.” Selection bias refers to the practice of selectively choosing data — consciously or unconsciously — in a way that that leads to a conclusion that is misleading or ephemeral.
+
+* **Data snooping** — that is, extensive hunting through the data until something interesting emerges? There is a saying among statisticians: “If you torture the data long enough, sooner or later it will confess.”
+
+Typical forms of selection bias in statistics, in addition to the vast search effect, include nonrandom sampling (see sampling bias), cherry-picking data, selection of time intervals that accentuate a particular statistical effect, and stopping an experiment when the results look “interesting.”
+
+[back to current section](#data-and-sampling-distributions)
 
 ### Sampling Distribution of a Statistic
 
-* The frequency distribution of a sample statistic tells us how that metric would turn out differently from sample to sample.
-* This sampling distribution can be estimated via the bootstrap, or via formulas that rely on the central limit theorem.
-* A key metric that sums up the variability of a sample statistic is its standard error.
+* **Sample statistic**: A metric calculated for a sample of data drawn from a larger population.
+* **Data distribution**: The frequency distribution of individual values in a data set.
+* **Sampling distribution**: The frequency distribution of a sample statistic over many samples or resamples. It is important to distinguish between the distribution of the individual data points, known as the data distribution, and the distribution of a sample statistic, known as the sampling distribution.
+* **Central Limit Theorem**: The tendency of the sampling distribution to take on a normal shape as sample size rises. It says that the means drawn from multiple samples will resemble the familiar bell-shaped normal curve, even if the source population is not normally distributed, provided that the sample size is large enough and the departure of the data from normality is not too great. The central limit theorem allows normal-approximation formulas like the t-distribution to be used in calculating sampling distributions for inference — that is, confidence intervals and hypothesis tests. The central limit theorem receives a lot of attention in traditional statistics texts because it underlies the machinery of hypothesis tests and confidence intervals, which themselves consume half the space in such texts. Data scientists should be aware of this role, but, since formal hypothesis tests and confidence intervals play a small role in data science, and the bootstrap is available in any case, the central limit theorem is not so central in the practice of data science.
+
+[back to current section](#data-and-sampling-distributions)
 
 ### The Bootstrap
 
