@@ -13,6 +13,7 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 * [Fraud Detection Tradeoff](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Fraud-Detection-Tradeoffs.md) (by Affirm)
 * [Classification Metrics](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Classification-Metrics.md) (by Uber)
 * [Estimation of Fraud](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Estimation-of-Fraud.md) (by Affirm)
+* [Churn Model](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Churn-Model.md) (by Robinhood)
 
 ## Coding
 
