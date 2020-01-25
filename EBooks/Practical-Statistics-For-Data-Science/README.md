@@ -148,19 +148,34 @@ Here are the sections:
 
 ### Normal Distribution
 
-* The normal distribution was essential to the historical development of statistics, as it permitted mathematical approximation of uncertainty and variability.
-* While raw data is typically not normally distributed, errors often are, as are averages and totals in large samples.
-* To convert data to z-scores, you subtract the mean of the data and divide by the standard deviation; you can then compare the data to a normal distribution.
+* **Error**: The difference between a data point and a predicted or average value.
+* **Standardize**: Subtract the mean and divide by the standard deviation.
+* **z-score**: The result of standardizing an individual data point.
+* **Standard normal**: A normal distribution with mean = 0 and standard deviation = 1.
+* **QQ-Plot**: A plot to visualize how close a sample distribution is to a normal distribution.
+
+A standard normal distribution is one in which the units on the x-axis are expressed in terms of standard deviations away from the mean. To compare data to a standard normal distribution, you subtract the mean then divide by the standard deviation; this is also called normalization or standardization (see “Standardization (Normalization, Z-Scores)”).
+
+Converting data to z-scores (i.e., standardizing or normalizing the data) does not make the data normally distributed. It just puts the data on the same scale as the standard normal distribution, often for comparison purposes.
+
+The normal distribution was essential to the historical development of statistics, as it permitted mathematical approximation of uncertainty and variability. While raw data is typically not normally distributed, errors often are, as are averages and totals in large samples. To convert data to z-scores, you subtract the mean of the data and divide by the standard deviation; you can then compare the data to a normal distribution.
+
+[back to current section](#data-and-sampling-distributions)
 
 ### Long Tailed Distribution
 
-* Most data is not normally distributed.
-* Assuming a normal distribution can lead to under-estimation of extreme events ("black swans").
+* **Skew**: Where one tail of a distribution is longer than the other.
+
+While the normal distribution is often appropriate and useful with respect to the distribution of errors and sample statistics, it typically does not characterize the distribution of raw data. Sometimes, the distribution is highly skewed (asymmetric), such as with income data, or the distribution can be discrete, as with binomial data. Both symmetric and asymmetric distributions may have long tails. The tails of a distribution correspond to the extreme values (small and large). Long tails, and guarding against them, are widely recognized in practical work.
+
+[back to current section](#data-and-sampling-distributions)
 
 ### Student t-Distribution
 
-* The t-distribution is actually a family of distributions resembling the normal distribution, but with thicker tails.
-* It is widely used as a reference basis for the distribution of sample means, differences between two sample means, regression parameters, and more.
+* The t-distribution is a normally shaped distribution, but a bit thicker and longer on the tails. It is used extensively in depicting distributions of sample statistics. Distributions of sample means are typically shaped like a t-distribution, and there is a family of t-distributions that differ depending on how large the sample is. The larger the sample, the more normally shaped the t-distribution becomes.
+* The t-distribution has been used as a reference for the distribution of a sample mean, the difference between two sample means, regression parameters, and other statistics.
+
+[back to current section](#data-and-sampling-distributions)
 
 ### Binomial Distribution
 
