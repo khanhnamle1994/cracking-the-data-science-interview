@@ -96,6 +96,12 @@ Here are the sections:
 
 ## Data and Sampling Distributions
 
+A popular misconception holds that the era of big data means the end of a need for sampling. In fact, the proliferation of data of varying quality and relevance reinforces the need for sampling as a tool to work efficiently with a variety of data and to minimize bias. Even in a big data project, predictive models are typically developed and piloted with samples. Samples are also used in tests of various sorts (e.g., pricing, web treatments).
+
+Figure below shows a schematic that underpins the concepts in this chapter. The lefthand side represents a population that, in statistics, is assumed to follow an underlying but *unknown* distribution. The only thing available is the *sample* data and its empirical distribution, shown on the righthand side. To get from the lefthand side to the righthand side, a *sampling* procedure is used (represented by an arrow). Traditional statistics focused very much on the lefthand side, using theory based on strong assumptions about the population. Modern statistics has moved to the righthand side, where such assumptions are not needed.
+
+![Figure 2-1](psds_0201.png)
+
 Here are the sections:
 
 * [Random Sampling and Sample Bias](#random-sampling-and-sample-bias)
@@ -164,13 +170,41 @@ Here are the sections:
 
 ### Poisson and Related Distributions
 
-* For events that occur at a constant rate, the number of events per unit of time or space can be modeled as a Poisson distribution.
-* In this scenario, you can also model the time or distance between one event and the next as an exponential distribution.
-* A changing event rate over time can be modeled with the Weibull distribution.
+Many processes produce events randomly at a given overall rate — visitors arriving at a website, cars arriving at a toll plaza (events spread over time), imperfections in a square meter of fabric, or typos per 100 lines of code (events spread over space).
+
+It is useful when addressing queuing questions like “How much capacity do we need to be 95% sure of fully processing the internet traffic that arrives on a server in any 5- second period?”
+
+* **Lambda**: The rate (per unit of time or space) at which events occur. This is also the variance.
+* **Poisson distribution**: The frequency distribution of the number of events in sampled units of time or space. For events that occur at a constant rate, the number of events per unit of time or space can be modeled as a Poisson distribution. In this scenario, you can also model the time or distance between one event and the next as an exponential distribution, see below.
+* **Exponential distribution**: The frequency distribution of the time or distance from one event to the next event. Using the same parameter that we used in the Poisson distribution, we can also model the distribution of the time between events: time between visits to a website or between cars arriving at a toll plaza. It is also used in engineering to model time to failure, and in process management to model, for example, the time required per service call.
+* **Estimating the failure rate**: In many applications, the event rate, , is known or can be estimated from prior data. However, for rare events, this is not necessarily so. Aircraft engine failure for example. If there is some data but not enough to provide a precise, reliable estimate of the rate, a goodness-of-fit test (see “Chi-Square Test”) can be applied to various rates to determine how well they fit the observed data.
+* **Weibull distribution**: A generalized version of the exponential, in which the event rate is allowed to shift over time. So a changing event rate over time (e.g., an increasing probability of device failure) can be modeled with the Weibull distribution.
+
+[back to current section](#data-and-sampling-distributions)
 
 [back to top](#practical-statistics-for-data-scientists)
 
 ## Statistical Experiments and Significance Testing
+
+Design of experiments is a cornerstone of the practice of statistics, with applications in virtually all areas of research. The goal is to design an experiment in order to confirm or reject a hypothesis. Data scientists are faced with the need to conduct continual experiments, particularly regarding user interface and product marketing. This chapter reviews traditional experimental design and discusses some common challenges in data science. It also covers some oft-cited concepts in statistical inference and explains their meaning and relevance (or lack of relevance) to data science.
+
+Whenever you see references to statistical significance, t-tests, or p-values, it is typically in the context of the classical statistical inference “pipeline” (see Figure below). This process starts with a hypothesis (“drug A is better than the existing standard drug,” “price A is more profitable than the existing price B”). An experiment (it might be an A/B test) is designed to test the hypothesis—designed in such a way that, hopefully, will deliver conclusive results. The data is collected and analyzed, and then a conclusion is drawn. The term *inference* reflects the intention to apply the experiment results, which involve a limited set of data, to a larger process or population.
+
+![Figure 3-1](psds_03in01.png)
+
+Here are the sections:
+
+* [A/B Testing](#ab-testing)
+* [Hypothesis Test](#hypothesis-test)
+* [Resampling](#resampling)
+* [Statistical Significance and P-Values](#statistical-significance-and-p-values)
+* [t-Tests](#t-tests)
+* [Multiple Testing](#multiple-testing)
+* [Degrees of Freedom](#degrees-of-freedom)
+* [ANOVA](#ANOVA)
+* [Chi-Square Test](#chi-square-test)
+* [Multi-Arm Bandit Algorithm](#multi-arm-bandit-algorithm)
+* [Power and Sample Size](#power-and-sample-size)
 
 ## Regression and Prediction
 
