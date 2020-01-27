@@ -25,3 +25,4 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [First Touch Attribution](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/First-Touch-Attribution.md) (by Google)
 * [Swipe Precision](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Swipe-Precision.md) (by Tinder)
 * [Cumulative Distribution](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Cumulative-Distribution.md) (by Square)
+* [Max Width](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Max-Width.md) (by Microsoft)
