@@ -206,6 +206,8 @@ Here are the categories:
 
 ## Statistics
 
+* [Probability Cheatsheet](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/probability_cheatsheet.pdf)
+* [Statistics Cheatsheet](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/stats_cheatsheet.pdf)
 * [Think Stats](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Think-Stats.md)
 * [Enunciating the Central Limit Theorem](#enunciating-the-Central-Limit-Theorem)
 * [Defining good hypotheses in a hypothesis test](#defining-good-hypotheses-in-a-hypothesis-test)
