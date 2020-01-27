@@ -10,7 +10,7 @@ You are given a [dataset](https://u4221007.ct.sendgrid.net/wf/click?upn=c6wysRx7
 
 Given this, write code to find the fraction of messages that are sent between the same sender and receiver within five minutes (e.g. the fraction of messages that receive a response within 5 minutes).
 
-## Solution
+<!-- ## Solution
 [Click here](https://colab.research.google.com/drive/1ioUZSdjhDu-JqFFgLhxgAlkXeNZARWB4#scrollTo=YXNp3ykBU85t) to view this solution in an interactive Colab (Jupyter) notebook.
 
 ```
@@ -122,4 +122,4 @@ five_mins_response_messages = len(messages_less_5)
 round(five_mins_response_messages/all_messages,2)
 ```
 
-**21%** of messages get a response after 5 minutes!
+**21%** of messages get a response after 5 minutes! -->

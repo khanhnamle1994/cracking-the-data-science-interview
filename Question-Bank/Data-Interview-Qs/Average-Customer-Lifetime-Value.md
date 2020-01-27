@@ -20,7 +20,7 @@ data['TotalCharges'] = pd.to_numeric(data.TotalCharges, downcast='integer', erro
 data['MonthlyCharges'] = pd.to_numeric(data.MonthlyCharges, downcast='integer', errors='coerce')
 ```
 
-## Solution
+<!-- ## Solution
 [Click here](https://colab.research.google.com/drive/1ld0zaEwLK9MMsWQHX_cqYgsTJ1g6iSYz) to view this solution in an interactive Colab (Jupyter) notebook.
 
 ```
@@ -39,4 +39,4 @@ ltv = average_total_charges / churn_rate
 ltv
 ```
 
-Output: **8604.218836195445**
+Output: **8604.218836195445** -->

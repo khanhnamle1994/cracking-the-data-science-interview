@@ -8,7 +8,7 @@ Given the following table, called 'students', write a SQL query to count the # o
 | 2 |  22 |    New York   |   92  |   Omar Mullins   |
 | 3 |  21 | San Francisco |   70  | Spencer McDaniel |
 
-## Solution
+<!-- ## Solution
 ```
 # Base selection of the grade, count of students
 SELECT
@@ -22,4 +22,4 @@ HAVING grade >
     (SELECT AVG(grade)
      FROM customer
      WHERE city = 'Detroit');
-```
+``` -->

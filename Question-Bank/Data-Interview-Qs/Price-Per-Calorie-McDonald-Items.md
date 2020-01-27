@@ -7,7 +7,7 @@ Write code to merge the two datasets, calculate the price per calorie of food, a
 
 *There are of course nuances in nutritional benefits, protein, etc, but we're simplifying here for the purposes of these definitions and assuming someone wants to optimize purely for cost of calories.*
 
-## Solution
+<!-- ## Solution
 [Click here](https://colab.research.google.com/drive/1-tUGrhYlE2KWRRSRJSwjlb4Q0KMQICOg) to view this solution in an interactive Colab (Jupyter) notebook
 
 ### 1) First, we can import + preview the two datasets
@@ -66,4 +66,4 @@ food_merged.head(10)
 food_merged.tail(10)
 ```
 
-As expected, premium items and more voluminous items like salads have a higher price per calorie, whereas more standard/dollar menu offerings have a lower cost per calorie. The pricing of course floats around depending on state (and country), but in general this trend checks out.
+As expected, premium items and more voluminous items like salads have a higher price per calorie, whereas more standard/dollar menu offerings have a lower cost per calorie. The pricing of course floats around depending on state (and country), but in general this trend checks out. -->

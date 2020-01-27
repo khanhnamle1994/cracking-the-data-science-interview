@@ -5,7 +5,7 @@ You have collected the following [dataset](https://docs.google.com/spreadsheets/
 
 Using all of this information, write code to visualize the [Probability Mass Function](https://en.wikipedia.org/wiki/Probability_mass_function) (PMF) of your customers' spot selections. Your resultant chart should show each spot # (1-20) along with the probability of that spot being chosen based on your dataset. You can ignore seasonality and assume this month represents a standard month of parking at your lot.
 
-## Solution
+<!-- ## Solution
 [Click here](https://colab.research.google.com/drive/1_XO9hTA5ZZ4NmwwqvSHwJs_SjfbYQe6Q) to view this solution in an interactive Colab (Jupyter) notebook.
 
 1 - Import the data
@@ -91,4 +91,4 @@ plt.bar(list(probability_mass_function.keys()), probability_mass_function.values
 plt.show()
 ```
 
-Here we can see that spot 16 looks like it has the highest probability of being chosen at random by a customer.
+Here we can see that spot 16 looks like it has the highest probability of being chosen at random by a customer. -->

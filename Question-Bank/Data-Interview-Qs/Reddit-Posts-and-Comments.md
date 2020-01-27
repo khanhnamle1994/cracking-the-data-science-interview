@@ -28,7 +28,7 @@ Table: **comments**
 
 Given the above, write a SQL query to highlight comment activity by subreddit. This problem is intended to test how you can think through vague/open-ended questions.
 
-## Solution
+<!-- ## Solution
 The first thing we need to decide is what period we want to analyze. I'm going to say that a post needs to be active for at least 2 hours, and we're going to look at the last 30 days of posts. The query below selects all posts with this criteria.
 
 ```
@@ -91,4 +91,4 @@ FROM(
 GROUP BY 1, 2
 ```
 
-Part of this question is figuring out "how to present this information to a partner team." I would initially present this by classifying each subreddit by activity level (possibly high, medium, low or maybe using a 10 point scale -- it depends on what the data distribution looks like). Within each activity level, I would then classify the activity distribution visually by using a box and whisker plot. If the partner needs more information, then I would work with them to figure out what else they would need to answer the questions at hand.
+Part of this question is figuring out "how to present this information to a partner team." I would initially present this by classifying each subreddit by activity level (possibly high, medium, low or maybe using a 10 point scale -- it depends on what the data distribution looks like). Within each activity level, I would then classify the activity distribution visually by using a box and whisker plot. If the partner needs more information, then I would work with them to figure out what else they would need to answer the questions at hand. -->

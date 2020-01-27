@@ -10,7 +10,7 @@ Given the data table below, determine if there is a relationship between fitness
 
 You don't have to fully solve for the number here (that would be pretty time-intensive for an interview setting), but lay out the steps you would take to solve such a problem.
 
-## Solution
+<!-- ## Solution
 Here, we can set up a [Chi-square test](https://en.wikipedia.org/wiki/Chi-squared_test):
 * Null hypothesis H0: fitness level and smoking habits are independent
 * Alternative hypothesis Ha: fitness level and smoking habits are independent
@@ -30,4 +30,4 @@ Next, we can apply this to each field in the table (for example, 'Never smoked' 
 Next, we can solve for X^2 using the following formula:
 * X^2 = (observation - estimate)^2 / estimate (where estimate was derived using the formula above for each cell in the table)
 
-Solving this, we arrive at X^2 = 91.73, where we can then use the table of X^2 critical values to find that the P-value is less than 0.001 meaning we can reject our null hypothesis and conclude that there is a relationship between fitness level and smoking habits.
+Solving this, we arrive at X^2 = 91.73, where we can then use the table of X^2 critical values to find that the P-value is less than 0.001 meaning we can reject our null hypothesis and conclude that there is a relationship between fitness level and smoking habits. -->

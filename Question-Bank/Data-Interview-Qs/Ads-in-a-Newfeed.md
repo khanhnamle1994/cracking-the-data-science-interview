@@ -6,7 +6,7 @@ Suppose you're working for a social media company that has a feature similar to 
 
 For each option, what is the expected number of ads shown in 100 news stories? If we go with the second option, what is the chance a user will be shown only a single ad in 100 stories? What about no ads at all?
 
-## Solution
+<!-- ## Solution
 
 **Option 1, expected number of ads**
 
@@ -48,4 +48,4 @@ Pr(k; n, p) = Pr(0.04; 100, 0)
 = 0.01687
 ```
 
-There's about a 16.87% chance that there will be 0 ads shown
+There's about a 16.87% chance that there will be 0 ads shown -->

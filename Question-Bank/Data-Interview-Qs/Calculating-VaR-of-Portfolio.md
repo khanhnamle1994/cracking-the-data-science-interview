@@ -16,7 +16,7 @@ To help get you started, you can reference this [Google Colab](https://colab.res
 ['AAPL','FB', 'C', 'DIS']
 ```
 
-## Solution
+<!-- ## Solution
 [Click here](https://colab.research.google.com/drive/1uVhaxrX7QJwPr9MM9SAD0PyDKBhYqWAw) to view this solution in an interactive Colab (Jupyter) notebook.
 
 ```
@@ -61,4 +61,4 @@ var_1d1
 22347.7792230231
 ```
 
-Here we are saying with 95% confidence that the loss of our portfolio will not exceed ~$22.3k over a one day period.
+Here we are saying with 95% confidence that the loss of our portfolio will not exceed ~$22.3k over a one day period. -->

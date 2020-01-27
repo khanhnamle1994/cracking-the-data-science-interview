@@ -12,7 +12,7 @@ Input: [[1,0,1],
 Output: 12
 ```
 
-## Solution
+<!-- ## Solution
 [Click here](https://colab.research.google.com/drive/1pdnGnxKPEq6_0XrX_IBN4LHX1vQ8h_1B) to view this solution in an interactive Colab (Jupyter) notebook.
 
 Here we can set up a function to loop through each cell in the grid, then check left, right, up, and down. If any of the cells are on the edge, or next to land, then we increment our 'sides' variable which is tallying up the perimeter.
@@ -48,4 +48,4 @@ grid = [[1,0,1],
 
 island_perimeter(grid)    
 #Output: 12
-```
+``` -->

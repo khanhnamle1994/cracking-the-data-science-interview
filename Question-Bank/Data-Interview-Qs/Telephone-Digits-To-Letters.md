@@ -18,7 +18,7 @@ Output:
 ['c', 'i']
 ```
 
-## Solution
+<!-- ## Solution
 [Click here](https://colab.research.google.com/drive/1jc0Ey8filNAXPvNZ90PGUIRArHJZelrC) to view this solution in an interactive Colab (Jupyter) notebook.
 
 ```
@@ -55,5 +55,5 @@ def printLettersWrapper(number, n):
 if __name__ == '__main__':
     number = [2, 4]
     n = len(number)
-    printLettersWrapper(number, n); 
-```
+    printLettersWrapper(number, n);
+``` -->

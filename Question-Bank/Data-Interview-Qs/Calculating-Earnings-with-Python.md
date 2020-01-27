@@ -9,7 +9,7 @@ For example, if an individual earns $55/hour and works for 40 hours, the functio
 * Pre-tax earnings were 55*40 = $2,200 for the week.
 * Post-tax earnings were $2,200*.7 (since we fall in higher tax bracket here) = $1,540 for the week
 
-## Solution:
+<!-- ## Solution:
 
 [Click here](https://colab.research.google.com/drive/1ir-gaUMwuXGVnzia_qkEn_BiOuETtG_X#scrollTo=YkoCBwgrtZ-w) to view this solution in an interactive Colab (Jupyter) notebook.
 
@@ -48,4 +48,4 @@ def main():
           .format(**locals()))
 
 main()
-```
+``` -->

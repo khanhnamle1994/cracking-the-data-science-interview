@@ -25,7 +25,7 @@ Table: **customer_transactions**
 
 Given this, can you write a SQL query that calculates percent of revenue loyal customers brought in 2017?
 
-## Solution
+<!-- ## Solution
 We are first going to figure out how to get the customer_ids of "loyal" customers, then we will figure out how to calculate the percent of revenue in 2017.
 
 1) Solving for the first condition, having a membership for the points system is an easy add on and we'll be incorporating this condition in each subquery. Let's skip to the 2nd condition, "having > 2 stays at any hotel location". We'll aggregate the number of transactions for each unique customer and hotel_id, we'll build a query on top of that underlying query to get customer_ids where the # of transactions is > 2.
@@ -171,4 +171,4 @@ FROM (
      ) as total
       on 1=1
 )
- ```
+ ``` -->

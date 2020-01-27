@@ -3,7 +3,7 @@ Suppose you want to generate a sample of heads and tails from a fair coin. Howev
 
 Write a simulation in python that will use your biased coin to generate a sample of heads/tails as if it were coming from a fair coin.
 
-## Solution
+<!-- ## Solution
 [Click here](https://colab.research.google.com/drive/1xUDx7GqbzvJMjG9Wp-Dt8Fp1isdIH7yZ) to view this solution in an interactive Colab (Jupyter) notebook.
 
 ```
@@ -35,4 +35,4 @@ def fairCoin(biasedCoin):
 sum(fairCoin(biasedCoin) for i in range(100000))
 ```
 
-Here, we can see the output is approximately 50%: 49,910/100,000
+Here, we can see the output is approximately 50%: 49,910/100,000 -->

@@ -15,7 +15,7 @@ Can you write a SQL query to summarize the BroadBeanOrigin for US manufactured c
 |             Bean Type            |       BeanType      |    string   |                   The variety (breed) of bean used, if provided.                   |
 |         Broad Bean Origin        |   BroadBeanOrigin   |    string   |                    The broad geo-region of origin for the bean.                    |
 
-## Solution
+<!-- ## Solution
 
 ```
 SELECT
@@ -28,4 +28,4 @@ FROM InternationalChocolateRatings
 WHERE CompnayLocation = "U.S.A"
 GROUP BY 1
 ORDER BY 3 DESC
-```
+``` -->
