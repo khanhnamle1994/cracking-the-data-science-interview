@@ -18,6 +18,7 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [Parking Space Probabilities](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Parking-Space-Probabilities.md)
 * [Calculating earnings with Python](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Calculating-Earnings-with-Python.md)
 * [Price per calorie of McDonald's menu items](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Price-Per-Calorie-McDonald-Items.md)
+* [U.S. state population statistics](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/US-State-Population-Stats.md)
 
 ## Statistics
 

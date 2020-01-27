@@ -6,3 +6,21 @@ You are given the following [dataset](https://u4221007.ct.sendgrid.net/wf/click?
 |     Date    |    string   | Date of sales summary |
 |     Name    |    string   |  Name of sales person |
 |  Num_Sales  |      12     | Total number of sales |
+
+<!-- ## Solution
+```
+SELECT
+    Date,
+    Name
+FROM (
+    SELECT
+        Date,
+        Name,
+# assigning a rank to each sales person split apart by date and ordered by number of sales descending
+        RANK() OVER(Partition By Date, Num_Sales DESC) as rank
+    FROM DailySales
+)
+# selecting only the top sales person for each date
+# note there may be multiple
+WHERE rank = 1
+``` -->
