@@ -206,6 +206,7 @@ Here are the categories:
 
 ## Statistics
 
+* [Think Stats](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Think-Stats.md)
 * [Enunciating the Central Limit Theorem](#enunciating-the-Central-Limit-Theorem)
 * [Defining good hypotheses in a hypothesis test](#defining-good-hypotheses-in-a-hypothesis-test)
 * [Calculating the probability of a sum of random variables](#calculating-the-probability-of-a-sum-of-random-variables)
@@ -447,12 +448,21 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 ## Deep Learning Concepts
 
 * [Neural Networks From Scratch](#neural-networks-from-scratch)
+* [Notes from Coursera Deep Learning Specialization](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Notes-From-Coursera-DL-Specialization.pdf)
 * [Backpropagation with ReLU](#backpropagation-with-ReLU)
 * [Transfer Learning](#transfer-learning)
 * [Convolutional Filters](#convolutional-filters)
 * [Forward Propagation](#forward-propagation)
 
 ### Neural Networks From Scratch
+
+These are the code snippets from [Emil Wallner](https://github.com/emilwallner/Deep-Learning-From-Scratch):
+
+* [Method of Least Squares](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Least-Squares.py): First cost function.
+* [Gradient Descent](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Gradient-Descent.py): Finding the minimum of the cost function.
+* [Linear Regression](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Linear-Regression.py): Automatically decrease the cost function.
+* [Perceptron](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Perceptron.py): Use a linear regression equation to mimic a neuron.
+* [Backpropagation](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Backprop.py): Leverage backpropagation to solve non-linear problems.
 
 [back to current section](#deep-learning-concepts)
 
