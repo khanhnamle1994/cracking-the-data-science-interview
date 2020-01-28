@@ -74,6 +74,10 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
 
     _Tools: TensorFlow, Keras, Pandas, NumPy, Matplotlib, Scikit-Learn, TensorBoard_
 
+- ### Natural Language Processing
+
+    - [Classifying Tweets with Weights & Biases](https://www.wandb.com/articles/classifying-tweets-with-wandb): Developed 3 different neural network models that classify tweets on a crowdsourced dataset in Figure Eight.
+
 - ### Data Analysis and Visualization
 
     - [World Cup 2018 Team Analysis](https://github.com/khanhnamle1994/world-cup-2018): Analysis and visualization of the FIFA 18 dataset to predict the best possible international squad lineups for 10 teams at the 2018 World Cup in Russia.
@@ -97,6 +101,8 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
     - [Decision Trees Tutorial](https://www.datacamp.com/community/tutorials/decision-trees-R)
 
     - [Support Vector Machines Tutorial](https://www.datacamp.com/community/tutorials/support-vector-machines-r)
+
+    - [A Friendly Introduction to Data-Driven Marketing for Business Leaders](https://www.topbots.com/data-driven-marketing-for-business-leaders/)
 
 - ### Machine Learning
 
@@ -139,3 +145,5 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
     - [The 4 Research Techniques to Train Deep Neural Network Models More Efficiently](https://heartbeat.fritz.ai/the-4-research-techniques-to-train-deep-neural-network-models-more-efficiently-810ea2886205)
 
     - [The 2 Hardware Architectures for Efficient Training and Inference of Deep Nets](https://heartbeat.fritz.ai/the-2-types-of-hardware-architectures-for-efficient-training-and-inference-of-deep-neural-networks-a034850e26dd)
+
+    - [10 Deep Learning Best Practices to Keep in Mind in 2020](https://nanonets.com/blog/10-best-practices-deep-learning/)
