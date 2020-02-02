@@ -5,9 +5,12 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 * [Ranking Lists of Shows](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Ranking-Lists-Of-Shows.md) (by Netflix)
 * [Is the Coin Biased](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Is-The-Coin-Biased.md) (by Google)
 * [Social Graph Comparison](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Social-Graph-Comparison.md) (by Facebook)
-* [Forming A Triangle](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Forming-a-Triangle.md) (by Google)
 * [Experimenting with p-values](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Experimenting-With-p-Values.md) (by Airbnb)
 * [Drawing Normally](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Drawing-Normally.md) (by Quora)
+
+## Probability
+* [Forming A Triangle](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Forming-a-Triangle.md) (by Google)
+* [Flips Until Two Heads](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Flips-Until-Two-Heads.md) (by Lyft)
 
 ## Machine Learning
 
