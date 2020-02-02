@@ -25,3 +25,4 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 
 * [Measuring User Retention](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Measuring-User-Retention.md) (by Facebook)
 * [Cities with The Most User Orders](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Cities-with-Most-User-Orders.md) (by Robinhood)
+* [Ad CTR](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Ad-CTR.md)(by Facebook)
