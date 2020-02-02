@@ -9,3 +9,8 @@ Given the following datasets:
 3. Using the column from (2), project out the future population by state in 5 years, assuming the population change remains the same (on an absolute/n-count basis). You can assume each state's net transfer in/out rate from folks moving is 0 for this question's sake.
 
 *For example, if CA's population is 30M and the birth-death rate is 150k, then the projected population in 5 years is just 30,000,000 + 150,000*5 = 30.75M.*
+
+<!-- ## Solution
+[Click here](https://colab.research.google.com/drive/1YNOgngHuDQwsSTckk1QAzpiIvrHu2-qi) to view this solution in an interactive Colab (Jupyter) notebook.
+
+Some good follow ups to this would be to consider other factors that influence state population rates (such as net adds in/out from moves), what variables one might use to predict aside from raw population growth (e.g. economic growth, job creation, age distribution of population, etc). -->
