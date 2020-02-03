@@ -245,8 +245,7 @@ Whenever you see references to statistical significance, t-tests, or p-values, i
 
 Here are the sections:
 
-* [A/B Testing](#ab-testing)
-* [Hypothesis Test](#hypothesis-test)
+* [AB Testing](#ab-testing)
 * [Resampling](#resampling)
 * [Statistical Significance and P-Values](#statistical-significance-and-p-values)
 * [t-Tests](#t-tests)
@@ -256,6 +255,80 @@ Here are the sections:
 * [Chi-Square Test](#chi-square-test)
 * [Multi-Arm Bandit Algorithm](#multi-arm-bandit-algorithm)
 * [Power and Sample Size](#power-and-sample-size)
+
+### AB Testing
+
+* **Treatment**: Something (drug, price, web headline) to which a subject is exposed.
+* **Treatment group**: A group of subjects exposed to a specific treatment.
+* **Control group**: A group of subjects exposed to no (or standard) treatment.
+* **Randomization**: The process of randomly assigning subjects to treatments.
+* **Subjects**: The items (web visitors, patients, etc.) that are exposed to treatments.
+* **Test statistic**: The metric used to measure the effect of the treatment.
+
+### Resampling
+
+Permutation tests are useful heuristic procedures for exploring the role of random variation. They are relatively easy to code, interpret and explain, and they offer a useful detour around the formalism and “false determinism” of formula-based statistics. One virtue of resampling, in contrast to formula approaches, is that it comes much closer to a “one size fits all” approach to inference. Data can be numeric or binary. Sample sizes can be the same or different. Assumptions about normally distributed data are not needed.
+
+There are two main types of resampling procedures: the bootstrap and permutation tests. The bootstrap is used to assess the reliability of an estimate. Permutation tests are used to test hypotheses, typically involving two or more groups.
+
+### Statistical Significance and P-Values
+
+* **P-value**: Given a chance model that embodies the null hypothesis, the p-value is the probability of obtaining results as unusual or extreme as the observed results.
+* **Alpha**: The probability threshold of “unusualness” that chance results must surpass, for actual outcomes to be deemed statistically significant. The probability question being answered is not “what is the probability that this happened by chance?” but rather “given a chance model, what is the probability of a result this extreme?” We then deduce backward about the appropriateness of the chance model, but that judgment does not carry a probability. This point has been the subject of much confusion.
+* **Type 1 error**: Mistakenly concluding an effect is real (when it is due to chance).
+* **Type 2 error**: Mistakenly concluding an effect is due to chance (when it is real).
+
+### t-Tests
+
+Before the advent of computers, resampling tests were not practical and statisticians used standard reference distributions.  A test statistic could then be standardized and compared to the reference distribution. One such widely used standardized statistic is the t-statistic
+
+### Multiple Testing
+
+Problem of **overfitting** in data mining, or “**fitting the model to the noise.**” The more variables you add, or the more models you run, the greater the probability that something will emerge as “significant” just by chance. Multiplicity in a research study or data mining project (multiple comparisons, many variables, many models, etc.) increases the risk of concluding that something is significant just by chance.
+
+* For predictive modeling, the risk of getting an illusory model whose apparent efficacy is largely a product of random chance is mitigated by cross-validation, and use of a holdout sample.
+* For other procedures without a labeled holdout set to check the model, you must rely on: (1) Awareness that the more you query and manipulate the data, the greater the role that chance might play; and (2) Resampling and simulation heuristics to provide random chance benchmarks against which observed results can be compared.
+
+### Degrees of Freedom
+
+The concept is applied to statistics calculated from sample data, and refers to the number of values free to vary. For example, if you know the mean for a sample of 10 values, and you also know 9 of the values, you also know the 10th value. Only 9 are free to vary.
+
+When you use a sample to estimate the variance for a population, you will end up with an estimate that is slightly biased downward if you use n in the denominator. If you use n – 1 in the denominator, the estimate will be free of that bias.
+
+### ANOVA
+
+* **Pairwise comparison**: A hypothesis test (e.g., of means) between two groups among multiple groups.
+* **Omnibus test**: A single hypothesis test of the overall variance among multiple group means.
+* **Decomposition of variance**: Separation of components. contributing to an individual value (e.g., from the overall average, from a treatment mean, and from a residual error).
+* **F-statistic**: A standardized statistic that measures the extent to which differences among group means exceeds what might be expected in a chance model.
+* **SS**: “Sum of squares,” referring to deviations from some average value.
+
+### Chi-Square Test
+
+* **Chi-square statistic**: A measure of the extent to which some observed data departs from expectation.
+* **Expectation or expected**: How we would expect the data to turn out under some assumption, typically the null hypothesis.
+
+### Multi-Arm Bandit Algorithm
+
+Multi-arm bandits offer an approach to testing, especially web testing, that allows explicit optimization and more rapid decision making than the traditional statistical approach to designing experiments.
+
+**How it works**
+
+Your goal is to win as much money as possible, and more specifically, to identify and settle on the winning arm sooner rather than later. The challenge is that you don’t know at what rate the arms pay out — you only know the results of pulling the arm. Suppose each “win” is for the same amount, no matter which arm. What differs is the probability of a win. Suppose further that you initially try each arm 50 times and get the following results:
+
+* **Arm A**: 10 wins out of 50
+* **Arm B**: 2 win out of 50
+* **Arm C**: 4 wins out of 50
+
+We start pulling A more often, to take advantage of its apparent superiority, but we don’t abandon B and C. We just pull them less often. If A continues to outperform, we continue to shift resources (pulls) away from B and C and pull A more often. If, on the other hand, C starts to do better, and A starts to do worse, we can shift pulls from A back to C. If one of them turns out to be superior to A and this was hidden in the initial trial due to chance, it now has an opportunity to emerge with further testing.
+
+A more sophisticated algorithm uses “**Thompson’s sampling.**” This procedure “samples” (pulls a bandit arm) at each stage to maximize the probability of choosing the best arm. Of course you don’t know which is the best arm — that’s the whole problem! — but as you observe the payoff with each successive draw, you gain more information. Thompson’s sampling uses a Bayesian approach: some prior distribution of rewards is assumed initially, using what is called a beta distribution (this is a common mechanism for specifying prior information in a Bayesian problem). As information accumulates from each draw, this information can be updated, allowing the selection of the next draw to be better optimized as far as choosing the right arm.
+
+### Power and Sample Size
+
+* **Effect size**: The minimum size of the effect that you hope to be able to detect in a statistical test, such as “a 20% improvement in click rates”.
+* **Power**: The probability of detecting a given effect size with a given sample size.
+* **Significance level**: The statistical significance level at which the test will be conducted.
 
 ## Regression and Prediction
 
