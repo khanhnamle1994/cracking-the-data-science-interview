@@ -265,11 +265,15 @@ Here are the sections:
 * **Subjects**: The items (web visitors, patients, etc.) that are exposed to treatments.
 * **Test statistic**: The metric used to measure the effect of the treatment.
 
+[back to current section](#statistical-experiments-and-significance-testing)
+
 ### Resampling
 
 Permutation tests are useful heuristic procedures for exploring the role of random variation. They are relatively easy to code, interpret and explain, and they offer a useful detour around the formalism and “false determinism” of formula-based statistics. One virtue of resampling, in contrast to formula approaches, is that it comes much closer to a “one size fits all” approach to inference. Data can be numeric or binary. Sample sizes can be the same or different. Assumptions about normally distributed data are not needed.
 
 There are two main types of resampling procedures: the bootstrap and permutation tests. The bootstrap is used to assess the reliability of an estimate. Permutation tests are used to test hypotheses, typically involving two or more groups.
+
+[back to current section](#statistical-experiments-and-significance-testing)
 
 ### Statistical Significance and P-Values
 
@@ -278,9 +282,13 @@ There are two main types of resampling procedures: the bootstrap and permutation
 * **Type 1 error**: Mistakenly concluding an effect is real (when it is due to chance).
 * **Type 2 error**: Mistakenly concluding an effect is due to chance (when it is real).
 
+[back to current section](#statistical-experiments-and-significance-testing)
+
 ### t-Tests
 
 Before the advent of computers, resampling tests were not practical and statisticians used standard reference distributions.  A test statistic could then be standardized and compared to the reference distribution. One such widely used standardized statistic is the t-statistic
+
+[back to current section](#statistical-experiments-and-significance-testing)
 
 ### Multiple Testing
 
@@ -289,11 +297,15 @@ Problem of **overfitting** in data mining, or “**fitting the model to the nois
 * For predictive modeling, the risk of getting an illusory model whose apparent efficacy is largely a product of random chance is mitigated by cross-validation, and use of a holdout sample.
 * For other procedures without a labeled holdout set to check the model, you must rely on: (1) Awareness that the more you query and manipulate the data, the greater the role that chance might play; and (2) Resampling and simulation heuristics to provide random chance benchmarks against which observed results can be compared.
 
+[back to current section](#statistical-experiments-and-significance-testing)
+
 ### Degrees of Freedom
 
 The concept is applied to statistics calculated from sample data, and refers to the number of values free to vary. For example, if you know the mean for a sample of 10 values, and you also know 9 of the values, you also know the 10th value. Only 9 are free to vary.
 
 When you use a sample to estimate the variance for a population, you will end up with an estimate that is slightly biased downward if you use n in the denominator. If you use n – 1 in the denominator, the estimate will be free of that bias.
+
+[back to current section](#statistical-experiments-and-significance-testing)
 
 ### ANOVA
 
@@ -303,10 +315,14 @@ When you use a sample to estimate the variance for a population, you will end up
 * **F-statistic**: A standardized statistic that measures the extent to which differences among group means exceeds what might be expected in a chance model.
 * **SS**: “Sum of squares,” referring to deviations from some average value.
 
+[back to current section](#statistical-experiments-and-significance-testing)
+
 ### Chi-Square Test
 
 * **Chi-square statistic**: A measure of the extent to which some observed data departs from expectation.
 * **Expectation or expected**: How we would expect the data to turn out under some assumption, typically the null hypothesis.
+
+[back to current section](#statistical-experiments-and-significance-testing)
 
 ### Multi-Arm Bandit Algorithm
 
@@ -324,11 +340,17 @@ We start pulling A more often, to take advantage of its apparent superiority, bu
 
 A more sophisticated algorithm uses “**Thompson’s sampling.**” This procedure “samples” (pulls a bandit arm) at each stage to maximize the probability of choosing the best arm. Of course you don’t know which is the best arm — that’s the whole problem! — but as you observe the payoff with each successive draw, you gain more information. Thompson’s sampling uses a Bayesian approach: some prior distribution of rewards is assumed initially, using what is called a beta distribution (this is a common mechanism for specifying prior information in a Bayesian problem). As information accumulates from each draw, this information can be updated, allowing the selection of the next draw to be better optimized as far as choosing the right arm.
 
+[back to current section](#statistical-experiments-and-significance-testing)
+
 ### Power and Sample Size
 
 * **Effect size**: The minimum size of the effect that you hope to be able to detect in a statistical test, such as “a 20% improvement in click rates”.
 * **Power**: The probability of detecting a given effect size with a given sample size.
 * **Significance level**: The statistical significance level at which the test will be conducted.
+
+[back to current section](#statistical-experiments-and-significance-testing)
+
+[back to top](#practical-statistics-for-data-scientists)
 
 ## Regression and Prediction
 
