@@ -8,6 +8,7 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 * [Experimenting with p-values](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Experimenting-With-p-Values.md) (by Airbnb)
 * [Drawing Normally](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Drawing-Normally.md) (by Quora)
 * [Surge Pricing](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Surge-Pricing.md) (by Uber)
+* [Picking Between Two Dice Games](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Picking-Between-Two-Dice-Games.md) (by Facebook)
 
 ## Probability
 * [Forming A Triangle](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Forming-a-Triangle.md) (by Google)
