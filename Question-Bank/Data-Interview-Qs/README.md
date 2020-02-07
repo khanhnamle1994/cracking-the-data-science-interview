@@ -29,3 +29,4 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [Ads In A Newfeed](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Ads-in-a-Newfeed.md)
 * [Student intelligence](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Student-Intelligence.md)
 * [Defective gaskets](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Defective-Gaskets.md)
+* [New Strains Of Flu](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/New-Strains-Of-Flu.md)
