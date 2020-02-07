@@ -19,6 +19,7 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [Is it raining in Seattle?](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Is-It-Raining-in-Seattle.md) (by Facebook)
 * [Boarding Time Bias](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Boarding-Time-Bias.md) (by Tesla)
 * [Post Success](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Post-Success.md) (by Facebook)
+* [Replace Words With Stems](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Replace-Words-With-Stems.md) (by Adobe)
 
 ## Hard
 
