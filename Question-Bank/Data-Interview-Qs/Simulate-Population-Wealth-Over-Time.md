@@ -12,3 +12,6 @@ Additionally, you're told that economic transactions occur randomly between two 
 * When they interact, their wealth is put into a pot, and is then split randomly and uniformly between the two parties
 
 Given this information, write a simulation to show how wealth of the population will change over time. You can simulate 50 time steps (or transactions per individual).
+
+<!-- ## Solution:
+[Click here](https://colab.research.google.com/drive/1JKVLiLquCjsz4tBfhNBYHpcy4mnoygoM) to view this solution in an interactive Colab (Jupyter) notebook. -->
