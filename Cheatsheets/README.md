@@ -218,7 +218,24 @@ Here are the categories:
 
 ### Enunciating the Central Limit Theorem
 
-The CTL is enunciated in a comprehensible way in [this lecture video](https://www.coursera.org/lecture/inferential-statistics-intro/clt-for-the-mean-examples-XhkI6). If you're looking for more content on the CTL, [here](https://www.coursera.org/lecture/six-sigma-define-measure-advanced/the-central-limit-theorem-clt-VLACz) is another video about the CTL. It is followed by [practical examples](https://www.coursera.org/lecture/six-sigma-define-measure-advanced/the-central-limit-theorem-clt-applications-SSvkU) applying the CTL. If you prefer reading, check out [this wikipedia page](https://en.wikipedia.org/wiki/Central_limit_theorem).
+The CTL is enunciated in a comprehensible way in [this lecture video](https://www.coursera.org/lecture/inferential-statistics-intro/clt-for-the-mean-examples-XhkI6).
+* Question 1: X = length of one song => P(X > 5) = 500 / 3000 = 0.17
+* Question 2: P(X1 + X2 + ... + X100 > 360 min) = P(X_average > 3.6)
+=> Mean = 3.45, Standard Error = 0.165 => Z-score = (3.6 - 3.45) / 0.163 = 0.92
+=> P(Z > 0.92) = 0.179
+* Question 3: Plot A is a distribution of 100 sample means from random samples with size 7 (Remaining choice), Plot B is a single random sample of 100 observations from this population (It is right-skewed just like the parent distribution and also has the largest spread), and Plot C is a distribution of 100 sample means from random samples with size 49 (CLT tells us that sampling distributions will be nearly normal when n is large).
+
+If you're looking for more content on the CTL, [here](https://www.coursera.org/lecture/six-sigma-define-measure-advanced/the-central-limit-theorem-clt-VLACz) is another video about the CTL.
+* CLT enables use to go from descriptive statistics to inferential statistics.
+* The mean of the sampling distribution of means is equal to the mean of the population from which the samples were drawn.
+-> Our sample mean is a fair estimate of the population mean.
+* The variance of the sampling distribution of means is equal to the variance of the population from which the samples were drawn divided by the size of the samples.
+-> Larger samples have less variability and are more likely to be close to the true population mean.
+* If the original distribution is normally distributed, the sampling distribution of the means will also be normal. Otherwise, if n >= 30, we can still safely assume normality.
+
+It is followed by [practical examples](https://www.coursera.org/lecture/six-sigma-define-measure-advanced/the-central-limit-theorem-clt-applications-SSvkU) applying the CTL.
+* **Standard Error** of the means is `\sigma / \sqrt{n}` (standard deviation of the means)
+* **Confidence Interval**: A 95% CI on the mean = 95% of the time, the true population mean should be within that interval. This metric allows us to provide some confidence around the estimate.
 
 ### Defining good hypotheses in a hypothesis test
 
