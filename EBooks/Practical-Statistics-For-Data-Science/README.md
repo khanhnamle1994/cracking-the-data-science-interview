@@ -354,6 +354,70 @@ A more sophisticated algorithm uses “**Thompson’s sampling.**” This proced
 
 ## Regression and Prediction
 
+Here are the sections:
+
+* [Simple Linear Regression](#simple-linear-regression)
+* [Multiple Linear Regression](#multiple-linear-regression)
+* [Prediction Using Regression](#prediction-using-regression)
+* [Factor Variables In Regression](#factor-variables-in-regression)
+* [Testing The Assumptions Regression Diagnostics](#testing-the-assumptions-regression-diagnostics)
+* [Polynomial And Spline Regression](#polynomial-and-spline-regression)
+
+### Simple Linear Regression
+Simple linear regression models the relationship between the magnitude of one variable and that of a second — for example, as X increases, Y also increases. Or as X increases, Y decreases. Correlation is another way to measure how two variables are related. The difference is that while correlation measures the strength of an association between two variables, regression quantifies the nature of the relationship
+
+* **Response**: The variable we are trying to predict. Synonyms: dependent variable, Y-variable, target, outcome
+* **Independent**: variable The variable used to predict the response. Synonyms: independent variable, X-variable, feature, attribute
+* **Record**: The vector of predictor and outcome values for a specific individual or case. Synonyms: row, case, instance, example
+* **Intercept**: The intercept of the regression line — that is, the predicted value when X=0. Synonyms: b0 and Beta0
+* **Regression coefficient**: The slope of the regression line. Synonyms: slope, b1, beta1, parameter estimates, weights
+* **Fitted values**: The estimates Y-hat_{i} obtained from the regression line. Synonyms: predicted values
+* **Residuals**: The difference between the observed values and the fitted values. Synonyms: errors
+* **Least squares**: The method of fitting a regression by minimizing the sum of squared residuals. Synonyms: ordinary least squares
+
+### Multiple Linear Regression
+
+Instead of a line, we now have a linear model — the relationship between eachcoefficient and its variable (feature) is linear.
+
+* **Root mean squared error**: The square root of the average squared error of the regression (this is the most widely used metric to compare regression models). Synonyms: RMSE
+* **Residual standard error**: The same as the root mean squared error, but adjusted for degrees of freedom. Synonyms RSE
+* **R-squared**: The proportion of variance explained by the model, from 0 to 1. Synonyms: coefficient of determination,
+* **t-statistic**: The coefficient for a predictor, divided by the standard error of the coefficient, giving a metric to compare the importance of variables in the model.
+* **Weighted regression**: Regression with the records having different weights
+
+**Cross Validation**
+
+Classic statistical regression metrics (R2, F-statistics, and p-values) are all “in-sample” metrics — they are applied to the same data that was used to fit themodel. Intuitively, you can see that it would make a lot of sense to set aside some of the original data, not use it to fit the model, and then apply the model to the set-aside (holdout) data to see how well it does. Normally, you would use a majority of the data to fit the model, and use a smaller portion to test the model.
+
+Cross-validation extends the idea of a holdout sample to multiple sequential holdout samples. The algorithm for basic k-fold cross-validation is as follows:
+1. Set aside 1/k of the data as a holdout sample.
+2. Train the model on the remaining data.
+3. Apply (score) the model to the 1/k holdout, and record needed model assessment metrics.
+4. Restore the first 1/k of the data, and set aside the next 1/k (excluding any records that got picked the first time).
+5. Repeat steps 2 and 3.
+6. Repeat until each record has been used in the holdout portion.
+7. Average or otherwise combine the model assessment metrics.
+
+The division of the data into the training sample and the holdout sample is also called a fold.
+
+**Model Selection and Stepwise Regression**
+
+In some problems, many variables could be used as predictors in a regression. Adding more variables, however, does not necessarily mean we have a better model. Statisticians use the principle of *Occam’s razor* to guide the choice of a model: all things being equal, a simpler model should be used in preference to amore complicated model.
+
+Including additional variables always reduces RMSE and increases R^2. Hence, these are not appropriate to help guide the model choice. In the 1970s, Hirotugu Akaike, the eminent Japanese statistician, developed a metric called AIC (Akaike’s Information Criteria) that penalizes adding terms to a model. In the case of regression, AIC has the form:
+
+```
+AIC = 2P + n log(RSS/n)
+```
+
+Where P is the number of variables and n is the number of records. The goal is to find the model that minimizes AIC; models with k more extra variables are penalized by 2k.
+
+How do we find the model that minimizes AIC? One approach is to search through all possible models, called *all subset regression*. This is computationally expensive and is not feasible for problems with large data and many variables. An attractive alternative is to use *stepwise regression*, which successively adds and drops predictors to find a model that lowers AIC.
+
+Simpler yet are *forward selection* and *backward selection*. In forward selection, you start with no predictors and add them one-by-one, at each step adding the predictor that has the largest contribution to R^2, stopping when the contribution is no longer statistically significant. In backward selection, or *backward elimination*, you start with the full model and take away predictors that are not statistically significant until you are left with a model in which all predictors are statistically significant.
+
+Stepwise regression and all subset regression are in-sample methods to assess and tune models. This means the model selection is possibly subject to overfitting and may not perform as well when applied to new data. One common approach to avoid this is to use cross-validation to validate the models.
+
 ## Classification
 
 ## Statistical Machine Learning
