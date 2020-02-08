@@ -237,6 +237,8 @@ It is followed by [practical examples](https://www.coursera.org/lecture/six-sigm
 * **Standard Error** of the means is `\sigma / \sqrt{n}` (standard deviation of the means)
 * **Confidence Interval**: A 95% CI on the mean = 95% of the time, the true population mean should be within that interval. This metric allows us to provide some confidence around the estimate.
 
+[back to current section](#statistics)
+
 ### Defining good hypotheses in a hypothesis test
 
 If you are carrying-out a statistical test, it is important to define good hypotheses. [These slides](http://www.sci.utah.edu/~arpaiva/classes/UT_ece3530/hypothesis_testing.pdf) contain several case studies to build intuition on choosing good hypotheses for your statistical test.
@@ -258,21 +260,44 @@ Steps in hypothesis testing:
 3. Choose the test statistic and establish the critical region.
 4. Collect the sample and compute the test statistic. If the test statistic is in the critical region, reject H0. Otherwise, do not reject H0.
 
+[back to current section](#statistics)
+
 ### Calculating the probability of a sum of random variables
 
-[These lectures notes](https://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter7.pdf) define and give practice exercises to compute the probability of a sum of random variables. If you'd like to go further, [this series of videos](https://www.khanacademy.org/math/ap-statistics/random-variables-ap/combining-random-variables/v/mean-of-sum-and-difference-of-random-variables) explains how to compute the mean and the variance for a sum of random variables.
+[This series of videos](https://www.khanacademy.org/math/ap-statistics/random-variables-ap/combining-random-variables/v/mean-of-sum-and-difference-of-random-variables) explains how to compute the mean and the variance for a sum of random variables.
+* Mean of the sum of random variables equals to the sum of the means of the random variables: E(X + Y) = E(X) + E(Y)
+* Variance of the sum of random variables equals to the sum of the variances of the random variables: Var(X + Y) = Var(X) + Var(Y)
+=> Assumes that X and Y are independent variables.
+
+[back to current section](#statistics)
 
 ### Calculating the probability of an intersection of events
 
-[These course notes](https://math.la.asu.edu/~garcia/3.6reading.pdf) (pages 675-681) offer exercises to practice problems involving the intersection of probabilistic events and recalls the use of conditional probabilities. To review the basic definitions and rules of probabilities (including the intersection and union of events), you can also watch [this video](https://www.coursera.org/lecture/introductiontoprobability/definition-and-rules-k3RwU).
+To review the basic definitions and rules of probabilities (including the intersection and union of events), you can also watch [this video](https://www.coursera.org/lecture/introductiontoprobability/definition-and-rules-k3RwU).
+* Definition 1: (Classical Probability) `P(A) = (# of basic outcomes that satisfy A) / (total # of outcomes in the sample space)`
+* Definition 2: (Empirical Probability) `P(A) = (# of times the event A occurs in repeated trials / (total # of trials in a random experiment)`
+* Definition 3: (Subjective Probability) `P(A) = an opinion or belief about the chance of occurrence`
+
+Fundamental Probability rules
+* Rule 1: The probability of an outcome in the sample space is 1 - `P(S) = 1`
+* Rule 2: For any event A, the probability of A is between 0 and 1 - `0 <= P(A) <= 1`
+* Rule 3: For disjoint events A and B, `P(A U B) = P(A or B) = P(A) + P(B)`
+
+Additional Rule when A and B are not disjointed: `P(A U B) = P(A or B) = P(A) + P(B) - P(A join B)`
+
+[back to current section](#statistics)
 
 ### Analyzing a residuals plot
 
 [This video](https://www.coursera.org/lecture/linear-models/fitted-values-and-residuals-t1VJ9) explains how to analyze a residual plot. If you're looking for more advanced readings on residuals, check [these lecture notes](http://www-personal.umich.edu/~gonzo/coursenotes/file7.pdf) and [these slides](https://courses.washington.edu/b515/l7.pdf).
 
+[back to current section](#statistics)
+
 ### Calculating conditional probabilities using the Bayes rule
 
 The Bayes rule is a common interview topic for machine learning and data science roles. [These course notes](https://math.la.asu.edu/~surgent/mat142/Sect_8_5.pdf) (pages 381-388) show techniques to solve problems involving conditional probabilities. Also, [these course notes](http://faculty.washington.edu/tamre/BayesTheorem.pdf) (pages 7-9) offer examples and practice exercises. If you prefer watching videos, [this lecture](https://www.coursera.org/lecture/probability-intro/conditional-probability-fN6Kh) is an intuitive explanation on conditional probabilities.
+
+[back to current section](#statistics)
 
 [back to top](#data-science-cheatsheets)
 
