@@ -360,6 +360,7 @@ Here are the sections:
 * [Multiple Linear Regression](#multiple-linear-regression)
 * [Prediction Using Regression](#prediction-using-regression)
 * [Factor Variables In Regression](#factor-variables-in-regression)
+* [Interpreting The Regression Equation](#interpreting-the-regression-equation)
 * [Testing The Assumptions Regression Diagnostics](#testing-the-assumptions-regression-diagnostics)
 * [Polynomial And Spline Regression](#polynomial-and-spline-regression)
 
@@ -374,6 +375,8 @@ Simple linear regression models the relationship between the magnitude of one va
 * **Fitted values**: The estimates Y-hat_{i} obtained from the regression line. Synonyms: predicted values
 * **Residuals**: The difference between the observed values and the fitted values. Synonyms: errors
 * **Least squares**: The method of fitting a regression by minimizing the sum of squared residuals. Synonyms: ordinary least squares
+
+[back to current section](#regression-and-prediction)
 
 ### Multiple Linear Regression
 
@@ -418,6 +421,8 @@ Simpler yet are *forward selection* and *backward selection*. In forward selecti
 
 Stepwise regression and all subset regression are in-sample methods to assess and tune models. This means the model selection is possibly subject to overfitting and may not perform as well when applied to new data. One common approach to avoid this is to use cross-validation to validate the models.
 
+[back to current section](#regression-and-prediction)
+
 ### Prediction Using Regression
 The primary purpose of regression in data science is prediction. This is useful to keep in mind, since regression, being an old and established statistical method, comes with baggage that is more relevant to its traditional explanatory modeling role than to prediction.
 
@@ -447,6 +452,57 @@ We can model this individual error with the residuals from the fitted values. Th
 3. Take a single residual at random from the original regression fit, add it to the predicted value, and record the result.
 4. Repeat steps 1 through 3, say, 1,000 times.
 5. Find the 2.5th and the 97.5th percentiles of the results.
+
+[back to current section](#regression-and-prediction)
+
+### Factor Variables In Regression
+Factor variables, also termed categorical variables, take on a limited number of discrete values. For example, a loan purpose can be “debt consolidation,” “wedding,” “car,” and so on. The binary (yes/no) variable, also called an indicator variable, is a special case of a factor variable. Regression requires numerical inputs, so factor variables need to be recoded to use in the model. The most common approach is to convert a variable into a set of binary dummy variables.
+
+* **Dummy variables**: Binary 0–1 variables derived by recoding factor data for use in regression and other models.
+* **Reference coding**: The most common type of coding used by statisticians, in which one level of a factor is used as a reference and other factors are compared to that level. Synonyms: treatment coding
+* **One hot encoder**: A common type of coding used in the machine learning community in which all factors levels are retained. While useful for certain machine learning algorithms, this approach is not appropriate for multiple linear regression.
+* **Deviation coding**: A type of coding that compares each level against the overall mean as opposed to the reference level. Synonyms: sum contrasts
+
+[back to current section](#regression-and-prediction)
+
+### Interpreting The Regression Equation
+
+* **Correlated variables**: When the predictor variables are highly correlated, it is difficult to interpret the individual coefficients.
+* **Multicollinearity**: When the predictor variables have perfect, or near-perfect, correlation, the regression can be unstable or impossible to compute. Synonyms: collinearity
+* **Confounding variables**: An important predictor that, when omitted, leads to spurious relationships in a regression equation.
+* **Main effects**: The relationship between a predictor and the outcome variable, independent from other variables.
+* **Interactions**: An interdependent relationship between two or more predictors and the response.
+
+**Correlated Predictors**
+In multiple regression, the predictor variables are often correlated with each other. The coefficient for Bedrooms is negative! This implies that adding a bedroom to a house will reduce its value. How can this be? This is because the predictor variables are correlated: larger houses tend to have more bedrooms, and it is the size that drives house value, not the number of bedrooms. Consider two homes of the exact same size: it is reasonable to expect that a home with more, but smaller, bedrooms would be considered less desirable.
+
+Having correlated predictors can make it difficult to interpret the sign and value of regression coefficients
+
+The update function can be used to add or remove variables from a model. Now the coefficient for bedrooms is positive in our ex — in line with what we would expect (though it is really acting as a proxy for house size, now that those variables have been removed).
+
+Correlated variables are only one issue with interpreting regression coefficients.
+
+**Multicollinearity**
+An extreme case of correlated variables produces multicollinearity — a condition in which there is redundance among the predictor variables. Perfect multicollinearity occurs when one predictor variable can be expressed as a linear combination of others. Multicollinearity occurs when:
+* A variable is included multiple times by error.
+* P dummies, instead of P – 1 dummies, are created from a factor variable (see “Factor Variables in Regression”).
+* Two variables are nearly perfectly correlated with one another.
+
+Multicollinearity in regression must be addressed — variables should be removed until the multicollinearity is gone. A regression does not have a well-defined solution in the presence of perfect multicollinearity.
+
+**Confounding Variables**
+With correlated variables, the problem is one of commission: including different variables that have a similar predictive relationship with the response. With confounding variables, the problem is one of omission: an important variable is not included in the regression equation. Naive interpretation of the equation coefficients can lead to invalid conclusions.
+
+**Model Selection with Interaction Terms**
+In problems involving many variables, it can be challenging to decide which interaction terms should be included in the model. Several different approaches are commonly taken:
+* In some problems, prior knowledge and intuition can guide the choice of which interaction terms to include in the model.
+* Stepwise selection (see “Model Selection and Stepwise Regression”) can be used to sift through the various models.
+* Penalized regression can automatically fit to a large set of possible interaction terms.
+* Perhaps the most common approach is the use tree models, as well as their descendents, random forest and gradient boosted trees. This class of models automatically searches for optimal interaction terms; see “Tree Models”.
+
+[back to current section](#regression-and-prediction)
+
+[back to top](#practical-statistics-for-data-scientists)
 
 ## Classification
 
