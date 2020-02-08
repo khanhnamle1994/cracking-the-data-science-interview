@@ -240,6 +240,23 @@ It is followed by [practical examples](https://www.coursera.org/lecture/six-sigm
 ### Defining good hypotheses in a hypothesis test
 
 If you are carrying-out a statistical test, it is important to define good hypotheses. [These slides](http://www.sci.utah.edu/~arpaiva/classes/UT_ece3530/hypothesis_testing.pdf) contain several case studies to build intuition on choosing good hypotheses for your statistical test.
+* A statistical hypothesis is an assertion or conjecture concerning one or more populations. To prove that a hypothesis is true, or false, with absolute
+certainty, we would need absolute knowledge. That is, we would have to examine the entire population. Instead, **hypothesis testing** concerns on how to use a random sample to judge if it is evidence that supports or not the hypothesis.
+* Hypothesis testing is formulated in terms of two hypotheses: H0: the null hypothesis; H1: the alternate hypothesis. The hypothesis we want to test is if H1 is “likely” true. So, there are two possible outcomes: (1) Reject H0 and accept H1 because of sufficient evidence in the sample in favor or H1; (2) Do not reject H0 because of insufficient evidence to support H1.
+* The acceptance of H1 when H0 is true is called a **Type I error**. The probability of committing a type I error is called the level of significance and is denoted by α. Example: Convicting the defendant when he is innocent! The lower significance level α, the less likely we are to commit a type I error. Generally, we would like small values of α; typically, 0.05 or smaller.
+* Failure to reject H0 when H1 is true is called a **Type II error**. The probability of committing a type II error is denoted by β. It is impossible to compute β unless we have a specific alternate hypothesis.
+
+Properties of hypothesis testing:
+1. α and β are related; decreasing one generally increases the other.
+2. α can be set to a desired value by adjusting the critical value. Typically, α is set at 0.05 or 0.01.
+3. Increasing n decreases both α and β.
+4. β decreases as the distance between the true value and hypothesized value (H1) increases.
+
+Steps in hypothesis testing:
+1. State the null and alternate hypothesis.
+2. Choose a significance level α.
+3. Choose the test statistic and establish the critical region.
+4. Collect the sample and compute the test statistic. If the test statistic is in the critical region, reject H0. Otherwise, do not reject H0.
 
 ### Calculating the probability of a sum of random variables
 
