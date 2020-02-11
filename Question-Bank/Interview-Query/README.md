@@ -29,3 +29,4 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [Swipe Precision](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Swipe-Precision.md) (by Tinder)
 * [Cumulative Distribution](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Cumulative-Distribution.md) (by Square)
 * [Max Width](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Max-Width.md) (by Microsoft)
+* [Rolling Bank Transactions](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Rolling-Bank-Transactions.md) (by Dropbox)
