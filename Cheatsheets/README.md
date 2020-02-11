@@ -287,12 +287,6 @@ Additional Rule when A and B are not disjointed: `P(A U B) = P(A or B) = P(A) + 
 
 [back to current section](#statistics)
 
-### Analyzing a residuals plot
-
-[This video](https://www.coursera.org/lecture/linear-models/fitted-values-and-residuals-t1VJ9) explains how to analyze a residual plot. If you're looking for more advanced readings on residuals, check [these lecture notes](http://www-personal.umich.edu/~gonzo/coursenotes/file7.pdf) and [these slides](https://courses.washington.edu/b515/l7.pdf).
-
-[back to current section](#statistics)
-
 ### Calculating conditional probabilities using the Bayes rule
 
 The Bayes rule is a common interview topic for machine learning and data science roles. [These course notes](https://math.la.asu.edu/~surgent/mat142/Sect_8_5.pdf) (pages 381-388) show techniques to solve problems involving conditional probabilities. Also, [these course notes](http://faculty.washington.edu/tamre/BayesTheorem.pdf) (pages 7-9) offer examples and practice exercises. If you prefer watching videos, [this lecture](https://www.coursera.org/lecture/probability-intro/conditional-probability-fN6Kh) is an intuitive explanation on conditional probabilities.
