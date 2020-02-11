@@ -27,6 +27,7 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 
 * [Sum of Consecutive Numbers](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Sum-of-Consecutive-Numbers.md) (by Robinhood)
 * [Sampling With Weights](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Sampling-with-Weights.md) (by Lyft)
+* [Generating Integer Partitions](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Generating-Integer-Partitions.md) (by Stripe)
 
 ## SQL
 
