@@ -21,7 +21,7 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [U.S. state population statistics](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/US-State-Population-Stats.md)
 * [Simulate population wealth over time](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Simulate-Population-Wealth-Over-Time.md)
 * [Predicting churn with a decision tree](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Predicting-Churn-With-A-Decision-Tree.md)
-* [Plotting stock prices]((https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Plotting-Stock-Prices.md)
+* [Plotting stock prices](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Plotting-Stock-Prices.md)
 
 ## Statistics
 

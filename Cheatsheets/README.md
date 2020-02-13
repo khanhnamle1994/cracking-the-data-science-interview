@@ -502,12 +502,48 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 
 ## Deep Learning Concepts
 
+* [Standard Architectures](#standard-architectures)
+* [Common Regularizers](#common-regularizers)
+* [Common Normalization](#common-normalization)
+* [Common Optimizers](#common-optimizers)
+* [Reparameterization Trick](#reparameterization-trick)
 * [Neural Networks From Scratch](#neural-networks-from-scratch)
 * [Notes from Coursera Deep Learning Specialization](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Notes-From-Coursera-DL-Specialization.pdf)
 * [Backpropagation with ReLU](#backpropagation-with-ReLU)
 * [Transfer Learning](#transfer-learning)
 * [Convolutional Filters](#convolutional-filters)
 * [Forward Propagation](#forward-propagation)
+
+### Standard Architectures
+
+* [Multi-Layer Perceptron](http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/)
+* [Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+* [Long Short Term Memory Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+* [Gated Recurrent Units](https://arxiv.org/abs/1412.3555v1)
+* [Convolutional](http://colah.github.io/posts/2014-07-Conv-Nets-Modular/) [layers](https://cs231n.github.io/convolutional-networks/)
+* [ResNets](https://arxiv.org/abs/1512.03385)
+* [Attention](https://arxiv.org/abs/1409.0473) [Mechanisms](https://arxiv.org/abs/1706.03762)
+
+### Common Regularizers
+
+* [Weight Decay](https://papers.nips.cc/paper/563-a-simple-weight-decay-can-improve-generalization.pdf)
+* [Dropout](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf)
+
+### Common Normalization
+
+* [Batch Norm](https://arxiv.org/abs/1502.03167)
+* [Layer Norm](https://arxiv.org/abs/1607.06450)
+* [Weight Norm](https://arxiv.org/abs/1602.07868)
+
+### Common Optimizers
+
+* [SGD/Momentum SGD](http://ufldl.stanford.edu/tutorial/supervised/OptimizationStochasticGradientDescent/)
+* [Adam](https://arxiv.org/abs/1412.6980)
+* [Others](https://arxiv.org/abs/1609.04747)
+
+### Reparameterization Trick
+
+* [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
 
 ### Neural Networks From Scratch
 
