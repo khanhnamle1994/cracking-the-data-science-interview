@@ -22,6 +22,7 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [Post Success](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Post-Success.md) (by Facebook)
 * [Replace Words With Stems](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Replace-Words-With-Stems.md) (by Adobe)
 * [First To Six](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/First-To-Six.md) (by Microsoft)
+* [Revenue Retention](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Revenue-Retention.md) (by Ampush)
 
 ## Hard
 
