@@ -5,6 +5,7 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [Weekly Aggregation](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Weekly-Aggregation.md) (by Postmates)
 * [Decreasing Comments](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Decreasing-Comments.md) (by Pinterest)
 * [Find The Missing Number](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Find-The-Missing-Number.md) (by Microsoft)
+* [Bank Fraud Model](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Bank-Fraud-Model.md) (by Square)
 
 ## Medium
 
