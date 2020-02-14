@@ -14,6 +14,7 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 * [Forming A Triangle](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Forming-a-Triangle.md) (by Google)
 * [Flips Until Two Heads](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Flips-Until-Two-Heads.md) (by Lyft)
 * [Fair Odds From Unfair Coin](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Fair-Odds-From-Unfair-Coin.md) (by Airbnb)
+* [Ant Collision](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Ant-Collision.md) (by Facebook)
 
 ## Machine Learning
 
