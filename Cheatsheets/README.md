@@ -893,6 +893,7 @@ ConvNet architectures make the explicit assumption that the inputs are images, w
 Convolutional Neural Networks take advantage of the fact that the input consists of images and they constrain the architecture in a more sensible way. In particular, unlike a regular Neural Network, the layers of a ConvNet have neurons arranged in 3 dimensions: **width, height, depth**. (Note that the word depth here refers to the third dimension of an activation volume, not to the depth of a full Neural Network, which can refer to the total number of layers in a network.) For example, the input images in CIFAR-10 are an input volume of activations, and the volume has dimensions 32x32x3 (width, height, depth respectively). As we will soon see, the neurons in a layer will only be connected to a small region of the layer before it, instead of all of the neurons in a fully-connected manner. Moreover, the final output layer would for CIFAR-10 have dimensions 1x1x10, because by the end of the ConvNet architecture we will reduce the full image into a single vector of class scores, arranged along the depth dimension. Here is a visualization:
 
 ![](assets/ConvNet-Architecture.jpeg)
+
 *Left: A regular 3-layer Neural Network. Right: A ConvNet arranges its neurons in three dimensions (width, height, depth), as visualized in one of the layers. Every layer of a ConvNet transforms the 3D input volume to a 3D output volume of neuron activations. In this example, the red input layer holds the image, so its width and height would be the dimensions of the image, and the depth would be 3 (Red, Green, Blue channels).*
 
 [back to current section](#computer-vision)
@@ -911,6 +912,7 @@ A simple ConvNet is a sequence of layers, and every layer of a ConvNet transform
 In this way, ConvNets transform the original image layer by layer from the original pixel values to the final class scores. Note that some layers contain parameters and other don’t. In particular, the CONV/FC layers perform transformations that are a function of not only the activations in the input volume, but also of the parameters (the weights and biases of the neurons). On the other hand, the RELU/POOL layers will implement a fixed function. The parameters in the CONV/FC layers will be trained with gradient descent so that the class scores that the ConvNet computes are consistent with the labels in the training set for each image.
 
 ![](assets/ConvNet-Layers.jpeg)
+
 *The activations of an example ConvNet architecture. The initial volume stores the raw image pixels (left) and the last volume stores the class scores (right). Each volume of activations along the processing path is shown as a column. Since it's difficult to visualize 3D volumes, we lay out each volume's slices in rows. The last layer volume holds the scores for each class, but here we only visualize the sorted top 5 scores, and print the labels of each one. The architecture shown here is a tiny VGG Net.*
 
 In summary:
@@ -922,6 +924,23 @@ In summary:
 * Each Layer may or may not have additional hyperparameters (e.g. CONV/FC/POOL do, RELU doesn’t)
 
 [back to current section](#computer-vision)
+
+### Convolutional Layer
+
+* Accepts a volume of size `W1 × H1 ×D1`
+* Requires four hyperparameters:
+    * Number of filters K,
+    * their spatial extent F,
+    * the stride S,
+    * the amount of zero padding P.
+* Produces a volume of size `W2 × H2 × D2` where:
+    * `W2 = (W1 − F + 2P)/S + 1`
+    * `H2 = (H1 − F + 2P)/S + 1` (i.e. width and height are computed equally by symmetry)
+    * `D2 = K`
+* With parameter sharing, it introduces `F⋅F⋅D1` weights per filter, for a total of `(F⋅F⋅D1)⋅K` weights and K biases.
+* In the output volume, the d-th depth slice (of size `W2 × H2`) is the result of performing a valid convolution of the d-th filter over the input volume with a stride of S, and then offset by d-th bias.
+
+A common setting of the hyperparameters is `F = 3, S = 1, P = 1`.
 
 ### Backpropagation with ReLU
 
