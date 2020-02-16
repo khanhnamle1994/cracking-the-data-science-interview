@@ -41,6 +41,10 @@ Here are the sections:
 * [Data Interview Qs](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Data-Interview-Qs)
 * [Data Science Prep](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Data-Science-Prep)
 * [Interview Query](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Interview-Query)
+* [Analytics Vidhya](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Analytics-Vidhya.md)
+* [Springboard](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Springboard.md)
+* [Elite Data Science](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Elite-Data-Science.md)
+* [Workera](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Workera)
 
 ## Data Science Case Studies
 [This section](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Case-Studies) contains case study questions that concern designing machine learning systems to solve practical problems.
