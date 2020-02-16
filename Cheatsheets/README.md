@@ -942,6 +942,29 @@ In summary:
 
 A common setting of the hyperparameters is `F = 3, S = 1, P = 1`.
 
+[back to current section](#computer-vision)
+
+### Pooling Layer
+
+* Accepts a volume of size `W1 × H1 × D1`
+* Requires two hyperparameters:
+    * their spatial extent F,
+    * the stride S,
+* Produces a volume of size `W2 × H2 × D2` where:
+    * `W2 = (W1 − F)/S + 1`
+    * `H2 = (H1 − F)/S + 1`
+    * `D2 = D1`
+* Introduces zero parameters since it computes a fixed function of the input.
+* For Pooling layers, it is not common to pad the input using zero-padding.
+
+It is worth noting that there are only two commonly seen variations of the max pooling layer found in practice: A pooling layer with `F = 3, S = 2` (also called overlapping pooling), and more commonly `F = 2, S = 2`. Pooling sizes with larger receptive fields are too destructive.
+
+![](assets/maxpool.jpeg)
+
+*Pooling layer downsamples the volume spatially, independently in each depth slice of the input volume. Left: In this example, the input volume of size [224x224x64] is pooled with filter size 2, stride 2 into output volume of size [112x112x64]. Notice that the volume depth is preserved. Right: The most common downsampling operation is max, giving rise to max pooling, here shown with a stride of 2. That is, each max is taken over 4 numbers (little 2x2 square).*
+
+[back to current section](#computer-vision)
+
 ### Backpropagation with ReLU
 
 * Watch Stanford's CS230 [lecture 7](https://youtu.be/gCJCgQW_LKc?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb&t=4592) from 1:16:32 to 1:20:30.
