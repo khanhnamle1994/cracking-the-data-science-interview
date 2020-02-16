@@ -503,7 +503,7 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 
 ## Deep Learning Concepts
 
-* [Standard Architectures](#standard-architectures)
+* [Multi Layer Neural Network](#multi-layer-neural-network)
 * [Common Regularizers](#common-regularizers)
 * [Common Normalization](#common-normalization)
 * [Common Optimizers](#common-optimizers)
@@ -511,19 +511,50 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 * [Neural Networks From Scratch](#neural-networks-from-scratch)
 * [Notes from Coursera Deep Learning Specialization](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Notes-From-Coursera-DL-Specialization.pdf)
 
-### Standard Architectures
+### Multi Layer Neural Network
 
-* [Multi-Layer Perceptron](http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/)
-* [Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
-* [Long Short Term Memory Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
-* [Gated Recurrent Units](https://arxiv.org/abs/1412.3555v1)
-* [Convolutional](http://colah.github.io/posts/2014-07-Conv-Nets-Modular/) [Neural Networks](https://cs231n.github.io/convolutional-networks/)
-* [Attention](https://arxiv.org/abs/1409.0473) [Mechanisms](https://arxiv.org/abs/1706.03762)
+Here is the [reference](http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/):
+
+A neural network is put together by hooking together many of our simple “neurons,” so that the output of a neuron can be the input of another. For example, here is a small neural network:
+
+![](assets/Network331.png)
+
+In this figure, we have used circles to also denote the inputs to the network. The circles labeled “+1” are called *bias units*, and correspond to the intercept term. The leftmost layer of the network is called the *input layer*, and the rightmost layer the *output layer* (which, in this example, has only one node). The middle layer of nodes is called the *hidden layer*, because its values are not observed in the training set. We also say that our example neural network has *3 input units* (not counting the bias unit), *3 hidden units*, and *1 output unit*.
+
+We will let `n_l` denote the number of layers in our network; thus `n_l = 3` in our example. We label layer l as `L_l`, so layer `L_1` is the input layer, and layer `L_nl` the output layer. Our neural network has parameters `(W, b) = (W(1), b(1), W(2), b(2))`, where we write `W(l)_ij` to denote the parameter (or weight) associated with the connection between unit j in layer l, and unit i in layer l + 1. Also, `b(l)_i` is the bias associated with unit i in layer l + 1. Thus, in our example, we have W(1) ∈ ℜ^{3×3}, and W(2) ∈ ℜ^{1×3}. Note that bias units don’t have inputs or connections going into them, since they always output the value +1. We also let `s_l` denote the number of nodes in layer l (not counting the bias unit).
+
+We will write `a(l)_i` to denote the activation (meaning output value) of unit i in layer l. For `l = 1`, we also use `a(1)_i = x_i` to denote the i-th input. Given a fixed setting of the parameters W, b, our neural network defines a hypothesis `h_W,b(x)` that outputs a real number. Specifically, the computation that this neural network represents is given by:
+
+![](assets/MLP-Equation1.png)
+
+In the sequel, we also let `z(l)_i` denote the total weighted sum of inputs to unit i in layer l, including the bias term, so that `a(l)_i = f(z(l)_i)`.
+
+Note that this easily lends itself to a more compact notation. Specifically, if we extend the activation function f(⋅) to apply to vectors in an element-wise fashion, then we can write the equations above more compactly as:
+
+![](assets/MLP-Equation2.png)
+
+We call this step *forward propagation*. More generally, recalling that we also use `a(1) = x` to also denote the values from the input layer, then given layer l’s activations a(l), we can compute layer l + 1’s activations a(l + 1) as:
+
+![](assets/MLP-Equation3.png)
+
+By organizing our parameters in matrices and using matrix-vector operations, we can take advantage of fast linear algebra routines to quickly perform calculations in our network.
+
+We have so far focused on one example neural network, but one can also build neural networks with other *architectures* (meaning patterns of connectivity between neurons), including ones with multiple hidden layers. The most common choice is a n_l-layered network where layer 1 is the input layer, layer n_l is the output layer, and each layer l is densely connected to layer l + 1. In this setting, to compute the output of the network, we can successively compute all the activations in layer L2, then layer L3, and so on, up to layer L_nl, using the equations above that describe the forward propagation step. This is one example of a feedforward neural network, since the connectivity graph does not have any directed loops or cycles.
+
+Neural networks can also have multiple output units. For example, here is a network with two hidden layers layers L2 and L3 and two output units in layer L4:
+
+![](assets/Network3322.png)
+
+To train this network, we would need training examples (x(i),y(i)) where y(i) ∈ ℜ^2. This sort of network is useful if there’re multiple outputs that you’re interested in predicting. (For example, in a medical diagnosis application, the vector x might give the input features of a patient, and the different outputs yi’s might indicate presence or absence of different diseases.)
+
+[back to current section](#deep-learning-concepts)
 
 ### Common Regularizers
 
 * [Weight Decay](https://papers.nips.cc/paper/563-a-simple-weight-decay-can-improve-generalization.pdf)
 * [Dropout](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf)
+
+[back to current section](#deep-learning-concepts)
 
 ### Common Normalization
 
@@ -531,15 +562,21 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 * [Layer Norm](https://arxiv.org/abs/1607.06450)
 * [Weight Norm](https://arxiv.org/abs/1602.07868)
 
+[back to current section](#deep-learning-concepts)
+
 ### Common Optimizers
 
 * [SGD/Momentum SGD](http://ufldl.stanford.edu/tutorial/supervised/OptimizationStochasticGradientDescent/)
 * [Adam](https://arxiv.org/abs/1412.6980)
 * [Others](https://arxiv.org/abs/1609.04747)
 
+[back to current section](#deep-learning-concepts)
+
 ### Reparameterization Trick
 
 * [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
+
+[back to current section](#deep-learning-concepts)
 
 ### Neural Networks From Scratch
 
@@ -770,6 +807,8 @@ Here is a visual explanation of PCA:
 
 ## Computer Vision
 
+* [Convolutional](http://colah.github.io/posts/2014-07-Conv-Nets-Modular/) [Neural Networks](https://cs231n.github.io/convolutional-networks/)
+* [Attention](https://arxiv.org/abs/1409.0473) [Mechanisms](https://arxiv.org/abs/1706.03762)
 * [Backpropagation with ReLU](#backpropagation-with-ReLU)
 * [Transfer Learning](#transfer-learning)
 * [Convolutional Filters](#convolutional-filters)
@@ -837,6 +876,9 @@ Suppose an image has size W x W, the filter has size F x F, the padding is P, an
 * [N-gram](#ngram)
 * [Bag of Words](#bag-of-words)
 * [word2vec](#word2vec)
+* [Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+* [Long Short Term Memory Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+* [Gated Recurrent Units](https://arxiv.org/abs/1412.3555v1)
 
 ### Tokenization
 
