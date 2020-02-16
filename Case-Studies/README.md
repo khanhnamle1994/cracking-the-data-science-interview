@@ -1,7 +1,7 @@
 # Data Science Case Studies
-The content of this folder comes from Chip Huyen's chapter on [Machine Learning Systems Design](https://github.com/chiphuyen/machine-learning-systems-design/blob/master/build/build1/consolidated.pdf) for her upcoming book []"Machine Learning Interviews"](https://huyenchip.com/2019/07/21/machine-learning-interviews.html), which I highly recommend to subscribe.
+The content of this folder comes from Chip Huyen's chapter on [Machine Learning Systems Design](https://github.com/chiphuyen/machine-learning-systems-design/blob/master/build/build1/consolidated.pdf) for her upcoming book ["Machine Learning Interviews"](https://huyenchip.com/2019/07/21/machine-learning-interviews.html), which I highly recommend to subscribe.
 
-Here are the corresponding industry examples and exercises to work on.
+Here are the corresponding [industry examples](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Case-Studies/Industry-Examples.md) and [exercises](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Case-Studies/Exercises.md) to work on.
 
 Designing a machine learning system is an iterative process. There are generally four main components of the process: project setup, data pipeline, modeling (selecting, training, and debugging your model), and serving (testing, deploying, maintaining).
 
