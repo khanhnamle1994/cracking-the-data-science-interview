@@ -3,6 +3,7 @@ Here are the sections:
 * [Data Science Cheatsheets](#data-science-cheatsheets)
 * [Data Science EBooks](#data-science-ebooks)
 * [Data Science Question Bank](#data-science-question-bank)
+* [Data Science Case Studies](#data-science-case-studies)
 * [Data Science Portfolio](#data-science-portfolio)
 * [Data Journalism Portfolio](#data-journalism-portfolio)
 
@@ -14,9 +15,10 @@ Here are the sections:
 * [Statistics](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#statistics)
 * [Mathematics](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#mathematics)
 * [Machine Learning Concepts](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#machine-learning-concepts)
+* [Deep Learning Concepts](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#deep-learning-concepts)
 * [Supervised Learning](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#supervised-learning)
 * [Unsupervised Learning](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#unsupervised-learning)
-* [Deep Learning Concepts](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#deep-learning-concepts)
+* [Computer Vision](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#computer-vision)
 * [Natural Language Processing](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#natural-language-processing)
 * [Software Engineering](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#software-engineering)
 * [Stanford Materials](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#stanford-materials)
@@ -39,6 +41,9 @@ Here are the sections:
 * [Data Interview Qs](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Data-Interview-Qs)
 * [Data Science Prep](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Data-Science-Prep)
 * [Interview Query](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Interview-Query)
+
+## Data Science Case Studies
+[This section](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Case-Studies) contains case study questions that concern designing machine learning systems to solve practical problems.
 
 ## Data Science Portfolio
 
