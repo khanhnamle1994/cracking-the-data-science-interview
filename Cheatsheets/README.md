@@ -959,9 +959,35 @@ A common setting of the hyperparameters is `F = 3, S = 1, P = 1`.
 
 It is worth noting that there are only two commonly seen variations of the max pooling layer found in practice: A pooling layer with `F = 3, S = 2` (also called overlapping pooling), and more commonly `F = 2, S = 2`. Pooling sizes with larger receptive fields are too destructive.
 
+![](assets/pool.jpeg)
 ![](assets/maxpool.jpeg)
 
-*Pooling layer downsamples the volume spatially, independently in each depth slice of the input volume. Left: In this example, the input volume of size [224x224x64] is pooled with filter size 2, stride 2 into output volume of size [112x112x64]. Notice that the volume depth is preserved. Right: The most common downsampling operation is max, giving rise to max pooling, here shown with a stride of 2. That is, each max is taken over 4 numbers (little 2x2 square).*
+*Pooling layer downsamples the volume spatially, independently in each depth slice of the input volume. Above: In this example, the input volume of size [224x224x64] is pooled with filter size 2, stride 2 into output volume of size [112x112x64]. Notice that the volume depth is preserved. Below: The most common downsampling operation is max, giving rise to max pooling, here shown with a stride of 2. That is, each max is taken over 4 numbers (little 2x2 square).*
+
+[back to current section](#computer-vision)
+
+### ConvNet Layer Patterns
+
+The most common form of a ConvNet architecture stacks a few CONV-RELU layers, follows them with POOL layers, and repeats this pattern until the image has been merged spatially to a small size. At some point, it is common to transition to fully-connected layers. The last fully-connected layer holds the output, such as the class scores. In other words, the most common ConvNet architecture follows the pattern:
+
+`INPUT -> [[CONV -> RELU]*N -> POOL?]*M -> [FC -> RELU]*K -> FC`
+
+where the `*` indicates repetition, and the `POOL?` indicates an optional pooling layer. Moreover, `N >= 0` (and usually `N <= 3`), `M >= 0`, `K >= 0` (and usually `K < 3`). For example, here are some common ConvNet architectures you may see that follow this pattern:
+
+* `INPUT -> FC`, implements a linear classifier. Here `N = M = K = 0`.
+* `INPUT -> CONV -> RELU -> FC`
+* `INPUT -> [CONV -> RELU -> POOL]*2 -> FC -> RELU -> FC`. Here we see that there is a single CONV layer between every POOL layer.
+* `INPUT -> [CONV -> RELU -> CONV -> RELU -> POOL]*3 -> [FC -> RELU]*2 -> FC`. Here we see two CONV layers stacked before every POOL layer. This is generally a good idea for larger and deeper networks, because multiple stacked CONV layers can develop more complex features of the input volume before the destructive pooling operation.
+
+[back to current section](#computer-vision)
+
+### ConvNet Layer Sizing Patterns
+
+The **input layer** (that contains the image) should be divisible by 2 many times. Common numbers include 32 (e.g. CIFAR-10), 64, 96 (e.g. STL-10), or 224 (e.g. common ImageNet ConvNets), 384, and 512.
+
+The **conv layers** should be using small filters (e.g. 3x3 or at most 5x5), using a stride of `S = 1`, and crucially, padding the input volume with zeros in such way that the conv layer does not alter the spatial dimensions of the input. That is, when `F = 3`, then using `P = 1` will retain the original size of the input. When `F = 5`, `P = 2`. For a general F, it can be seen that `P = (F − 1) / 2` preserves the input size. If you must use bigger filter sizes (such as 7x7 or so), it is only common to see this on the very first conv layer that is looking at the input image.
+
+The **pool layers** are in charge of downsampling the spatial dimensions of the input. The most common setting is to use max-pooling with 2x2 receptive fields (i.e. `F = 2`), and with a stride of 2 (i.e. `S = 2`). Note that this discards exactly 75% of the activations in an input volume (due to downsampling by 2 in both width and height). Another slightly less common setting is to use 3x3 receptive fields with a stride of 2, but this makes. It is very uncommon to see receptive field sizes for max pooling that are larger than 3 because the pooling is then too lossy and aggressive. This usually leads to worse performance.
 
 [back to current section](#computer-vision)
 
