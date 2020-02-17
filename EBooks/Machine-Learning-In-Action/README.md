@@ -47,12 +47,14 @@ The code and data for this chapter is in [Ch02 folder](https://github.com/khanhn
 
 Here is the pseudocode for k-Nearest Neighbors algorithm to classify one piece of data called `inX`:
 
-*For every point in our dataset:
+```
+For every point in our dataset:
   - calculate the distance between inX and the current point
   - sort the distances in increasing order
   - take k items with lowest distances to inX
   - find the majority class among these items
-  - return the majority class as our prediction for the class of inX*
+  - return the majority class as our prediction for the class of inX
+```
 
 Here is the corresponding Python code:
 
@@ -102,6 +104,106 @@ An additional drawback is that kNN doesn’t give you any idea of the underlying
 [back to top](#machine-learning-in-action)
 
 ## Decision Trees
+
+The code and data for this chapter is in [Ch03 folder](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-In-Action/Ch03).
+
+Here is the pseudo-code for a function called `createBranch()` to build a decision tree:
+
+```
+Check if every item in the dataset is in the same class:
+If so return the class label
+Else
+  find the best feature to split the data
+  split the dataset
+  create a branch node
+  for each split
+    call createBranch and add the result to the branch node
+  return branch node
+```
+
+Here is the Python code to calculate information gain (Shannon entropy) of a dataset:
+
+```
+def calcShannonEnt(dataSet):
+    numEntries = len(dataSet)
+    labelCounts = {}
+
+    # Create dictionary of all possible classes
+    for featVec in dataSet: #the the number of unique elements and their apperance
+        currentLabel = featVec[-1]
+        if currentLabel not in labelCounts.keys(): labelCounts[currentLabel] = 0
+        labelCounts[currentLabel] += 1
+    shannonEnt = 0.0
+
+    for key in labelCounts:
+        prob = float(labelCounts[key])/numEntries
+        shannonEnt -= prob * log(prob,2) #log base 2
+    return shannonEnt
+```
+
+Here is the Python code to split data on a given feature:
+
+```
+def splitDataSet(dataSet, axis, value):
+    retDataSet = [] # create separate list
+
+    for featVec in dataSet:
+        if featVec[axis] == value:
+
+            # cut out the feature to split on
+            reducedFeatVec = featVec[:axis]     #chop out axis used for splitting
+            reducedFeatVec.extend(featVec[axis+1:])
+            retDataSet.append(reducedFeatVec)
+
+    return retDataSet
+```
+
+Here is the Python code to choose the best feature to split on:
+
+```
+def chooseBestFeatureToSplit(dataSet):
+    numFeatures = len(dataSet[0]) - 1      #the last column is used for the labels
+    baseEntropy = calcShannonEnt(dataSet)
+    bestInfoGain = 0.0; bestFeature = -1
+
+    for i in range(numFeatures):        #iterate over all the features
+        featList = [example[i] for example in dataSet]#create an unique list of all the examples of this feature
+        uniqueVals = set(featList)       #get a set of unique values
+        newEntropy = 0.0
+
+        # Calculate entropy for each split
+        for value in uniqueVals:
+            subDataSet = splitDataSet(dataSet, i, value)
+            prob = len(subDataSet)/float(len(dataSet))
+            newEntropy += prob * calcShannonEnt(subDataSet)     
+        infoGain = baseEntropy - newEntropy     #calculate the info gain; ie reduction in entropy
+
+        if (infoGain > bestInfoGain):       #compare this to the best gain so far
+            bestInfoGain = infoGain         #if better than current best, set to best
+            bestFeature = i
+    return bestFeature                      #returns an integer
+```
+
+Here is the Python code to recursively create a tree:
+
+```
+def createTree(dataSet,labels):
+    classList = [example[-1] for example in dataSet]
+    if classList.count(classList[0]) == len(classList):
+        return classList[0]#stop splitting when all of the classes are equal
+    if len(dataSet[0]) == 1: #stop splitting when there are no more features in dataSet
+        return majorityCnt(classList)
+    bestFeat = chooseBestFeatureToSplit(dataSet)
+    bestFeatLabel = labels[bestFeat]
+    myTree = {bestFeatLabel:{}}
+    del(labels[bestFeat])
+    featValues = [example[bestFeat] for example in dataSet]
+    uniqueVals = set(featValues)
+    for value in uniqueVals:
+        subLabels = labels[:]       #copy all of labels, so trees don't mess up existing labels
+        myTree[bestFeatLabel][value] = createTree(splitDataSet(dataSet, bestFeat, value),subLabels)
+    return myTree
+```
 
 **Pros:** Computationally cheap to use, easy for humans to understand learned results, missing values OK, can deal with irrelevant features.
 
