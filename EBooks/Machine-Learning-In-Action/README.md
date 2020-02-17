@@ -43,6 +43,42 @@ Here are the chapters:
 
 ## k-Nearest Neighbors
 
+The code and data for this chapter is in [Ch02 folder](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-In-Action/Ch02).
+
+Here is the pseudocode for k-Nearest Neighbors algorithm to classify one piece of data called `inX`:
+
+*For every point in our dataset:
+  - calculate the distance between inX and the current point
+  - sort the distances in increasing order
+  - take k items with lowest distances to inX
+  - find the majority class among these items
+  - return the majority class as our prediction for the class of inX*
+
+Here is the corresponding Python code:
+
+```
+def classify0(inX, dataSet, labels, k):
+    dataSetSize = dataSet.shape[0]
+
+    # Calculate the Euclidean distance
+    diffMat = tile(inX, (dataSetSize,1)) - dataSet
+    sqDiffMat = diffMat**2
+    sqDistances = sqDiffMat.sum(axis=1)
+    distances = sqDistances**0.5
+
+    sortedDistIndicies = distances.argsort()     
+    classCount={}
+
+    for i in range(k):
+        # voting with lowest k distances
+        voteIlabel = labels[sortedDistIndicies[i]]
+        classCount[voteIlabel] = classCount.get(voteIlabel,0) + 1
+
+    # Sort the dictionary
+    sortedClassCount = sorted(classCount.iteritems(), key=operator.itemgetter(1), reverse=True)
+    return sortedClassCount[0][0]
+```
+
 **Pros:** High accuracy, insensitive to outliers, no assumptions about data.
 
 **Cons:** Computationally expensive, requires a lot of memory.

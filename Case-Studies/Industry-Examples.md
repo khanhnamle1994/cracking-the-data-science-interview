@@ -5,10 +5,11 @@ Here are the list of industry examples that Chip compiles:
 **Problem**: Predict Customer Lifetime Value of new listings
 
 **ML Workflow**:
- 	- Feature Engineering: Define relevant features using Airbnb's internal feature repository Zipline.
-	- Prototyping and Training: Train a model prototype using scikit-learn.
-	- Model Selection and Validation: Perform model selection and validation using various AutoML frameworks.
-	- Productionization: Take the selected model prototype to production using Airbnb's notebook translation framework ML Automator into an Airflow ML pipeline.
+
+- Feature Engineering: Define relevant features using Airbnb's internal feature repository Zipline.
+- Prototyping and Training: Train a model prototype using scikit-learn.
+- Model Selection and Validation: Perform model selection and validation using various AutoML frameworks.
+- Productionization: Take the selected model prototype to production using Airbnb's notebook translation framework ML Automator into an Airflow ML pipeline.
 
 2. [Using Machine Learning to Improve Streaming Quality at Netflix](https://medium.com/netflix-techblog/using-machine-learning-to-improve-streaming-quality-at-netflix-9651263ef09f) (Chaitanya Ekanadham, Netflix Technology Blog, 2018)
 
