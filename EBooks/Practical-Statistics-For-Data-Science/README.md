@@ -502,6 +502,27 @@ In problems involving many variables, it can be challenging to decide which inte
 
 [back to current section](#regression-and-prediction)
 
+### Testing The Assumptions Regression Diagnostics
+
+* **Standardized residuals**: Residuals divided by the standard error of the residuals.
+* **Outliers**: Records (or outcome values) that are distant from the rest of the data (or the predicted outcome).
+* **Influential value**: A value or record whose presence or absence makes a big difference in the regression equation.
+* **Leverage**: The degree of influence that a single record has on a regression equation. Synonyms: hat-value
+* **Non-normal residuals**: Non-normally distributed residuals can invalidate some technical requirements of regression, but are usually not a concern in data science.
+* **Heteroskedasticity**: When some ranges of the outcome experience residuals with higher variance (may indicate a predictor missing from the equation).
+* **Partial residual plots**: A diagnostic plot to illuminate the relationship between the outcome variable and a single predictor. Synonyms: added variables plot.
+
+[back to current section](#regression-and-prediction)
+
+### Polynomial And Spline Regression
+
+* **Polynomial regression**: Adds polynomial terms (squares, cubes, etc.) to a regression.
+* **Spline regression**: Fitting a smooth curve with a series of polynomial segments.
+* **Knots**: Values that separate spline segments.
+* **Generalized additive models**: Spline models with automated selection of knots. Synonyms: GAM.
+
+[back to current section](#regression-and-prediction)
+
 [back to top](#practical-statistics-for-data-scientists)
 
 ## Classification
