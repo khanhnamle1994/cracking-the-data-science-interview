@@ -527,6 +527,12 @@ In problems involving many variables, it can be challenging to decide which inte
 
 ## Classification
 
+* [Naive Bayes](#naive-bayes)
+* [Discriminant Analysis](#discriminant-analysis)
+* [Logistic Regression](#logistic-regression)
+* [Evaluating Classification Models](#evaluating-classification-models)
+* [Strategies for Imbalanced Data](#strategies-for-imbalanced-data)
+
 ## Statistical Machine Learning
 
 ## Unsupervised Learning
