@@ -255,6 +255,38 @@ There are a number of practical considerations when implementing naïve Bayes in
 
 ## Logistic Regression
 
+The code and data for this chapter is in [Ch05 folder](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-In-Action/Ch05).
+
+Here is the pseudocode to train gradient ascent for logistic regression:
+
+```
+Start with the weights all set to 1
+Repeat R number of times:
+  Calculate the gradient of the entire dataset
+  Update the weights vector by alpha*gradient
+Return the weights vector
+```
+
+Here is the Python code to optimize gradient ascent for logistic regression:
+
+```
+def sigmoid(inX):
+    return 1.0 / (1 + exp(-inX))
+
+def gradAscent(dataMatIn, classLabels):
+    dataMatrix = mat(dataMatIn)             #convert to NumPy matrix
+    labelMat = mat(classLabels).transpose() #convert to NumPy matrix
+    m,n = shape(dataMatrix)
+    alpha = 0.001
+    maxCycles = 500
+    weights = ones((n,1))
+    for k in range(maxCycles):              #heavy on matrix operations
+        h = sigmoid(dataMatrix*weights)     #matrix multiplication
+        error = (labelMat - h)              #vector subtraction
+        weights = weights + alpha * dataMatrix.transpose()* error #matrix mult
+    return weights
+```
+
 **Pros:** Computationally inexpensive, easy to implement, knowledge representation easy to interpret.
 
 **Cons:** Prone to underfitting, may have low accuracy.
