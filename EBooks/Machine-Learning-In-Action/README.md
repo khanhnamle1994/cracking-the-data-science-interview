@@ -425,6 +425,58 @@ The CART algorithm builds binary trees and can handle discrete as well as contin
 
 ## k-Means Clustering
 
+The code and data for this chapter is in [Ch10 folder](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-In-Action/Ch10).
+
+Here is the pseudocode for the k-Means clustering algorithm:
+
+```
+Create k points for starting centroids (often randomly)
+While any point has changed:
+  for every centroid
+    calculate the distance between the centroid and point
+    assign the point to the cluster with the lowest distance
+  for every cluster calculate the mean of the points in that cluster
+    assign the centroid to the mean
+```
+
+Here is the corresponding Python code: (1) Calculate the Euclidean distance between 2 vectors, (2) Creates a set of random centroids for a given dataset, (3) Implement full k-Means
+
+```
+def distMeas(vecA, vecB):
+    return sqrt(sum(power(vecA - vecB, 2))) #la.norm(vecA-vecB)
+
+def createCent(dataSet, k):
+    n = shape(dataSet)[1]
+    centroids = mat(zeros((k,n)))#create centroid mat
+    for j in range(n):#create random cluster centers, within bounds of each dimension
+        minJ = min(dataSet[:,j])
+        rangeJ = float(max(dataSet[:,j]) - minJ)
+        centroids[:,j] = mat(minJ + rangeJ * random.rand(k,1))
+    return centroids
+
+def kMeans(dataSet, k, distMeas=distEclud, createCent=randCent):
+    m = shape(dataSet)[0]
+    clusterAssment = mat(zeros((m,2)))#create mat to assign data points
+                                      #to a centroid, also holds SE of each point
+    centroids = createCent(dataSet, k)
+    clusterChanged = True
+    while clusterChanged:
+        clusterChanged = False
+        for i in range(m):#for each data point assign it to the closest centroid
+            minDist = inf; minIndex = -1
+            for j in range(k):
+                distJI = distMeas(centroids[j,:],dataSet[i,:])
+                if distJI < minDist:
+                    minDist = distJI; minIndex = j
+            if clusterAssment[i,0] != minIndex: clusterChanged = True
+            clusterAssment[i,:] = minIndex,minDist**2
+        print centroids
+        for cent in range(k):#recalculate centroids
+            ptsInClust = dataSet[nonzero(clusterAssment[:,0].A==cent)[0]]#get all the point in this cluster
+            centroids[cent,:] = mean(ptsInClust, axis=0) #assign centroid to mean
+    return centroids, clusterAssment
+```
+
 **Pros:** Easy to implement.
 
 **Cons:** Can converge at local minima; slow on very large datasets.
