@@ -64,7 +64,19 @@ Here are the list of industry examples that Chip compiles:
 
 4. [How we grew from 0 to 4 million women on our fashion app, with a vertical machine learning approach](https://medium.com/hackernoon/how-we-grew-from-0-to-4-million-women-on-our-fashion-app-with-a-vertical-machine-learning-approach-f8b7fc0a89d7) (Gabriel Aldamiz, HackerNoon, 2018)
 
-
+- **Thesis**: Outfits are the best asset to understand people’s taste. Understanding taste will transform online fashion. The Fashion Taste API builds a Taste Graph for each fashion retailer, their system of intelligence to understand why a shopper buys a product. It’s a strategic asset that includes Taste Profiles, a fashion ontology, and our own interpretation of fashion products.
+- **1st Step: Building the app for people to express their needs** - Three things helped with retention:
+	- (a) identify retention levers using behavioral cohorts.
+	- (b) re-think the onboarding process, once we knew the levers of retention.
+	- (c) define how we learn.
+- **2nd step: Building the data platform to learn people’s fashion needs**
+	- Social Fashion Graph is a compact representation of how needs, outfits and people interrelate, a concept that helped us build the data platform. The data platform creates a high-quality dataset linked to a learning and training world, our app, which therefore improves with each new expression of taste.
+	- We ended up opening up this technology to fashion retailers, with the Fashion Taste API. The objective of the Fashion Taste API is to empower teams to own taste data from each of their shoppers, so they can built memorable experiences for their clients. Truly effective fitting room smart mirrors, in-store fashion stylists, and personalized omnichannel experiences.
+	- We thought of outfits as playlists: an outfit is a combination of items that makes sense to consume together. Using collaborative filtering, the relations captured here allow us to offer recommendations in different areas of the app.
+- **3rd Step: Algorithms**
+	- Fashion has its own challenges.
+	- There is not an easy way to match an outfit to a shoppable product (think about most garments in your wardrobe, most likely you won’t find a link to view/buy those garments online, something you can do for many other products you have at home). Another challenge: the industry is not capturing how people describe clothes or outfits, so there is a strong disconnect between many ecommerces and its shoppers. Another challenge: style is complex to capture and classify by a machine.
+	- Owning the correct data set allows us to focus on the specific narrow use cases related to outfit recommendations, and to focus on delivering value through the algorithms instead of spending time collecting and cleaning data. People’s very personal style can become as actionable as metadata and possibly as transparent as well (?), and I think we can see the path to get there. As we have a consumer product that people already love, we can ship early results of these algorithms partially hidden, and increase their presence as feedback improves results.
 
 5. [Machine Learning-Powered Search Ranking of Airbnb Experiences](https://medium.com/airbnb-engineering/machine-learning-powered-search-ranking-of-airbnb-experiences-110b4b1a0789) (Mihajlo Grbovic, Airbnb Engineering & Data Science, 2019)
 
