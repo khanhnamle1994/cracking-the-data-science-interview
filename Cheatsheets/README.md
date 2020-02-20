@@ -595,37 +595,45 @@ Recent research has found a different activation function, the rectified linear 
     - Weight decay is used as part of the back-propagation algorithm.
     - Weight decay is a way of implementing an L2 regularization term.
 
-* **Dropout**: ([Paper](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf))
-
 ![](assets/Dropout-Fig1.png)
 
-Model combination nearly always improves the performance of machine learning methods. With large neural networks, however, the obvious idea of averaging the outputs of many separately trained nets is prohibitively expensive. Combining several models is most helpful when the individual models are different from each other and in order to make neural net models different, they should either have different architectures or be trained on different data. Training many different architectures is hard because finding optimal hyperparameters for each architecture is a daunting task and training each large network requires a lot of computation.
+* **Dropout**: ([Paper](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf))
 
-Moreover, large networks normally require large amounts of training data and there may not be enough data available to train different networks on different subsets of the data. Even if one was able to train many different large networks, using them all at test time is infeasible in applications where it is important to respond quickly.
-
-Dropout is a technique that addresses both these issues. It prevents overfitting and provides a way of approximately combining exponentially many different neural network architectures efficiently. The term “dropout” refers to dropping out units (hidden and visible) in a neural network. By dropping a unit out, we mean temporarily removing it from the network, along with all its incoming and outgoing connections, as shown in the figure 1.
-
-The choice of which units to drop is random. In the simplest case, each unit is retained with a fixed probability p independent of other units, where p can be chosen using a validation set or can simply be set at 0.5, which seems to be close to optimal for a wide range of networks and tasks. For the input units, however, the optimal probability of retention is usually closer to 1 than to 0.5.
-
-Applying dropout to a neural network amounts to sampling a “thinned” network from it. The thinned network consists of all the units that survived dropout (Figure 1b). A neural net with n units, can be seen as a collection of 2^n possible thinned neural networks. These networks all share weights so that the total number of parameters is still O(n^2), or less. For each presentation of each training case, a new thinned network is sampled and trained. So training a neural network with dropout can be seen as training a collection of 2^n thinned networks with extensive weight sharing, where each thinned network gets trained very rarely, if at all.
-
-At test time, it is not feasible to explicitly average the predictions from exponentially many thinned models. However, a very simple approximate averaging method works well in practice. The idea is to use a single neural net at test time without dropout. The weights of this network are scaled-down versions of the trained weights. If a unit is retained with probability p during training, the outgoing weights of that unit are multiplied by p at test time as shown in Figure 2. This ensures that for any hidden unit the expected output (under the distribution used to drop units at training time) is the same as the actual output at test time. By doing this scaling, 2^n networks with shared weights can be combined into a single neural network to be used at test time.
+    - Dropout is a technique that prevents overfitting and provides a way of approximately combining exponentially many different neural network architectures efficiently. The term “dropout” refers to dropping out units (hidden and visible) in a neural network, as shown in the figure 1.
+    - The choice of which units to drop is random. In the simplest case, each unit is retained with a fixed probability p independent of other units, where p can be chosen using a validation set or can simply be set at 0.5, which seems to be close to optimal for a wide range of networks and tasks. For the input units, however, the optimal probability of retention is usually closer to 1 than to 0.5.
+    - One of the drawbacks of dropout is that it increases training time. A dropout network typically takes 2-3 times longer to train than a standard neural network of the same architecture. A major cause of this increase is that the parameter updates are very noisy. Each training case effectively tries to train a different random architecture. Therefore, the gradients that are being computed are not gradients of the final architecture that will be used at test time. Therefore, it is not surprising that training takes a long time.
+    - Applying dropout to a neural network amounts to sampling a “thinned” network from it. The thinned network consists of all the units that survived dropout (Figure 1b). A neural net with n units, can be seen as a collection of 2^n possible thinned neural networks. These networks all share weights so that the total number of parameters is still O(n^2), or less. For each presentation of each training case, a new thinned network is sampled and trained. So training a neural network with dropout can be seen as training a collection of 2^n thinned networks with extensive weight sharing, where each thinned network gets trained very rarely, if at all.
+    - At test time, it is not feasible to explicitly average the predictions from exponentially many thinned models. However, a very simple approximate averaging method works well in practice. The idea is to use a single neural net at test time without dropout. The weights of this network are scaled-down versions of the trained weights. If a unit is retained with probability p during training, the outgoing weights of that unit are multiplied by p at test time as shown in Figure 2. This ensures that for any hidden unit the expected output (under the distribution used to drop units at training time) is the same as the actual output at test time. By doing this scaling, 2^n networks with shared weights can be combined into a single neural network to be used at test time.
 
 ![](assets/Dropout-Fig2.png)
-
-One of the drawbacks of dropout is that it increases training time. A dropout network typically takes 2-3 times longer to train than a standard neural network of the same architecture. A major cause of this increase is that the parameter updates are very noisy. Each training case effectively tries to train a different random architecture. Therefore, the gradients that are being computed are not gradients of the final architecture that will be used at test time. Therefore, it is not surprising that training takes a long time.
-
-However, it is likely that this stochasticity prevents overfitting. This creates a trade-off between overfitting and training time. With more training time, one can use high dropout and suffer less overfitting.
-
-However, one way to obtain some of the benefits of dropout without stochasticity is to marginalize the noise to obtain a regularizer that does the same thing as the dropout procedure, in expectation. The paper showed that for linear regression this regularizer is a modified form of L2 regularization. For more complicated models, it is not obvious how to obtain an equivalent regularizer. Speeding up dropout is an interesting direction for future work.
 
 [back to current section](#deep-learning-concepts)
 
 ### Common Normalization
 
-* [Batch Norm](https://arxiv.org/abs/1502.03167)
-* [Layer Norm](https://arxiv.org/abs/1607.06450)
-* [Weight Norm](https://arxiv.org/abs/1602.07868)
+* **Batch Norm**: ([Paper](https://arxiv.org/abs/1502.03167))
+
+    - Definition:
+      - Batch Normalization (BN) is a normalization method/layer for neural networks.
+      - Usually inputs to neural networks are normalized to either the range of [0, 1] or [-1, 1] or to mean = 0 and variance = 1. The latter is called *Whitening*.
+      - It essentially performs Whitening to the intermediate layers of the networks.
+    - How its calculated:
+      - The basic formula is `x* = (x - E[x]) / sqrt(var(x))`, where `x*` is the new value of a single component, `E[x]` is its mean within a batch and `var(x)` is its variance within a batch.
+      - BN extends that formula further to `x** = gamma * x* + beta`, where `x**` is the final normalized value. `gamma` and `beta` are learned per layer. They make sure that BN can learn the identity function, which is needed in a few cases.
+      - For convolutions, every layer/filter/kernel is normalized on its own (linear layer: each neuron/node/component). That means that every generated value ("pixel") is treated as an example. If we have a batch size of N and the image generated by the convolution has width = P and height = Q, we would calculate the mean (E) over N * P * Q examples (same for the variance).
+    - Theoretical effects:
+      - BN reduces *Covariate Shift*. That is the change in distribution of activation of a component. By using BN, each neuron's activation becomes (more or less) a gaussian distribution, i.e. its usually not active, sometimes a bit active, rare very active.
+      - Covariate Shift is undesirable, because the later layers have to keep adapting to the change of the type of distribution (instead of just to new distribution parameters, e.g. new mean and variance values for gaussian distributions).
+      - BN reduces effects of exploding and vanishing gradients, because every becomes roughly normal distributed. Without BN, low activations of one layer can lead to lower activations in the next layer, and then even lower ones in the next layer and so on.
+    - Practical effects:
+      - BN reduces training times. (Because of less Covariate Shift, less exploding/vanishing gradients.)
+      - BN reduces demand for regularization, e.g. dropout or L2 norm. (Because the means and variances are calculated over batches and therefore every normalized value depends on the current batch. I.e. the network can no longer just memorize values and their correct answers.)
+      - BN allows higher learning rates. (Because of less danger of exploding/vanishing gradients.)
+      - BN enables training with saturating nonlinearities in deep networks, e.g. sigmoid. (Because the normalization prevents them from getting stuck in saturating ranges, e.g. very high/low values for sigmoid.)
+
+* **Layer Norm**: ([Paper](https://arxiv.org/abs/1607.06450))
+
+* **Weight Norm**: ([Paper](https://arxiv.org/abs/1602.07868))
 
 [back to current section](#deep-learning-concepts)
 
