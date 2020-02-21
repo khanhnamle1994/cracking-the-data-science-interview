@@ -658,17 +658,26 @@ Weight normalization separates the weight vector from its direction, this has a 
 
 [back to current section](#deep-learning-concepts)
 
-### Common Optimizers
+### Gradient Descent Variants
 
-* [SGD/Momentum SGD](http://ufldl.stanford.edu/tutorial/supervised/OptimizationStochasticGradientDescent/)
-* [Adam](https://arxiv.org/abs/1412.6980)
-* [Others](https://arxiv.org/abs/1609.04747)
+* Batch Gradient Descent
+* Stochastic Gradient Descent
+* Mini-Batch Gradient Descent
 
 [back to current section](#deep-learning-concepts)
 
-### Reparameterization Trick
+### Common Gradient Descent Optimizers
 
-* [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
+* Momentum
+* Nesterov
+* Adagrad
+* Adadelta
+* RMSprop
+* Adam
+* AdaMax
+* Nadam
+* AMSGrad
+* Which to choose?
 
 [back to current section](#deep-learning-concepts)
 

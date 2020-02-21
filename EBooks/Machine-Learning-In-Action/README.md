@@ -339,6 +339,32 @@ Support vector machines are a binary classifier and additional methods can be ex
 
 ## AdaBoost
 
+The code and data for this chapter is in [Ch07 folder](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-In-Action/Ch07).
+
+Pseudocode to create a weak learner with decision stumps:
+
+```
+Set the minError to +∞
+For every feature in the dataset:
+  For every step:
+    For each inequality:
+      Build a decision stump and test it with the weighted dataset
+      If the error is less than minError: set this stump as the best stump
+Return the best stump
+```
+
+Pseudocode to implement the full AdaBoost algorithm:
+
+```
+For each iteration:
+  Find the best stump using buildStump()
+  Add the best stump to the stump array
+  Calculate alpha
+  Calculate the new weight vector – D
+  Update the aggregate class estimate
+  If the error rate ==0.0: break out of the for loop
+```
+
 **Pros:** Low generalization error, easy to code, works with most classifiers, no parameters to adjust.
 
 **Cons:** Sensitive to outliers.
@@ -556,6 +582,35 @@ The FP-growth algorithm is an efficient way of finding frequent patterns in a da
 [back to top](#machine-learning-in-action)
 
 ## Principal Component Analysis
+
+The code and data for this chapter is in [Ch13 folder](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-In-Action/Ch13).
+
+Pseudocode for transforming out data into the top N principal components would look like this:
+
+```
+Remove the mean
+Compute the covariance matrix
+Find the eigenvalues and eigenvectors of the covariance matrix
+Sort the eigenvalues from largest to smallest
+Take the top N eigenvectors
+Transform the data into the new space created by the top N eigenvectors
+```
+
+Here is the Python code to implement PCA:
+
+```
+def pca(dataMat, topNfeat=9999999):
+    meanVals = mean(dataMat, axis=0)
+    meanRemoved = dataMat - meanVals #remove mean
+    covMat = cov(meanRemoved, rowvar=0)
+    eigVals,eigVects = linalg.eig(mat(covMat))
+    eigValInd = argsort(eigVals)            #sort, sort goes smallest to largest
+    eigValInd = eigValInd[:-(topNfeat+1):-1]  #cut off unwanted dimensions
+    redEigVects = eigVects[:,eigValInd]       #reorganize eig vects largest to smallest
+    lowDDataMat = meanRemoved * redEigVects#transform data into new dimensions
+    reconMat = (lowDDataMat * redEigVects.T) + meanVals
+    return lowDDataMat, reconMat
+```
 
 **Pros:** Reduces complexity of data, identifies most important features.
 
