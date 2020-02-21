@@ -507,8 +507,8 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 * [Common Activation Functions](#common-activation-functions)
 * [Common Regularizers](#common-regularizers)
 * [Common Normalization](#common-normalization)
-* [Common Optimizers](#common-optimizers)
-* [Reparameterization Trick](#reparameterization-trick)
+* [Gradient Descent Variants](#gradient-descent-variants)
+* [Common Gradient Descent Optimizers](#common-gradient-descent-optimizers)
 * [Neural Networks From Scratch](#neural-networks-from-scratch)
 * [Notes from Coursera Deep Learning Specialization](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Notes-From-Coursera-DL-Specialization.pdf)
 
@@ -660,9 +660,25 @@ Weight normalization separates the weight vector from its direction, this has a 
 
 ### Gradient Descent Variants
 
-* Batch Gradient Descent
-* Stochastic Gradient Descent
-* Mini-Batch Gradient Descent
+**Batch Gradient Descent** computes the gradient of the cost function w.r.t. to the parameters `θ` for the entire training dataset:
+
+`θ = θ − η ⋅ ∇_θ J(θ)`
+
+As we need to calculate the gradients for the whole dataset to perform just one update, batch gradient descent can be very slow and is intractable for datasets that don't fit in memory. Batch gradient descent also doesn't allow us to update our model online, i.e. with new examples on-the-fly.
+
+**Stochastic Gradient Descent** in contrast performs a parameter update for each training example x(i) and label y(i):
+
+`θ = θ − η ⋅ ∇_θ J(θ; x(i); y(i))`
+
+Batch gradient descent performs redundant computations for large datasets, as it recomputes gradients for similar examples before each parameter update. SGD does away with this redundancy by performing one update at a time. It is therefore usually much faster and can also be used to learn online.
+
+While batch gradient descent converges to the minimum of the basin the parameters are placed in, SGD's fluctuation, on the one hand, enables it to jump to new and potentially better local minima. On the other hand, this ultimately complicates convergence to the exact minimum, as SGD will keep overshooting. However, it has been shown that when we slowly decrease the learning rate, SGD shows the same convergence behaviour as batch gradient descent, almost certainly converging to a local or the global minimum for non-convex and convex optimization respectively.
+
+**Mini-Batch Gradient Descent** finally takes the best of both worlds and performs an update for every mini-batch of n training examples:
+
+`θ = θ − η ⋅ ∇_θ J(θ; x(i:i+n); y(i:i+n))`
+
+This way, it a) reduces the variance of the parameter updates, which can lead to more stable convergence; and b) can make use of highly optimized matrix optimizations common to state-of-the-art deep learning libraries that make computing the gradient w.r.t. a mini-batch very efficient. Common mini-batch sizes range between 50 and 256, but can vary for different applications. Mini-batch gradient descent is typically the algorithm of choice when training a neural network and the term SGD usually is employed also when mini-batches are used.
 
 [back to current section](#deep-learning-concepts)
 
