@@ -684,16 +684,7 @@ This way, it a) reduces the variance of the parameter updates, which can lead to
 
 ### Common Gradient Descent Optimizers
 
-* Momentum
-* Nesterov
-* Adagrad
-* Adadelta
-* RMSprop
-* Adam
-* AdaMax
-* Nadam
-* AMSGrad
-* Which to choose?
+![](assets/gradient-descent-optimizers.png)
 
 [back to current section](#deep-learning-concepts)
 
