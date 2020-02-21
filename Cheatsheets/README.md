@@ -633,24 +633,28 @@ There are 2 problems with Batch Normalization:
 1. *Variable Batch Size* → If batch size is of 1, then variance would be 0 which doesn’t allow batch norm to work. Furthermore, if we have small mini-batch size then it becomes too noisy and training might affect. There would also be a problem in *distributed training*. As, if you are computing in different machines then you have to take same batch size because otherwise γ and β will be different for different systems.
 2. *Recurrent Neural Network* → In an RNN, the recurrent activations of each time-step will have a different story to tell(i.e. statistics). This means that we have to fit a separate batch norm layer for each time-step. This makes the model more complicated and space consuming because it forces us to store the statistics for each time-step during training.
 
-* **Layer Norm**: ([Paper](https://arxiv.org/abs/1607.06450))
+**Layer Norm**: ([Paper](https://arxiv.org/abs/1607.06450))
 
-* **Weight Norm**: ([Paper](https://arxiv.org/abs/1602.07868))
+Layer normalization normalizes input across the features instead of normalizing input features across the batch dimension in batch normalization.
 
-    - Definition:
-      - Weight Normalization (WN) is a normalization technique, similar to Batch Normalization (BN).
-      - It normalizes each layer's weights.
-    - Differences to BN:
-      - WN normalizes based on each weight vector's orientation and magnitude. BN normalizes based on each weight's mean and variance in a batch.
-      - WN works on each example on its own. BN works on whole batches.
-      - WN is more deterministic than BN (due to not working an batches).
-      - WN is better suited for noisy environment (RNNs, LSTMs, reinforcement learning, generative models). (Due to being more deterministic.)
-      - WN is computationally simpler than BN.
-    - How it is done:
-      - WN is a module added on top of a linear or convolutional layer.
-      - If that layer's weights are `w` then WN learns two parameters `g` (scalar) and `v` (vector, identical dimension to `w`) so that `w = gv / ||v||` is fullfilled (`||v||` = euclidean norm of v).
-      - `g` is the magnitude of the weights, `v` are their orientation.
-      - `v` is initialized to zero mean and a standard deviation of 0.05.
+A mini-batch consists of multiple examples with the same number of features. Mini-batches are matrices(or tensors) where one axis corresponds to the batch and the other axis(or axes) correspond to the feature dimensions
+
+![](assets/layer-norm.png)
+
+Layer normalization performs better than batch norm in case of RNNs.
+
+**Weight Norm**: ([Paper](https://arxiv.org/abs/1602.07868))
+
+Weight normalization is a method that normalize weights of a layer instead of normalizing the activations directly. It re-parameterizes the weights (ω) as :
+
+![](assets/weight-norm.png)
+
+* g is a scalar magnitude of the weights
+* v is a vector orientation of the weights
+* ||v|| is the Euclidean norm of v
+* v is initialized to 0 mean and 0.05 standard deviation
+
+Weight normalization separates the weight vector from its direction, this has a similar effect as in batch normalization with variance. The only difference is in variation instead of direction.
 
 [back to current section](#deep-learning-concepts)
 
