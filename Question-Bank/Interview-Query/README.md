@@ -24,6 +24,7 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [First To Six](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/First-To-Six.md) (by Microsoft)
 * [Revenue Retention](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Revenue-Retention.md) (by Ampush)
 * [Third Purchase](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Third-Purchase.md) (by Uber)
+* [One Element Removed](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/One-Element-Removed.md) (by Facebook)
 
 ## Hard
 
