@@ -80,7 +80,57 @@ Here are the list of industry examples that Chip compiles:
 
 5. [Machine Learning-Powered Search Ranking of Airbnb Experiences](https://medium.com/airbnb-engineering/machine-learning-powered-search-ranking-of-airbnb-experiences-110b4b1a0789) (Mihajlo Grbovic, Airbnb Engineering & Data Science, 2019)
 
+**Problem**: Building a Search Ranking for Airbnb Experiences
 
+- **Stage 1: Build a Strong Baseline**
+	- *Collect training data*: Collected search logs / clicks of users who ended up making bookings.
+	- *Label training data*: 2 labels (experiences that were booked + experiences that were clicked but not booked)
+	- *Build signals based on which to be ranked*: Built 25 experience features.
+	- *Train the ranking model*: Given the training data, labels, and features, used Gradient Boosted Decision Tree model. Treated the problem as binary classification with log-loss loss function.
+	- *Test the ranking model*:
+		- To perform offline hyper-parameter tuning and comparison to random re-ranking in production, used hold-out data which was not used in training. Choice of metrics were AUC and NDCG.
+		- Plotted partial dependency plots for several most important Experience features -> showing what would happen to specific Experience ranking scores if all values but a single feature are fixed.
+		- Conducted an online A/B experiment between proposed model and rule-based random ranking in terms of number of bookings -> Improve bookings by +13%.
+	- *Implementation Details*: The entire ranking pipeline, including training and scoring, was implemented offline and ran daily in Airflow. The output was just a complete ordering of all Experiences (an ordered list).
+
+- **Stage 2: Personalize**
+	- *Personalize based on Booked Airbnb Homes*: Use 2 features, (1) Distance between Booked Home and Experience; and (2) Experience available during Booked Trip.
+	- *Personalize based on User's Clicks*: Compute 2 features derived from user clicks and categories of clicked Experiences: (1) Category Intensity; and (2) Category Recency.
+	- *Training the ranking model*:
+		- Generated training data that contains Personalization features by reconstructing the past based on search logs.
+		- Train 2 models: one with personalization features for logged-in users and one without personalization features that will serve log-out traffic.
+	- *Test the ranking model*: Conducted A/B tests to compare the new setup with 2 models with Personalization features to the model from Stage 1 -> Improve bookings by +7.9%.
+
+- **Stage 3: Move to Online Scoring**
+	- Used Query Features and user's browser language setting / country information.
+	- *Training the ranking model*: Trained 2 GBDT models
+		- Model for logged-in users, which uses Experience Features, Query Features, and User (Personalization) Features.
+		- Model for logged-out traffic, which uses Experience and Query Features, trained using data of logged-in users but not considering Personalization Features.
+	- *Test the ranking model*: Conducted an A/B test to compare the Stage 3 to Stage 2 models -> Improve bookings by +5.1%.
+
+- **Stage 4: Handle Business Rules**
+	- Promote quality.
+	- Discover and promote potential new hits early.
+	- Enforce diversity in the top 8 results.
+	- Optimize Search without Location for Click-ability.
+
+- **Monitor and Explain Rankings**
+	- Give hosts concrete feedback on what factors lead to improvement in the ranking and what factors lead to decline.
+	- Keep track of the general trends that the ranking algorithm is enforcing to make sure it is the behavior for Airbnb's marketplace.
+	- Used Apache Superset and Airflow to create 2 dashboards: (1) Dashboard that tracks rankings of specific Experiences in their market over time, as well as values of feature used by the ML model; and (2) Dashboard that shows overall ranking trends for different groups of Experiences (e.g. how 5-star Experiences rank in their market).
+
+- **Ongoing and Future Work**
+	- Training data construction (by logging the feature values at the time of scoring instead of reconstructing them based on best guess for that day)
+	- Loss function (e.g. by using pairwise loss, where we compare booked Experience with Experience that was ranked higher but not booked, a setup that is far more appropriate for ranking)
+	- Training labels (e.g. by using utilities instead of binary labels, i.e. assigning different values to different user actions, such as: 0 for impression, 0.1 for click, 0.2 for click with selected date & time, 1.0 for booking, 1.2 for high quality booking)
+	- Adding more real-time signals (e.g. being able to personalize based on immediate user activities, i.e. clicks that happened 10 minutes ago instead of 1 day ago)
+	- Explicitly asking users about types of activities they wish to do on their trip (so we can personalize based on declared interest in addition to inferred ones)
+	- Tackling position bias that is present in the data we use in training
+	- Optimizing for additional secondary objectives, such as helping hosts who host less often than others (e.g. 1–2 a month) and hosts who go on vacation and come back
+	- Testing different models beyond GBDT
+	- Finding more types of supply that work well in certain markets by leveraging predictions of the ranking model.
+	- Explore/Exploit framework
+	- Test human-in-the-loop approach (e.g. Staff picks)
 
 6. [From shallow to deep learning in fraud](https://eng.lyft.com/from-shallow-to-deep-learning-in-fraud-9dafcbcef743) (Hao Yi Ong, Lyft Engineering, 2018)
 
