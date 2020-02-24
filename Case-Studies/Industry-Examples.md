@@ -164,12 +164,34 @@ Here are the list of industry examples that Chip compiles:
 - Identify patterns that fast shoppers exhibit, and share those insights with other shoppers.
 - Make better operational decisions about parking spaces, store locations, and product offering.
 
-8. [Uber's Big Data Platform: 100+ Petabytes with Minute Latency](https://eng.uber.com/uber-big-data-platform/) (Reza Shiftehfar, Uber Engineering, 2018)
+8. [Creating a Modern OCR Pipeline Using Computer Vision and Deep Learning](https://blogs.dropbox.com/tech/2017/04/creating-a-modern-ocr-pipeline-using-computer-vision-and-deep-learning/) (Brad Neuberg, Dropbox Engineering, 2017)
 
 
 
-9. [Creating a Modern OCR Pipeline Using Computer Vision and Deep Learning](https://blogs.dropbox.com/tech/2017/04/creating-a-modern-ocr-pipeline-using-computer-vision-and-deep-learning/) (Brad Neuberg, Dropbox Engineering, 2017)
+9. [Scaling Machine Learning at Uber with Michelangelo](https://eng.uber.com/scaling-michelangelo/) (Jeremy Hermann and Mike Del Balso, Uber Engineering, 2019)
 
+**ML Use Cases at Uber**
+- Uber Eats
+- Marketplace Forecasting
+- Customer Support
+- Ride Check
+- Estimated Times of Arrivals
+- One-Click Chat
+- Self-Driving Cars
 
-
-10. [Scaling Machine Learning at Uber with Michelangelo](https://eng.uber.com/scaling-michelangelo/) (Jeremy Hermann and Mike Del Balso, Uber Engineering, 2019)
+**How To Scale ML at Uber**
+- Organization:
+	- Product Teams
+	- Specialist Teams
+	- Research Teams
+	- ML Platform Teams
+- Process:
+	- Launching Models
+	- Coordinated Planning Across ML Teams
+	- Community
+	- Education
+- Technology:
+	- End-To-End Workflow
+	- ML as Software Engineering
+	- Model Developer Velocity
+	- Modularity and Tiered Architecture
