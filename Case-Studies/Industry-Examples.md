@@ -134,11 +134,35 @@ Here are the list of industry examples that Chip compiles:
 
 6. [From shallow to deep learning in fraud](https://eng.lyft.com/from-shallow-to-deep-learning-in-fraud-9dafcbcef743) (Hao Yi Ong, Lyft Engineering, 2018)
 
-
+- How to improve Lyft's ML infrastructure?
+- Logistic Regression to Gradient-Boosted Decision Trees.
+- **Road to Production**
+    - A simple and reliable way to serialize a prototype model on a Jupyter Notebook and load it onto a production system.
+    - Built a library that utilizes the standardized scikit-learn API and pickle-based serialization
+    - Use Tensorflow deep learning models in production because of their performance and their ability to work with signals that are hard to engineer features from.
+    - Developing a more modern, container-based model execution to put a seamless prototype-to-production ML process within reach.
+- **Climbing Over Walls**
+    - Having a research scientist with good system knowledge helped guide and accelerate the engineering development process.
+    - Additionally, the change in work scope reduced miscommunication between different roles and freed up engineers from rote feature implementation to focus more on, appropriately, building better platforms.
 
 7. [Space, Time and Groceries](https://tech.instacart.com/space-time-and-groceries-a315925acf3a) (Jeremy Stanley, Tech at Instacart, 2017)
 
+**Problem**: Logistics at Instacart => Stochastic Capacitated Vehicle Routing Problem with Time Windows for Multiple Trips
 
+**ML System**:
+
+- Predict the distribution of time expected for any given shopper and assignment.
+- Decompose into sub-problems and solve them to near optimality.
+- Apply heuristics for limiting search spaces, deal with anomalies, fine-tune solutions, and adapt under uncertainty.
+- Recompute batch plans every minute and make dispatch decisions just in time.
+
+**Use Visualization To**:
+
+- Build intuition for how logistics system functions at scale.
+- Generate hypotheses for ways to improve algorithms or operations.
+- Confirm that changes to production have the expected behavior.
+- Identify patterns that fast shoppers exhibit, and share those insights with other shoppers.
+- Make better operational decisions about parking spaces, store locations, and product offering.
 
 8. [Uber's Big Data Platform: 100+ Petabytes with Minute Latency](https://eng.uber.com/uber-big-data-platform/) (Reza Shiftehfar, Uber Engineering, 2018)
 
