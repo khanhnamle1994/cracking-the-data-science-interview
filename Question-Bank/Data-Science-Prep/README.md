@@ -26,6 +26,7 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 * [Churn Model](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Churn-Model.md) (by Robinhood)
 * [Identifying Synonyms](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Identifying-Synonyms.md) (by Google)
 * [L1 and L2 Regularization](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/L1-and-L2-Regularization.md) (by Uber)
+* [Square root of model scores](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Square-Root-of-Model-Scores.md) (by Affirm)
 
 ## Coding
 
