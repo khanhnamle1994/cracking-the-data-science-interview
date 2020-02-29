@@ -503,16 +503,17 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 
 ## Deep Learning Concepts
 
-* [Multi Layer Neural Network](#multi-layer-neural-network)
+* [Neural Network Model](#neural-network-model)
+* [Backpropagation](#backpropagation)
 * [Common Activation Functions](#common-activation-functions)
-* [Common Regularizers](#common-regularizers)
-* [Common Normalization](#common-normalization)
 * [Gradient Descent Variants](#gradient-descent-variants)
 * [Common Gradient Descent Optimizers](#common-gradient-descent-optimizers)
+* [Common Regularizers](#common-regularizers)
+* [Common Normalization](#common-normalization)
 * [Neural Networks From Scratch](#neural-networks-from-scratch)
 * [Notes from Coursera Deep Learning Specialization](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Notes-From-Coursera-DL-Specialization.pdf)
 
-### Multi Layer Neural Network
+### Neural Network Model
 
 Here is the [reference](http://ufldl.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/):
 
@@ -520,33 +521,58 @@ A neural network is put together by hooking together many of our simple “neuro
 
 ![](assets/Network331.png)
 
-In this figure, we have used circles to also denote the inputs to the network. The circles labeled “+1” are called *bias units*, and correspond to the intercept term. The leftmost layer of the network is called the *input layer*, and the rightmost layer the *output layer* (which, in this example, has only one node). The middle layer of nodes is called the *hidden layer*, because its values are not observed in the training set. We also say that our example neural network has *3 input units* (not counting the bias unit), *3 hidden units*, and *1 output unit*.
+- In this figure, we have used circles to also denote the inputs to the network.
+- The circles labeled “+1” are called *bias units*, and correspond to the intercept term.
+- The leftmost layer of the network is called the *input layer*, and the rightmost layer the *output layer* (which, in this example, has only one node).
+- The middle layer of nodes is called the *hidden layer*, because its values are not observed in the training set.
+- We also say that our example neural network has *3 input units* (not counting the bias unit), *3 hidden units*, and *1 output unit*.
 
-We will let `n_l` denote the number of layers in our network; thus `n_l = 3` in our example. We label layer l as `L_l`, so layer `L_1` is the input layer, and layer `L_nl` the output layer. Our neural network has parameters `(W, b) = (W(1), b(1), W(2), b(2))`, where we write `W(l)_ij` to denote the parameter (or weight) associated with the connection between unit j in layer l, and unit i in layer l + 1. Also, `b(l)_i` is the bias associated with unit i in layer l + 1. Thus, in our example, we have W(1) ∈ ℜ^{3×3}, and W(2) ∈ ℜ^{1×3}. Note that bias units don’t have inputs or connections going into them, since they always output the value +1. We also let `s_l` denote the number of nodes in layer l (not counting the bias unit).
+**Notation**
+- We will let `n_l` denote the number of layers in our network; thus `n_l = 3` in our example.
+- We label layer l as `L_l`, so layer `L_1` is the input layer, and layer `L_nl` the output layer.
+- Our neural network has parameters `(W, b) = (W(1), b(1), W(2), b(2))`, where we write `W(l)_ij` to denote the parameter (or weight) associated with the connection between unit j in layer l, and unit i in layer l + 1. Thus, in our example, we have `W(1) ∈ ℜ^{3×3}`, and `W(2) ∈ ℜ^{1×3}`.
+- Also, `b(l)_i` is the bias associated with unit i in layer l + 1. Note that bias units don’t have inputs or connections going into them, since they always output the value +1.
+- We also let `s_l` denote the number of nodes in layer l (not counting the bias unit).
 
-We will write `a(l)_i` to denote the activation (meaning output value) of unit i in layer l. For `l = 1`, we also use `a(1)_i = x_i` to denote the i-th input. Given a fixed setting of the parameters W, b, our neural network defines a hypothesis `h_W,b(x)` that outputs a real number. Specifically, the computation that this neural network represents is given by:
+**Forward Propagation**
+- We will write `a(l)_i` to denote the activation (meaning output value) of unit i in layer l. For `l = 1`, we also use `a(1)_i = x_i` to denote the i-th input.
+- Given a fixed setting of the parameters W, b, our neural network defines a hypothesis `h_W,b(x)` that outputs a real number. Specifically, the computation that this neural network represents is given by:
 
 ![](assets/MLP-Equation1.png)
 
-In the sequel, we also let `z(l)_i` denote the total weighted sum of inputs to unit i in layer l, including the bias term, so that `a(l)_i = f(z(l)_i)`.
-
-Note that this easily lends itself to a more compact notation. Specifically, if we extend the activation function f(⋅) to apply to vectors in an element-wise fashion, then we can write the equations above more compactly as:
+- In the sequel, we also let `z(l)_i` denote the total weighted sum of inputs to unit i in layer l, including the bias term, so that `a(l)_i = f(z(l)_i)`.
+- Note that this easily lends itself to a more compact notation. Specifically, if we extend the activation function f(⋅) to apply to vectors in an element-wise fashion, then we can write the equations above more compactly as:
 
 ![](assets/MLP-Equation2.png)
 
-We call this step *forward propagation*. More generally, recalling that we also use `a(1) = x` to also denote the values from the input layer, then given layer l’s activations a(l), we can compute layer l + 1’s activations a(l + 1) as:
+- We call this step *forward propagation*. More generally, recalling that we also use `a(1) = x` to also denote the values from the input layer, then given layer l’s activations `a(l)`, we can compute layer l + 1’s activations `a(l + 1)` as:
 
 ![](assets/MLP-Equation3.png)
 
-By organizing our parameters in matrices and using matrix-vector operations, we can take advantage of fast linear algebra routines to quickly perform calculations in our network.
+- By organizing our parameters in matrices and using matrix-vector operations, we can take advantage of fast linear algebra routines to quickly perform calculations in our network.
 
-We have so far focused on one example neural network, but one can also build neural networks with other *architectures* (meaning patterns of connectivity between neurons), including ones with multiple hidden layers. The most common choice is a n_l-layered network where layer 1 is the input layer, layer n_l is the output layer, and each layer l is densely connected to layer l + 1. In this setting, to compute the output of the network, we can successively compute all the activations in layer L2, then layer L3, and so on, up to layer L_nl, using the equations above that describe the forward propagation step. This is one example of a feedforward neural network, since the connectivity graph does not have any directed loops or cycles.
-
-Neural networks can also have multiple output units. For example, here is a network with two hidden layers layers L2 and L3 and two output units in layer L4:
+**Multiple Hidden Layers**
+- We have so far focused on one example neural network, but one can also build neural networks with multiple hidden layers.
+- The most common choice is a n_l-layered network where layer 1 is the input layer, layer n_l is the output layer, and each layer l is densely connected to layer l + 1.
+- In this setting, to compute the output of the network, we can successively compute all the activations in layer L2, then layer L3, and so on, up to layer L_nl, using the equations above that describe the forward propagation step.
+- This is one example of a *feedforward* neural network, since the connectivity graph does not have any directed loops or cycles.
+- Neural networks can also have multiple output units. For example, here is a network with two hidden layers layers L2 and L3 and two output units in layer L4:
 
 ![](assets/Network3322.png)
 
-To train this network, we would need training examples (x(i),y(i)) where y(i) ∈ ℜ^2. This sort of network is useful if there’re multiple outputs that you’re interested in predicting. (For example, in a medical diagnosis application, the vector x might give the input features of a patient, and the different outputs yi’s might indicate presence or absence of different diseases.)
+- To train this network, we would need training examples (x(i),y(i)) where y(i) ∈ ℜ^2.
+- This sort of network is useful if there’re multiple outputs that you’re interested in predicting.
+
+[back to current section](#deep-learning-concepts)
+
+### Backpropagation
+
+- Given a training example `(x,y)`, we will first run a “forward pass” to compute all the activations throughout the network, including the output value of the hypothesis `hW,b(x)`.
+- Then, for each node i in layer l, we would like to compute an “error term” `δ(l)_i` that measures how much that node was “responsible” for any errors in our output.
+- For an output node, we can directly measure the difference between the network’s activation and the true target value, and use that to define `δ(n_l)_i` (where layer n_l is the output layer).
+- For hidden units, we will compute `δ(l)_i` based on a weighted average of the error terms of the nodes that uses `a(l)_i` as an input.
+
+![](assets/backprop.png)
 
 [back to current section](#deep-learning-concepts)
 
@@ -558,51 +584,106 @@ To train this network, we would need training examples (x(i),y(i)) where y(i) �
 
 **Sigmoid or Logistic**
 
-It is an activation function of the form `f(x) = 1 / 1 + exp(-x)`. Its range falls between 0 and 1. It is a S — shaped curve. It is easy to understand and apply but it has major reasons which have made it fall out of popularity:
-* Vanishing gradient problem
-* Secondly, its output isn’t zero centered. It makes the gradient updates go too far in different directions. 0 < output < 1, and it makes optimization harder.
-* Sigmoids saturate and kill gradients.
-* Sigmoids have slow convergence.
-
-![](assets/sigmoid.png)
+- It is an activation function of the form `f(x) = 1 / 1 + exp(-x)`.
+- Its range falls between 0 and 1. It is a S — shaped curve.
+- It is easy to understand and apply but it has major reasons which have made it fall out of popularity:
+  - (1) Sigmoids suffer from vanishing gradient problem (gradients are saturated and killed).
+  - (2) Sigmoids' output isn’t zero centered. This makes the gradient updates go too far in different directions, which makes optimization harder.
+  - (3) Sigmoids have slow convergence.
 
 **Tanh — Hyperbolic tangent**
 
-Its mathematical formula is `f(x) = 1 — exp(-2x) / 1 + exp(-2x)`. Its output is zero centered because its range falls between -1 to 1. It is a rescaled version of the sigmoid. Since optimization is easier in this method, in practice it is always preferred over the sigmoid function. But still it suffers from the vanishing gradient problem.
-
-![](assets/tanh.png)
+- Its mathematical formula is `f(x) = 1 — exp(-2x) / 1 + exp(-2x)`.
+- Its output is zero centered because its range falls between -1 to 1.
+- It is a rescaled version of the sigmoid. Since optimization is easier in this method, in practice it is always preferred over the sigmoid function.
+- But still it suffers from the vanishing gradient problem.
 
 **ReLU -Rectified linear units**
 
-Recent research has found a different activation function, the rectified linear function, often works better in practice for deep neural networks. This activation function is different from sigmoid and tanh because it is not bounded or continuously differentiable. The rectified linear activation function is given by `max(0, x)`.
-* It is piece-wise linear and saturates at exactly 0 whenever the input is less than 0.
-* It avoids and rectifies vanishing gradient problem.
-* It should only be used within the hidden layers of the neural network.
-* Another problem with ReLU is that some gradients can be fragile during training and can die. It can cause a weight update which will makes it never activate on any data point again. Simply saying that ReLU could result in Dead Neurons.
-* To fix this problem another modification was introduced called *Leaky ReLU* to fix the problem of dying neurons. It introduces a small slope to keep the updates alive.
-* We then have another variant made form both ReLU and Leaky ReLU called Randomized Leaky ReLU function .
+- Its mathematical function is given by `max(0, x)`.
+- It is piece-wise linear and saturates at exactly 0 whenever the input is less than 0.
+- It avoids and rectifies vanishing gradient problem.
+- It should only be used within the hidden layers of the neural network.
+- It could result in Dead Neurons.
+- To fix this problem another modification was introduced called **Leaky ReLU** to fix the problem of dying neurons. It introduces a small slope to keep the updates alive.
 
-![](assets/ReLU.png)
+![](assets/activation-functions.png)
+
+[back to current section](#deep-learning-concepts)
+
+### Gradient Descent Variants
+
+**Batch Gradient Descent** computes the gradient of the cost function w.r.t. to the parameters `θ` for the entire training dataset:
+
+`θ = θ − η ⋅ ∇_θ J(θ)`
+
+- As we need to calculate the gradients for the whole dataset to perform just one update, batch gradient descent can be very slow and is intractable for datasets that don't fit in memory.
+- Batch gradient descent also doesn't allow us to update our model online, i.e. with new examples on-the-fly.
+
+![](assets/batch-GD.png)
+
+**Stochastic Gradient Descent** in contrast performs a parameter update for each training example x(i) and label y(i):
+
+`θ = θ − η ⋅ ∇_θ J(θ; x(i); y(i))`
+
+- Batch gradient descent performs redundant computations for large datasets, as it recomputes gradients for similar examples before each parameter update. SGD does away with this redundancy by performing one update at a time. It is therefore usually much faster and can also be used to learn online.
+- It has been shown that when we slowly decrease the learning rate, SGD shows the same convergence behavior as batch gradient descent, almost certainly converging to a local or the global minimum for non-convex and convex optimization respectively.
+
+![](assets/stochastic-GD.png)
+
+**Mini-Batch Gradient Descent** finally takes the best of both worlds and performs an update for every mini-batch of n training examples:
+
+`θ = θ − η ⋅ ∇_θ J(θ; x(i:i+n); y(i:i+n))`
+
+- It reduces the variance of the parameter updates, which can lead to more stable convergence.
+- It can make use of highly optimized matrix optimizations common to state-of-the-art deep learning libraries that make computing the gradient w.r.t. a mini-batch very efficient.
+- Common mini-batch sizes range between 50 and 256, but can vary for different applications.
+
+![](assets/minibatch-GD.png)
+
+[back to current section](#deep-learning-concepts)
+
+### Common Gradient Descent Optimizers
+
+These are ways to update the gradients with adaptive learning rates ("one learning rate per parameter"). This is because
+- *Small Learning Rates* converge slowly and gets stuck in false local minima.
+- *Large Learning Rates* overshoot, become unstable and diverge.
+- *Stable Learning Rates* converge smoothly and avoid local minima.
+
+Adaptive learning rates can "adapt" to the landscape:
+- **Momentum**: Momentum helps accelerate SGD in the relevant direction and dampens oscillations.
+- **Adagrad**: Adagrad adapts updates to each individual parameter to perform larger or smaller updates depending on their importance. Learning rates are scaled by the square root of the cumulative sum of squared gradients.
+- **Adadelta**: Adadelta is an extension of Adagrad that seeks to reduce its aggressive, monotonically decreasing learning rate. Instead of accumulating all past squared gradients, Adadelta restricts the window of accumulated past gradients to some fixed size w.
+- **RMSProp**: RMSprop divides the learning rate by an exponentially decaying average of squared gradients.
+- **Adam**: Adaptive Moment Estimation is most popular today. It computes adaptive learning rates for each parameter. In addition to storing an exponentially decaying average of past squared gradients vt like Adadelta and RMSprop, Adam also keeps an exponentially decaying average of past gradients, similar to momentum.
 
 [back to current section](#deep-learning-concepts)
 
 ### Common Regularizers
 
+These are techniques that constrain our optimization problem to discourage complex models (aka, to prevent overfitting) and help improve generelization of our model on unnseen data.
+
 * **Weight Decay**: ([Paper](https://papers.nips.cc/paper/563-a-simple-weight-decay-can-improve-generalization.pdf)):
 
     - When training neural networks, it is common to use "weight decay," where after each update, the weights are multiplied by a factor slightly less than 1. This prevents the weights from growing too large, and can be seen as gradient descent on a quadratic regularization term.
-    - Weight decay is used as part of the back-propagation algorithm and is also a way of implementing an L2 regularization term.
+    - Weight decay is used as part of the back-propagation algorithm.
+    - There are 3 ways to do weight decay: Lasso (shrinks coefficients to 0), Ridge (makes coefficients smaller), and Elastic Net (tradeoff between variable selection and small coefficients).
 
 ![](assets/Dropout.png)
 
 * **Dropout**: ([Paper](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf))
 
-    - Dropout is a technique that prevents overfitting and provides a way of approximately combining exponentially many different neural network architectures efficiently. The term “dropout” refers to dropping out units (hidden and visible) in a neural network, as shown in the figure 1.
-    - The choice of which units to drop is random. In the simplest case, each unit is retained with a fixed probability p independent of other units, where p can be chosen using a validation set or can simply be set at 0.5, which seems to be close to optimal for a wide range of networks and tasks. For the input units, however, the optimal probability of retention is usually closer to 1 than to 0.5.
-    - One of the drawbacks of dropout is that it increases training time. A dropout network typically takes 2-3 times longer to train than a standard neural network of the same architecture. A major cause of this increase is that the parameter updates are very noisy. Each training case effectively tries to train a different random architecture. Therefore, the gradients that are being computed are not gradients of the final architecture that will be used at test time. Therefore, it is not surprising that training takes a long time.
-    - Applying dropout to a neural network amounts to sampling a “thinned” network from it. The thinned network consists of all the units that survived dropout (Figure 1b). A neural net with n units, can be seen as a collection of 2^n possible thinned neural networks. These networks all share weights so that the total number of parameters is still O(n^2), or less. For each presentation of each training case, a new thinned network is sampled and trained. So training a neural network with dropout can be seen as training a collection of 2^n thinned networks with extensive weight sharing, where each thinned network gets trained very rarely, if at all.
+    - During training, randomly set some activations to 0.
+    - Typically drop 50% of activations in layer.
+    - Forces network to not rely on any 1 node.
+    - One of the drawbacks of dropout is that it increases training time. A dropout network typically takes 2-3 times longer to train than a standard neural network of the same architecture. A major cause of this increase is that the parameter updates are very noisy. Each training case effectively tries to train a different random architecture. Therefore, the gradients that are being computed are not gradients of the final architecture that will be used at test time.
     - At test time, we replace the masks by their expectation. This is simply the constant vector 0.5 if dropout probability is 0.5.
-    - Beats regular backpropagation on many datasets and has become a standard practice.
+
+* **Early Stopping**:
+
+  - This approach stops the training process as soon as the validation loss reaches a plateau or starts to increase.
+
+![](assets/early-stopping.png)
 
 [back to current section](#deep-learning-concepts)
 
@@ -641,46 +722,6 @@ There are 2 problems with Batch Normalization:
 
 - Weight normalization is a method that normalize weights of a layer instead of normalizing the activations directly.
 - Weight normalization separates the weight vector from its direction. This has a similar effect as in batch normalization with variance. The only difference is in variation instead of direction.
-
-[back to current section](#deep-learning-concepts)
-
-### Gradient Descent Variants
-
-**Batch Gradient Descent** computes the gradient of the cost function w.r.t. to the parameters `θ` for the entire training dataset:
-
-`θ = θ − η ⋅ ∇_θ J(θ)`
-
-- As we need to calculate the gradients for the whole dataset to perform just one update, batch gradient descent can be very slow and is intractable for datasets that don't fit in memory.
-- Batch gradient descent also doesn't allow us to update our model online, i.e. with new examples on-the-fly.
-
-**Stochastic Gradient Descent** in contrast performs a parameter update for each training example x(i) and label y(i):
-
-`θ = θ − η ⋅ ∇_θ J(θ; x(i); y(i))`
-
-- Batch gradient descent performs redundant computations for large datasets, as it recomputes gradients for similar examples before each parameter update. SGD does away with this redundancy by performing one update at a time. It is therefore usually much faster and can also be used to learn online.
-- It has been shown that when we slowly decrease the learning rate, SGD shows the same convergence behavior as batch gradient descent, almost certainly converging to a local or the global minimum for non-convex and convex optimization respectively.
-
-**Mini-Batch Gradient Descent** finally takes the best of both worlds and performs an update for every mini-batch of n training examples:
-
-`θ = θ − η ⋅ ∇_θ J(θ; x(i:i+n); y(i:i+n))`
-
-- It reduces the variance of the parameter updates, which can lead to more stable convergence.
-- It can make use of highly optimized matrix optimizations common to state-of-the-art deep learning libraries that make computing the gradient w.r.t. a mini-batch very efficient.
-- Common mini-batch sizes range between 50 and 256, but can vary for different applications.
-
-[back to current section](#deep-learning-concepts)
-
-### Common Gradient Descent Optimizers
-
-These are ways to update the gradients with adaptive learning rates ("one learning rate per parameter")
-
-- **Momentum**: Momentum helps accelerate SGD in the relevant direction and dampens oscillations.
-- **Adagrad**: Adagrad adapts updates to each individual parameter to perform larger or smaller updates depending on their importance. Learning rates are scaled by the square root of the cumulative sum of squared gradients.
-- **Adadelta**: Adadelta is an extension of Adagrad that seeks to reduce its aggressive, monotonically decreasing learning rate. Instead of accumulating all past squared gradients, Adadelta restricts the window of accumulated past gradients to some fixed size w.
-- **RMSProp**: RMSprop divides the learning rate by an exponentially decaying average of squared gradients.
-- **Adam**: Adaptive Moment Estimation is most popular today. It computes adaptive learning rates for each parameter. In addition to storing an exponentially decaying average of past squared gradients vt like Adadelta and RMSprop, Adam also keeps an exponentially decaying average of past gradients, similar to momentum
-
-![](assets/gradient-descent-optimizers.png)
 
 [back to current section](#deep-learning-concepts)
 
@@ -923,15 +964,14 @@ Here is a visual explanation of PCA:
 * [Backpropagation with ReLU](#backpropagation-with-ReLU)
 * [Transfer Learning](#transfer-learning)
 * [Convolutional Filters](#convolutional-filters)
-* [Forward Propagation](#forward-propagation)
 
 ### ConvNet Architecture
 
-Here is the [reference](https://cs231n.github.io/convolutional-networks/):
+Here is the [reference](https://cs231n.github.io/convolutional-networks/).
 
-ConvNet architectures make the explicit assumption that the inputs are images, which allows us to encode certain properties into the architecture. These then make the forward function more efficient to implement and vastly reduce the amount of parameters in the network.
-
-Convolutional Neural Networks take advantage of the fact that the input consists of images and they constrain the architecture in a more sensible way. In particular, unlike a regular Neural Network, the layers of a ConvNet have neurons arranged in 3 dimensions: **width, height, depth**. (Note that the word depth here refers to the third dimension of an activation volume, not to the depth of a full Neural Network, which can refer to the total number of layers in a network.) For example, the input images in CIFAR-10 are an input volume of activations, and the volume has dimensions 32x32x3 (width, height, depth respectively). As we will soon see, the neurons in a layer will only be connected to a small region of the layer before it, instead of all of the neurons in a fully-connected manner. Moreover, the final output layer would for CIFAR-10 have dimensions 1x1x10, because by the end of the ConvNet architecture we will reduce the full image into a single vector of class scores, arranged along the depth dimension. Here is a visualization:
+- Convolutional Neural Networks take advantage of the fact that the input consists of images and they constrain the architecture in a more sensible way. In particular, unlike a regular Neural Network, the layers of a ConvNet have neurons arranged in 3 dimensions: **width, height, depth**.
+- The neurons in a layer will only be connected to a small region of the layer before it, instead of all of the neurons in a fully-connected manner.
+- Here is a visualization:
 
 ![](assets/ConvNet-Architecture.jpeg)
 
@@ -941,28 +981,15 @@ Convolutional Neural Networks take advantage of the fact that the input consists
 
 ### ConvNet Layers
 
-A simple ConvNet is a sequence of layers, and every layer of a ConvNet transforms one volume of activations to another through a differentiable function. We use three main types of layers to build ConvNet architectures: **Convolutional Layer**, **Pooling Layer**, and **Fully-Connected Layer** (exactly as seen in regular Neural Networks). We will stack these layers to form a full ConvNet **architecture**.
-
-*Example Architecture*: A simple ConvNet for CIFAR-10 classification could have the architecture [INPUT - CONV - RELU - POOL - FC]. In more detail:
-* INPUT [32x32x3] will hold the raw pixel values of the image, in this case an image of width 32, height 32, and with three color channels R,G,B.
-* CONV layer will compute the output of neurons that are connected to local regions in the input, each computing a dot product between their weights and a small region they are connected to in the input volume. This may result in volume such as [32x32x12] if we decided to use 12 filters.
-* RELU layer will apply an elementwise activation function, such as the max(0,x) thresholding at zero. This leaves the size of the volume unchanged ([32x32x12]).
-* POOL layer will perform a downsampling operation along the spatial dimensions (width, height), resulting in volume such as [16x16x12].
-* FC (i.e. fully-connected) layer will compute the class scores, resulting in volume of size [1x1x10], where each of the 10 numbers correspond to a class score, such as among the 10 categories of CIFAR-10. As with ordinary Neural Networks and as the name implies, each neuron in this layer will be connected to all the numbers in the previous volume.
-
-In this way, ConvNets transform the original image layer by layer from the original pixel values to the final class scores. Note that some layers contain parameters and other don’t. In particular, the CONV/FC layers perform transformations that are a function of not only the activations in the input volume, but also of the parameters (the weights and biases of the neurons). On the other hand, the RELU/POOL layers will implement a fixed function. The parameters in the CONV/FC layers will be trained with gradient descent so that the class scores that the ConvNet computes are consistent with the labels in the training set for each image.
+- A simple ConvNet is a sequence of layers, and every layer of a ConvNet transforms one volume of activations to another through a differentiable function.
+- We use three main types of layers to build ConvNet architectures: **Convolutional Layer**, **Pooling Layer**, and **Fully-Connected Layer** (exactly as seen in regular Neural Networks). We will stack these layers to form a full ConvNet **architecture**.
+- In this way, ConvNets transform the original image layer by layer from the original pixel values to the final class scores.
+- Note that some layers contain parameters and other don’t. In particular, the CONV/FC layers perform transformations that are a function of not only the activations in the input volume, but also of the parameters (the weights and biases of the neurons). On the other hand, the RELU/POOL layers will implement a fixed function.
+- The parameters in the CONV/FC layers will be trained with gradient descent so that the class scores that the ConvNet computes are consistent with the labels in the training set for each image.
 
 ![](assets/ConvNet-Layers.jpeg)
 
 *The activations of an example ConvNet architecture. The initial volume stores the raw image pixels (left) and the last volume stores the class scores (right). Each volume of activations along the processing path is shown as a column. Since it's difficult to visualize 3D volumes, we lay out each volume's slices in rows. The last layer volume holds the scores for each class, but here we only visualize the sorted top 5 scores, and print the labels of each one. The architecture shown here is a tiny VGG Net.*
-
-In summary:
-
-* A ConvNet architecture is in the simplest case a list of Layers that transform the image volume into an output volume (e.g. holding the class scores)
-* There are a few distinct types of Layers (e.g. CONV/FC/RELU/POOL are by far the most popular)
-* Each Layer accepts an input 3D volume and transforms it to an output 3D volume through a differentiable function
-* Each Layer may or may not have parameters (e.g. CONV/FC do, RELU/POOL don’t)
-* Each Layer may or may not have additional hyperparameters (e.g. CONV/FC/POOL do, RELU doesn’t)
 
 [back to current section](#computer-vision)
 
@@ -1086,14 +1113,6 @@ Suppose an image has size W x W, the filter has size F x F, the padding is P, an
 2. Therefore, the quantity (W – F + 2P) / S + 1 should be an integer, and so (W – F + 2P) should be evenly divisible by S. This will never be a problem if S = 1 but could be a problem if S is greater than 1.
 
 3. If you set S = 1 (very common), then by setting P = (F – 1) / 2 the result size of convolution will be the same as the image size (which is usually what you want). If S is greater than 1, then you need to adjust P and/or F if you want to retain the original image size.
-
-[back to current section](#computer-vision)
-
-### Forward Propagation
-
-* Review the forward propagation of convolutional layer in [this lecture](https://www.coursera.org/lecture/convolutional-neural-networks/one-layer-of-a-convolutional-network-nsiuW).
-* If you have 10 filters that are 3 x 3 x 3 in one layer of a neural network, how many parameters does that layer have?
-=> We have 280 parameters: 3 * 3 * 3 (27 params) + 1 bias param = 28 for one filter. For 10 filters, we have 28 * 10 = 280
 
 [back to current section](#computer-vision)
 
