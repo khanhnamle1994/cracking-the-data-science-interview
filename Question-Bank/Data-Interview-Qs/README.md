@@ -8,6 +8,7 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [Chocolate Bar Reviews](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Chocolate-Bar-Reviews.md)
 * [Top Earners](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Top-Earners.md)
 * [Querying San Francisco Public Worker Salaries](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Querying-San-Francisco-Public-Worker-Salaries.md)
+* [Music Streaming Behavior](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Music-Streaming-Behavior.md)
 
 ## Python
 
