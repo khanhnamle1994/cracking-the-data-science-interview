@@ -590,12 +590,10 @@ Recent research has found a different activation function, the rectified linear 
 
 * **Weight Decay**: ([Paper](https://papers.nips.cc/paper/563-a-simple-weight-decay-can-improve-generalization.pdf)):
 
-    - It is proven that a weight decay has two effects in a linear network. First, it suppresses any irrelevant components of the weight vector by choosing the smallest vector that solves the learning problem. Second, if the size is chosen right, a weight decay can suppress some of the effects of static noise on the targets, which improves generalization quite a lot.
     - When training neural networks, it is common to use "weight decay," where after each update, the weights are multiplied by a factor slightly less than 1. This prevents the weights from growing too large, and can be seen as gradient descent on a quadratic regularization term.
-    - Weight decay is used as part of the back-propagation algorithm.
-    - Weight decay is a way of implementing an L2 regularization term.
+    - Weight decay is used as part of the back-propagation algorithm and is also a way of implementing an L2 regularization term.
 
-![](assets/Dropout-Fig1.png)
+![](assets/Dropout.png)
 
 * **Dropout**: ([Paper](http://jmlr.org/papers/volume15/srivastava14a.old/srivastava14a.pdf))
 
@@ -603,9 +601,8 @@ Recent research has found a different activation function, the rectified linear 
     - The choice of which units to drop is random. In the simplest case, each unit is retained with a fixed probability p independent of other units, where p can be chosen using a validation set or can simply be set at 0.5, which seems to be close to optimal for a wide range of networks and tasks. For the input units, however, the optimal probability of retention is usually closer to 1 than to 0.5.
     - One of the drawbacks of dropout is that it increases training time. A dropout network typically takes 2-3 times longer to train than a standard neural network of the same architecture. A major cause of this increase is that the parameter updates are very noisy. Each training case effectively tries to train a different random architecture. Therefore, the gradients that are being computed are not gradients of the final architecture that will be used at test time. Therefore, it is not surprising that training takes a long time.
     - Applying dropout to a neural network amounts to sampling a “thinned” network from it. The thinned network consists of all the units that survived dropout (Figure 1b). A neural net with n units, can be seen as a collection of 2^n possible thinned neural networks. These networks all share weights so that the total number of parameters is still O(n^2), or less. For each presentation of each training case, a new thinned network is sampled and trained. So training a neural network with dropout can be seen as training a collection of 2^n thinned networks with extensive weight sharing, where each thinned network gets trained very rarely, if at all.
-    - At test time, it is not feasible to explicitly average the predictions from exponentially many thinned models. However, a very simple approximate averaging method works well in practice. The idea is to use a single neural net at test time without dropout. The weights of this network are scaled-down versions of the trained weights. If a unit is retained with probability p during training, the outgoing weights of that unit are multiplied by p at test time as shown in Figure 2. This ensures that for any hidden unit the expected output (under the distribution used to drop units at training time) is the same as the actual output at test time. By doing this scaling, 2^n networks with shared weights can be combined into a single neural network to be used at test time.
-
-![](assets/Dropout-Fig2.png)
+    - At test time, we replace the masks by their expectation. This is simply the constant vector 0.5 if dropout probability is 0.5.
+    - Beats regular backpropagation on many datasets and has become a standard practice.
 
 [back to current section](#deep-learning-concepts)
 
@@ -621,13 +618,14 @@ Recent research has found a different activation function, the rectified linear 
 
 **Batch Normalization**: ([Paper](https://arxiv.org/abs/1502.03167))
 
-Batch normalization is a method that normalizes activations in a network across the mini-batch of definite size. For each feature, batch normalization computes the mean and variance of that feature in the mini-batch. It then subtracts the mean and divides the feature by its mini-batch standard deviation.
-
-![](assets/batch-norm1.png)
+- Batch normalization is a method that normalizes activations in a network across the mini-batch of definite size.
+- During training, batch normalization computes the mean and variance of each feature in the mini-batch. It then subtracts the mean and divides the feature by its mini-batch standard deviation.
+- Backpropagation takes into account the normalization.
+- At test time, the global mean and stddev is used.
 
 We can add γ and β as scale and shift learn-able parameters respectively to increase the magnitude of the weights, which makes the network perform better. This all can be summarized as:
 
-![](assets/batch-norm2.png)
+![](assets/batch-norm.png)
 
 There are 2 problems with Batch Normalization:
 1. *Variable Batch Size* → If batch size is of 1, then variance would be 0 which doesn’t allow batch norm to work. Furthermore, if we have small mini-batch size then it becomes too noisy and training might affect. There would also be a problem in *distributed training*. As, if you are computing in different machines then you have to take same batch size because otherwise γ and β will be different for different systems.
@@ -635,26 +633,14 @@ There are 2 problems with Batch Normalization:
 
 **Layer Norm**: ([Paper](https://arxiv.org/abs/1607.06450))
 
-Layer normalization normalizes input across the features instead of normalizing input features across the batch dimension in batch normalization.
-
-A mini-batch consists of multiple examples with the same number of features. Mini-batches are matrices(or tensors) where one axis corresponds to the batch and the other axis(or axes) correspond to the feature dimensions
-
-![](assets/layer-norm.png)
-
-Layer normalization performs better than batch norm in case of RNNs.
+- Layer normalization normalizes input across the features instead of normalizing input features across the batch dimension in batch normalization.
+- A mini-batch consists of multiple examples with the same number of features.
+- Layer normalization performs better than batch norm in case of RNNs.
 
 **Weight Norm**: ([Paper](https://arxiv.org/abs/1602.07868))
 
-Weight normalization is a method that normalize weights of a layer instead of normalizing the activations directly. It re-parameterizes the weights (ω) as :
-
-![](assets/weight-norm.png)
-
-* g is a scalar magnitude of the weights
-* v is a vector orientation of the weights
-* ||v|| is the Euclidean norm of v
-* v is initialized to 0 mean and 0.05 standard deviation
-
-Weight normalization separates the weight vector from its direction, this has a similar effect as in batch normalization with variance. The only difference is in variation instead of direction.
+- Weight normalization is a method that normalize weights of a layer instead of normalizing the activations directly.
+- Weight normalization separates the weight vector from its direction. This has a similar effect as in batch normalization with variance. The only difference is in variation instead of direction.
 
 [back to current section](#deep-learning-concepts)
 
@@ -664,25 +650,35 @@ Weight normalization separates the weight vector from its direction, this has a 
 
 `θ = θ − η ⋅ ∇_θ J(θ)`
 
-As we need to calculate the gradients for the whole dataset to perform just one update, batch gradient descent can be very slow and is intractable for datasets that don't fit in memory. Batch gradient descent also doesn't allow us to update our model online, i.e. with new examples on-the-fly.
+- As we need to calculate the gradients for the whole dataset to perform just one update, batch gradient descent can be very slow and is intractable for datasets that don't fit in memory.
+- Batch gradient descent also doesn't allow us to update our model online, i.e. with new examples on-the-fly.
 
 **Stochastic Gradient Descent** in contrast performs a parameter update for each training example x(i) and label y(i):
 
 `θ = θ − η ⋅ ∇_θ J(θ; x(i); y(i))`
 
-Batch gradient descent performs redundant computations for large datasets, as it recomputes gradients for similar examples before each parameter update. SGD does away with this redundancy by performing one update at a time. It is therefore usually much faster and can also be used to learn online.
-
-While batch gradient descent converges to the minimum of the basin the parameters are placed in, SGD's fluctuation, on the one hand, enables it to jump to new and potentially better local minima. On the other hand, this ultimately complicates convergence to the exact minimum, as SGD will keep overshooting. However, it has been shown that when we slowly decrease the learning rate, SGD shows the same convergence behaviour as batch gradient descent, almost certainly converging to a local or the global minimum for non-convex and convex optimization respectively.
+- Batch gradient descent performs redundant computations for large datasets, as it recomputes gradients for similar examples before each parameter update. SGD does away with this redundancy by performing one update at a time. It is therefore usually much faster and can also be used to learn online.
+- It has been shown that when we slowly decrease the learning rate, SGD shows the same convergence behavior as batch gradient descent, almost certainly converging to a local or the global minimum for non-convex and convex optimization respectively.
 
 **Mini-Batch Gradient Descent** finally takes the best of both worlds and performs an update for every mini-batch of n training examples:
 
 `θ = θ − η ⋅ ∇_θ J(θ; x(i:i+n); y(i:i+n))`
 
-This way, it a) reduces the variance of the parameter updates, which can lead to more stable convergence; and b) can make use of highly optimized matrix optimizations common to state-of-the-art deep learning libraries that make computing the gradient w.r.t. a mini-batch very efficient. Common mini-batch sizes range between 50 and 256, but can vary for different applications. Mini-batch gradient descent is typically the algorithm of choice when training a neural network and the term SGD usually is employed also when mini-batches are used.
+- It reduces the variance of the parameter updates, which can lead to more stable convergence.
+- It can make use of highly optimized matrix optimizations common to state-of-the-art deep learning libraries that make computing the gradient w.r.t. a mini-batch very efficient.
+- Common mini-batch sizes range between 50 and 256, but can vary for different applications.
 
 [back to current section](#deep-learning-concepts)
 
 ### Common Gradient Descent Optimizers
+
+These are ways to update the gradients with adaptive learning rates ("one learning rate per parameter")
+
+- **Momentum**: Momentum helps accelerate SGD in the relevant direction and dampens oscillations.
+- **Adagrad**: Adagrad adapts updates to each individual parameter to perform larger or smaller updates depending on their importance. Learning rates are scaled by the square root of the cumulative sum of squared gradients.
+- **Adadelta**: Adadelta is an extension of Adagrad that seeks to reduce its aggressive, monotonically decreasing learning rate. Instead of accumulating all past squared gradients, Adadelta restricts the window of accumulated past gradients to some fixed size w.
+- **RMSProp**: RMSprop divides the learning rate by an exponentially decaying average of squared gradients.
+- **Adam**: Adaptive Moment Estimation is most popular today. It computes adaptive learning rates for each parameter. In addition to storing an exponentially decaying average of past squared gradients vt like Adadelta and RMSprop, Adam also keeps an exponentially decaying average of past gradients, similar to momentum
 
 ![](assets/gradient-descent-optimizers.png)
 
