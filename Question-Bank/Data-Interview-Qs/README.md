@@ -37,3 +37,4 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [Defective gaskets](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Defective-Gaskets.md)
 * [New Strains Of Flu](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/New-Strains-Of-Flu.md)
 * [Choosing two ice creams](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Choosing-Two-Ice-Creams.md)
+* [Car Battery](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Car-Battery.md)
