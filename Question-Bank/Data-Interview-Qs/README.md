@@ -26,6 +26,7 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [Plotting stock prices](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Plotting-Stock-Prices.md)
 * [Random Forest with GridSearchCV](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Random-Forest-GridSearchCV.md)
 * [Filtering student information with Pandas](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Filtering-Student-Info.md)
+* [Pythagorean Triplet](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Pythagorean-Triplet.md)
 
 ## Statistics
 
