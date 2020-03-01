@@ -508,7 +508,9 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 * [Common Activation Functions](#common-activation-functions)
 * [Weight Initialization](#weight-initialization)
 * [Gradient Descent Variants](#gradient-descent-variants)
-* [Common Gradient Descent Optimizers](#common-gradient-descent-optimizers)
+* [Learning Rate](#learning-rate)
+* [Batch Size](#batch-size)
+* [Choice of Optimizers](#choice-of-optimizers)
 * [Common Regularizers](#common-regularizers)
 * [Common Normalization](#common-normalization)
 * [Neural Networks From Scratch](#neural-networks-from-scratch)
@@ -664,19 +666,49 @@ A neural network is put together by hooking together many of our simple “neuro
 
 [back to current section](#deep-learning-concepts)
 
-### Common Gradient Descent Optimizers
+### Learning Rate
 
-These are ways to update the gradients with adaptive learning rates ("one learning rate per parameter"). This is because
-- *Small Learning Rates* converge slowly and gets stuck in false local minima.
-- *Large Learning Rates* overshoot, become unstable and diverge.
-- *Stable Learning Rates* converge smoothly and avoid local minima.
+The learning rate influences the optimization’s convergence. It also counterbalances the influence of the cost function’s curvature.
+- If the learning rate is too small, updates are small and optimization is slow, especially if the cost curvature is low. Also, you’re likely to settle into an poor local minimum or plateau.
+- If the learning rate is too large, updates will be large and the optimization is likely to diverge, especially if the cost function’s curvature is high.
+- If the learning rate is chosen well, updates are appropriate and the optimization should converge to a good set of parameters.
 
-Adaptive learning rates can "adapt" to the landscape:
-- **Momentum**: Momentum helps accelerate SGD in the relevant direction and dampens oscillations.
-- **Adagrad**: Adagrad adapts updates to each individual parameter to perform larger or smaller updates depending on their importance. Learning rates are scaled by the square root of the cumulative sum of squared gradients.
-- **Adadelta**: Adadelta is an extension of Adagrad that seeks to reduce its aggressive, monotonically decreasing learning rate. Instead of accumulating all past squared gradients, Adadelta restricts the window of accumulated past gradients to some fixed size w.
-- **RMSProp**: RMSprop divides the learning rate by an exponentially decaying average of squared gradients.
-- **Adam**: Adaptive Moment Estimation is most popular today. It computes adaptive learning rates for each parameter. In addition to storing an exponentially decaying average of past squared gradients vt like Adadelta and RMSprop, Adam also keeps an exponentially decaying average of past gradients, similar to momentum.
+It is common to start with a large learning rate — say, between 0.1 and 1 — and decay it during training. Choosing the right decay (how often? by how much?) is non-trivial. An excessively aggressive decay schedule slows progress toward the optimum, while a slow-paced decay schedule leads to chaotic updates with small improvements.
+
+In fact, finding the “best decay schedule” is non trivial. However, adaptive learning-rate algorithms such as Momentum Adam and RMSprop help adjust the learning rate during the optimization process.
+
+[back to current section](#deep-learning-concepts)
+
+### Batch Size
+
+Batch size is the number of data points used to train a model in each iteration. Typical small batches are 32, 64, 128, 256, 512, while large batches can be thousands of examples.
+
+Choosing the right batch size is important to ensure convergence of the cost function and parameter values, and to the *generalization* of your model. Some research has considered how to make the choice, but there is no consensus. In practice, you can use a *hyperparameter search*.
+
+Research into batch size has revealed the following principles:
+- Batch size determines the frequency of updates. The smaller the batches, the more, and the quicker, the updates.
+- The larger the batch size, the more accurate the gradient of the cost will be with respect to the parameters. That is, the direction of the update is most likely going down the local slope of the cost landscape.
+- Having larger batch sizes, but not so large that they no longer fit in GPU memory, tends to improve parallelization efficiency and can accelerate training.
+
+In choosing batch size, there’s a balance to be struck depending on the available computational hardware and the task you’re trying to achieve.
+
+[back to current section](#deep-learning-concepts)
+
+### Choice of Optimizers
+
+The choice of optimizer influences both the speed of convergence and whether it occurs.
+- **Momentum**:
+  - Momentum usually speeds up the learning with a very minor implementation change.
+  - Momentum uses more memory for a given batch size than stochastic gradient descent but less than RMSprop and Adam.
+- **RMSProp**:
+  - RMSprop’s adaptive learning rate usually prevents the learning rate decay from diminishing too slowly or too fast.
+  - RMSprop maintains per-parameter learning rates.
+  - RMSprop uses more memory for a given batch size than stochastic gradient descent and Momentum, but less than Adam.
+- **Adam**:
+  - Adaptive Moment Estimation is most popular today. The hyperparameters of Adam (learning rate, exponential decay rates for the moment estimates, etc.) are usually set to predefined values (given in the paper), and do not need to be tuned.
+  - Adam performs a form of learning rate annealing with adaptive step-sizes.
+  - Of the optimizers profiled here, Adam uses the most memory for a given batch size.
+  - Adam is often the default optimizer in machine learning.
 
 [back to current section](#deep-learning-concepts)
 
