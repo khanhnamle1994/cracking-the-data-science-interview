@@ -506,6 +506,7 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 * [Neural Network Model](#neural-network-model)
 * [Backpropagation](#backpropagation)
 * [Common Activation Functions](#common-activation-functions)
+* [Weight Initialization](#weight-initialization)
 * [Gradient Descent Variants](#gradient-descent-variants)
 * [Common Gradient Descent Optimizers](#common-gradient-descent-optimizers)
 * [Common Regularizers](#common-regularizers)
@@ -608,6 +609,26 @@ A neural network is put together by hooking together many of our simple “neuro
 - To fix this problem another modification was introduced called **Leaky ReLU** to fix the problem of dying neurons. It introduces a small slope to keep the updates alive.
 
 ![](assets/activation-functions.png)
+
+[back to current section](#deep-learning-concepts)
+
+### Weight Initialization
+
+- Why is initialization important?
+  - Initializing all the weights with 0 leads the neurons to learn the same features during training.
+  - Initializing the weights with values too small or too large leads respectively to slow learning or divergence.
+
+- The problem of exploding or vanishing gradients:
+  - A too-large initialization leads to exploding gradients. That is, the gradients of the cost with the respect to the parameters are too big. This leads the cost to oscillate around its minimum value.
+  - A too-small initialization leads to vanishing gradients. That is, the gradients of the cost with the respect to the parameters are too small. This leads to convergence of the cost before it has reached the minimum value.
+
+- Proper initialization:
+  - Rules of thumb: (1) The mean of the activations should be 0, (2) The variance of the activations should stay the same across every layer.
+  - Xavier initialization for tanh activations.
+    - All the weights of layer `l` are picked randomly from a normal distribution with mean 0 and variance `1 / n^{# of neurons in previous layer (l - 1)}`.
+    - Biases are initialized with 0s.
+  - He initialization for ReLU activations.
+    - The weights are initialized by multiplying by 2 the variance of the Xavier initialization.
 
 [back to current section](#deep-learning-concepts)
 
