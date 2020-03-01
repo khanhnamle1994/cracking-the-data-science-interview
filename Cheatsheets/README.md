@@ -961,7 +961,6 @@ Here is a visual explanation of PCA:
 * [ConvNet Layer Patterns](#convnet-layer-patterns)
 * [ConvNet Layer Sizing Patterns](#convnet-layer-sizing-patterns)
 * [ConvNet Examples](#convnet-examples)
-* [Backpropagation with ReLU](#backpropagation-with-ReLU)
 * [Transfer Learning](#transfer-learning)
 * [Convolutional Filters](#convolutional-filters)
 
@@ -975,7 +974,7 @@ Here is the [reference](https://cs231n.github.io/convolutional-networks/).
 
 ![](assets/ConvNet-Architecture.jpeg)
 
-*Left: A regular 3-layer Neural Network. Right: A ConvNet arranges its neurons in three dimensions (width, height, depth), as visualized in one of the layers. Every layer of a ConvNet transforms the 3D input volume to a 3D output volume of neuron activations. In this example, the red input layer holds the image, so its width and height would be the dimensions of the image, and the depth would be 3 (Red, Green, Blue channels).*
+*Left: A ConvNet arranges its neurons in three dimensions (width, height, depth), as visualized in one of the layers. Every layer of a ConvNet transforms the 3D input volume to a 3D output volume of neuron activations. In this example, the red input layer holds the image, so its width and height would be the dimensions of the image, and the depth would be 3 (Red, Green, Blue channels).*
 
 [back to current section](#computer-vision)
 
@@ -995,20 +994,22 @@ Here is the [reference](https://cs231n.github.io/convolutional-networks/).
 
 ### Convolutional Layer
 
-* Accepts a volume of size `W1 × H1 ×D1`
+* Accepts a volume of size `W1 × H1 × D1`
 * Requires four hyperparameters:
     * Number of filters K,
-    * their spatial extent F,
+    * their spatial extent F (filter has size F x F),
     * the stride S,
     * the amount of zero padding P.
 * Produces a volume of size `W2 × H2 × D2` where:
-    * `W2 = (W1 − F + 2P)/S + 1`
+    * `W2 = (W1 − F + 2P)/S + 1` (For example, if an image is 100 x 100, a filter is 6 × 6, the padding is 7, and the stride is 4, the result of convolution will be (100 – 6 + (2)(7)) / 4 + 1 = 28 × 28)
     * `H2 = (H1 − F + 2P)/S + 1` (i.e. width and height are computed equally by symmetry)
     * `D2 = K`
 * With parameter sharing, it introduces `F⋅F⋅D1` weights per filter, for a total of `(F⋅F⋅D1)⋅K` weights and K biases.
 * In the output volume, the d-th depth slice (of size `W2 × H2`) is the result of performing a valid convolution of the d-th filter over the input volume with a stride of S, and then offset by d-th bias.
 
 A common setting of the hyperparameters is `F = 3, S = 1, P = 1`.
+
+![Convolution Math](assets/convolution_math.jpg)
 
 [back to current section](#computer-vision)
 
@@ -1028,9 +1029,12 @@ A common setting of the hyperparameters is `F = 3, S = 1, P = 1`.
 It is worth noting that there are only two commonly seen variations of the max pooling layer found in practice: A pooling layer with `F = 3, S = 2` (also called overlapping pooling), and more commonly `F = 2, S = 2`. Pooling sizes with larger receptive fields are too destructive.
 
 ![](assets/pool.jpeg)
+
+*Pooling layer downsamples the volume spatially, independently in each depth slice of the input volume. In this example, the input volume of size [224x224x64] is pooled with filter size 2, stride 2 into output volume of size [112x112x64]. Notice that the volume depth is preserved.*
+
 ![](assets/maxpool.jpeg)
 
-*Pooling layer downsamples the volume spatially, independently in each depth slice of the input volume. Above: In this example, the input volume of size [224x224x64] is pooled with filter size 2, stride 2 into output volume of size [112x112x64]. Notice that the volume depth is preserved. Below: The most common downsampling operation is max, giving rise to max pooling, here shown with a stride of 2. That is, each max is taken over 4 numbers (little 2x2 square).*
+*The most common downsampling operation is max, giving rise to max pooling, here shown with a stride of 2. That is, each max is taken over 4 numbers (little 2x2 square).*
 
 [back to current section](#computer-vision)
 
@@ -1047,15 +1051,25 @@ where the `*` indicates repetition, and the `POOL?` indicates an optional poolin
 * `INPUT -> [CONV -> RELU -> POOL]*2 -> FC -> RELU -> FC`. Here we see that there is a single CONV layer between every POOL layer.
 * `INPUT -> [CONV -> RELU -> CONV -> RELU -> POOL]*3 -> [FC -> RELU]*2 -> FC`. Here we see two CONV layers stacked before every POOL layer. This is generally a good idea for larger and deeper networks, because multiple stacked CONV layers can develop more complex features of the input volume before the destructive pooling operation.
 
+![](assets/Training-CNN.png)
+*(1) Feature Extraction: Learn features in input image through convolution, introduce non-linearity through activation function, reduce dimensionality and preserve spatial invariance with pooling; (2) Classification: Convolution and Pooling layers output high-level features of input, Fully-connected layer uses these features for classifying input image, use softmax to express output as probability of image belonging to a particular class; (3) Use backpropagation with cross-entropy loss to learn weights for convolutional filers and fully-connected layers*
+
 [back to current section](#computer-vision)
 
 ### ConvNet Layer Sizing Patterns
 
-The **input layer** (that contains the image) should be divisible by 2 many times. Common numbers include 32 (e.g. CIFAR-10), 64, 96 (e.g. STL-10), or 224 (e.g. common ImageNet ConvNets), 384, and 512.
+- The **input layer** (that contains the image) should be divisible by 2 many times.
+  - Common numbers include 32 (e.g. CIFAR-10), 64, 96 (e.g. STL-10), or 224 (e.g. common ImageNet ConvNets), 384, and 512.
 
-The **conv layers** should be using small filters (e.g. 3x3 or at most 5x5), using a stride of `S = 1`, and crucially, padding the input volume with zeros in such way that the conv layer does not alter the spatial dimensions of the input. That is, when `F = 3`, then using `P = 1` will retain the original size of the input. When `F = 5`, `P = 2`. For a general F, it can be seen that `P = (F − 1) / 2` preserves the input size. If you must use bigger filter sizes (such as 7x7 or so), it is only common to see this on the very first conv layer that is looking at the input image.
+- The **conv layers** should be using small filters (e.g. 3x3 or at most 5x5), using a stride of `S = 1`, and crucially, padding the input volume with zeros in such way that the conv layer does not alter the spatial dimensions of the input.
+  - That is, when `F = 3`, then using `P = 1` will retain the original size of the input.
+  - When `F = 5`, `P = 2`.
+  - For a general F, it can be seen that `P = (F − 1) / 2` preserves the input size.
+  - If you must use bigger filter sizes (such as 7x7 or so), it is only common to see this on the very first conv layer that is looking at the input image.
 
-The **pool layers** are in charge of downsampling the spatial dimensions of the input. The most common setting is to use max-pooling with 2x2 receptive fields (i.e. `F = 2`), and with a stride of 2 (i.e. `S = 2`). Note that this discards exactly 75% of the activations in an input volume (due to downsampling by 2 in both width and height). Another slightly less common setting is to use 3x3 receptive fields with a stride of 2, but this makes. It is very uncommon to see receptive field sizes for max pooling that are larger than 3 because the pooling is then too lossy and aggressive. This usually leads to worse performance.
+- The **pool layers** are in charge of downsampling the spatial dimensions of the input.
+  - The most common setting is to use max-pooling with 2x2 receptive fields (i.e. `F = 2`), and with a stride of 2 (i.e. `S = 2`).
+  - Note that this discards exactly 75% of the activations in an input volume (due to downsampling by 2 in both width and height).
 
 [back to current section](#computer-vision)
 
@@ -1064,19 +1078,11 @@ The **pool layers** are in charge of downsampling the spatial dimensions of the 
 There are several architectures in the field of Convolutional Networks that have a name. The most common are:
 
 * **LeNet**. The first successful applications of Convolutional Networks were developed by Yann LeCun in 1990’s. Of these, the best known is the [LeNet](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf) architecture that was used to read zip codes, digits, etc.
-* **AlexNet**. The first work that popularized Convolutional Networks in Computer Vision was the [AlexNet](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks), developed by Alex Krizhevsky, Ilya Sutskever and Geoff Hinton. The AlexNet was submitted to the ImageNet ILSVRC challenge in 2012 and significantly outperformed the second runner-up (top 5 error of 16% compared to runner-up with 26% error). The Network had a very similar architecture to LeNet, but was deeper, bigger, and featured Convolutional Layers stacked on top of each other (previously it was common to only have a single CONV layer always immediately followed by a POOL layer).
-* **ZF Net**. The ILSVRC 2013 winner was a Convolutional Network from Matthew Zeiler and Rob Fergus. It became known as the [ZFNet](http://arxiv.org/abs/1311.2901) (short for Zeiler & Fergus Net). It was an improvement on AlexNet by tweaking the architecture hyperparameters, in particular by expanding the size of the middle convolutional layers and making the stride and filter size on the first layer smaller.
-* **GoogLeNet**. The ILSVRC 2014 winner was a Convolutional Network from [Szegedy et al.](http://arxiv.org/abs/1409.4842) from Google. Its main contribution was the development of an Inception Module that dramatically reduced the number of parameters in the network (4M, compared to AlexNet with 60M). Additionally, this paper uses Average Pooling instead of Fully Connected layers at the top of the ConvNet, eliminating a large amount of parameters that do not seem to matter much. There are also several followup versions to the GoogLeNet, such as [Inception-v4](http://arxiv.org/abs/1602.07261).
-* **VGGNet**. The runner-up in ILSVRC 2014 was the network from Karen Simonyan and Andrew Zisserman that became known as the [VGGNet](http://www.robots.ox.ac.uk/~vgg/research/very_deep/). Its main contribution was in showing that the depth of the network is a critical component for good performance. Their final best network contains 16 CONV/FC layers and, appealingly, features an extremely homogeneous architecture that only performs 3x3 convolutions and 2x2 pooling from the beginning to the end. A downside of the VGGNet is that it is more expensive to evaluate and uses a lot more memory and parameters (140M). Most of these parameters are in the first fully connected layer, and it was since found that these FC layers can be removed with no performance downgrade, significantly reducing the number of necessary parameters.
-* **ResNet**. [Residual Network](http://arxiv.org/abs/1512.03385) developed by Kaiming He et al. was the winner of ILSVRC 2015. It features special skip connections and a heavy use of batch normalization. The architecture is also missing fully connected layers at the end of the network.
-
-[back to current section](#computer-vision)
-
-### Backpropagation with ReLU
-
-* Watch Stanford's CS230 [lecture 7](https://youtu.be/gCJCgQW_LKc?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb&t=4592) from 1:16:32 to 1:20:30.
-
-![Backprop ReLU](assets/Backprop-RELU.png)
+* **AlexNet** (8 layers, 61 million parameters). The first work that popularized Convolutional Networks in Computer Vision was the [AlexNet](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks), developed by Alex Krizhevsky, Ilya Sutskever and Geoff Hinton. The AlexNet was submitted to the ImageNet ILSVRC challenge in 2012 and significantly outperformed the second runner-up (top 5 error of 16% compared to runner-up with 26% error). The Network had a very similar architecture to LeNet, but was deeper, bigger, and featured Convolutional Layers stacked on top of each other (previously it was common to only have a single CONV layer always immediately followed by a POOL layer).
+* **ZF Net** (8 layers, more filters). The ILSVRC 2013 winner was a Convolutional Network from Matthew Zeiler and Rob Fergus. It became known as the [ZFNet](http://arxiv.org/abs/1311.2901) (short for Zeiler & Fergus Net). It was an improvement on AlexNet by tweaking the architecture hyperparameters, in particular by expanding the size of the middle convolutional layers and making the stride and filter size on the first layer smaller.
+* **GoogLeNet** (Inception modules, 22 layers, 5 million parameters). The ILSVRC 2014 winner was a Convolutional Network from [Szegedy et al.](http://arxiv.org/abs/1409.4842) from Google. Its main contribution was the development of an Inception Module that dramatically reduced the number of parameters in the network (4M, compared to AlexNet with 60M). Additionally, this paper uses Average Pooling instead of Fully Connected layers at the top of the ConvNet, eliminating a large amount of parameters that do not seem to matter much. There are also several followup versions to the GoogLeNet, such as [Inception-v4](http://arxiv.org/abs/1602.07261).
+* **VGGNet** (19 layers). The runner-up in ILSVRC 2014 was the network from Karen Simonyan and Andrew Zisserman that became known as the [VGGNet](http://www.robots.ox.ac.uk/~vgg/research/very_deep/). Its main contribution was in showing that the depth of the network is a critical component for good performance. Their final best network contains 16 CONV/FC layers and, appealingly, features an extremely homogeneous architecture that only performs 3x3 convolutions and 2x2 pooling from the beginning to the end. A downside of the VGGNet is that it is more expensive to evaluate and uses a lot more memory and parameters (140M). Most of these parameters are in the first fully connected layer, and it was since found that these FC layers can be removed with no performance downgrade, significantly reducing the number of necessary parameters.
+* **ResNet** (152 layers). [Residual Network](http://arxiv.org/abs/1512.03385) developed by Kaiming He et al. was the winner of ILSVRC 2015. It features special skip connections and a heavy use of batch normalization. The architecture is also missing fully connected layers at the end of the network.
 
 [back to current section](#computer-vision)
 
@@ -1095,24 +1101,6 @@ There are several architectures in the field of Convolutional Networks that have
 * **Fine-tuning** consists in unfreezing a few of the top layers of a frozen model base used for feature extraction, and jointly training both the newly added part of the model (in our case, the fully-connected classifier) and these top layers. This is called "fine-tuning" because it slightly adjusts the more abstract representations of the model being reused, in order to make them more relevant for the problem at hand.
 
 ![Fine-Tuning](assets/vgg16_fine_tuning.png)
-
-[back to current section](#computer-vision)
-
-### Convolutional Filters
-
-* Review the role of filters in a convolutional layer in [this lecture](https://www.coursera.org/lecture/convolutional-neural-networks/one-layer-of-a-convolutional-network-nsiuW).
-* A convolutional neural network (CNN) applies a filter to an image in a very tricky way. When you use a CNN you have to be aware of the relationship between the image size, the filter size, the size of the padding around the image, and the distance the filter moves (the stride) during convolution.
-* Without image padding, the pixels on the edge of the image are only partially processed (which may be OK), and the result of convolution will be smaller than the original image size (usually not good).
-
-![Convolution Math](assets/convolution_math.jpg)
-
-Suppose an image has size W x W, the filter has size F x F, the padding is P, and the stride is S. Then:
-
-1. The result size of a convolution will be (W – F + 2P) / S + 1. For example, if an image is 100×100, a filter is 6×6, the padding is 7, and the stride is 4, the result of convolution will be (100 – 6 + (2)(7)) / 4 + 1 = 28×28.
-
-2. Therefore, the quantity (W – F + 2P) / S + 1 should be an integer, and so (W – F + 2P) should be evenly divisible by S. This will never be a problem if S = 1 but could be a problem if S is greater than 1.
-
-3. If you set S = 1 (very common), then by setting P = (F – 1) / 2 the result size of convolution will be the same as the image size (which is usually what you want). If S is greater than 1, then you need to adjust P and/or F if you want to retain the original image size.
 
 [back to current section](#computer-vision)
 
