@@ -38,3 +38,4 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [Rolling Bank Transactions](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Rolling-Bank-Transactions.md) (by Dropbox)
 * [Distribution of 2X - Y](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Distribution-2X-Y.md) (by Google)
 * [Subscription Overlap](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Subscription-Overlap.md) (by Twitch)
+* [HHT or HTT](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/HHT-or-HTT.md) (by Goldman Sachs)
