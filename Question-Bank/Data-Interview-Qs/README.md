@@ -29,6 +29,7 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [Filtering student information with Pandas](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Filtering-Student-Info.md)
 * [Pythagorean Triplet](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Pythagorean-Triplet.md)
 * [Candy Production Increase](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Candy-Production-Increase.md)
+* [Births By State](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Births-By-State.md)
 
 ## Statistics
 
