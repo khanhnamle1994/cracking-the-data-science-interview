@@ -28,6 +28,7 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [One Element Removed](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/One-Element-Removed.md) (by Facebook)
 * [Get Top N Words](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Get-Top-N-Words.md) (by Indeed)
 * [Food Delivery Times](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Food-Delivery-Times.md) (by Postmates)
+* [Over-Budget Projects](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Over-Budget-Projects.md) (by Boston Consulting Group)
 
 ## Hard
 
