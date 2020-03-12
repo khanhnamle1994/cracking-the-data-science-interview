@@ -43,3 +43,4 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [Subscription Overlap](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Subscription-Overlap.md) (by Twitch)
 * [HHT or HTT](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/HHT-or-HTT.md) (by Goldman Sachs)
 * [Half-Off Rider Discount](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Half-Off-Rider-Discount.md) (by Lyft)
+* [Liker's Likers](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Liker-Likers.md) (by Calm)
