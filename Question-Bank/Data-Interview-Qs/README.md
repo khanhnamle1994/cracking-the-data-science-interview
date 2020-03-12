@@ -10,6 +10,7 @@ These are answers to questions from [Data Interview Qs](https://www.interviewqs.
 * [Querying San Francisco Public Worker Salaries](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Querying-San-Francisco-Public-Worker-Salaries.md)
 * [Music Streaming Behavior](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Music-Streaming-Behavior.md)
 * [Shoe Prices](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Shoe-Prices.md)
+* [Twitch view times by creators](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Interview-Qs/Twitch-View-Times-By-Creators.md)
 
 ## Python
 
