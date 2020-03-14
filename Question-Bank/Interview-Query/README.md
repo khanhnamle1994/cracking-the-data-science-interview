@@ -8,6 +8,7 @@ These are answers to questions from [Interview Query](https://www.interviewquery
 * [Bank Fraud Model](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Bank-Fraud-Model.md) (by Square)
 * [Download Facts](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Download-Facts.md) (by Microsoft)
 * [Stop Words Filter](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Stop-Words-Filter.md) (by Instacart)
+* [Find Bigrams](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Interview-Query/Find-Bigrams.md) (by Indeed)
 
 ## Medium
 
