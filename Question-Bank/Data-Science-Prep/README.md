@@ -13,6 +13,7 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 * [Difficulties in A/B testing](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Difficulties-AB-Testing.md) (by Airbnb)
 * [Simulating a standard normal distribution](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Simulating-Normal-Distribution.md) (by Uber)
 * [MLE vs. MAP](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/MLE-vs-MAP.md) (by Netflix)
+* [Improving Signups](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Improving-Signups.md) (by Quora)
 
 ## Probability
 * [Forming A Triangle](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Forming-a-Triangle.md) (by Google)
