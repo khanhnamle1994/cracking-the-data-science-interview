@@ -208,6 +208,7 @@ Here are the categories:
 ## Statistics and Probability
 
 * [Guidelines for AB Testing](#guidelines-for-ab-testing)
+* [Udacity AB Testing Course](#udacity-ab-testing-course)
 * [Probability Cheatsheet](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/probability_cheatsheet.pdf)
 * [Statistics Cheatsheet](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/stats_cheatsheet.pdf)
 * [Think Stats](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Think-Stats.md)
@@ -257,7 +258,37 @@ This section comes from Emily Robinson's post [here](https://hookedondata.org/gu
   - It’s very tempting to launch big changes or a bundle of smaller changes in the hope that they result in big wins. But the problem is that you will often invest tons of effort up front only to find out your change doesn’t work.
   - And when it doesn’t, it’s hard to figure out why - was it just one part that failed? Or was it an interaction of the changes? A better practice is to split them up into smaller tests.
 
-[back to current section](#statistics)
+[back to current section](#statistics-and-probability)
+
+### Udacity AB Testing Course
+
+This section comes from Kelly Peng's post [here](https://towardsdatascience.com/a-summary-of-udacity-a-b-testing-course-9ecc32dedbb1):
+- We do A/B tests to measure the impact that changes have on our metrics.
+- When A/B testing is not useful, we can: (1) Analyze user activity logs, (2) Conduct retrospective analysis, (3) Conduct user experience research, (4) Focus groups and surveys, and (5) Human evaluation.
+- An A/B test can be summarized into the 5 steps below:
+  1. Choose and characterize metrics to evaluate your experiments, i.e. what do you care about, how do you want to measure the effect
+  2. Choose significance level (alpha), statistical power (1-beta) and practical significance level you really want to launch the change if the test is statistically significant
+  3. Calculate required sample size
+  4. Take sample for control/treatment groups and run the test
+  5. Analyze the results and draw valid conclusions
+
+**Step 1: Choose and characterize metrics for both sanity check and evaluation**
+
+**Step 2: Choose significance level, statistical power and practical significance level**
+
+**Step 3: Calculate required sample size**
+
+**Step 4: Take sample for control/treatment groups and run the test**
+
+**Step 5: Analyze the results and draw conclusions**
+
+**Gotchas**
+
+**Lessons learned**
+
+**Politics and ethics for experiments**
+
+[back to current section](#statistics-and-probability)
 
 ### Enunciating the Central Limit Theorem
 
@@ -280,7 +311,7 @@ It is followed by [practical examples](https://www.coursera.org/lecture/six-sigm
 * **Standard Error** of the means is `\sigma / \sqrt{n}` (standard deviation of the means)
 * **Confidence Interval**: A 95% CI on the mean = 95% of the time, the true population mean should be within that interval. This metric allows us to provide some confidence around the estimate.
 
-[back to current section](#statistics)
+[back to current section](#statistics-and-probability)
 
 ### Defining good hypotheses in a hypothesis test
 
@@ -303,7 +334,7 @@ Steps in hypothesis testing:
 3. Choose the test statistic and establish the critical region.
 4. Collect the sample and compute the test statistic. If the test statistic is in the critical region, reject H0. Otherwise, do not reject H0.
 
-[back to current section](#statistics)
+[back to current section](#statistics-and-probability)
 
 ### Calculating the probability of a sum of random variables
 
@@ -312,7 +343,7 @@ Steps in hypothesis testing:
 * Variance of the sum of random variables equals to the sum of the variances of the random variables: Var(X + Y) = Var(X) + Var(Y)
 => Assumes that X and Y are independent variables.
 
-[back to current section](#statistics)
+[back to current section](#statistics-and-probability)
 
 ### Calculating the probability of an intersection of events
 
@@ -328,13 +359,13 @@ Fundamental Probability rules
 
 Additional Rule when A and B are not disjointed: `P(A U B) = P(A or B) = P(A) + P(B) - P(A join B)`
 
-[back to current section](#statistics)
+[back to current section](#statistics-and-probability)
 
 ### Calculating conditional probabilities using the Bayes rule
 
 The Bayes rule is a common interview topic for machine learning and data science roles. [These course notes](https://math.la.asu.edu/~surgent/mat142/Sect_8_5.pdf) (pages 381-388) show techniques to solve problems involving conditional probabilities. Also, [these course notes](http://faculty.washington.edu/tamre/BayesTheorem.pdf) (pages 7-9) offer examples and practice exercises. If you prefer watching videos, [this lecture](https://www.coursera.org/lecture/probability-intro/conditional-probability-fN6Kh) is an intuitive explanation on conditional probabilities.
 
-[back to current section](#statistics)
+[back to current section](#statistics-and-probability)
 
 [back to top](#data-science-cheatsheets)
 

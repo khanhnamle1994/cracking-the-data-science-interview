@@ -535,4 +535,29 @@ In problems involving many variables, it can be challenging to decide which inte
 
 ## Statistical Machine Learning
 
+* [K Nearest Neighbors](#k-nearest-neighbors)
+* [Tree Models](#tree-models)
+* [Bagging and Random Forest](#bagging-and-random-forest)
+* [Boosting](#boosting)
+
+### K Nearest Neighbors
+
+- kNN classifies a record by assigning it to the class that similar records belong to.
+- Similarity (distance) is determined by Euclidean distance or Manhattan distance.
+  - Euclidean distance corresponds to the straight-line distance between two points.
+  - Manhattan distance is the distance between two points traversed in a single direction at a time.
+- The number of nearest neighbors to compare a record to, K, is determined by how well the algorithm performs on training data, using different values for K.
+- Typically, the predictor variables are standardized so that variables of large scale do not dominate the distance metric.
+  - Standardization / normalization puts all variables on similar scales by subtracting the mean and dividing by the standard deviation.
+  - These are called z-scores, stated in terms of "standard deviations away from the mean."
+- kNN is often used as a first stage in predictive modeling, and the predicted value is added back into the data as a predictor for second-stage modeling.
+
+[back to current section](#statistical-machine-learning)
+
 ## Unsupervised Learning
+
+* [Principal Component Analysis](#principal-component-analysis)
+* [K Means Clustering](#k-means-clustering)
+* [Hierarchical Clustering](#hierarchical-clustering)
+* [Model Based Clustering](#model-based-clustering)
+* [Scaling and Categorical Variables](#scaling-and-categorical-variables)
