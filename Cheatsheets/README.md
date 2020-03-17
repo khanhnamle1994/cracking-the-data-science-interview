@@ -7,7 +7,7 @@ The purpose of this README is two fold:
 Here are the categories:
 
 * [SQL](#sql)
-* [Statistics](#statistics)
+* [Statistics and Probability](#statistics-and-probability)
 * [Mathematics](#mathematics)
 * [Machine Learning Concepts](#machine-learning-concepts)
 * [Deep Learning Concepts](#deep-learning-concepts)
@@ -205,8 +205,9 @@ Here are the categories:
 
 [back to top](#data-science-cheatsheets)
 
-## Statistics
+## Statistics and Probability
 
+* [Guidelines for AB Testing](#guidelines-for-ab-testing)
 * [Probability Cheatsheet](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/probability_cheatsheet.pdf)
 * [Statistics Cheatsheet](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/stats_cheatsheet.pdf)
 * [Think Stats](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Think-Stats.md)
@@ -214,8 +215,49 @@ Here are the categories:
 * [Defining good hypotheses in a hypothesis test](#defining-good-hypotheses-in-a-hypothesis-test)
 * [Calculating the probability of a sum of random variables](#calculating-the-probability-of-a-sum-of-random-variables)
 * [Calculating the probability of an intersection of events](#calculating-the-probability-of-an-intersection-of-events)
-* [Analyzing a residuals plot](#analyzing-a-residuals-plot)
 * [Calculating conditional probabilities using the Bayes rule](#calculating-conditional-probabilities-using-the-Bayes-rule)
+
+### Guidelines for AB Testing
+
+This section comes from Emily Robinson's post [here](https://hookedondata.org/guidelines-for-ab-testing/):
+
+1. **Have one key metric for your experiment**:
+  - Choose a proportion metric: (1) Care more about the number of people doing something than how much they do it, and (2) Don't have to deal with outliers and changing standard deviations.
+  - Testing many metrics can lead to an increased false positive rate.
+2. **Use that key metric to do a power calculation**:
+  - Run a power calculation first to determine how long it would take to detect an X% increase. You’ll need the current rate (if a proportion metric) or mean and standard deviation of your key metric, how many visitors you get daily, what type of change you’re aiming to get (1% increase? 5%?), the percentage of people you’ll be allocating to your new version (e.g. are you doing 50/50 or 75/25 split), desired level of power (usually 80%), and the significance threshold (usually 95% or 90%). If you’re doing a proportion metric, experimentcalculator.com is good for this.
+  - Two things will generally happen: 1) you’ll find that it will take a few days or weeks or 2) you’ll find that it will take 3 years, 5 months, and 23 days. If the latter happens, you may either have to go for a different metric with a higher baseline rate or decide you only care about bigger changes. For example, you can decide that it’s okay that you can’t detect a 5% increase clicks because only a 10% or greater increase is meaningful.
+3. **Run your experiment for the length you’ve planned on**:
+  - You should monitor it in the first few days to make sure nothing exploded, but plan on running it for the length you planned on in your power calculation. Don’t stop as soon as something is significant or you will get a lot of false positives. Don’t be another p-hacking statistic
+4. **Pay more attention to confidence intervals than p-values**:
+  - They have a 1-1 relationship such that if the p-value is less than .05, the 95% confidence interval does not overlap with 0. But if the confidence interval is wide and very close to zero, you’ve got a lot less evidence of a change than if it’s tiny and far away.
+5. **Don’t run tons of variants**:
+  - You will lower your ability to detect a statistical effect, as each group will have fewer people in it.
+  - You’ll also raise the likelihood of a false positive if you simply test the control against each treatment group.
+  - As a rule of thumb, stick to only a treatment and control most of the time and don’t go more than four total groups (control and three variations).
+6. **Don’t try to look for differences for every possible segment**:
+  - If your test doesn’t work overall, it can be tempting to hold out hope that it actually did, just not for everyone. Or even if your A/B tests did succeed, you may want to know if it was driven by a big change in one segment.
+  - If you really think there will be a difference, either pre-specify your hypothesis or run separate tests (e.g. one for new visitors and one for returning).
+7. **Check that there’s not bucketing skew**:
+  - Bucketing skew, also known as sample ratio mismatch, is where the split of people between your variants does not match what you planned.
+  - To check if you have an issue, run a proportion test with the number of visitors in each group and check if your p-value is less than .05. If you do have bucketing skew, you have a bug.
+  - Unfortunately, it can be difficult to find it, but a good place to start is checking is if the skew differs based on web browser, country, or another visitor factor. Also check if your treatment is significantly slower; it may be that users with slow connections are dropping out before they get bucketed into the treatment.
+  - Finding the bug and rerunning the test is very important because generally users aren’t going missing at random. If you’re systematically dropping people who use internet explorer in the treatment, who also never buy your product, your conversion rate will look artificially better because the population in the control vs. treatment is different.
+8. **Don’t overcomplicate your methods**:
+  - If you’re just starting out A/B testing methods, focus on getting the basic, frequentist methods right. Even after a few years, it’s usually better to invest in experiment design and education rather than fancy statistical methods.
+9. **Be careful of launching things because they “don’t hurt”**:
+  - There may actually be a negative change that’s too small to detect but could have a meaningful effect in the long-term.
+  - When deciding whether to launch on “neutral,” the first step is to look at your non-key metrics. If other metrics you care about have been impacted negatively, you’ll probably want to rollback. If not, this is where your product intuition and other data can come in.
+10. **Have a data scientist/analyst involved in the whole process**:
+  - If a team tries to bring in a data scientist after they launched an experiment, they may find the data doesn’t exist to measure their key metric, the test is severely underpowered, or there’s a design flaw that means they can’t draw any conclusions.
+11. **Only include people in your analysis who could have been affected by the change**:
+  - If you have users in your experiment whose experience could not have been impacted by your change, you’re adding noise and reducing your ability to detect an effect.
+  - For example, if you’re changing the layout of the search page, only add users to the experiment if they visit the search page.
+12. **Focus on smaller, incremental tests that change one thing at a time**:
+  - It’s very tempting to launch big changes or a bundle of smaller changes in the hope that they result in big wins. But the problem is that you will often invest tons of effort up front only to find out your change doesn’t work.
+  - And when it doesn’t, it’s hard to figure out why - was it just one part that failed? Or was it an interaction of the changes? A better practice is to split them up into smaller tests.
+
+[back to current section](#statistics)
 
 ### Enunciating the Central Limit Theorem
 
