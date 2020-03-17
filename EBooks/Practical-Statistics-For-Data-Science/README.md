@@ -566,6 +566,21 @@ In problems involving many variables, it can be challenging to decide which inte
 
 [back to current section](#statistical-machine-learning)
 
+### Bagging and Random Forest
+
+- Ensemble models improve model accuracy by combining the results from many models. The simple version is as follows:
+  - Develop a predictive model and record the predictions for a given dataset.
+  -  Repeat for multiple models, on the same data.
+  - For each record to be predicted, take an average (or a weighted average, or a majority vote) of the predictions.
+- Bagging is a particular type of ensemble model based on fitting many models to bootstrapped samples of the data and averaging the models.
+- Random forest is a special type of bagging applied to decision trees. In addition to resampling the data, the random forest algorithm samples the predictor variables when splitting the trees.
+- A useful output from the random forest is a measure of variable importance that ranks the predictors in terms of their contribution to model accuracy.
+- The random forest has a set of hyper-parameters that should be tuned using cross-validation to avoid overfitting.
+  - *nodesize*: The minimum size for terminal nodes (leaves in the tree). The default is 1 for classification and 5 for regression.
+  - *maxnode*: The maximum number of nodes in each decision tree. By default, there is no limit and the largest tree will be fit subject to the constraints of *nodesize*.
+
+[back to current section](#statistical-machine-learning)
+
 ## Unsupervised Learning
 
 * [Principal Component Analysis](#principal-component-analysis)
