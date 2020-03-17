@@ -554,6 +554,18 @@ In problems involving many variables, it can be challenging to decide which inte
 
 [back to current section](#statistical-machine-learning)
 
+### Tree Models
+
+- Decision trees produce a set of rules to classify or predict an outcome.
+- The rules correspond to successive partitioning of the data into subpartitions.
+- Each partition, or split, references a specific value of a predictor variable and divides the data into records where that predictor value is above or below that split value.
+- At each stage, the tree algorithm chooses the split that minimizes the outcome impurity within each subpartition.
+- When no further splits can be made, the tree is fully grown and each terminal node, or leaf, has records of a single class; new cases following that rule (split) path would be assigned that class.
+- A fully grown tree overfits the data and must be pruned back so that it captures signal and not noise.
+- Multiple-tree algorithms like random forests and boostred trees yield better predictive performance, but lose the rule-based communicative power of single trees.
+
+[back to current section](#statistical-machine-learning)
+
 ## Unsupervised Learning
 
 * [Principal Component Analysis](#principal-component-analysis)
