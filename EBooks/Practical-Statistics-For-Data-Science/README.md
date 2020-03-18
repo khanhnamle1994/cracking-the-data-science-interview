@@ -533,6 +533,27 @@ In problems involving many variables, it can be challenging to decide which inte
 * [Evaluating Classification Models](#evaluating-classification-models)
 * [Strategies for Imbalanced Data](#strategies-for-imbalanced-data)
 
+### Naive Bayes
+
+- Naive Bayes works with categorical (factor) predictors and outcomes.
+- It asks, "Within each outcome category, which predictor categories are most probable?"
+- That information is then inverted to estimate probabilities of outcome categories, given predictor values.
+- To apply naive Bayes to numerical predictors, one of two approaches must be taken:
+  - Bin and convert the numerical predictors to categorical predictors and apply the algorithm of the previous section.
+  - Use a probability model to estimate the conditional probability `P(X_j | Y = i)`.
+
+[back to current section](#classification)
+
+### Discriminant Analysis
+
+- Discriminant analysis works with continuous or categorical predictors, as well as categorical outcomes.
+- Using the covariance matrix, it calculates a *linear discriminant function*, which is used to distinguish records belong to one class from those belong to another.
+  - The covariance measures the relationship between two variables x and z.
+  - The covariance matrix for x and z consists of the individual variable variances, `s_x^2` and `s_y^2`, on the diagonal (where row and column are the same variable) and the covariances between variable pairs on the off-diagonals.
+- This function is applied to the records to derive weights, or scores, for each record (one weight for each possible class) that determines its estimated class.
+
+[back to current section](#classification)
+
 ## Statistical Machine Learning
 
 * [K Nearest Neighbors](#k-nearest-neighbors)
