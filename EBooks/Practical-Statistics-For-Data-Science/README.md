@@ -581,6 +581,28 @@ In problems involving many variables, it can be challenging to decide which inte
 
 [back to current section](#statistical-machine-learning)
 
+### Boosting
+
+- Boosting is a class of ensemble models based on fitting a sequence of models, with more weight given to records with large errors in successive rounds.
+- Stochastic gradient boosting is the most general type of boosting and offers the best performance. The most common form of stochastic gradient boosting uses tree models.
+- XGBoost is a popular and computationally efficient software package for stochastic gradient boosting: it is available in all common languages used in data science.
+- Boosting is prone to overfitting the data, and the hyperparameters need to be tuned to avoid this.
+  - *eta*: (Learning Rate) The shrinkage factor between 0 and 1 applied to the weight values in the boosting algorithm.
+  - *nrounds*: The number of boosting rounds. If *eta* is set to a small value, it is important to increase the number of rounds since the algorithm learns more slowly.
+  - *max_depth*: The maximum depth of the tree. In contrast to the random forest, which fits very deep trees, boosting usually fits the shallow trees. This has the advantage of avoiding spurious complex interactions in the model that can arise from noisy data.
+  - *subsample* and *colsample_bytree*: Fraction of the records to sample without replacement and the fraction of predictors to sample for use in fitting the trees.
+  - *lambda* and *alpha*: The regularization parameters to help control overfitting.
+- Regularization is one way to avoid overfitting by including a penalty term on the number of parameters in a model.
+  - *alpha* is the Manhattan distance.
+  - *lambda* is the squared Euclidean distance.
+- Cross-validation is especially important for boosting due to the large number of hyperparameters that need to be set.
+  - Cross-validation randomly splits up the data into K different groups, also called *folds*.
+  - For each fold, a model is trained on the data not in the fold and then evaluated on the data in the field.
+  - This yields a measure of accuracy of the model on out-of-sample data.
+  - The best set of hyperparameters is the one given by the model with the lowest overall error as computed by averaging the errors from each of the folds.
+
+[back to current section](#statistical-machine-learning)
+
 ## Unsupervised Learning
 
 * [Principal Component Analysis](#principal-component-analysis)
