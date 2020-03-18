@@ -610,3 +610,45 @@ In problems involving many variables, it can be challenging to decide which inte
 * [Hierarchical Clustering](#hierarchical-clustering)
 * [Model Based Clustering](#model-based-clustering)
 * [Scaling and Categorical Variables](#scaling-and-categorical-variables)
+
+### Principal Component Analysis
+
+- Principal components are linear combinations of the predictor variables (numeric data only).
+- They are calculated so as to minimize correlation between components, reducing redundancy.
+- A limited number of components will typically explain most of the variance in the outcome variable.
+- The limited set of principal components can then be used in place of the (more numerous) original predictors, reducing dimensionality.
+
+[back to current section](#unsupervised-learning)
+
+### K Means Clustering
+
+- The number of desired clusters, K, is chosen by the user.
+- The algorithm develops clusters by iteratively assigning records to the nearest cluster mean until cluster assignments do not change.
+- Practical considerations usually dominate the choice of K: there is no statistically determined optimal number of clusters.
+
+[back to current section](#unsupervised-learning)
+
+### Hierarchical Clustering
+
+- Start with every record in its own cluster.
+- Progressively, clusters are joined to nearby clusters until all records belong to a single cluster  (the agglomerative algorithm).
+- The agglomerative history is retained and plotted, and the user (without specifying the number of clusters beforehand) can visualize the number and structure of clusters at different stages.
+- Inter-cluster distances are computed in different ways, all relying on the set of all inter-record distances.
+
+[back to current section](#unsupervised-learning)
+
+### Model Based Clustering
+
+- Clusters are assumed to derive from different data-generating processes with different probability distributions.
+- Different models are fit, assuming different numbers of (typically normal) distributions.
+- The method chooses the model (and the associated number of clusters) that fits the data well without using too many parameters (i.e., overfitting).
+
+[back to current section](#unsupervised-learning)
+
+### Scaling and Categorical Variables
+
+- Variables measured on different scales need to be transformed to similar scales, so that their impact on algorithms is not determined mainly by their scale.
+- A common scaling method is normalization (standardization) - subtracting the mean and dividing by the standard deviation.
+- Another method is Gower's distance, which scales all variables to the 0-1 range (it is often used with mixed numeric and categorical data).
+
+[back to current section](#unsupervised-learning)
