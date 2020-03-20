@@ -571,6 +571,23 @@ In problems involving many variables, it can be challenging to decide which inte
 
 [back to current section](#classification)
 
+### Evaluating Classification Models
+
+- *Accuracy* (the percent of the predicted classification that are correct) is but a first step in evaluating a model.
+- Other metrics focus on more specific performance characteristics.
+  - Confusion matrix is a table showing the number of correct and incorrect predictions categorized by type of response.
+  - *Precision* measures the accuracy of a predicted positive outcome: `(TP) / (TP + FP)`
+  - *Recall* measures the strength of the model to predict a positive outcome (the proportion of the 1s that it correctly identifies): `(TP) / (TP + FN)`
+  - *Specificity* measures a model's ability to predict a negative outcome: `(TN) / (TN + FP)`
+- *AUC* (area under the ROC curve) is a common metric for the ability of a model to distinguish 1s from 0s.
+  - The *ROC Curve* plots recall on the y-axis against specificity on the x-axis. It shows the tradeoff between correctly identifying 1s and misclassifying 0s.
+  - The larger the value of AUC, the more effective the classifier. An AUC of 1 indicates a perfect classifier: it gets all the 1s correctly classified, and doesn't misclassify any 0s as 1s. A completely ineffective classifier (the diagonal line) will have an AUC of 0.5.
+- Similarly, *lift* measures how effective a model is in identifying the 1s, and it is often calculated decile by decile, starting with the most probable 1s.
+  - To compute a lift chart, you first produce a *cumulative gains chart* that shows the recall on the y-axis and the total number of records on the x-axis.
+  - The *lift curve* is the ratio of the cumulative gains to the diagonal line corresponding to random selection. It lets you look at the consequences of setting different probability cutoffs for classifying records as 1s.
+
+[back to current section](#classification)
+
 [back to top](#practical-statistics-for-data-scientists)
 
 ## Statistical Machine Learning
