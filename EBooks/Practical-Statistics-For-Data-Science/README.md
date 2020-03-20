@@ -554,6 +554,25 @@ In problems involving many variables, it can be challenging to decide which inte
 
 [back to current section](#classification)
 
+### Logistic Regression
+
+- Logistic regression is like linear regression, except that the outcome is a binary variable.
+  - Linear regression is fit using least squares, and the quality of the fit is evaluated using RMSE and R-squared statistics.
+  - In logistic regression, there is no closed-form solution and the model must be fit using *Maximum Likelihood Estimation (MLE)*. This is a process that tries to find the model that is most likely to have produced the data we see.
+- Several transformations are needed to get the model into a form that can be fit as a linear model, with the log of the odds ratio as the response variable. After the linear model is fit (by an iterative process), the log odds is mapped back to a probability.
+  - The log odds function (logit function) maps the probability from `(0, 1)` to any value `(-inf, inf)`.
+  - The odds ratio is easiest to understand for a binary factor variable `X`: `Odds(Y = 1 | X = 1) / Odds(Y = 1 | X = 0)`. This is interpreted as the odds that `Y = 1` when `X = 1` versus the odds that `Y = 1` when `X = 0` (i.e, if the odds ratio is 2, then the odds that `Y = 1` are 2 times higher when `X = 1` versus `X = 0`).
+  - We work with odds because the coefficients `Beta_j` in the logistic regression is the log of the odds ratio for `X_j`.
+  - In logistic regression, the MLE finds the solution such that the estimated log odds best describes the observed outcome. The mechanics of the algorithm involve a quasi-Newton optimization that iterates between a scoring step (Fisher's scoring), based on the current parameters, and an update to the parameters to improve the fit.
+- Logistic regression is popular because it is computationally fast, and produces a model that can be scored to new data without recomputation.
+  - It is the most common form of Generalized Linear Models, which are characterized by 2 main components:
+    - A probability distribution or family (binomial in the case of logistic regression).
+    - A link function mapping the response to the predictors (logit in the case of logistic regression).
+
+[back to current section](#classification)
+
+[back to top](#practical-statistics-for-data-scientists)
+
 ## Statistical Machine Learning
 
 * [K Nearest Neighbors](#k-nearest-neighbors)
@@ -624,6 +643,8 @@ In problems involving many variables, it can be challenging to decide which inte
 
 [back to current section](#statistical-machine-learning)
 
+[back to top](#practical-statistics-for-data-scientists)
+
 ## Unsupervised Learning
 
 * [Principal Component Analysis](#principal-component-analysis)
@@ -673,3 +694,5 @@ In problems involving many variables, it can be challenging to decide which inte
 - Another method is Gower's distance, which scales all variables to the 0-1 range (it is often used with mixed numeric and categorical data).
 
 [back to current section](#unsupervised-learning)
+
+[back to top](#practical-statistics-for-data-scientists)
