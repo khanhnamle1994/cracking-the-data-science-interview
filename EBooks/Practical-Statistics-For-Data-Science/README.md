@@ -588,6 +588,20 @@ In problems involving many variables, it can be challenging to decide which inte
 
 [back to current section](#classification)
 
+### Strategies for Imbalanced Data
+
+- Highly imbalanced data are problematic for classification algorithms.
+- If we have enough data, one solution is to *undersample* the prevalent class. The basic idea in undersampling is that the data for the dominant class has many redundant records. Dealing with a smaller, more balanced data set yields benefits in model performance, and makes it easier to prepare the data, and to explore and pilot models.
+- One criticism of the undersampling method is that it throws away data and is not using all the information at hand:
+  - In this case, we should *oversample* the rarer class by drawing additional rows with replacement (bootstrapping).
+  - We can achieve a similar effect by weighting the data. The sum of the weights for both classes should be roughly equal.
+- A variation of upsampling via bootstrapping is *data generation* by perturbing existing records to create new records.
+  - By creating new records that are similar but not identical to existing records, the algorithm has a chance to learn a more robust set of rules. This notion is similar in spirit to ensemble statistical models such as boosting and bagging.
+  - The *SMOTE* algorithm (Synthetic Minority Oversampling Technique) finds a record that is similar to the record being upsampled and creates a synthetic record that is a randomly weighted average of the original record and the neighboring record, where the weight is generated separately for each predictor. The number of synthetic oversampled records created depends on the oversampling rato required to bring the data set into approximate balance, with respect to outcome classes.
+- Imbalanced data usually indicates that correctly classifying one class (the 1s) has higher value, and that value ratio should be built into the assessment metric.
+
+[back to current section](#classification)
+
 [back to top](#practical-statistics-for-data-scientists)
 
 ## Statistical Machine Learning
