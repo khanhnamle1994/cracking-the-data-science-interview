@@ -430,38 +430,20 @@ Here are the sections:
 
 ### Interpreting The Regression Equation
 
-* **Correlated variables**: When the predictor variables are highly correlated, it is difficult to interpret the individual coefficients.
-* **Multicollinearity**: When the predictor variables have perfect, or near-perfect, correlation, the regression can be unstable or impossible to compute. Synonyms: collinearity
-* **Confounding variables**: An important predictor that, when omitted, leads to spurious relationships in a regression equation.
-* **Main effects**: The relationship between a predictor and the outcome variable, independent from other variables.
-* **Interactions**: An interdependent relationship between two or more predictors and the response.
-
-**Correlated Predictors**
-In multiple regression, the predictor variables are often correlated with each other. The coefficient for Bedrooms is negative! This implies that adding a bedroom to a house will reduce its value. How can this be? This is because the predictor variables are correlated: larger houses tend to have more bedrooms, and it is the size that drives house value, not the number of bedrooms. Consider two homes of the exact same size: it is reasonable to expect that a home with more, but smaller, bedrooms would be considered less desirable.
-
-Having correlated predictors can make it difficult to interpret the sign and value of regression coefficients
-
-The update function can be used to add or remove variables from a model. Now the coefficient for bedrooms is positive in our ex — in line with what we would expect (though it is really acting as a proxy for house size, now that those variables have been removed).
-
-Correlated variables are only one issue with interpreting regression coefficients.
-
-**Multicollinearity**
-An extreme case of correlated variables produces multicollinearity — a condition in which there is redundance among the predictor variables. Perfect multicollinearity occurs when one predictor variable can be expressed as a linear combination of others. Multicollinearity occurs when:
-* A variable is included multiple times by error.
-* P dummies, instead of P – 1 dummies, are created from a factor variable (see “Factor Variables in Regression”).
-* Two variables are nearly perfectly correlated with one another.
-
-Multicollinearity in regression must be addressed — variables should be removed until the multicollinearity is gone. A regression does not have a well-defined solution in the presence of perfect multicollinearity.
-
-**Confounding Variables**
-With correlated variables, the problem is one of commission: including different variables that have a similar predictive relationship with the response. With confounding variables, the problem is one of omission: an important variable is not included in the regression equation. Naive interpretation of the equation coefficients can lead to invalid conclusions.
-
-**Model Selection with Interaction Terms**
-In problems involving many variables, it can be challenging to decide which interaction terms should be included in the model. Several different approaches are commonly taken:
-* In some problems, prior knowledge and intuition can guide the choice of which interaction terms to include in the model.
-* Stepwise selection (see “Model Selection and Stepwise Regression”) can be used to sift through the various models.
-* Penalized regression can automatically fit to a large set of possible interaction terms.
-* Perhaps the most common approach is the use tree models, as well as their descendents, random forest and gradient boosted trees. This class of models automatically searches for optimal interaction terms; see “Tree Models”.
+- Because of correlation between predictors, care must be taken in the interpretation of the coefficients in multiple linear regression.
+  - Having correlated predictors can make it difficult to interpret the sign and value of regression coefficients.
+- *Multicollinearity* can cause numerical instability in fitting the regression equation. It occurs when:
+  - A variable is included multiple times by error.
+  - P dummies, instead of P – 1 dummies, are created from a factor variable (see “Factor Variables in Regression”).
+  - Two variables are nearly perfectly correlated with one another.
+- A *confounding variable* is an important predictor that is omitted from a model and can lead to a regression equation with spurious relationships.
+  - With correlated variables, the problem is one of commission: including different variables that have a similar predictive relationship with the response.
+  - With confounding variables, the problem is one of omission: an important variable is not included in the regression equation. Naive interpretation of the equation coefficients can lead to invalid conclusions.
+- An *interaction term* between two variables is needed if the relationship between the variables and the response is interdependent. It can be challenging to decide which interaction terms should be included in the model. Several different approaches are commonly taken:
+  - In some problems, prior knowledge and intuition can guide the choice of which interaction terms to include in the model.
+  - Stepwise selection can be used to sift through the various models.
+  - Penalized regression can automatically fit to a large set of possible interaction terms.
+  - Perhaps the most common approach is the use tree models, as well as their descendents, random forest and gradient boosted trees. This class of models automatically searches for optimal interaction terms.
 
 [back to current section](#regression-and-prediction)
 
