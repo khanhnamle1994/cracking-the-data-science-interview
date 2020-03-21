@@ -407,34 +407,16 @@ Here are the sections:
 [back to current section](#regression-and-prediction)
 
 ### Prediction Using Regression
-The primary purpose of regression in data science is prediction. This is useful to keep in mind, since regression, being an old and established statistical method, comes with baggage that is more relevant to its traditional explanatory modeling role than to prediction.
 
-* **Prediction interval**: An uncertainty interval around an individual predicted value.
-* **Extrapolation**: Extension of a model beyond the range of the data used to fit it.
-
-**Confidence and Prediction Intervals**
-Useful metrics are confidence intervals, which are uncertainty intervals placed around regression coefficients and predictions. An easy way to understand this is via the bootstrap.
-
-The most common regression confidence intervals encountered in software output are those for regression parameters (coefficients). Here is a bootstrap algorithm for generating confidence intervals for regression parameters (coefficients) for a data set with P predictors and n records (rows):
-1. Consider each row (including outcome variable) as a single “ticket” and place all the n tickets in a box.
-2. Draw a ticket at random, record the values, and replace it in the box.
-3. Repeat step 2 n times; you now have one bootstrap resample.
-4. Fit a regression to the bootstrap sample, and record the estimated coefficients.
-5. Repeat steps 2 through 4, say, 1,000 times.
-6. You now have 1,000 bootstrap values for each coefficient; find the appropriate percentiles for each one (e.g., 5th and 95th for a 90% confidence interval).
-
-Of greater interest to data scientists are intervals around predicted y values ( ). The uncertainty around comes from two sources:
-* Uncertainty about what the relevant predictor variables and their coefficients
-* Additional error inherent in individual data points
-
-The individual data point error can be thought of as follows: even if we knew for certain what the regression equation was (e.g., if we had a huge number of records to fit it), the actual outcome values for a given set of predictor values will vary.
-
-We can model this individual error with the residuals from the fitted values. The bootstrap algorithm for modeling both the regression model error and the individual data point error would look as follows:
-1. Take a bootstrap sample from the data (spelled out in greater detail earlier).
-2. Fit the regression, and predict the new value.
-3. Take a single residual at random from the original regression fit, add it to the predicted value, and record the result.
-4. Repeat steps 1 through 3, say, 1,000 times.
-5. Find the 2.5th and the 97.5th percentiles of the results.
+- Extrapolation beyond the range of the data can lead to error.
+- *Confidence intervals* quantify uncertainty around regression coefficients.
+- *Prediction intervals* quantify uncertainty in individual predictions.
+- The *bootstrap algorithm* for modeling both the regression model error and the individual data point error would look as follows:
+  1. Take a bootstrap sample from the data (spelled out in greater detail earlier).
+  2. Fit the regression, and predict the new value.
+  3. Take a single residual at random from the original regression fit, add it to the predicted value, and record the result.
+  4. Repeat steps 1 through 3, say, 1,000 times.
+  5. Find the 2.5th and the 97.5th percentiles of the results.
 
 [back to current section](#regression-and-prediction)
 
