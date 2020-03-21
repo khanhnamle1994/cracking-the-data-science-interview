@@ -258,12 +258,12 @@ Here are the sections:
 
 ### AB Testing
 
-* **Treatment**: Something (drug, price, web headline) to which a subject is exposed.
-* **Treatment group**: A group of subjects exposed to a specific treatment.
-* **Control group**: A group of subjects exposed to no (or standard) treatment.
-* **Randomization**: The process of randomly assigning subjects to treatments.
-* **Subjects**: The items (web visitors, patients, etc.) that are exposed to treatments.
-* **Test statistic**: The metric used to measure the effect of the treatment.
+- An A/B test is an experiment with two groups to establish which of two treatments, products, procedures, or the like is superior.
+  - *Treatment group* is the group of subjects exposed to a specific treatment.
+  - *Control group* is the group of subjects exposed to no (or standard) treatment.
+- A proper A/B test has subjects that can be assigned to one treatment or another. Ideally, subjects are randomized to treatments.
+  - You need to pay attention to the *test statistic* - the metric used to measure the effect of the treatment. Most common is a binary variable: click or no click, buy or don't buy, fraud or no fraud, and so on.
+- Without a control group, there is no assurance that "other things are equal" and that any difference is really due to the treatment.
 
 [back to current section](#statistical-experiments-and-significance-testing)
 
