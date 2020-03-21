@@ -499,10 +499,13 @@ In problems involving many variables, it can be challenging to decide which inte
 
 ### Polynomial And Spline Regression
 
-* **Polynomial regression**: Adds polynomial terms (squares, cubes, etc.) to a regression.
-* **Spline regression**: Fitting a smooth curve with a series of polynomial segments.
-* **Knots**: Values that separate spline segments.
-* **Generalized additive models**: Spline models with automated selection of knots. Synonyms: GAM.
+- *Outliers* in a regression are records with a large residual.
+- *Multicollinearity* can cause numerical instability in fitting the regression equation.
+- A *confounding variable* is an important predictor that is omitted from a model and can lead to a regression equation with spurious relationships.
+- An *interaction term* between two variables is needed if the effect of one variable depends on the level of the other.
+- *Polynomial regression* can fit nonlinear relationships between predictors and the outcome variable.
+- *Splines* are series of polynomial segments strung together, joining at knots.
+- *Generalized additive models* (GAM) automate the process of specifying the knots in spline.
 
 [back to current section](#regression-and-prediction)
 
