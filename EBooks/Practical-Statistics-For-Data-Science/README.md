@@ -365,15 +365,16 @@ Here are the sections:
 * [Polynomial And Spline Regression](#polynomial-and-spline-regression)
 
 ### Simple Linear Regression
-Simple linear regression models the relationship between the magnitude of one variable and that of a second — for example, as X increases, Y also increases. Or as X increases, Y decreases. Correlation is another way to measure how two variables are related. The difference is that while correlation measures the strength of an association between two variables, regression quantifies the nature of the relationship
 
-* **Response**: The variable we are trying to predict. Synonyms: dependent variable, Y-variable, target, outcome
-* **Independent**: variable The variable used to predict the response. Synonyms: independent variable, X-variable, feature, attribute
-* **Record**: The vector of predictor and outcome values for a specific individual or case. Synonyms: row, case, instance, example
-* **Intercept**: The intercept of the regression line — that is, the predicted value when X=0. Synonyms: b0 and Beta0
-* **Regression coefficient**: The slope of the regression line. Synonyms: slope, b1, beta1, parameter estimates, weights
-* **Fitted values**: The estimates Y-hat_{i} obtained from the regression line. Synonyms: predicted values
-* **Residuals**: The difference between the observed values and the fitted values. Synonyms: errors
+- The regression equation models the relationship between a response variable `y` and a predictor variable `X` as a line: `Y = b_0 + b_1 * X`
+  - We can this as "Y equals b_1 times X, plus a constant b_0."
+  - The symbol b_0 is known as the *intercept*, and the symbol b_1 as the *slope* for `X`.
+  - The `Y` variable is known as the *response* or *dependent* variable since it depends on `X`.
+  - The `X` variable is known as the *predictor* or *independent* variable.
+  - The ML community tends to use other terms, calling `Y` the *target* and `X` a *feature* vector.
+- A regression model yields fitted values and residuals - predictions of the response and the errors of the predictions.
+  - The *fitted* values are typically denoted by `Y^_i` (Y-hat): `Y^_i = b^_0 + b^_1 * X_i`
+  - We compute the *residuals* `e^_i` by subtracting the *fitted* values from the original data: `e^_i = Y_i - Y^_i`
 * **Least squares**: The method of fitting a regression by minimizing the sum of squared residuals. Synonyms: ordinary least squares
 
 [back to current section](#regression-and-prediction)
