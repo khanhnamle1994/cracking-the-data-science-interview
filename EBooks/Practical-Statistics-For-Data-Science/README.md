@@ -246,6 +246,7 @@ Whenever you see references to statistical significance, t-tests, or p-values, i
 Here are the sections:
 
 * [AB Testing](#ab-testing)
+* [Hypothesis Test](#hypothesis-test)
 * [Resampling](#resampling)
 * [Statistical Significance and P-Values](#statistical-significance-and-p-values)
 * [t-Tests](#t-tests)
@@ -264,6 +265,14 @@ Here are the sections:
 - A proper A/B test has subjects that can be assigned to one treatment or another. Ideally, subjects are randomized to treatments.
   - You need to pay attention to the *test statistic* - the metric used to measure the effect of the treatment. Most common is a binary variable: click or no click, buy or don't buy, fraud or no fraud, and so on.
 - Without a control group, there is no assurance that "other things are equal" and that any difference is really due to the treatment.
+
+[back to current section](#statistical-experiments-and-significance-testing)
+
+### Hypothesis Test
+
+- A *null hypothesis* is a logical construct embodying the notion that nothing special has happened, and any effect you observe is due to random chance.
+  - Our hope is that we can, in fact, prove the null hypothesis wrong, and show that the outcomes for groups A and B are more different than what chance might produce.
+- The *hypothesis test* assumes that the null hypothesis is true, creates a "null model" (a probability model), and tests whether the effect you observe is a reasonable outcome of that model.
 
 [back to current section](#statistical-experiments-and-significance-testing)
 
