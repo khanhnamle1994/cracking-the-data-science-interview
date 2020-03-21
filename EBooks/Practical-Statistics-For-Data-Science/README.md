@@ -375,52 +375,34 @@ Here are the sections:
 - A regression model yields fitted values and residuals - predictions of the response and the errors of the predictions.
   - The *fitted* values are typically denoted by `Y^_i` (Y-hat): `Y^_i = b^_0 + b^_1 * X_i`
   - We compute the *residuals* `e^_i` by subtracting the *fitted* values from the original data: `e^_i = Y_i - Y^_i`
-* **Least squares**: The method of fitting a regression by minimizing the sum of squared residuals. Synonyms: ordinary least squares
+- Regression models are typically fit by the method of least squares.
+  - The regression line is the estimate that minimizes the sum of squared residual values (*residual sum of squares*).
+  - Least squares are sensitive to outliers, although this tends to be a significant problem only in small or moderate-sized problems.
+- Regression is used both for prediction and explanation.
 
 [back to current section](#regression-and-prediction)
 
 ### Multiple Linear Regression
 
-Instead of a line, we now have a linear model — the relationship between eachcoefficient and its variable (feature) is linear.
-
-* **Root mean squared error**: The square root of the average squared error of the regression (this is the most widely used metric to compare regression models). Synonyms: RMSE
-* **Residual standard error**: The same as the root mean squared error, but adjusted for degrees of freedom. Synonyms RSE
-* **R-squared**: The proportion of variance explained by the model, from 0 to 1. Synonyms: coefficient of determination,
-* **t-statistic**: The coefficient for a predictor, divided by the standard error of the coefficient, giving a metric to compare the importance of variables in the model.
-* **Weighted regression**: Regression with the records having different weights
-
-**Cross Validation**
-
-Classic statistical regression metrics (R2, F-statistics, and p-values) are all “in-sample” metrics — they are applied to the same data that was used to fit themodel. Intuitively, you can see that it would make a lot of sense to set aside some of the original data, not use it to fit the model, and then apply the model to the set-aside (holdout) data to see how well it does. Normally, you would use a majority of the data to fit the model, and use a smaller portion to test the model.
-
-Cross-validation extends the idea of a holdout sample to multiple sequential holdout samples. The algorithm for basic k-fold cross-validation is as follows:
-1. Set aside 1/k of the data as a holdout sample.
-2. Train the model on the remaining data.
-3. Apply (score) the model to the 1/k holdout, and record needed model assessment metrics.
-4. Restore the first 1/k of the data, and set aside the next 1/k (excluding any records that got picked the first time).
-5. Repeat steps 2 and 3.
-6. Repeat until each record has been used in the holdout portion.
-7. Average or otherwise combine the model assessment metrics.
-
-The division of the data into the training sample and the holdout sample is also called a fold.
-
-**Model Selection and Stepwise Regression**
-
-In some problems, many variables could be used as predictors in a regression. Adding more variables, however, does not necessarily mean we have a better model. Statisticians use the principle of *Occam’s razor* to guide the choice of a model: all things being equal, a simpler model should be used in preference to amore complicated model.
-
-Including additional variables always reduces RMSE and increases R^2. Hence, these are not appropriate to help guide the model choice. In the 1970s, Hirotugu Akaike, the eminent Japanese statistician, developed a metric called AIC (Akaike’s Information Criteria) that penalizes adding terms to a model. In the case of regression, AIC has the form:
-
-```
-AIC = 2P + n log(RSS/n)
-```
-
-Where P is the number of variables and n is the number of records. The goal is to find the model that minimizes AIC; models with k more extra variables are penalized by 2k.
-
-How do we find the model that minimizes AIC? One approach is to search through all possible models, called *all subset regression*. This is computationally expensive and is not feasible for problems with large data and many variables. An attractive alternative is to use *stepwise regression*, which successively adds and drops predictors to find a model that lowers AIC.
-
-Simpler yet are *forward selection* and *backward selection*. In forward selection, you start with no predictors and add them one-by-one, at each step adding the predictor that has the largest contribution to R^2, stopping when the contribution is no longer statistically significant. In backward selection, or *backward elimination*, you start with the full model and take away predictors that are not statistically significant until you are left with a model in which all predictors are statistically significant.
-
-Stepwise regression and all subset regression are in-sample methods to assess and tune models. This means the model selection is possibly subject to overfitting and may not perform as well when applied to new data. One common approach to avoid this is to use cross-validation to validate the models.
+- Multiple linear regression models the relationship between a response variable `Y` and multiple predictor variables `X_1, ..., X_p`.
+- The most important metrics to evaluate a model are *root mean squared error* (RMSE) and *R-Squared* (R^2).
+  - RMSE is the square root of the average squared error in the predicted `y^_i` values. This measures the overall accuracy of the model, and is a basis for comparing it to other models.
+  - R-squared statistic (also known as *coefficient of determination*) ranges from 0 to 1 and measures the proportion of variation in the data that is accounted for in the model.
+- *Stepwise regression* is a way to automatically determine which variables should be included in the model.
+  - This approach successively adds and drops predictors to find a model that lowers AIC.
+  - AIC has the form: `AIC = 2P + n log(RSS/n)` (where P is the number of variables and n is the number of records. The goal is to find the model that minimizes AIC; models with k more extra variables are penalized by 2k).
+- Simpler yet are forward selection and backward selection:
+  - In *forward selection*, you start with no predictors and add them one-by-one, at each step adding the predictor that has the largest contribution to R^2, stopping when the contribution is no longer statistically significant.
+  - In *backward selection*, or *backward elimination*, you start with the full model and take away predictors that are not statistically significant until you are left with a model in which all predictors are statistically significant.
+- Cross-validation extends the idea of a holdout sample to multiple sequential holdout samples. The division of the data into the training sample and the holdout sample is also called *a fold*. The algorithm for basic k-fold cross-validation is as follows:
+  1. Set aside 1/k of the data as a holdout sample.
+  2. Train the model on the remaining data.
+  3. Apply (score) the model to the 1/k holdout, and record needed model assessment metrics.
+  4. Restore the first 1/k of the data, and set aside the next 1/k (excluding any records that got picked the first time).
+  5. Repeat steps 2 and 3.
+  6. Repeat until each record has been used in the holdout portion.
+  7. Average or otherwise combine the model assessment metrics.
+- Weighted regression is used to give certain records more or less weight in fitting the equation.
 
 [back to current section](#regression-and-prediction)
 
