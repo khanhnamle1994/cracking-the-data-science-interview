@@ -421,12 +421,10 @@ Here are the sections:
 [back to current section](#regression-and-prediction)
 
 ### Factor Variables In Regression
-Factor variables, also termed categorical variables, take on a limited number of discrete values. For example, a loan purpose can be “debt consolidation,” “wedding,” “car,” and so on. The binary (yes/no) variable, also called an indicator variable, is a special case of a factor variable. Regression requires numerical inputs, so factor variables need to be recoded to use in the model. The most common approach is to convert a variable into a set of binary dummy variables.
-
-* **Dummy variables**: Binary 0–1 variables derived by recoding factor data for use in regression and other models.
-* **Reference coding**: The most common type of coding used by statisticians, in which one level of a factor is used as a reference and other factors are compared to that level. Synonyms: treatment coding
-* **One hot encoder**: A common type of coding used in the machine learning community in which all factors levels are retained. While useful for certain machine learning algorithms, this approach is not appropriate for multiple linear regression.
-* **Deviation coding**: A type of coding that compares each level against the overall mean as opposed to the reference level. Synonyms: sum contrasts
+- *Factor variables* need to be converted into numeric variables for use in a regression.
+- The most common method to encode a factor variable with P distinct values is to represent them using P - 1 dummy variables.
+- A factor variable with many levels, even in very big data sets, may need to be consolidated into a variable with fewer levels.
+- Some factors have levels that are ordered and can be represented as a single numeric variable.
 
 [back to current section](#regression-and-prediction)
 
