@@ -487,13 +487,12 @@ In problems involving many variables, it can be challenging to decide which inte
 
 ### Testing The Assumptions Regression Diagnostics
 
-* **Standardized residuals**: Residuals divided by the standard error of the residuals.
-* **Outliers**: Records (or outcome values) that are distant from the rest of the data (or the predicted outcome).
-* **Influential value**: A value or record whose presence or absence makes a big difference in the regression equation.
-* **Leverage**: The degree of influence that a single record has on a regression equation. Synonyms: hat-value
-* **Non-normal residuals**: Non-normally distributed residuals can invalidate some technical requirements of regression, but are usually not a concern in data science.
-* **Heteroskedasticity**: When some ranges of the outcome experience residuals with higher variance (may indicate a predictor missing from the equation).
-* **Partial residual plots**: A diagnostic plot to illuminate the relationship between the outcome variable and a single predictor. Synonyms: added variables plot.
+- While outliers can cause problems for small data sets, the primary interest with outliers is to identify problems with the data, or locate anomalies.
+- Single records (including regression outliers) can have a big influence on a regression equation with small data, but this effect washes out in big data.
+- If the regression model is used for formal inference (p-values and the like), then certain assumptions about the distribution of the residuals shouuld be checked. In general, however, the distribution of residuals is not critical in data science.
+  - *Heteroskedasticity* is the lack of constant residual variance across the range of the predicted values.
+- The *partial residuals plot* can be used to qualitatively assess the fit for each regression term, possibly leading to alternative model specification.
+  - The basic idea is to isolate the relationship between a predictor variable and the response, *taking into account all of the other predictor variables*.
 
 [back to current section](#regression-and-prediction)
 
