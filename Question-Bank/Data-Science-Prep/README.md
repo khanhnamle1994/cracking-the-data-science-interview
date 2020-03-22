@@ -23,6 +23,7 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 * [Ant Collision](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Ant-Collision.md) (by Facebook)
 * [Number of Cards Before An Ace](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Number-Of-Cards-Before-An-Ace.md) (by Lyft)
 * [First To Roll Side K](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/First-To-Roll-Side-K.md) (by Lyft)
+* [Flipping Game](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Flipping-Game.md) (by Facebook)
 
 ## Machine Learning
 
