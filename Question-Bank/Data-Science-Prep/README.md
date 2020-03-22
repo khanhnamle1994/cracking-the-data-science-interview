@@ -36,6 +36,7 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 * [Square root of model scores](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Square-Root-of-Model-Scores.md) (by Affirm)
 * [Bias-Variance Tradeoff](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Bias-Variance-Tradeoff.md) (by Microsoft)
 * [Modeling Listing Revenue](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Modeling-Listing-Revenue.md) (by Airbnb)
+* [Recommended Similar Listings](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Recommended-Similar-Listings.md) (by Airbnb)
 
 ## Coding
 
