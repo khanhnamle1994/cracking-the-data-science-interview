@@ -14,6 +14,7 @@ These are answers to questions from [Data Science Prep](https://datascienceprep.
 * [Simulating a standard normal distribution](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Simulating-Normal-Distribution.md) (by Uber)
 * [MLE vs. MAP](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/MLE-vs-MAP.md) (by Netflix)
 * [Improving Signups](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Improving-Signups.md) (by Quora)
+* [Independent and uncorrelated](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Independent-And-Uncorrelated.md) (by Stripe)
 
 ## Probability
 * [Forming A Triangle](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/Forming-a-Triangle.md) (by Google)
