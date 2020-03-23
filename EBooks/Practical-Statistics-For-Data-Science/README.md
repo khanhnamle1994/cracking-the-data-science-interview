@@ -278,9 +278,20 @@ Here are the sections:
 
 ### Resampling
 
-Permutation tests are useful heuristic procedures for exploring the role of random variation. They are relatively easy to code, interpret and explain, and they offer a useful detour around the formalism and “false determinism” of formula-based statistics. One virtue of resampling, in contrast to formula approaches, is that it comes much closer to a “one size fits all” approach to inference. Data can be numeric or binary. Sample sizes can be the same or different. Assumptions about normally distributed data are not needed.
-
-There are two main types of resampling procedures: the bootstrap and permutation tests. The bootstrap is used to assess the reliability of an estimate. Permutation tests are used to test hypotheses, typically involving two or more groups.
+- A *resampling* in statistics means to repeatedly sample values from observed data, with a general goal of assessing random variability in a statistic. It can also be used to assess and improve the accuracy of some machine learning models (i.e., bagging).
+- There are two main types of resampling procedures: the bootstrap and permutation tests. The bootstrap is used to assess the reliability of an estimate. Permutation tests are used to test hypotheses, typically involving two or more groups.
+- In a permutation procedure, two or more samples are involved, typically the groups in an A/B or other hypothesis test. Permute means to change the order of a set of values. The first step in a permutation test of a hypothesis is to combine the results from groups A and B (and, if used, C, D, ...) together. This is the logical embodiment of the null hypothesis that the treatments to which the groups were exposed do not differ.
+- We then test that hypothesis by randomly drawing groups from this combined set, and seeing how much they differ from one another.
+- The permutation procedure is as follows:
+  1. Combine the results from the different groups in a single data set.
+  2. Shuffle the combined data, then randomly draw (without replacing) a resample of the same size as group A.
+  3. From the remaining data, randomly draw (without replacing) a resample of the same size as group B.
+  4. Do the same for groups C, D, and so on.
+  5. Whatever statistic or estimate was calculated for the original samples (e.g., difference in group proportions), calculate it now for the resamples, and record. This constitutes one permutation iteration.
+  6. Repeat the previous steps R times to yield a permutation distribution of the test statistic.
+- Now go back to the observed difference between groups and compare it to the set of permuted differences.
+  - If the observed difference lies well within the set of permuted differences, then we have not proven anything - the observed difference is within the range of what chance might produce.
+  - However, the observed difference lies outside most of the permutation distribution, then we conclude that chance is not responsible. In technical terms, the difference is *statistically significant*.
 
 [back to current section](#statistical-experiments-and-significance-testing)
 
@@ -397,6 +408,7 @@ Here are the sections:
 - The most important metrics to evaluate a model are *root mean squared error* (RMSE) and *R-Squared* (R^2).
   - RMSE is the square root of the average squared error in the predicted `y^_i` values. This measures the overall accuracy of the model, and is a basis for comparing it to other models.
   - R-squared statistic (also known as *coefficient of determination*) ranges from 0 to 1 and measures the proportion of variation in the data that is accounted for in the model.
+  - The *t-statistic* (and its mirror image, the *p-value*) measures the extent to which a coefficient is "statistically significant" - that is, outside the range of what a random chance arrangement of predictor and target variable might produce. The higher the t-statistic (and the lower the p-value), the more significant the predictor.
 - *Stepwise regression* is a way to automatically determine which variables should be included in the model.
   - This approach successively adds and drops predictors to find a model that lowers AIC.
   - AIC has the form: `AIC = 2P + n log(RSS/n)` (where P is the number of variables and n is the number of records. The goal is to find the model that minimizes AIC; models with k more extra variables are penalized by 2k).
