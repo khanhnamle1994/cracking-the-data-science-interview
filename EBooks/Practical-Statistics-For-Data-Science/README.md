@@ -297,10 +297,15 @@ Here are the sections:
 
 ### Statistical Significance and P-Values
 
-* **P-value**: Given a chance model that embodies the null hypothesis, the p-value is the probability of obtaining results as unusual or extreme as the observed results.
-* **Alpha**: The probability threshold of “unusualness” that chance results must surpass, for actual outcomes to be deemed statistically significant. The probability question being answered is not “what is the probability that this happened by chance?” but rather “given a chance model, what is the probability of a result this extreme?” We then deduce backward about the appropriateness of the chance model, but that judgment does not carry a probability. This point has been the subject of much confusion.
-* **Type 1 error**: Mistakenly concluding an effect is real (when it is due to chance).
-* **Type 2 error**: Mistakenly concluding an effect is due to chance (when it is real).
+- Significance tests are used to determine whether an observed effect is within the range of chance variation for a null hypothesis model.
+- The *p-value* is the probability that results as extreme as the observed results might occur, given a null hypothesis model.
+  -  We can estimate a p-value from our permutation test by taking the proportion of times that the permutation test produces a difference equal to or greater than the observed difference.
+- The *alpha* value is the threshold of "unusualness" in a null hypothesis chance model. Typical alpha levels are 5% and 1%.
+- In assessing statistical significance, two types of error are possible:
+  - **Type 1 error**: Mistakenly concluding an effect is real (when it is due to chance).
+  - **Type 2 error**: Mistakenly concluding an effect is due to chance (when it is real).
+- For a data scientist, a p-value is a useful metric in situations where you want to know whether a model result that appears interesting and useful is within the range of normal chance variability.
+  - For example, p-values are sometimes used as intermediate inputs in some statistical or machine learning models - a feature might be included in or excluded from a model depending on its p-value.
 
 [back to current section](#statistical-experiments-and-significance-testing)
 
