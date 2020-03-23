@@ -311,24 +311,27 @@ Here are the sections:
 
 ### t-Tests
 
-Before the advent of computers, resampling tests were not practical and statisticians used standard reference distributions.  A test statistic could then be standardized and compared to the reference distribution. One such widely used standardized statistic is the t-statistic
+- Before the advent of computers, resampling tests were not practical and statisticians used standard reference distributions.
+- A test statistic could then be standardized and compared to the reference distribution.
+- One such widely used standardized statistic is the *t-statistic*.
 
 [back to current section](#statistical-experiments-and-significance-testing)
 
 ### Multiple Testing
 
-Problem of **overfitting** in data mining, or “**fitting the model to the noise.**” The more variables you add, or the more models you run, the greater the probability that something will emerge as “significant” just by chance. Multiplicity in a research study or data mining project (multiple comparisons, many variables, many models, etc.) increases the risk of concluding that something is significant just by chance.
-
-* For predictive modeling, the risk of getting an illusory model whose apparent efficacy is largely a product of random chance is mitigated by cross-validation, and use of a holdout sample.
-* For other procedures without a labeled holdout set to check the model, you must rely on: (1) Awareness that the more you query and manipulate the data, the greater the role that chance might play; and (2) Resampling and simulation heuristics to provide random chance benchmarks against which observed results can be compared.
+- The more variables you add, or the more models you run, the greater the probability that something will emerge as “significant” just by chance.
+- Multiplicity in a research study or data mining project (multiple comparisons, many variables, many models, etc.) increases the risk of concluding that something is significant just by chance.
+- The bottom line for data scientists on multiplicity is:
+  - For predictive modeling, the risk of getting an illusory model whose apparent efficacy is largely a product of random chance is mitigated by cross-validation, and use of a holdout sample.
+  - For other procedures without a labeled holdout set to check the model, you must rely on: (1) Awareness that the more you query and manipulate the data, the greater the role that chance might play; and (2) Resampling and simulation heuristics to provide random chance benchmarks against which observed results can be compared.
 
 [back to current section](#statistical-experiments-and-significance-testing)
 
 ### Degrees of Freedom
 
-The concept is applied to statistics calculated from sample data, and refers to the number of values free to vary. For example, if you know the mean for a sample of 10 values, and you also know 9 of the values, you also know the 10th value. Only 9 are free to vary.
-
-When you use a sample to estimate the variance for a population, you will end up with an estimate that is slightly biased downward if you use n in the denominator. If you use n – 1 in the denominator, the estimate will be free of that bias.
+- The number of degrees of freedom forms part of the calculation to standardize test statistics so they can be compared to reference distribution.
+- The concept of degrees of freedom lies behind the factoring of categorical variables into n - 1 indicator or dummy variables when doing a regression (to avoid multicollinearity).
+  - When you use a sample to estimate the variance for a population, you will end up with an estimate that is slightly biased downward if you use n in the denominator. If you use n – 1 in the denominator, the estimate will be free of that bias.
 
 [back to current section](#statistical-experiments-and-significance-testing)
 
