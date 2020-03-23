@@ -337,11 +337,19 @@ Here are the sections:
 
 ### ANOVA
 
-* **Pairwise comparison**: A hypothesis test (e.g., of means) between two groups among multiple groups.
-* **Omnibus test**: A single hypothesis test of the overall variance among multiple group means.
-* **Decomposition of variance**: Separation of components. contributing to an individual value (e.g., from the overall average, from a treatment mean, and from a residual error).
-* **F-statistic**: A standardized statistic that measures the extent to which differences among group means exceeds what might be expected in a chance model.
-* **SS**: “Sum of squares,” referring to deviations from some average value.
+- ANOVA is a statistical procedure for analyzing the results of an experiment with multiple groups.
+- It is the extension of similar procedures for the A/B test, used to assess whether the overall variation among groups is within the range of chance variation.
+- A useful outcome of an ANOVA is the identification of variance components associated with group treatments, interaction effects, and errors.
+- The basics for it can be seen in the following resampling procedure (specified here for the A-B-C-D test of web page stickiness):
+  1. Combine all the data together in a single box.
+  2. Shuffle and draw out four resamples of five values each.
+  3. Record the mean of each of the four groups.
+  4. Record the variance among the four group means.
+  5. Repeat steps 2-4 many times (say 1,000).
+- What proportion of the time did the resampled variance exceed the observed variance? This is the p-value.
+- There is a statistical test for ANOVA based on the *F-statistic*.
+  - The F-statistic is based on the ratio of the variance across group means (i.e., the treatment effect) to the variance due to residual error.
+  - The higher this ratio, the more statistically significant the result.
 
 [back to current section](#statistical-experiments-and-significance-testing)
 
@@ -372,9 +380,10 @@ A more sophisticated algorithm uses “**Thompson’s sampling.**” This proced
 
 ### Power and Sample Size
 
-* **Effect size**: The minimum size of the effect that you hope to be able to detect in a statistical test, such as “a 20% improvement in click rates”.
-* **Power**: The probability of detecting a given effect size with a given sample size.
-* **Significance level**: The statistical significance level at which the test will be conducted.
+- Finding out how big a sample size you need requires thinking ahead to the statistical test you plan to conduct.
+- You must specify the minimum size of the effect that you want to detect.
+- You must also specify the required probability of detecting that effect size (power).
+- Finally, you must specify  the significance level (alpha) at which the test will be conducted.
 
 [back to current section](#statistical-experiments-and-significance-testing)
 
