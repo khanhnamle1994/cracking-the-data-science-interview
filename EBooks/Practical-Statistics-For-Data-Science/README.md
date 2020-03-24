@@ -359,8 +359,22 @@ Here are the sections:
 
 ### Chi-Square Test
 
-* **Chi-square statistic**: A measure of the extent to which some observed data departs from expectation.
-* **Expectation or expected**: How we would expect the data to turn out under some assumption, typically the null hypothesis.
+- There are two types of **Chi-Square Tests**:
+  1. The *goodness of fit* test (does a coin tossed 20 times turn up 10 heads and 10 tails?)
+  2. The *test of independence* (is there a relationship between gender and salary?)
+- We have some outcomes, and a variable that we think might have an effect.
+  - We look at *observed* values of the outcome, with and without our variable of interest.
+  - We then *calculate* the expected values.
+  - From that, we calculate the deviations from what we observed.
+  - We scale the deviations based on the expected values, and adjust for number of sets of samples.
+  - The *chi-square statistic* is one measure of that deviation (whatever we are observing, is it random or is it unlikely to be random?)
+- Statisticians (using probability and combinatorics) have already calculated a look-up table, called the chi-squared table.
+  - Given a certain observed deviation, that table tells us what is the probability that this deviation is due to chance.
+  - If that probability is really tiny, then we say “Hey, that can’t be due to chance. There must be some sort of an effect.”
+  - If the p-value is big, we say “This could be purely due to chance. No need to get excited about this.”
+  - That in a nutshell is how Chi-square works: It is a measure of deviation, compared against pre-computed values that tells us how probable these deviations are.
+- Chi-square tests, or similar resampling simulations, are used in data science applications more as a filter to determine whether an effect or feature is worthy of further consideration than as a formal test of significance.
+- They can also be used in automated feature selection in machine learning, to assess class prevalence across features and identify features whether the prevalence of a certain class is unusually high or low, in a way that is not compatible with random variation.
 
 [back to current section](#statistical-experiments-and-significance-testing)
 
