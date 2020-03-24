@@ -311,9 +311,13 @@ Here are the sections:
 
 ### t-Tests
 
-- Before the advent of computers, resampling tests were not practical and statisticians used standard reference distributions.
-- A test statistic could then be standardized and compared to the reference distribution.
-- One such widely used standardized statistic is the *t-statistic*.
+- The **t-test** provides insight into whether the difference between the means of two groups is due to chance or is reliable.
+- t-test can be used when evaluating the results of an A/B test: "Would the difference between the control group and the treatment group be the same in a new sample from the same population?"
+- The results of a t-test are evaluated through the ratio of the difference between the groups and the difference within the groups.
+  - This ratio is known as the *t-statistic*; the t-statistic has a corresponding *p-value*, which represents the probability that what is observed could be produced by random data.
+  - The lower the p-value, the more confident we can be that the difference is not produced by chance and is indeed a reliable difference between the means of the two groups.
+  - In research, a p-value of 0.05 or less is generally considered reliable (statistically significant), but in a more entrepreneurial setting you may decide that a higher p-value is acceptable.
+  - P-values correspond to t-statistics based on the size of the samples: The larger the sample size (more degrees of freedom), the lower the p-value for the same t-statistic (ratio of differences).
 
 [back to current section](#statistical-experiments-and-significance-testing)
 
