@@ -203,32 +203,20 @@ The bootstrap can be used with multivariate data, where the rows are sampled as 
 
 ### Binomial Distribution
 
-* **Trial**: An event with a discrete outcome (e.g., a coin flip).
-* **Success**: The outcome of interest for a trial. Synonyms “1” (as opposed to “0”).
-* **Binomial**: Having two outcomes. Synonyms yes/no, 0/1, binary.
-* **Binomial trial**: A trial with two outcomes. Synonym Bernoulli trial.
-* **Binomial distribution**: Distribution of number of successes in x trials. Synonym Bernoulli distribution.
-
-The binomial distribution is the frequency distribution of the number of successes (x) in a given number of trials (n) with specified probability (p) of success in each trial. There is a family of binomial distributions, depending on the values of x, n, and p. The binomial distribution would answer a question like: If the probability of a click converting to a sale is 0.02, what is the probability of observing 0 sales in 200 clicks?
-
-* Mean: `n * p`
-* Variance: `n * p(1 - p)`
-
-With large n, and provided p is not too close to 0 or 1, the binomial distribution can be approximated by the normal distribution.
+- Binomial outcomes are important to model, since they represent, among other things, fundamental decisions (buy or don't buy, click or don't click, survive or die, etc.)
+- The binomial distribution is the frequency distribution of the number of successes (x) in a given number of trials (n) with specified probability (p) of success in each trial.
+  -  There are 2 possible outcomes: one with probability p and the other with probability 1 - p.
+  - Mean: `n * p`
+  - Variance: `n * p(1 - p)`
+- With large n, and provided p is not too close to 0 or 1, the binomial distribution can be approximated by the normal distribution.
 
 [back to current section](#data-and-sampling-distributions)
 
 ### Poisson and Related Distributions
 
-Many processes produce events randomly at a given overall rate — visitors arriving at a website, cars arriving at a toll plaza (events spread over time), imperfections in a square meter of fabric, or typos per 100 lines of code (events spread over space).
-
-It is useful when addressing queuing questions like “How much capacity do we need to be 95% sure of fully processing the internet traffic that arrives on a server in any 5- second period?”
-
-* **Lambda**: The rate (per unit of time or space) at which events occur. This is also the variance.
-* **Poisson distribution**: The frequency distribution of the number of events in sampled units of time or space. For events that occur at a constant rate, the number of events per unit of time or space can be modeled as a Poisson distribution. In this scenario, you can also model the time or distance between one event and the next as an exponential distribution, see below.
-* **Exponential distribution**: The frequency distribution of the time or distance from one event to the next event. Using the same parameter that we used in the Poisson distribution, we can also model the distribution of the time between events: time between visits to a website or between cars arriving at a toll plaza. It is also used in engineering to model time to failure, and in process management to model, for example, the time required per service call.
-* **Estimating the failure rate**: In many applications, the event rate, , is known or can be estimated from prior data. However, for rare events, this is not necessarily so. Aircraft engine failure for example. If there is some data but not enough to provide a precise, reliable estimate of the rate, a goodness-of-fit test (see “Chi-Square Test”) can be applied to various rates to determine how well they fit the observed data.
-* **Weibull distribution**: A generalized version of the exponential, in which the event rate is allowed to shift over time. So a changing event rate over time (e.g., an increasing probability of device failure) can be modeled with the Weibull distribution.
+- For events that occur at a constant rate, the number of events per unit of time or space can be modeled as a Poisson distribution.
+- In this scenario, you can also model the time or distance between one event and the next as an exponential distribution.
+- A changing event rate over time (e.g., an increasing probability of device failure) can be modeled with the Weibull distribution.
 
 [back to current section](#data-and-sampling-distributions)
 
