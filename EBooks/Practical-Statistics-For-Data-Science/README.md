@@ -136,10 +136,14 @@ Here are the sections:
 
 ### Sampling Distribution of a Statistic
 
-* **Sample statistic**: A metric calculated for a sample of data drawn from a larger population.
-* **Data distribution**: The frequency distribution of individual values in a data set.
-* **Sampling distribution**: The frequency distribution of a sample statistic over many samples or resamples. It is important to distinguish between the distribution of the individual data points, known as the data distribution, and the distribution of a sample statistic, known as the sampling distribution.
-* **Central Limit Theorem**: The tendency of the sampling distribution to take on a normal shape as sample size rises. It says that the means drawn from multiple samples will resemble the familiar bell-shaped normal curve, even if the source population is not normally distributed, provided that the sample size is large enough and the departure of the data from normality is not too great. The central limit theorem allows normal-approximation formulas like the t-distribution to be used in calculating sampling distributions for inference — that is, confidence intervals and hypothesis tests. The central limit theorem receives a lot of attention in traditional statistics texts because it underlies the machinery of hypothesis tests and confidence intervals, which themselves consume half the space in such texts. Data scientists should be aware of this role, but, since formal hypothesis tests and confidence intervals play a small role in data science, and the bootstrap is available in any case, the central limit theorem is not so central in the practice of data science.
+- The frequency distribution of a sample statistic tells us how that metric would turn out differently from sample to sample.
+- This sampling distribution can be estimated via the bootstrap, or via formulas that rely on the central limit theorem.
+  - **Central Limit Theorem** is the tendency of the sampling distribution to take on a normal shape as sample size rises.
+  - It says that the means drawn from multiple samples will resemble the familiar bell-shaped normal curve, even if the source population is not normally distributed, provided that the sample size is large enough and the departure of the data from normality is not too great.
+  - The central limit theorem allows normal-approximation formulas like the t-distribution to be used in calculating sampling distributions for inference — that is, confidence intervals and hypothesis tests.
+- A key metric that sums up the variability of a sample statistic is its *standard error*.
+  - The standard error can be estimated using a statistic based on the standard deviation s of the sample values, and the sample size n: `SE = s / \sqrt{n}`.
+  - As the sample size increases, the standard error decreases.
 
 [back to current section](#data-and-sampling-distributions)
 
@@ -163,11 +167,12 @@ The bootstrap can be used with multivariate data, where the rows are sampled as 
 
 ### Confidence Intervals
 
-Frequency tables, histograms, boxplots, and standard errors are all ways to understand the potential error in a sample estimate. Confidence intervals are another.
-
-Confidence intervals always come with a coverage level, expressed as a (high) percentage, say 90% or 95%. One way to think of a 90% confidence interval is as follows: it is the interval that encloses the central 90% of the bootstrap sampling distribution of a sample statistic (see “The Bootstrap”). More generally, an x% confidence interval around a sample estimate should, on average, contain similar sample estimates x% of the time (when a similar sampling procedure is followed).
-
-The percentage associated with the confidence interval is termed the level of confidence. The higher the level of confidence, the wider the interval. Also, the smaller the sample, the wider the interval (i.e., the more uncertainty). Both make sense: the more confident you want to be, and the less data you have, the wider you must make the confidence interval to be sufficiently assured of capturing the true value.
+- **Confidence intervals** are the typical way to present estimates as an interval range.
+- The more data you have, the less variable a sample estimate will be.
+  - Confidence intervals always come with a coverage level, expressed as a (high) percentage, say 90% or 95%.
+  - One way to think of a 90% confidence interval is as follows: it is the interval that encloses the central 90% of the bootstrap sampling distribution of a sample statistic.
+  - The higher the level of confidence, the wider the interval. Also, the smaller the sample, the wider the interval (i.e., the more uncertainty). Both make sense: the more confident you want to be, and the less data you have, the wider you must make the confidence interval to be sufficiently assured of capturing the true value.
+- The bootstrap is an effective way to construct confidence intervals.
 
 [back to current section](#data-and-sampling-distributions)
 
