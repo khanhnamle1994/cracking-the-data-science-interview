@@ -117,19 +117,20 @@ Here are the sections:
 
 ### Random Sampling and Sample Bias
 
-* Even in the era of big data, random sampling remains an important arrow in the data scientist's quiver.
-* Bias occurs when measurements or observations are systematically in error because they are not representative of the full population.
-* Data quality is often more important than data quantity, and random sampling can reduce bias and facilitate quality improvement that would be prohibitively expensive.
+- Even in the era of big data, random sampling remains an important arrow in the data scientist's quiver.
+  - *Random sampling* is a process in which each available member of the population being sampled has an equal chance of being chosen for the sample at each draw.
+  - Sampling can be done *with replacement*, in which observations are put back in the population after each draw for possible future re-selection.
+  - Or it can be done *without replacement*, in which case observations, once selected, are unavailable for future draws.
+- Bias occurs when measurements or observations are systematically in error because they are not representative of the full population.
+- Data quality is often more important than data quantity, and random sampling can reduce bias and facilitate quality improvement that would be prohibitively expensive.
 
 [back to current section](#data-and-sampling-distributions)
 
 ### Selection Bias
 
-To paraphrase Yogi Berra, “If you don’t know what you’re looking for, look hard enough and you’ll find it.” Selection bias refers to the practice of selectively choosing data — consciously or unconsciously — in a way that that leads to a conclusion that is misleading or ephemeral.
-
-* **Data snooping** — that is, extensive hunting through the data until something interesting emerges? There is a saying among statisticians: “If you torture the data long enough, sooner or later it will confess.”
-
-Typical forms of selection bias in statistics, in addition to the vast search effect, include nonrandom sampling (see sampling bias), cherry-picking data, selection of time intervals that accentuate a particular statistical effect, and stopping an experiment when the results look “interesting.”
+- Specifying a hypothesis, then collecting data following randomization and random sampling principles, ensures against bias.
+- All other forms of data analysis run the risk of bias resulting from the data collection/analysis process (repeated running of models in data mining, data snooping in research, and after-the-fact selection of interesting events).
+- *Regression to the mean* refers to a phenomenon involving successive measurements on a given variable: extreme observations tend to be followed by more central ones. Attaching special focus and meaning to the extreme value can lead to a form of selection bias.
 
 [back to current section](#data-and-sampling-distributions)
 
