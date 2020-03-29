@@ -12,7 +12,7 @@ Here are the sections:
 [This section](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets) contains cheatsheets of basic concepts in data science that will be asked in interviews:
 
 * [SQL](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#sql)
-* [Statistics](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#statistics)
+* [Statistics and Probability](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#statistics-and-probability)
 * [Mathematics](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#mathematics)
 * [Machine Learning Concepts](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#machine-learning-concepts)
 * [Deep Learning Concepts](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#deep-learning-concepts)

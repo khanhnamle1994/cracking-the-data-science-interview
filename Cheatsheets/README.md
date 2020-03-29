@@ -209,6 +209,7 @@ Here are the categories:
 
 * [Guidelines for AB Testing](#guidelines-for-ab-testing)
 * [Udacity AB Testing Course](#udacity-ab-testing-course)
+* [Probability Distributions](#probability-distributions)
 * [Probability Cheatsheet](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/probability_cheatsheet.pdf)
 * [Statistics Cheatsheet](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/stats_cheatsheet.pdf)
 * [Think Stats](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets/Think-Stats.md)
@@ -359,6 +360,31 @@ This section comes from Kelly Peng's post [here](https://towardsdatascience.com/
 2. What’s the potential benefit of the outcome of the study?
 3. What other choices do participants have?
 4. What privacy do participants have?
+
+[back to current section](#statistics-and-probability)
+
+### Probability Distributions
+
+A probability distribution specifies the relative likelihoods of all possible outcomes.
+
+**Discrete Distributions**
+
+- **Bernoulli**: A Bernoulli random variable takes the value 1 with probability of p and the value 0 with probability of 1 − p. It is frequently used to represent binary experiments, such as a coin toss.
+- **Binomial**: A binomial random variable is the sum of n independent Bernoulli random variables with parameter p. It is frequently used to model the number of successes in a specified number of identical binary experiments, such as the number of heads in five coin tosses.
+- **Geometric**: A geometric random variable counts the number of trials that are required to observe a single success, where each trial is independent and has success probability p. For example, this distribution can be used to model the number of times a die must be rolled in order for a six to be observed.
+- **Poisson**: A Poisson random variable counts the number of events occurring in a fixed interval of time or space, given that these events occur with an average rate λ. This distribution has been used to model events such as meteor showers and goals in a soccer match.
+- **Negative Binomial**: A negative binomial random variable counts the number of successes in a sequence of independent Bernoulli trials with parameter p before r failures occur. For example, this distribution could be used to model the number of heads that are flipped before three tails are observed in a sequence of coin tosses.
+
+**Continuous Distributions**
+
+- **Uniform**: The uniform distribution is a continuous distribution such that all intervals of equal length on the distribution's support have equal probability. For example, this distribution might be used to model people's full birth dates, where it is assumed that all times in the calendar year are equally likely.
+- **Normal / Gaussian**: The normal (or Gaussian) distribution has a bell-shaped density function and is used in the sciences to represent real-valued random variables that are assumed to be additively produced by many small effects. For example the normal distribution is used to model people's height, since height can be assumed to be the result of many small genetic and evironmental factors.
+- **Student T**: Student's t-distribution, or simply the t-distribution, arises when estimating the mean of a normally distributed population in situations where the sample size is small and population standard deviation is unknown.
+- **Chi Squared**: A chi-squared random variable with k degrees of freedom is the sum of k independent and identically distributed squared standard normal random variables. It is often used in hypothesis testing and in the construction of confidence intervals.
+- **Exponential**: The exponential distribution is the continuous analogue of the geometric distribution. It is often used to model waiting times.
+- **F**: The F-distribution, also known as the Fisher–Snedecor distribution, arises frequently as the null distribution of a test statistic, most notably in the analysis of variance.
+- **Gamma**: The gamma distribution is a general family of continuous probability distributions. The exponential and chi-squared distributions are special cases of the gamma distribution.
+- **Beta**: The beta distribution is a general family of continuous probability distributions bound between 0 and 1. The beta distribution is frequently used as a conjugate prior distribution in Bayesian statistics.
 
 [back to current section](#statistics-and-probability)
 
