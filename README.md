@@ -207,3 +207,7 @@ These PDF cheatsheets come from [BecomingHuman.AI](https://becominghuman.ai/chea
 ### 11 - Keras
 
 ![Keras](Keras.png)
+
+### 12 - Big-O
+
+![Big-O](Big-O.png)
