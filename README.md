@@ -203,3 +203,7 @@ These PDF cheatsheets come from [BecomingHuman.AI](https://becominghuman.ai/chea
 ### 10 - Matplotlib Basics
 
 ![Matplotlib Basics](Matplotlib_Basics.png)
+
+### 11 - Keras
+
+![Keras](Keras.png)
