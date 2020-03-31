@@ -173,3 +173,7 @@ These PDF cheatsheets come from [BecomingHuman.AI](https://becominghuman.ai/chea
 ### 3 - Machine Learning with Emojis
 
 ![Machine Learning with Emojis](ML_In_Emoji.png)
+
+### 4 - Scikit-Learn With Python
+
+![Scikit-Learn With Python](Scikit_Learn_With_Python.png)
