@@ -177,3 +177,7 @@ These PDF cheatsheets come from [BecomingHuman.AI](https://becominghuman.ai/chea
 ### 4 - Scikit-Learn With Python
 
 ![Scikit-Learn With Python](Scikit_Learn_With_Python.png)
+
+### 5 - Python Basics
+
+![Python Basics](Python_Basics.png)
