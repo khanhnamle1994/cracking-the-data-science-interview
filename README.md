@@ -195,3 +195,7 @@ These PDF cheatsheets come from [BecomingHuman.AI](https://becominghuman.ai/chea
 ![Data Wrangling With Pandas Part 1](Data_Wrangling_With_Pandas_Part1.png)
 
 ![Data Wrangling With Pandas Part 2](Data_Wrangling_With_Pandas_Part2.png)
+
+### 9 - SciPy Linear Algebra
+
+![SciPy Linear Algebra](SciPy_Linear_Algebra.png)
