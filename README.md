@@ -167,3 +167,5 @@ These PDF cheatsheets come from [BecomingHuman.AI](https://becominghuman.ai/chea
 ![Neural Network Basics](Neural_Nets_Basics.png)
 
 ### 2 - Neural Network Graphs
+
+![Neural Network Graphs](Neural_Nets_Graphs.png)
