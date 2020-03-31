@@ -181,3 +181,7 @@ These PDF cheatsheets come from [BecomingHuman.AI](https://becominghuman.ai/chea
 ### 5 - Python Basics
 
 ![Python Basics](Python_Basics.png)
+
+### 6 - NumPy Basics
+
+![NumPy Basics](NumPy_Basics.png)
