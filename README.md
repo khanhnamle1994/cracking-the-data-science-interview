@@ -199,3 +199,7 @@ These PDF cheatsheets come from [BecomingHuman.AI](https://becominghuman.ai/chea
 ### 9 - SciPy Linear Algebra
 
 ![SciPy Linear Algebra](SciPy_Linear_Algebra.png)
+
+### 10 - Matplotlib Basics
+
+![Matplotlib Basics](Matplotlib_Basics.png)
