@@ -169,3 +169,7 @@ These PDF cheatsheets come from [BecomingHuman.AI](https://becominghuman.ai/chea
 ### 2 - Neural Network Graphs
 
 ![Neural Network Graphs](Neural_Nets_Graphs.png)
+
+### 3 - Machine Learning with Emojis
+
+![Machine Learning with Emojis](ML_In_Emoji.png)
