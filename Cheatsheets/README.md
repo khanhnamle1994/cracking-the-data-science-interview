@@ -366,6 +366,9 @@ This section comes from Kelly Peng's post [here](https://towardsdatascience.com/
 ### Probability Distributions
 
 A probability distribution specifies the relative likelihoods of all possible outcomes.
+- For a *discrete random variable*, x, the probability distribution is defined by a **probability mass function**, denoted by f(x). This function provides the probability for each value of the random variable.
+- For a *continuous random variable*, since there is an infinite number of values in any interval, the probability that a continuous random variable will lie within a given interval is considered. So here, the probability distribution is defined by **probability density function**, also denoted by f(x).
+- Both probability functions must satisfy two requirements: (1) f(x) must be non-negative for each value of the random variable, and (2) the sum of the probabilities for each value (or integral over all values) of the random variable must equal one.
 
 **Discrete Distributions**
 

@@ -6,6 +6,7 @@ Here are the sections:
 * [Data Science Case Studies](#data-science-case-studies)
 * [Data Science Portfolio](#data-science-portfolio)
 * [Data Journalism Portfolio](#data-journalism-portfolio)
+* [Downloadable Cheatsheets](#downloadable-cheatsheets)
 
 ## Data Science Cheatsheets
 
@@ -156,3 +157,13 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
     - [The 2 Hardware Architectures for Efficient Training and Inference of Deep Nets](https://heartbeat.fritz.ai/the-2-types-of-hardware-architectures-for-efficient-training-and-inference-of-deep-neural-networks-a034850e26dd)
 
     - [10 Deep Learning Best Practices to Keep in Mind in 2020](https://nanonets.com/blog/10-best-practices-deep-learning/)
+
+## Downloadable Cheatsheets
+
+These PDF cheatsheets come from [BecomingHuman.AI](https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-science-pdf-f22dc900d2d7).
+
+### 1 - Neural Network Basics
+
+![Neural Network Basics](Neural_Nets_Basics.png)
+
+### 2 - Neural Network Graphs
