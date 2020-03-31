@@ -189,3 +189,9 @@ These PDF cheatsheets come from [BecomingHuman.AI](https://becominghuman.ai/chea
 ### 7 - Pandas Basics
 
 ![Pandas Basics](Pandas_Basics.png)
+
+### 8 - Data Wrangling With Pandas
+
+![Data Wrangling With Pandas Part 1](Data_Wrangling_With_Pandas_Part1.png)
+
+![Data Wrangling With Pandas Part 2](Data_Wrangling_With_Pandas_Part2.png)
