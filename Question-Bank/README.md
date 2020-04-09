@@ -9,3 +9,4 @@ These are the sources that provide these questions:
 * [Springboard](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Springboard.md)
 * [Elite Data Science](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Elite-Data-Science.md)
 * [Workera](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/Workera)
+* [150 Essential Data Science Questions and Answers](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Question-Bank/150-Essential-Data-Science-Questions-and-Answers.pdf)
