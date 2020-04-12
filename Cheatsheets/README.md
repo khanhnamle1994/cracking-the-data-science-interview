@@ -15,7 +15,6 @@ Here are the categories:
 * [Unsupervised Learning](#unsupervised-learning)
 * [Computer Vision](#computer-vision)
 * [Natural Language Processing](#natural-language-processing)
-* [Software Engineering](#software-engineering)
 * [Stanford Materials](#stanford-materials)
 
 ## SQL
@@ -1321,6 +1320,8 @@ There are several architectures in the field of Convolutional Networks that have
 * **VGGNet** (19 layers). The runner-up in ILSVRC 2014 was the network from Karen Simonyan and Andrew Zisserman that became known as the [VGGNet](http://www.robots.ox.ac.uk/~vgg/research/very_deep/). Its main contribution was in showing that the depth of the network is a critical component for good performance. Their final best network contains 16 CONV/FC layers and, appealingly, features an extremely homogeneous architecture that only performs 3x3 convolutions and 2x2 pooling from the beginning to the end. A downside of the VGGNet is that it is more expensive to evaluate and uses a lot more memory and parameters (140M). Most of these parameters are in the first fully connected layer, and it was since found that these FC layers can be removed with no performance downgrade, significantly reducing the number of necessary parameters.
 * **ResNet** (152 layers). [Residual Network](http://arxiv.org/abs/1512.03385) developed by Kaiming He et al. was the winner of ILSVRC 2015. It features special skip connections and a heavy use of batch normalization. The architecture is also missing fully connected layers at the end of the network.
 
+Review a complete list of computer vision models in PyTorch [here](https://pytorch.org/docs/stable/torchvision/models.html). The models subpackage contains definitions of models for addressing different tasks, including: image classification, pixelwise semantic segmentation, object detection, instance segmentation, person keypoint detection and video classification.
+
 [back to current section](#computer-vision)
 
 ### Transfer Learning
@@ -1411,71 +1412,6 @@ There are several architectures in the field of Convolutional Networks that have
 ![](assets/w2v.png)
 
 [back to current section](#natural-language-processing)
-
-[back to top](#data-science-cheatsheets)
-
-## Software Engineering
-
-* [Understanding race conditions](#understanding-race-conditions)
-* [Understanding the difference between concurrency and parallelism](#understanding-the-difference-between-concurrency-and-parallelism)
-* [Analyzing large files](#analyzing-large-files)
-* [Managing access permissions](#managing-access-permissions)
-* [Differentiate the stack from the heap](#differentiate-the-stack-from-the-heap)
-* [Making good software design decisions](#making-good-software-design-decisions)
-* [Differentiating Monolithic vs Microservices architectures](#differentiating-monolithic-vs-microservices-architectures)
-* [Understanding the role of the Hostname in a request](#understanding-the-role-of-the-hostname-in-a-request)
-* [Understanding classes and inheritance](#understanding-classes-and-inheritance)
-* [Understanding the purpose of different HTTP requests](#understanding-the-purpose-of-different-HTTP-requests)
-* [Understanding the single responsibility principle](#understanding-the-single-responsibility-principle)
-* [Understanding the benefits of continuous integration](#understanding-the-benefits-of-continous-integration)
-
-### Understanding race conditions
-
-Race conditions affect the correctness of concurrent programs. Learn about race conditions and the related concept of interleaving in [this video](https://www.coursera.org/lecture/golang-concurrency/m2-2-1-2v3-dybTl). You can also read about race conditions in [this MIT page](https://web.mit.edu/6.005/www/fa15/classes/19-concurrency/#race_condition).
-
-### Understanding the difference between concurrency and parallelism
-
-Concurrency and parallelism are fundamental concepts in software engineering. Learn about the differences between these two concepts in [this video](https://www.coursera.org/lecture/parprog1/introduction-to-parallel-computing-zNrIS) (minute 6:32). You can read about concurrency in [this Wikipedia article](https://en.wikipedia.org/wiki/Concurrent_computing) and [this MIT page](https://web.mit.edu/6.005/www/fa14/classes/17-concurrency/#reading_17_concurrency). Also, you can read about parallelism in [this Wikipedia article](https://en.wikipedia.org/wiki/Parallel_computing).
-
-### Analyzing large files
-
-Quickly analyzing large structured files is often difficult to do on standard spreadsheet applications. Therefore, it is useful to know how to use the Linux shell to perform such tasks. Read about useful shell commands for data handling in [this DataCamp page](https://www.datacamp.com/community/tutorials/shell-commands-data-scientist).
-
-### Managing access permissions
-
-In order to allow or restrict the use of files, the Linux shell can be used to set permissions on these files. Read about the chmod Linux command in [this Wikipedia article](https://en.wikipedia.org/wiki/Chmod). Also, take a look at [this short tutorial](https://www.howtoforge.com/tutorial/linux-chmod-command/) about Linux access permissions.
-
-### Differentiate the stack from the heap
-
-The stack is the memory set aside as scratch space for a thread of execution. The heap is memory set aside for dynamic allocation. Read [this thread](https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap#comment67326550_80113) for more information.
-
-### Making good software design decisions
-
-When building software applications, it is important to make good design decisions. To practice your software design, review [this interview preparation document](https://workera.ai/candidates/interview_prep/#h.dxekc5ol5li).
-
-### Differentiating Monolithic vs Microservices architectures
-
-Review a comparison between monolithic and microservices applications in [this video](https://www.coursera.org/lecture/uva-darden-continous-delivery-devops/microservices-vs-monoliths-tTnKW).
-
-### Understanding the role of the Hostname in a request
-
-Review the role and definition of a hostname in [this wikipedia page](https://en.wikipedia.org/wiki/Hostname).
-
-### Understanding classes and inheritance
-
-Learn about classes in [this video](https://www.coursera.org/lecture/python-databases/14-2-our-first-class-and-object-MI9uq). Learn about inheritance in [this video](https://www.coursera.org/lecture/intermediate-object-oriented-programming-unity-games/what-is-inheritance-Z2t3M).
-
-### Understanding the purpose of different HTTP requests
-
-Review the purpose of different HTTP requests (also known as methods or verbs) in [this Mozilla Web Docs page](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
-
-### Understanding the single responsibility principle
-
-The SOLID principles of Object-Oriented Design are guidelines for writing clean code. You can learn more about the single responsibility principle in [this Wikipedia article](https://en.wikipedia.org/wiki/Single_responsibility_principle). Also, you can find a more elaborate explanation of this principle in [this blog post](https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html).
-
-### Understanding the benefits of continuous integration
-
-Continuous integration is one of the strategies to increase development speed and reduce time to market. Review the concept of continuous integration in [this video](https://www.coursera.org/lecture/devops-culture-and-mindset/configuration-management-continuous-integration-testing-and-delivery-8YCtX) (min 2:59). If you prefer reading, you can check [this Wikipedia article](https://en.wikipedia.org/wiki/Continuous_integration).
 
 [back to top](#data-science-cheatsheets)
 
