@@ -466,6 +466,16 @@ Additional Rule when A and B are not disjointed: `P(A U B) = P(A or B) = P(A) + 
 
 The Bayes rule is a common interview topic for machine learning and data science roles. [These course notes](https://math.la.asu.edu/~surgent/mat142/Sect_8_5.pdf) (pages 381-388) show techniques to solve problems involving conditional probabilities. Also, [these course notes](http://faculty.washington.edu/tamre/BayesTheorem.pdf) (pages 7-9) offer examples and practice exercises. If you prefer watching videos, [this lecture](https://www.coursera.org/lecture/probability-intro/conditional-probability-fN6Kh) is an intuitive explanation on conditional probabilities.
 
+- Consider an event E and its probability P(E), which may be stated as an *a priori* fact. Now consider another event F. The conditional probability `P(E|F)` would then be called *a posteriori* probability, since we are reconsidering the probability of E in light of new information F.
+- **Bayes' Rule**: If a sample space S is partitioned into two complementary subsets A and B, and E is an event conditional on events A and B, then probabilities `P(A|E)` and `P(B|E)` are determined by:
+
+`P(A|E) = P(A ∩ E) / P(E) = [P(A) * P(E|A)] / [P(A) * P(E|A) + P(B) * P(E|B)]` and `P(B|E) = P(B ∩ E) / P(E) = [P(B) * P(E|B)] / [P(A) * P(E|A) + P(B) * P(E|B)]`
+
+- Bayes' Rule is quite easy to use, especially if a tree diagram is used to parse the information. Often, the most challenging part of the problem is setting up the tree itself. A common error is to label the nodes incorrectly. The following list of suggestions may help:
+  - Identify the question being asked, which will always be in conditional probability format. Write it out!
+  - The order in which you write your conditional probability expression suggests the order in which the tree is to be labeled. For example, if you write `P(A | B)`, then the tree will be labeled `A` and `A'` on the first tier of branches, and `B` and `B'` on the second tier of branches.
+  - Label all branches with their probabilities, being sure to translate percentages into their correct decimal form.
+
 [back to current section](#statistics-and-probability)
 
 [back to top](#data-science-cheatsheets)
