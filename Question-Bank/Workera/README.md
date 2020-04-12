@@ -20,7 +20,16 @@
 
 9. How to do error analysis in a machine learning pipeline? ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
 
-10. How to do cross-validation? ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
+10. **How to do cross-validation?** ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
+
+- In **hold-out cross validation**, we do the following:
+  1. Randomly split training set `S` into `S_train` and `S_cv` (the hold-out cross validation set).
+  2. Train each model `M_i` on `S_train` only, to get some hypothesis `h_i`.
+  3. Select and output the hypothesis `h_i` that had the smallest error on the hold-out cross validation set.
+- The disadvantage of using hold-out cross validation is that it "wastes" some portion of the data. Another method is called **k-fold cross validation** that holds out less data each time.
+  - A typically choice for the number of folds would be `k = 10`.
+  - This procedure may be more computationally expensive, since we now need to train each model `k` times.
+  - If we choose `k = m`, this is called **leave-one-out cross validation**.
 
 11. How to do feature selection? ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
 
@@ -30,10 +39,9 @@
 
 - The k-Means clustering algorithm is as follows:
   1. Initialize k **cluster centroids** randomly.
-  2. Repeat until convergence {
+  2. Repeat until convergence:
     - "Assigning" each training example to the closest centroid
     - Moving each cluster centroid to the mean of the points assigned to it.
-  }
 - The **distortion function** measures the sum of squared distances between each training example and the cluster centroid to which it has been assigned. This value monotonically decrease and will eventually converge.
 - This distortion function is non-convex, and so coordinate descent on it is not guaranteed to converge to the global minimum. In other words, k-means can be susceptible to local optima.
 
