@@ -1,5 +1,7 @@
 ## [The Machine Learning Algorithms Interview](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Workera/Machine-Learning-Algorithms-Interview.pdf)
 
+([Full Resource](https://workera.ai/resources/machine-learning-algorithms-interview/))
+
 1. Derive the binary cross-entropy + mean-squared error loss function.
 
 2. Explain Linear Regression ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
@@ -28,7 +30,17 @@
 
 14. Why is the EM algorithm useful? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7b.pdf))
 
-15. How does Principal Component Analysis work? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes10.pdf))
+15. **How does Principal Component Analysis work?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes10.pdf))
+
+- PCA tries to identify the subspace in which the data approximately lies.
+  - Prior to running PCA, we typically first preprocess the data by normalizing each feature to have mean 0 and variance 1. We do this by subtracting the mean and dividing by the empirical standard deviation.
+  - To compute the "major axis of variation" `u` - that is, the direction on which the data approximately lies, we find the unit vector u so that when the data is projected onto the direction onto the direction corresponding to `u`, the variance of the projected data is maximized.
+  - More specifically, if we wish to project our data into a k-dimensional subspace, we should choose `u1, ..., uk` to be the top k eigenvectors of `\Sum`, which is the empirical covariance matrix of the data. The `u_i`s now form a new, orthogonal basis for the data.
+- PCA is referred to as a **dimensionality reduction** algorithm. The vectors `u1, ..., uk` are called the first k **principal components** of the data.
+- PCA has many applications:
+  - Compression is an obvious application. If we reduce high dimensional data to `k = 2` or `3` dimensions, then we can also plot the `y^(i)`'s to visualize the data.
+  - Another standard application is to preprocess a dataset to reduce its dimension before running a supervised learning algorithm with the inputs. Apart from computational benefits, reducing the data's dimension can also reduce the complexity of the hypohtesis class considered and help avoid overfitting.
+  - Lastly, we can also view PCA as a noise reduction algorithm.
 
 ## [The Deep Learning Algorithms Interview](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Workera/Deep-Learning-Algorithms-Interview.pdf)
 
