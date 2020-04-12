@@ -28,7 +28,12 @@
 
 13. How does k-Means clustering algorithm work? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7a.pdf))
 
-14. Why is the EM algorithm useful? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7b.pdf))
+14. **Why is the EM algorithm useful?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7b.pdf))
+
+- The Expectation-Maximization algorithm is used for density estimation. It is an iterative algorithm that has 2 main steps:
+  - In the E-step, it tries to "guess" the values of the random variables `z`s.
+  - In the M-step, it updates the parameters of our model based on our guesses. Since in the M-step we are pretending that the guesses in the first part were correct, the maximization becomes easy.
+- The EM-algorithm is reminiscent of the K-means clustering algorithm, except that instead of the "hard" cluster assignments `c`, we instead have the "soft" assignments `w_j`. Similar to K-means, it is also susceptible to local optima, so reinitializing at several different initial parameters may be a good idea.
 
 15. **How does Principal Component Analysis work?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes10.pdf))
 
