@@ -26,7 +26,16 @@
 
 12. What is the Bayesian way to combat overfitting? ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
 
-13. How does k-Means clustering algorithm work? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7a.pdf))
+13. **How does k-Means clustering algorithm work?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7a.pdf))
+
+- The k-Means clustering algorithm is as follows:
+  1. Initialize k **cluster centroids** randomly.
+  2. Repeat until convergence {
+    - "Assigning" each training example to the closest centroid
+    - Moving each cluster centroid to the mean of the points assigned to it.
+  }
+- The **distortion function** measures the sum of squared distances between each training example and the cluster centroid to which it has been assigned. This value monotonically decrease and will eventually converge.
+- This distortion function is non-convex, and so coordinate descent on it is not guaranteed to converge to the global minimum. In other words, k-means can be susceptible to local optima.
 
 14. **Why is the EM algorithm useful?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7b.pdf))
 
@@ -40,8 +49,8 @@
 - PCA tries to identify the subspace in which the data approximately lies.
   - Prior to running PCA, we typically first preprocess the data by normalizing each feature to have mean 0 and variance 1. We do this by subtracting the mean and dividing by the empirical standard deviation.
   - To compute the "major axis of variation" `u` - that is, the direction on which the data approximately lies, we find the unit vector u so that when the data is projected onto the direction onto the direction corresponding to `u`, the variance of the projected data is maximized.
-  - More specifically, if we wish to project our data into a k-dimensional subspace, we should choose `u1, ..., uk` to be the top k eigenvectors of `\Sum`, which is the empirical covariance matrix of the data. The `u_i`s now form a new, orthogonal basis for the data.
-- PCA is referred to as a **dimensionality reduction** algorithm. The vectors `u1, ..., uk` are called the first k **principal components** of the data.
+  - More specifically, if we wish to project our data into a k-dimensional subspace, we should choose `u_1, ..., u_k` to be the top k eigenvectors of `\Sum`, which is the empirical covariance matrix of the data. The `u_i`s now form a new, orthogonal basis for the data.
+- PCA is referred to as a **dimensionality reduction** algorithm. The vectors `u_1, ..., u_k` are called the first k **principal components** of the data.
 - PCA has many applications:
   - Compression is an obvious application. If we reduce high dimensional data to `k = 2` or `3` dimensions, then we can also plot the `y^(i)`'s to visualize the data.
   - Another standard application is to preprocess a dataset to reduce its dimension before running a supervised learning algorithm with the inputs. Apart from computational benefits, reducing the data's dimension can also reduce the complexity of the hypohtesis class considered and help avoid overfitting.
