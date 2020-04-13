@@ -41,7 +41,10 @@
   - One possible choice of the score would be define `S(i)` to be the correlation between `x_i` and `y`, as measured on the training data. This would result in our choosing the features that are the most strongly correlated with the class labels.
   - In practice, it is more common to choose `S(i)` to be the **KL divergence** between `x_i` and `y`. If `x_i` and `y` are independent random variables, then the KL-divergence between the two distributions will be 0. This is consistent with the idea if `x_i` and `y` are independent, then `x_i` is clearly very "non-informative" about `y`, and thus the score `S(i)` should be small. Conversely, if `x_i` is very "informative" about `y`, then their KL-divergence would be large.
 
-12. What is the Bayesian way to combat overfitting? ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
+12. **What is the Bayesian way to combat overfitting?** ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
+
+- [Using Maximum a Posteriori instead of Maximum Likelihood to estimate our parameters](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/MLE-vs-MAP.md). They have the same formula except for the prior term at the end of MAP.
+- Using this choice of prior, the fitted parameters `theta_MAP` will have smaller norm than that selected by maximum likelihood. In practice, this causes the Bayesian MAP estimate to be less susceptible to overfitting than the ML estimate of the parameters. For example, Bayesian logistic regression turns out to be an effective algorithm for text classification, even though in text classification we usually have n ≫ m.
 
 13. **How does k-Means clustering algorithm work?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7a.pdf))
 
