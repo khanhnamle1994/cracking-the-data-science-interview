@@ -31,7 +31,15 @@
   - This procedure may be more computationally expensive, since we now need to train each model `k` times.
   - If we choose `k = m`, this is called **leave-one-out cross validation**.
 
-11. How to do feature selection? ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
+11. **How to do feature selection?** ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
+
+- Given `n` features, there are `2^n` possible feature subsets, and thus feature selection can be posed as a model selection problem over `2^n` possible models. For large values of `n`, it's usually too expensive to explicitly enumerate over and compare all `2^n` models, and so typically some heuristic search procedure is used to find a good feature subset.
+- *Wrapper model feature selection* is a procedure that "wraps" around your learning algorithm, and repeatedly makes calls to the learning algorithm to evaluate how well it does using different feature subsets. This includes *forward search* and *backward search*.
+  - **Forward search** starts off with `F is empty` as the initial set of features. For `i = 1, ..., n`, use some version of cross validation to evaluate features `F_i` and set `F` to be the best feature subset found. Finally, select and output the best feature subset that was evaluated during the entire search procedure.
+  - **Backward search** starts off with `F = {1, ..., n}` as the set of all features, and repeatedly deletes features one at a time (evaluating single-feature deletions in a similar manner to how forward search evaluates single-feature additions) until `F is empty`.
+- *Filter feature selection* methods give heuristic, but computationally much cheaper, ways of choosing a feature subset. The idea here is to compute some simple score `S(i)` that measures how informative each feature `x_i` is about the class labels `y`. Then, we simply pick the `k` features with the largest scores `S(i)`.
+  - One possible choice of the score would be define `S(i)` to be the correlation between `x_i` and `y`, as measured on the training data. This would result in our choosing the features that are the most strongly correlated with the class labels.
+  - In practice, it is more common to choose `S(i)` to be the **KL divergence** between `x_i` and `y`. If `x_i` and `y` are independent random variables, then the KL-divergence between the two distributions will be 0. This is consistent with the idea if `x_i` and `y` are independent, then `x_i` is clearly very "non-informative" about `y`, and thus the score `S(i)` should be small. Conversely, if `x_i` is very "informative" about `y`, then their KL-divergence would be large.
 
 12. What is the Bayesian way to combat overfitting? ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
 
