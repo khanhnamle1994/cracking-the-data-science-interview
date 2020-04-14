@@ -14,7 +14,15 @@
 
 6. Why is the Naive Bayes classifier called Naive? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes2.pdf))
 
-7. How does a discriminative model differ from a generative model? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes2.pdf))
+7. **How does a discriminative model differ from a generative model?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes2.pdf))
+
+- Consider a classification problem in which we want to learn to distinguish between elephants (y = 1) and dogs (y = 0), based on some features of an animal. Given a training set, an algorithm like logistic regression or the perceptron algorithm (basically) tries to find a straight line—that is, a decision boundary—that separates the elephants and dogs. Then, to classify a new animal as either an elephant or a dog, it checks on which side of the decision boundary it falls, and makes its prediction accordingly.
+- Here’s a different approach. First, looking at elephants, we can build a model of what elephants look like. Then, looking at dogs, we can build a separate model of what dogs look like. Finally, to classify a new animal, we can match the new animal against the elephant model, and match it against the dog model, to see whether the new animal looks more like the elephants or more like the dogs we had seen in the training set.
+- Algorithms that try to learn `p(y|x)` directly (such as logistic regression), or algorithms that try to learn mappings directly from the space of inputs X to the labels {0, 1}, (such as the perceptron algorithm) are called **discriminative** learning algorithms.
+- Algorithms that instead try to model `p(x|y)` (and `p(y)`) are called **generative** learning algorithms. For instance, if y indicates whether an example is a dog (0) or an elephant (1), then `p(x|y = 0)` models the distribution of dogs’ features, and `p(x|y = 1)` models the distribution of elephants’ features.
+- After modeling `p(y)` (called the class priors) and `p(x|y)`, our algorithm can then use Bayes rule to derive the posterior distribution on y given x:
+
+`p(y|x) = [p(x|y) * p(y)] / p(x)`
 
 8. **What is the bias-variance tradeoff?** ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
 
