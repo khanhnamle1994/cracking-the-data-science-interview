@@ -4,9 +4,13 @@
 
 1. Derive the binary cross-entropy + mean-squared error loss function.
 
-2. Explain Linear Regression ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
+2. **Explain Linear Regression** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
 
-3. Explain Logistic Regression ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
+Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html](https://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html)
+
+3. **Explain Logistic Regression** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
+
+Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html](https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html)
 
 4. Explain Generalized Linear Models ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
 
