@@ -2,7 +2,57 @@
 
 ([Full Resource](https://workera.ai/resources/machine-learning-algorithms-interview/))
 
-1. Derive the binary cross-entropy + mean-squared error loss function.
+1. **Explain different loss functions**
+
+**Cross Entropy**: Cross-entropy loss, or log loss, measures the performance of a classification model whose output is a probability value between 0 and 1. Cross-entropy loss increases as the predicted probability diverges from the actual label.
+
+```
+def CrossEntropy(yHat, y):
+    if y == 1:
+      return -log(yHat)
+    else:
+      return -log(1 - yHat)
+```
+
+In binary classification, where the number of classes `𝑀` equals 2, cross-entropy can be calculated as:
+
+`−(𝑦 log(𝑝) + (1 − 𝑦) log(1 − 𝑝))`
+
+If `𝑀 > 2` (i.e. multiclass classification), we calculate a separate loss for each class label per observation and sum the result.
+
+`− \sum_{c=1}^M 𝑦_{𝑜,𝑐} log(𝑝_{𝑜,𝑐})`
+
+**Hinge**: Used for classification.
+
+```
+def Hinge(yHat, y):
+    return np.max(0, 1 - yHat * y)
+```
+
+**Huber**: Typically used for regression. It’s less sensitive to outliers than the MSE as it treats error as square only inside an interval.
+
+```
+def Huber(yHat, y, delta=1.):
+    return np.where(np.abs(y-yHat) < delta,.5*(y-yHat)**2 , delta*(np.abs(y-yHat)-0.5*delta))
+```
+
+**Kullback-Leibler**
+
+```
+def KLDivergence(yHat, y):
+    return np.sum(yHat * np.log((yHat / y)))
+```
+
+**MAE (L1)**: Mean Absolute Error, or L1 loss.
+```
+    return np.sum(np.absolute(yHat - y))
+```
+
+**MSE (L2)**: Mean Squared Error, or L2 Loss.
+```
+def MSE(yHat, y):
+    return np.sum((yHat - y)**2) / y.size
+```
 
 2. **Explain Linear Regression** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
 
