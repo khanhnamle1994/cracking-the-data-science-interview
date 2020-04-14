@@ -12,7 +12,11 @@
 
 5. In Support Vector Machines, what is the kernel trick? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes3.pdf))
 
-6. Why is the Naive Bayes classifier called Naive? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes2.pdf))
+6. **Why is the Naive Bayes classifier called Naive?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes2.pdf))
+
+- In Naive Bayes, in order to model `p(x|y)`, we will make a very strong assumption. We will assume that the `x_i`’s are conditionally independent given y. This assumption is called the **Naive Bayes (NB) assumption**.
+- For instance, if `y = 1` means spam email; “buy” is word 2087 and “price” is word 39831; then we are assuming that if I tell you `y = 1` (that a particular piece of email is spam), then knowledge of `x_2087` (knowledge of whether “buy” appears in the message) will have no effect on your beliefs about the value of `x_39831` (whether “price” appears). More formally, this can be written `p(x_2087|y) = p(x_2087|y, x_39831)`.
+- Note that this is not the same as saying that `x_2087` and `x_39831` are independent, which would have been written ``“p(x_2087) = p(x_2087|x_39831)”``; rather, we are only assuming that `x_2087` and `x_39831` are conditionally independent given y.
 
 7. **How does a discriminative model differ from a generative model?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes2.pdf))
 
