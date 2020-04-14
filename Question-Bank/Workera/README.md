@@ -16,7 +16,11 @@
 
 7. How does a discriminative model differ from a generative model? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes2.pdf))
 
-8. What is the bias-variance tradeoff? ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
+8. **What is the bias-variance tradeoff?** ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
+
+- High bias is synonymous with underfitting: the model didn’t gather enough information from the training set, and doesn’t capture the link between the features and the target.
+- High variance is synonymous with overfitting:  the model is too closely related to the examples in the training set and doesn’t generalize well to other examples.
+- If the error is still too high, then the data is simply noisy. The model is neither overfitting or underfitting, and the high error is simply due to the amount of noise in the dataset.
 
 9. **How to do error analysis in a machine learning pipeline?** ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
 
