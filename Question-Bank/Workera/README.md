@@ -18,7 +18,14 @@
 
 8. What is the bias-variance tradeoff? ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
 
-9. How to do error analysis in a machine learning pipeline? ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
+9. **How to do error analysis in a machine learning pipeline?** ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
+
+- Even though understanding whether our poor test error is due to high bias or high variance is important, knowing which parts of the machine learning algorithm lead to this error or score is crucial.
+- If you build a complicated system, you might want to figure out how much error is attributable to each of the components. One thing to do is plug in the ground-truth for each component, and see how accuracy changes.
+- Error analysis is also useful when publishing a paper, since it's a convenient way to analyze the error of an algorithm and explain which parts should be improved.
+- While error analysis tries to explain the difference between current performance and perfect performance, ablative analysis tries to explain the difference between some baseline (much poorer) performance and current performance.
+- When presenting the results in a paper, ablative analysis really helps analyzing the features that helped decreasing the misclassification rate. Instead of simply giving the loss/error rate of the algorithm, we can provide evidence that some specific features are actually more important than others.
+- In brief, do not waste your time improving parts of your algorithm that won’t really help decreasing your error rate, and focus on what really matters.
 
 10. **How to do cross-validation?** ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
 
