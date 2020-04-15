@@ -1,3 +1,13 @@
+# Workera Resources
+
+This content comes from Workera's The Skills Boost:
+
+- [The Machine Learning Algorithms Interview](#the-machine-learning-algorithms-interview)
+- [The Deep Learning Algorithms Interview](#the-deep-learning-algorithms-interview)
+- [The Machine Learning Case Study Interview](#the-machine-learning-case-study-interview)
+- [The Deep Learning Case Study Interview](#the-deep-learning-case-study-interview)
+- [The Data Science Case Study interview](#the-data-science-case-study-interview)
+
 ## [The Machine Learning Algorithms Interview](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Workera/Machine-Learning-Algorithms-Interview.pdf)
 
 ([Full Resource](https://workera.ai/resources/machine-learning-algorithms-interview/))
@@ -152,7 +162,11 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
   - Another standard application is to preprocess a dataset to reduce its dimension before running a supervised learning algorithm with the inputs. Apart from computational benefits, reducing the data's dimension can also reduce the complexity of the hypohtesis class considered and help avoid overfitting.
   - Lastly, we can also view PCA as a noise reduction algorithm.
 
+[back to top](#workera-resources)
+
 ## [The Deep Learning Algorithms Interview](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Workera/Deep-Learning-Algorithms-Interview.pdf)
+
+([Full Resource](https://workera.ai/resources/deep-learning-algorithms-interview/))
 
 1. Explain Neural Networks from first principle ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes-deep_learning.pdf))
 
@@ -168,7 +182,11 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
 
 7. What is your approach to write a deep learning paper? ([Notes](http://cs230.stanford.edu/section/8/))
 
+[back to top](#workera-resources)
+
 ## [The Machine Learning Case Study Interview](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Workera/Machine-Learning-Case-Study-Interview.pdf)
+
+([Full Resource](https://workera.ai/resources/machine-learning-case-study-interview/))
 
 1. How would you build a trigger word detection algorithm to spot the word "activate" in a 10 second long audio clip?
 
@@ -177,6 +195,48 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
 3. You are given a dataset of credit card purchases information. Each record is labeled as fraudulent or safe. You are asked to build a fraud detection algorithm. How would you proceed?
 
 4. You are provided with data from a music streaming platform. Each of the 100,000 records indicates the songs a user has listened to in the past month. How would you build a music recommendation system?
+
+[back to top](#workera-resources)
+
+## The Deep Learning Case Study Interview
+
+([Full Resource](https://workera.ai/resources/deep-learning-case-study-interview/))
+
+1. How would you build a speech recognition system powering a virtual assistant like Amazon Alexa, Google Home, Apple Siri, and Baidu’s DuerOS?
+
+2. As a deep learning engineer, you are asked to build an object detector for a zoo. How would you get started?
+
+3. How would you build an algorithm that auto-completes your sentence when writing an email?
+
+4. In your opinion, what are technical challenges related to the deployment of an autonomous vehicle in a geofenced area?
+
+5. You built a computer vision algorithm that can detect pneumonia from chest X-rays. How would you convince a radiologist to use it?
+
+6. You are tackling the school dropout problem. How would you build a model that can determine whether a student is at-risk or not, and plan an intervention?
+
+[back to top](#workera-resources)
+
+## The Data Science Case Study interview
+
+([Full Resource](https://workera.ai/resources/data-science-case-study-interview/))
+
+1. How many cashiers should be at a Walmart store at a given time?
+
+2. You notice a spike in the number of user-uploaded videos on your platform in June. What do you think is the cause, and how would you test it?
+
+3. Your company is thinking of changing its logo. Is it a good idea? How would you test it?
+
+4. Could you tell if a coin is biased?
+
+5. In a given day, how many birthday posts occur on Facebook?
+
+6. What are the different performance metrics for evaluating ride sharing services?
+
+7. How will you test if a chosen credit scoring model works or not? What dataset(s) do you need?
+
+8. Given a user’s history of purchases, how do you predict their next purchase?
+
+[back to top](#workera-resources)
 
 **Company Machine Learning Case Studies**
 
