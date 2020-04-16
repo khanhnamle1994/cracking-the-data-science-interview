@@ -174,7 +174,36 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
 
 ([Full Resource](https://workera.ai/resources/deep-learning-algorithms-interview/))
 
-1. Explain Neural Networks from first principle ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes-deep_learning.pdf))
+1. **Explain Neural Networks from first principle** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes-deep_learning.pdf))
+
+Suppose we have three input features `x1`, `x2`, `x3` which are collectively called the *input layer*, four hidden units which are collectively called the *hidden layer* and one output neuron called the *output layer*. The term hidden layer is called “hidden” because we do not have the ground truth/training value for the hidden units. This is in contrast to the input and output layers, both of which we know the ground truth values from `(x(i), y(i))`.
+
+The first hidden unit requires the input `x1`, `x2`, `x3` and outputs a value denoted by `a_1`. We use the letter `a` since it refers to the neuron’s “activation” value. In this particular example, we have a single hidden layer but it is possible to have multiple hidden layers. Let `a[1]_1` denote the output value of the first hidden unit in the first hidden layer. We use zero-indexing to refer to the layer numbers. That is, the input layer is layer 0, the first hidden layer is layer 1 and the output layer is layer 2. Again, more complex neural networks may have more hidden layers. Given this mathematical notation,
+the output of layer 2 is `a[2]_1`.
+
+We can unify our notation: `x1 = a[0]_1`, `x2 = a[0]_2`, `x3 = a[0]_3`. To clarify, foo[1] with brackets denotes anything associated with layer 1, `x(i)` with parenthesis refers to the i-th training example, and `a[l]_j` refers to the activation of the j-th unit in layer l.
+
+We can represent `g(x)` with a single neuron in the neural network. We can break `g(x)` into two distinct computations: (1) `z = w^T x + b` and (2) `a = σ(z)` where `σ(z)` is an activation function (sigmoid, ReLU, or tanh).
+
+The first hidden unit in the first hidden layer will perform the following computation:
+
+`z[1]_1 = W[1]_1^T x + b[1]_1` and `a[1]_1 = g(z[1]_1)`
+
+where `W` is a matrix of parameters and `W_1` refers to the first row of this matrix. The parameters associated with the first hidden unit is the vector `W[1]_1` and the scalar `b[1]_1`.
+
+For the second and third hidden units in the first hidden layer, the computation is defined as:
+
+`z[1]_2 = W[1]_2^T x + b[1]_2` and `a[1]_2 = g(z[1]_2)`
+
+`z[1]_3 = W[1]_3^T x + b[1]_3` and `a[1]_3 = g(z[1]_3)`
+
+where each hidden unit has its corresponding parameters `W` and `b`. Moving on, the output layer performs the computation:
+
+`z[2]_1 = W[2]_1^T a[1] + b[2]_1` and `a[2]_1 = g(z[2]_1)`
+
+where `a[1]` is defined as the concatenation of all first layer activations.
+
+The activation `a[2]_1` from the second layer, which is a single scalar as defined by `a[2]_1 = g(z[2]_1)`, represents the neural network’s final output prediction.
 
 2. What is the most effective initialization for neural networks? ([Notes](https://www.deeplearning.ai/ai-notes/initialization/index.html))
 
