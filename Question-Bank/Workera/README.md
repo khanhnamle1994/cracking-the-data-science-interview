@@ -72,7 +72,13 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/linear_regress
 
 Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html](https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html)
 
-4. Explain Generalized Linear Models ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
+4. **Explain Generalized Linear Models** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
+
+- Both linear and logistic regression methods are special cases of a broader family of models, called Generalized Linear Models (GLMs).
+  - Exponential family class distributions have this form: `p(y; eta) = b(y) exp(eta^T T(y) - a(eta))`, where `eta` is the natural parameter of the distribution, `T(y)` is the sufficient statistic, and `a(eta)` is the log partition function.
+  - A fixed choice of `T`, `a`, and `b` defines a family of distributions that is parameterized by `eta`. As we vary `eta`, we then get different distributions within this family.
+  - In the regression example, our parameters are in a Gaussian distribution. In the classification one, our parameters are in a Bernoulli distribution.
+- There’re many other distributions that are members of the exponential family: The multinomial, the Poisson (for modeling count-data); the gamma and the exponential (for modeling continuous, non-negative random variables, such as time intervals); the beta and the Dirichlet (for distributions over probabilities); and many more.
 
 5. In Support Vector Machines, what is the kernel trick? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes3.pdf))
 
@@ -196,6 +202,16 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
 
 4. You are provided with data from a music streaming platform. Each of the 100,000 records indicates the songs a user has listened to in the past month. How would you build a music recommendation system?
 
+**Company Machine Learning Case Studies**
+
+1. [Machine Learning-Powered Search Ranking of Airbnb Experiences](https://medium.com/airbnb-engineering/machine-learning-powered-search-ranking-of-airbnb-experiences-110b4b1a0789)
+
+2. [Machine Learning at Facebook: Understanding Inference at the Edge](https://research.fb.com/wp-content/uploads/2018/12/Machine-Learning-at-Facebook-Understanding-Inference-at-the-Edge.pdf)
+
+3. [Empowering personalized marketing with machine learning](https://eng.lyft.com/empowering-personalized-marketing-with-machine-learning-fd36e6bdeca6)
+
+4. [Learning a Personalized Homepage](https://netflixtechblog.com/learning-a-personalized-homepage-aa8ec670359a)
+
 [back to top](#workera-resources)
 
 ## The Deep Learning Case Study Interview
@@ -237,13 +253,3 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
 8. Given a user’s history of purchases, how do you predict their next purchase?
 
 [back to top](#workera-resources)
-
-**Company Machine Learning Case Studies**
-
-1. [Machine Learning-Powered Search Ranking of Airbnb Experiences](https://medium.com/airbnb-engineering/machine-learning-powered-search-ranking-of-airbnb-experiences-110b4b1a0789)
-
-2. [Machine Learning at Facebook: Understanding Inference at the Edge](https://research.fb.com/wp-content/uploads/2018/12/Machine-Learning-at-Facebook-Understanding-Inference-at-the-Edge.pdf)
-
-3. [Empowering personalized marketing with machine learning](https://eng.lyft.com/empowering-personalized-marketing-with-machine-learning-fd36e6bdeca6)
-
-4. [Learning a Personalized Homepage](https://netflixtechblog.com/learning-a-personalized-homepage-aa8ec670359a)
