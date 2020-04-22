@@ -348,6 +348,20 @@ dL / db_2 = (2 / m) * (\hat{y} - y) * 1
 
 ### 4 - What is the difference between Vanilla, Mini-Batch, and Stochastic Gradient Descent?
 
+**Vanilla Gradient Descent** computes the gradient of the cost function w.r.t. to the parameters `θ` for the entire training dataset: `θ = θ − η ⋅ ∇_θ J(θ)`
+- As we need to calculate the gradients for the whole dataset to perform just one update, batch gradient descent can be very slow and is intractable for datasets that don't fit in memory.
+- Vanilla gradient descent also doesn't allow us to update our model online, i.e. with new examples on-the-fly.
+
+**Stochastic Gradient Descent** in contrast performs a parameter update for each training example `x(i)` and label `y(i)`: `θ = θ − η ⋅ ∇_θ J(θ; x(i); y(i))`
+- Vanilla gradient descent performs redundant computations for large datasets, as it recomputes gradients for similar examples before each parameter update.
+- SGD does away with this redundancy by performing one update at a time. It is therefore usually much faster and can also be used to learn online.
+- It has been shown that when we slowly decrease the learning rate, SGD shows the same convergence behavior as batch gradient descent, almost certainly converging to a local or the global minimum for non-convex and convex optimization respectively.
+
+**Mini-Batch Gradient Descent** finally takes the best of both worlds and performs an update for every mini-batch of n training examples: `θ = θ − η ⋅ ∇_θ J(θ; x(i:i+n); y(i:i+n))`
+- It reduces the variance of the parameter updates, which can lead to more stable convergence.
+- It can make use of highly optimized matrix optimizations common to state-of-the-art deep learning libraries that make computing the gradient w.r.t. a mini-batch very efficient.
+- Common mini-batch sizes range between 50 and 256, but can vary for different applications.
+
 [back to current section](#the-deep-learning-algorithms-interview)
 
 ### 5 - What is your process of optimizing parameters in neural networks? ([Notes](https://www.deeplearning.ai/ai-notes/optimization/))
