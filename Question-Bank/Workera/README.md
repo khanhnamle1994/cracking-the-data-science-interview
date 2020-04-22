@@ -12,7 +12,7 @@ This content comes from Workera's The Skills Boost:
 
 ([Full Resource](https://workera.ai/resources/machine-learning-algorithms-interview/))
 
-1. **Explain different loss functions**
+### 1 - Explain different loss functions
 
 **Cross Entropy**: Cross-entropy loss, or log loss, measures the performance of a classification model whose output is a probability value between 0 and 1. Cross-entropy loss increases as the predicted probability diverges from the actual label.
 
@@ -64,15 +64,21 @@ def MSE(yHat, y):
     return np.sum((yHat - y)**2) / y.size
 ```
 
-2. **Explain Linear Regression** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 2 - Explain Linear Regression ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
 
 Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html](https://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html)
 
-3. **Explain Logistic Regression** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 3 - Explain Logistic Regression ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
 
 Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html](https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html)
 
-4. **Explain Generalized Linear Models** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 4 - Explain Generalized Linear Models ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes1.pdf))
 
 - Both linear and logistic regression methods are special cases of a broader family of models, called Generalized Linear Models (GLMs).
   - Exponential family class distributions have this form: `p(y; eta) = b(y) exp(eta^T T(y) - a(eta))`, where `eta` is the natural parameter of the distribution, `T(y)` is the sufficient statistic, and `a(eta)` is the log partition function.
@@ -80,15 +86,19 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
   - In the regression example, our parameters are in a Gaussian distribution. In the classification one, our parameters are in a Bernoulli distribution.
 - There’re many other distributions that are members of the exponential family: The multinomial, the Poisson (for modeling count-data); the gamma and the exponential (for modeling continuous, non-negative random variables, such as time intervals); the beta and the Dirichlet (for distributions over probabilities); and many more.
 
+[back to current section](#the-machine-learning-algorithms-interview)
+
 5. In Support Vector Machines, what is the kernel trick? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes3.pdf))
 
-6. **Why is the Naive Bayes classifier called Naive?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes2.pdf))
+### 6 - Why is the Naive Bayes classifier called Naive? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes2.pdf))
 
 - In Naive Bayes, in order to model `p(x|y)`, we will make a very strong assumption. We will assume that the `x_i`’s are conditionally independent given y. This assumption is called the **Naive Bayes (NB) assumption**.
 - For instance, if `y = 1` means spam email; “buy” is word 2087 and “price” is word 39831; then we are assuming that if I tell you `y = 1` (that a particular piece of email is spam), then knowledge of `x_2087` (knowledge of whether “buy” appears in the message) will have no effect on your beliefs about the value of `x_39831` (whether “price” appears). More formally, this can be written `p(x_2087|y) = p(x_2087|y, x_39831)`.
 - Note that this is not the same as saying that `x_2087` and `x_39831` are independent, which would have been written ``“p(x_2087) = p(x_2087|x_39831)”``; rather, we are only assuming that `x_2087` and `x_39831` are conditionally independent given y.
 
-7. **How does a discriminative model differ from a generative model?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes2.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 7 - How does a discriminative model differ from a generative model? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes2.pdf))
 
 - Consider a classification problem in which we want to learn to distinguish between elephants (y = 1) and dogs (y = 0), based on some features of an animal. Given a training set, an algorithm like logistic regression or the perceptron algorithm (basically) tries to find a straight line—that is, a decision boundary—that separates the elephants and dogs. Then, to classify a new animal as either an elephant or a dog, it checks on which side of the decision boundary it falls, and makes its prediction accordingly.
 - Here’s a different approach. First, looking at elephants, we can build a model of what elephants look like. Then, looking at dogs, we can build a separate model of what dogs look like. Finally, to classify a new animal, we can match the new animal against the elephant model, and match it against the dog model, to see whether the new animal looks more like the elephants or more like the dogs we had seen in the training set.
@@ -98,13 +108,17 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
 
 `p(y|x) = [p(x|y) * p(y)] / p(x)`
 
-8. **What is the bias-variance tradeoff?** ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 8 - What is the bias-variance tradeoff? ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
 
 - High bias is synonymous with underfitting: the model didn’t gather enough information from the training set, and doesn’t capture the link between the features and the target.
 - High variance is synonymous with overfitting:  the model is too closely related to the examples in the training set and doesn’t generalize well to other examples.
 - If the error is still too high, then the data is simply noisy. The model is neither overfitting or underfitting, and the high error is simply due to the amount of noise in the dataset.
 
-9. **How to do error analysis in a machine learning pipeline?** ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 9 - How to do error analysis in a machine learning pipeline? ([Notes](http://cs229.stanford.edu/section/error-analysis.pdf))
 
 - Even though understanding whether our poor test error is due to high bias or high variance is important, knowing which parts of the machine learning algorithm lead to this error or score is crucial.
 - If you build a complicated system, you might want to figure out how much error is attributable to each of the components. One thing to do is plug in the ground-truth for each component, and see how accuracy changes.
@@ -113,7 +127,9 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
 - When presenting the results in a paper, ablative analysis really helps analyzing the features that helped decreasing the misclassification rate. Instead of simply giving the loss/error rate of the algorithm, we can provide evidence that some specific features are actually more important than others.
 - In brief, do not waste your time improving parts of your algorithm that won’t really help decreasing your error rate, and focus on what really matters.
 
-10. **How to do cross-validation?** ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 10 - How to do cross-validation? ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
 
 - In **hold-out cross validation**, we do the following:
   1. Randomly split training set `S` into `S_train` and `S_cv` (the hold-out cross validation set).
@@ -124,7 +140,9 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
   - This procedure may be more computationally expensive, since we now need to train each model `k` times.
   - If we choose `k = m`, this is called **leave-one-out cross validation**.
 
-11. **How to do feature selection?** ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 11 - How to do feature selection? ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
 
 - Given `n` features, there are `2^n` possible feature subsets, and thus feature selection can be posed as a model selection problem over `2^n` possible models. For large values of `n`, it's usually too expensive to explicitly enumerate over and compare all `2^n` models, and so typically some heuristic search procedure is used to find a good feature subset.
 - *Wrapper model feature selection* is a procedure that "wraps" around your learning algorithm, and repeatedly makes calls to the learning algorithm to evaluate how well it does using different feature subsets. This includes *forward search* and *backward search*.
@@ -134,12 +152,16 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
   - One possible choice of the score would be define `S(i)` to be the correlation between `x_i` and `y`, as measured on the training data. This would result in our choosing the features that are the most strongly correlated with the class labels.
   - In practice, it is more common to choose `S(i)` to be the **KL divergence** between `x_i` and `y`. If `x_i` and `y` are independent random variables, then the KL-divergence between the two distributions will be 0. This is consistent with the idea if `x_i` and `y` are independent, then `x_i` is clearly very "non-informative" about `y`, and thus the score `S(i)` should be small. Conversely, if `x_i` is very "informative" about `y`, then their KL-divergence would be large.
 
-12. **What is the Bayesian way to combat overfitting?** ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 12 - What is the Bayesian way to combat overfitting? ([Notes](http://cs229.stanford.edu/notes/cs229-notes5.pdf))
 
 - [Using Maximum a Posteriori instead of Maximum Likelihood to estimate our parameters](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Data-Science-Prep/MLE-vs-MAP.md). They have the same formula except for the prior term at the end of MAP.
 - Using this choice of prior, the fitted parameters `theta_MAP` will have smaller norm than that selected by maximum likelihood. In practice, this causes the Bayesian MAP estimate to be less susceptible to overfitting than the ML estimate of the parameters. For example, Bayesian logistic regression turns out to be an effective algorithm for text classification, even though in text classification we usually have n ≫ m.
 
-13. **How does k-Means clustering algorithm work?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7a.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 13 - How does k-Means clustering algorithm work? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7a.pdf))
 
 - The k-Means clustering algorithm is as follows:
   1. Initialize k **cluster centroids** randomly.
@@ -149,14 +171,18 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
 - The **distortion function** measures the sum of squared distances between each training example and the cluster centroid to which it has been assigned. This value monotonically decrease and will eventually converge.
 - This distortion function is non-convex, and so coordinate descent on it is not guaranteed to converge to the global minimum. In other words, k-means can be susceptible to local optima.
 
-14. **Why is the EM algorithm useful?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7b.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 14 - Why is the EM algorithm useful? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes7b.pdf))
 
 - The Expectation-Maximization algorithm is used for density estimation. It is an iterative algorithm that has 2 main steps:
   - In the E-step, it tries to "guess" the values of the random variables `z`s.
   - In the M-step, it updates the parameters of our model based on our guesses. Since in the M-step we are pretending that the guesses in the first part were correct, the maximization becomes easy.
 - The EM-algorithm is reminiscent of the K-means clustering algorithm, except that instead of the "hard" cluster assignments `c`, we instead have the "soft" assignments `w_j`. Similar to K-means, it is also susceptible to local optima, so reinitializing at several different initial parameters may be a good idea.
 
-15. **How does Principal Component Analysis work?** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes10.pdf))
+[back to current section](#the-machine-learning-algorithms-interview)
+
+### 15 - How does Principal Component Analysis work? ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes10.pdf))
 
 - PCA tries to identify the subspace in which the data approximately lies.
   - Prior to running PCA, we typically first preprocess the data by normalizing each feature to have mean 0 and variance 1. We do this by subtracting the mean and dividing by the empirical standard deviation.
@@ -168,13 +194,15 @@ Read these notes: [https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regre
   - Another standard application is to preprocess a dataset to reduce its dimension before running a supervised learning algorithm with the inputs. Apart from computational benefits, reducing the data's dimension can also reduce the complexity of the hypohtesis class considered and help avoid overfitting.
   - Lastly, we can also view PCA as a noise reduction algorithm.
 
+[back to current section](#the-machine-learning-algorithms-interview)
+
 [back to top](#workera-resources)
 
 ## [The Deep Learning Algorithms Interview](https://github.com/khanhnamle1994/cracking-the-data-science-interview/blob/master/Question-Bank/Workera/Deep-Learning-Algorithms-Interview.pdf)
 
 ([Full Resource](https://workera.ai/resources/deep-learning-algorithms-interview/))
 
-1. **Explain Neural Networks from first principle** ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes-deep_learning.pdf))
+### 1 - Explain Neural Networks from first principle ([Notes](http://cs229.stanford.edu/notes-spring2019/cs229-notes-deep_learning.pdf))
 
 Suppose we have three input features `x1`, `x2`, `x3` which are collectively called the *input layer*, four hidden units which are collectively called the *hidden layer* and one output neuron called the *output layer*. The term hidden layer is called “hidden” because we do not have the ground truth/training value for the hidden units. This is in contrast to the input and output layers, both of which we know the ground truth values from `(x(i), y(i))`.
 
@@ -205,23 +233,138 @@ where `a[1]` is defined as the concatenation of all first layer activations.
 
 The activation `a[2]_1` from the second layer, which is a single scalar as defined by `a[2]_1 = g(z[2]_1)`, represents the neural network’s final output prediction.
 
-2. **What is the most effective initialization for neural networks?** ([Notes](https://www.deeplearning.ai/ai-notes/initialization/index.html))
+[back to current section](#the-deep-learning-algorithms-interview)
+
+### 2 - What is the most effective initialization for neural networks? ([Notes](https://www.deeplearning.ai/ai-notes/initialization/index.html))
 
 - To prevent the gradients of the network’s activations from vanishing or exploding, we will stick to the following rules of thumb:
   - The mean of the activations should be zero.
   - The variance of the activations should stay the same across every layer.
-- Under these two assumptions, the backpropagated gradient signal should not be multiplied by values too small or too large in any layer. It should travel to the input layer without exploding or vanishing.
+- Under these two assumptions, the back-propagated gradient signal should not be multiplied by values too small or too large in any layer. It should travel to the input layer without exploding or vanishing.
 - The recommended initialization is **Xavier initialization**, where all the weights of each layer are picked randomly from a normal distribution with mean `\mu = 0` and variance `\sigma^2 = 1 / n^[l-1]`, where `n^[l-1]` is the number of neuron in layer `l - 1`. Biases are initialized with zeros.
 
-3. Explain how back-propagation works in a fully-connected neural network ([Notes](http://cs230.stanford.edu/section/3/))
+[back to current section](#the-deep-learning-algorithms-interview)
 
-4. What is the difference between Vanilla, Mini-Batch, and Stochastic Gradient Descent?
+### 3 - Explain how back-propagation works in a fully-connected neural network ([Notes](http://cs230.stanford.edu/section/3/))
 
-5. What is your process of optimizing parameters in neural networks? ([Notes](https://www.deeplearning.ai/ai-notes/optimization/))
+When datasets are large and high-dimensional, it is computationally very expensive (sometimes impossible!) to find an analytical solution for the optimal parameters of your network. Instead, we use optimization methods. A vanilla optimization approach would be to sample different combinations of parameters and choose the one with the lowest loss value.
+- Is this a good idea?
+- Would it be possible to extract another piece of information to direct our search towards the optimal parameters?
 
-6. What is your strategy for hyper-parameter tuning? ([Notes](http://cs230.stanford.edu/section/7/))
+This is exactly what *gradient descent* does! Apart from the loss value, gradient descent computes the local gradient of the loss when evaluating potential parameters. This information is used to decide which direction the search should go to find better parameter values. This extra piece of information (the local gradient) can be computed relatively easily using *backpropagation*. This recursive algorithm breaks up complex derivatives into smaller parts through the *chain rule*.
 
-7. What is your approach to write a deep learning paper? ([Notes](http://cs230.stanford.edu/section/8/))
+#### Univariate Regression
+
+Let’s consider a linear regression. You have a data set `(x, y)` with `m` examples. In other words, `x = (x_1, ..., x_m)` and `y = (y_1, ..., y_m)` are row vectors of `m` scalar examples. The goal is to find the scalar parameters `w` and `b` such that the line `y = wx + b` optimally fits the data. This can be achieved using gradient descent.
+
+![model](assets/model1.png)
+
+**Forward Propagation**
+
+The first step of gradient descent is to compute the loss. To do this, define your model’s output and loss function. In this regression setting, we use the mean squared error loss.
+
+```
+\hat{y} = wx + b
+L = (1 / m) * ||\hat{y} - y||^2
+```
+
+**Backward Propagation**
+
+The next step is to compute the local gradient of the loss with respect to the parameters (i.e. `w` and `b`). This means you need to calculate derivatives. Note that values stored during the forward propagation are used in the gradient equations.
+
+```
+dL / dw = (2 / m) * (\hat{y} - y) * x^T
+dL / db = (2 / m) * (\hat{y} - y) * 1
+```
+
+#### Multivariate Regression
+
+Now consider the case where `X` is a matrix of shape `(n, m)` and `y` is still a row vector of shape `(1, m)`. Instead of a single scalar value, the weights will be a vector (one element per feature) of shape `(1, n)`. The bias parameter is still a scalar.
+
+![model](assets/model2.png)
+
+**Forward Propagation**
+
+```
+\hat{y} = wx + b
+L = (1 / m) * ||\hat{y} - y||^2
+```
+
+**Backward Propagation**
+
+```
+dL / dw = (2 / m) * (\hat{y} - y) * x^T
+dL / db = (2 / m) * (\hat{y} - y) * 1
+```
+
+#### Two Layer Linear Network
+
+Consider stacking two linear layers together. You can introduce a hidden variable `Z` of shape `(k, m)`, which is the output of the first linear layer. The first layer is parameterized by a weight matrix `W_1` of shape `(k, n)` and bias `b_1` of shape `(k, 1)` broadcasted to `(k, m)`. The second layer will be the same as in the multivariate regression case, but its input will be `Z` instead of `X`.
+
+![model](assets/model3.png)
+
+**Forward Propagation**
+
+```
+Z = W_1 * X + b_1
+\hat{y} = w_2 * Z + b_2
+L = (1 / m) * ||\hat{y} - y||^2
+```
+
+**Backward Propagation**
+
+```
+dL / dw_1 = w_2^T * (2 / m) * (\hat{y} - y) * X^T
+dL / db_1 = w_2^T * (2 / m) * (\hat{y} - y) * 1
+dL / dw_2 = (2 / m) * (\hat{y} - y) * Z^T
+dL / db_2 = (2 / m) * (\hat{y} - y) * 1
+```
+
+#### Two Layer Nonlinear Network
+
+In this example, before sending `Z` as the input to the second layer, you will pass it through the sigmoid function. The output is denoted `A` and is the input of the second layer.
+
+![model](assets/model4.png)
+
+**Forward Propagation**
+
+```
+Z = W_1 * X + b_1
+A = sigmoid(Z)
+\hat{y} = w_2 * A + b_2
+L = (1 / m) * ||\hat{y} - y||^2
+```
+
+**Backward Propagation**
+
+```
+dL / dw_1 = [ (w_2^T * (2 / m) * (\hat{y} - y)) \cdot A \cdot (1 - A) ] * X^T
+dL / db_1 = [ (w_2^T * (2 / m) * (\hat{y} - y)) \cdot A \cdot (1 - A) ] * 1
+dL / dw_2 = (2 / m) * (\hat{y} - y) * A^T
+dL / db_2 = (2 / m) * (\hat{y} - y) * 1
+```
+
+[back to current section](#the-deep-learning-algorithms-interview)
+
+### 4 - What is the difference between Vanilla, Mini-Batch, and Stochastic Gradient Descent?
+
+[back to current section](#the-deep-learning-algorithms-interview)
+
+### 5 - What is your process of optimizing parameters in neural networks? ([Notes](https://www.deeplearning.ai/ai-notes/optimization/))
+
+[back to current section](#the-deep-learning-algorithms-interview)
+
+### 6 - What is the techniques to regularize neural networks? ([Notes](https://www.deeplearning.ai/ai-notes/regularization/))
+
+[back to current section](#the-deep-learning-algorithms-interview)
+
+### 7 - What is your strategy for hyper-parameter tuning? ([Notes](http://cs230.stanford.edu/section/7/))
+
+[back to current section](#the-deep-learning-algorithms-interview)
+
+### 8 - What is your approach to write a deep learning paper? ([Notes](http://cs230.stanford.edu/section/8/))
+
+[back to current section](#the-deep-learning-algorithms-interview)
 
 [back to top](#workera-resources)
 
