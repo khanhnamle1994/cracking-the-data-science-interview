@@ -205,7 +205,13 @@ where `a[1]` is defined as the concatenation of all first layer activations.
 
 The activation `a[2]_1` from the second layer, which is a single scalar as defined by `a[2]_1 = g(z[2]_1)`, represents the neural network’s final output prediction.
 
-2. What is the most effective initialization for neural networks? ([Notes](https://www.deeplearning.ai/ai-notes/initialization/index.html))
+2. **What is the most effective initialization for neural networks?** ([Notes](https://www.deeplearning.ai/ai-notes/initialization/index.html))
+
+- To prevent the gradients of the network’s activations from vanishing or exploding, we will stick to the following rules of thumb:
+  - The mean of the activations should be zero.
+  - The variance of the activations should stay the same across every layer.
+- Under these two assumptions, the backpropagated gradient signal should not be multiplied by values too small or too large in any layer. It should travel to the input layer without exploding or vanishing.
+- The recommended initialization is **Xavier initialization**, where all the weights of each layer are picked randomly from a normal distribution with mean `\mu = 0` and variance `\sigma^2 = 1 / n^[l-1]`, where `n^[l-1]` is the number of neuron in layer `l - 1`. Biases are initialized with zeros.
 
 3. Explain how back-propagation works in a fully-connected neural network ([Notes](http://cs230.stanford.edu/section/3/))
 
