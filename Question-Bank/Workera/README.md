@@ -366,9 +366,21 @@ dL / db_2 = (2 / m) * (\hat{y} - y) * 1
 
 ### 5 - What is your process of optimizing parameters in neural networks? ([Notes](https://www.deeplearning.ai/ai-notes/optimization/))
 
+The way you define the cost function will dictate the performance of your model on the task at hand. The diagram below illustrates the process of finding a model that performs well.
+
+![optimizationChart](assets/optimization_chart.png)
+
+- To find parameter values that achieve a function’s minimum, you can either try to derive a closed form solution algebraically or approximate it using an iterative method. In machine learning, iterative methods such as gradient descent are often the only option because cost functions are dependent on a large number of variables, and there is almost never any practical way to find a closed form solution for the minimum.
+- For gradient descent, you must first initialize the parameter values so that you have a starting point for optimization. Then, you adjust the parameter values iteratively to reduce the value of the cost function. At every iteration, parameter values are adjusted according to the opposite direction of the gradient of the cost; that is, in the direction that reduces the cost.
+- To use gradient descent, you must choose values for hyperparameters such as learning rate and batch size.
+  - The learning rate influences the optimization’s convergence. It also counterbalances the influence of the cost function’s curvature.
+  - Batch size is the number of data points used to train a model in each iteration. Typical small batches are 32, 64, 128, 256, 512, while large batches can be thousands of examples.
+- Now that you have a starting point, a learning rate, and a batch size, it’s time to update the parameters iteratively to move toward the cost function’s minimum.
+- The choice of optimizer influences both the speed of convergence and whether it occurs. Several alternatives to the classic gradient descent algorithms have been developed in the past few years: Momentum, RMSprop, and Adam.
+
 [back to current section](#the-deep-learning-algorithms-interview)
 
-### 6 - What is the techniques to regularize neural networks? ([Notes](https://www.deeplearning.ai/ai-notes/regularization/))
+### 6 - What are the techniques to regularize neural networks? ([Notes](https://www.deeplearning.ai/ai-notes/regularization/))
 
 [back to current section](#the-deep-learning-algorithms-interview)
 
