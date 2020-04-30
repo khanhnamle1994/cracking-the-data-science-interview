@@ -380,11 +380,7 @@ The way you define the cost function will dictate the performance of your model 
 
 [back to current section](#the-deep-learning-algorithms-interview)
 
-### 6 - What are the techniques to regularize neural networks? ([Notes](https://www.deeplearning.ai/ai-notes/regularization/))
-
-[back to current section](#the-deep-learning-algorithms-interview)
-
-### 7 - What is your strategy for hyper-parameter tuning? ([Notes](http://cs230.stanford.edu/section/8/))
+### 6 - What is your strategy for hyper-parameter tuning? ([Notes](http://cs230.stanford.edu/section/8/))
 
 Lots of hyperparameters are involved in the design of a deep neural network. Finding the best set of hyperparameters is an optimization task in of itself! In most cases, the space of possible hyperparameters is far too large for us to try all of them. Here are some strategies for solving this problem.
 
@@ -444,7 +440,14 @@ If you’re interested in learning more or trying out the optimizer, here is a g
 
 [back to current section](#the-deep-learning-algorithms-interview)
 
-### 8 - What is your approach to write a deep learning paper? ([Notes](http://cs230.stanford.edu/section/7/))
+### 7 - What is your approach to write a deep learning paper? ([Notes](http://cs230.stanford.edu/section/7/))
+
+- When writing your paper, always remember your audience. In particular,
+  - Your audience is already well-versed in deep learning. Hence, there is no need to describe in detail common deep learning techniques. For example, you can refer to methods such as convolutions, pooling, dropout, batch normalization, recurrent neural networks or L2 regularization without explaining their meaning. If you are using well-known data augmentation methods such as image rotation and translation, you can mention it without showing the augmented images.
+  - Your audience is busy. Hence, be as short and concise as possible and focus on the key insights of your paper. If the key insight of your paper is the loss function, write out the loss function and elaborate on it. If the key insight of your paper is the model architecture, draw it out and explain the key differences with prior work. For all other details that are common in deep learning, it’s best to state it concisely.
+  - Your audience may want to reimplement your paper. Hence, it’s important to give details which will help them to reimplement it. Once again, there’s no need to go overboard with details. Think about what will help you re-implement your own paper, and what were the main difficulties you faced when implementing your project were: elaborate more on those points.
+- The abstract, introduction and conclusion are essential parts of a paper. When writing these parts, it’s important to describe the *context* of your paper, the *motivation* behind your work and the *key insights* drawn from your work. It is also good to mention some results to entice your audience to read more. Refer to the section below on how to write an abstract for more details.
+- It is also important to provide explanations behind your decisions. Instead of stating that you tuned the number of frozen layers in your network, go beyond that and explain why you believe that a certain hyperparameter is the most important to tune in your network. Doing so also helps your audience fine-tune your network for their own dataset.
 
 [back to current section](#the-deep-learning-algorithms-interview)
 
