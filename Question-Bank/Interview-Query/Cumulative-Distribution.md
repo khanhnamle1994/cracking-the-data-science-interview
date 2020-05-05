@@ -21,7 +21,7 @@ This question was asked by: Square
 
 Given the two tables, write a SQL query that creates a cumulative distribution of number of comments per user. Assume bin buckets class intervals of one.
 
-## Solution
+<!-- ## Solution
 This question is similar to the question about creating a histogram from writing a query. However creating a cumulative distribution plot requires another couple of steps.
 
 We can start out with the query to count the frequency of each user by joining `users` to `user_comments` and then grouping by the user id to get the number of comments per user.
@@ -94,4 +94,4 @@ FROM freq AS f1
 LEFT JOIN freq AS f2
     ON f1.frequency >= f2.frequency
 GROUP BY 1
-```
+``` -->

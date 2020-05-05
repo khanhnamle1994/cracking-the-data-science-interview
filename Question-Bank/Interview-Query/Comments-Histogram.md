@@ -21,7 +21,7 @@ This question was asked by: Facebook
 
 Write a SQL query to create a histogram of number of comments per user in the month of January 2019. Assume bin buckets class intervals of one.
 
-## Solution
+<!-- ## Solution
 Let's break down the solution. Here are the things we have to note.
 
 A histogram with bin buckets of one means that we can avoid the logical overhead of grouping frequencies into specific intervals when we run a simple GROUP BY in SQL. Since a histogram is a bar chart of frequencies for each user, the only thing we need to do is select the total count of user comments in the month of January 2019 and then group by that count again.
@@ -56,4 +56,4 @@ WITH hist AS (
 SELECT comment_count, COUNT(*) AS frequency
 FROM hist
 GROUP BY 1
-```
+``` -->

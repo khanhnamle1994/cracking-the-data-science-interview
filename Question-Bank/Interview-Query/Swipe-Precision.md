@@ -43,7 +43,7 @@ Write a SQL query to output the average number of right swipes for two different
 |        33.0       | control |       100       |    590    |
 |        34.0       |   test  |       100       |    568    |
 
-## Solution
+<!-- ## Solution
 If you're a data scientist in charge of improving recommendations at a company and you develop an algorithm, how do you know if it performs better than the existing one?
 
 One metric to measure performance is called **precision** (also called positive predictive value), which has applications in machine learning as well as information retrieval. It is defined as the **fraction of relevant instances among the retrieved instances.**
@@ -188,4 +188,4 @@ INNER JOIN (
     ON subset.user_id = sr.user_id
 WHERE rank <= 100
 GROUP BY 1
-```
+``` -->

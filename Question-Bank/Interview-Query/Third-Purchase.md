@@ -13,7 +13,7 @@ This question was asked by: Uber
 
 Given the revenue transaction table above that contains a user_id, created_at timestamp, and transaction revenue, write a query that finds the third purchase of every user.
 
-## Solution
+<!-- ## Solution
 This problem set is relatively straight forward. We can first find the order of purchases for every user by looking at the created_at column and ordering by user_id and the created_at column. However, we still need an indicator of which purchase was the third value.
 
 In this case, we need to apply the RANK function to the transactions table. The RANK function is a window function that assigns a rank to each row in the partition of the result set.
@@ -39,4 +39,4 @@ FROM (
     FROM transactions
 ) AS t
 WHERE rank_val = 3;
-```
+``` -->

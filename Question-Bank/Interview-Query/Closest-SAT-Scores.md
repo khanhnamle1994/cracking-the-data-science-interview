@@ -28,7 +28,7 @@ Output:
 |:-----------:|:-------------:|:----------:|
 |    Alice    |     Scott     |     90     |
 
-## Solution
+<!-- ## Solution
 The question requires thinking about SQL in a creative manner. Given it's only one table with two columns, we have to self-reference different creations of the same table. It's helpful to think about these problems in the form of two different tables with the same values.
 
 There are two parts to this question, the first part is figuring out each combination of two students and their SAT scores. The second part is figuring out which two students scores are the closest.
@@ -62,4 +62,4 @@ INNER JOIN scores AS s2
         AND s1.id > s2.id
 ORDER BY 3 ASC
 LIMIT 1
-```
+``` -->

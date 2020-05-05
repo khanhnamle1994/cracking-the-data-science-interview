@@ -23,7 +23,7 @@ output = [('have', 'free'),
  ('other', 'activities.')]
 ```
 
-## Solution:
+<!-- ## Solution:
 There are a number of ways to solve this. At it's core, bi-grams are two words that are placed next to each other. Bi-grams give additional complexity in feature extraction versus just bag-of-words where each word frequency is set as it's own feature. Two words versus one in feature engineering for a NLP model gives an interaction effect.
 
 To actually parse them out of a string, we need to first split the input string. Then, once we've identified each individual word, we need to loop through each and append the subsequent word to make a tuple. This tuple gets added to a list that we eventually return.
@@ -38,4 +38,4 @@ def find_bigrams(sentence):
     #strip the whitespace and lower the word to ensure consistency
     bigram_list.append((input_list[i].strip().lower(), input_list[i+1].strip().lower()))
   return bigram_list
-```
+``` -->

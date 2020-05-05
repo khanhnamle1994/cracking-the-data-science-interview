@@ -24,7 +24,7 @@ For example, if Alice and Bob both combined income make 200K and work on a proje
 
 Write a query to select all projects that are over budget. Assume that employees only work on one project at a time.
 
-## Solution
+<!-- ## Solution
 Let's map out what the formula for constructing overbudget. In the question there was a simple example. If we define E as number of employees, PL as project length in days, S as in total salaries, and B as budget. Then our formula can be:
 
 **PL / 365 * (S*E) > B**
@@ -83,4 +83,4 @@ FROM (
         ON e.id = ep.employee_id
     GROUP BY 1,2,3
 ) AS temp
-```
+``` -->

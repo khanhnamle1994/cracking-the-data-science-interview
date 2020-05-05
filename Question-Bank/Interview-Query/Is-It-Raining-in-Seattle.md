@@ -5,7 +5,7 @@ You are about to get on a plane to Seattle. You want to know if you should bring
 
 What is the probability that it's actually raining in Seattle?
 
-## Solution
+<!-- ## Solution
 This question can be solved in two ways in the schools of thought: **Bayesian** or **Frequentist**. Let's do a thought experiment and try both.
 
 ### Frequentist
@@ -57,4 +57,4 @@ Note how B, C, and D are defined in relation to whether your friends tell you it
 ### Intuition
 Intuitively, if you might wonder why the answer 8/9 is quite a bit lower than 26/27. Imagine we repeated this task 27 times, we would expect that there was only one time when they all three lied out of 27 trials. But in our situation, we don't want to look at all 27 experiments, because we know that our friends gave the same answer, which only happens when they're all honest or when they all lie. They are all honest with (2/3)^3 = 8/27 probability, so in 8 of the experiments. That leaves us with 9 experiments when they all gave the same answer.
 
-So 8/9 times when they all give the same answer, they're honest.
+So 8/9 times when they all give the same answer, they're honest. -->

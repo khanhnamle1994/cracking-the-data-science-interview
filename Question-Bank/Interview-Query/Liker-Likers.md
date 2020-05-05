@@ -31,7 +31,7 @@ Write a query to count the number of liker's likers (the users that like the lik
 |   B  |   2   |
 |   D  |   1   |
 
-## Solution
+<!-- ## Solution
 The solution prompt in itself is a bit confusing and it helps to look at the examples to understand the exact link between the users and likers.
 
 Each user has a specified liker but since the likers can also be users, they can also show up in the left most column as we see with values B and D. B and D happen to be the only ones that are **both users and likers**, which means that they would be only values that could be specified as the liker's likers.
@@ -66,4 +66,4 @@ INNER JOIN liker AS l2
     ON l1.liker = l2.user
 GROUP BY 1
 ORDER BY 1
-```
+``` -->

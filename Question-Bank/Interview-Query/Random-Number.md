@@ -3,7 +3,7 @@ This question was asked by: Facebook
 
 Given a stream of numbers, select a random number from the stream, with O(1) space in selection.
 
-## Solution
+<!-- ## Solution
 We need to prove that every element is picked with 1/n probability where n is the number of items seen so far. For every new stream item x, we pick a random number from 0 to the count-1. If the picked number is count-1, we replace the previous result with x.
 
 ```
@@ -46,4 +46,4 @@ To simplify proof, let us first consider the last element, the last element repl
 
 Let us now talk about second last element. When second last element processed first time, the probability that it replaced the previous result is 1/(n-1). The probability that previous result stays when nth item is considered is (n-1)/n. So probability that the second last element is picked in last iteration is [1/(n-1)] * [(n-1)/n] which is 1/n.
 
-Similarly, we can prove for third last element and others.
+Similarly, we can prove for third last element and others. -->

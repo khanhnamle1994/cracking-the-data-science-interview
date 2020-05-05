@@ -5,7 +5,7 @@ Suppose there exists a new airline named Jetco flies domestically across North A
 
 What factors could have biased this result and what would you look into?
 
-## Solution
+<!-- ## Solution
 Solving for this problem means we have to look at the problem set holistically.
 * What assumptions are being made?
 * What is being left out of the problem statement?
@@ -17,4 +17,4 @@ Let's look at one of the parts where the question prompt states that Jetco **fli
 
 What about the time it takes for a passenger to board with a carry-on suitcase versus a passenger with just a small bag? If Jetco only allowed customers to carry on one small item or added fees for additional luggage, this would create less customers with added baggage which would decrease the overall boarding time. A metric to measure here would then be comparing the **average boarding time per passenger per bag**. If this number is equivalent to other airlines, then we can determine that Jetco may have less carry-ons on average than other airline companies.
 
-Lastly what if Jetco moved more of the logistic processes higher in the airport funnel. An example is having the ticketing process all moved towards the gate and security and not before boarding. That way the total amount of time is still the same, just shifted upwards. We could analyze the total time spent from arriving at the airport to seat boarding time to figure out if Jetco actually has a faster overall process.
+Lastly what if Jetco moved more of the logistic processes higher in the airport funnel. An example is having the ticketing process all moved towards the gate and security and not before boarding. That way the total amount of time is still the same, just shifted upwards. We could analyze the total time spent from arriving at the airport to seat boarding time to figure out if Jetco actually has a faster overall process. -->

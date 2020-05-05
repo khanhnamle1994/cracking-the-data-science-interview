@@ -15,7 +15,7 @@ Note that if the customer purchased two things on the same day that does not cou
 |  quantity  |    int   |
 |    price   |   float  |
 
-## Solution
+<!-- ## Solution
 This question is a little tricky because we have to note the dates that each user purchased products. We can't just group by `user_id` and look where the number of products purchased is greater than one because of the upsell condition. We have to group by both the date field and the `user_id` to get individual transaction days for each user.
 
 ```
@@ -45,4 +45,4 @@ FROM (
     -- Filter out users that only bought once
     HAVING COUNT(*) > 1
 ) AS s
-```
+``` -->

@@ -29,7 +29,7 @@ Given a table of product subscriptions with a subscription start date and end da
 |    3    |   True  |
 |    4    |  False  |
 
-## Solution
+<!-- ## Solution
 Let's take a look at each of the conditions first and see how they could be triggered. Given two date ranges, what determines if the subscriptions would overlap?
 
 Let's set an example with two dateranges: A and B.
@@ -88,4 +88,4 @@ LEFT JOIN subscriptions AS s2
         AND s1.start_date <= s2.end_date
         AND s1.end_date >= s2.start_date
 GROUP BY 1
-```
+``` -->

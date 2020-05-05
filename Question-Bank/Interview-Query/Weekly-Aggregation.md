@@ -22,7 +22,7 @@ output = [
 ]
 ```
 
-## Solution
+<!-- ## Solution
 This question sounds like it should be a SQL question doesn't it? Weekly aggregation implies a form of GROUP BY in a regular SQL or pandas question. In either case, aggregation on a dataset of this form by week would be pretty trivial.
 
 But since it's a scripting question, it's trying to pry out if the candidate deal with unstructured data. Data scientists deal with a lot of unstructured data.
@@ -75,4 +75,4 @@ def group_week(ts, delim='-'):
         out.append(week)
 
     return out
-```
+``` -->

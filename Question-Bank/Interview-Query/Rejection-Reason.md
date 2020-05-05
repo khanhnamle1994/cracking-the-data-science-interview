@@ -5,7 +5,7 @@ Suppose we have a binary classification model that classifies whether or not an 
 
 Given we don't have access to the feature weights, how would we give each rejected applicant a reason why they got rejected?
 
-## Solution
+<!-- ## Solution
 Let's pretend that we have three people: Alice, Bob, and Candace that have all applied for a loan. Simplifying the financial lending loan model, let's assume the only features are **total number of credit cards**, **dollar amount of current debt** and **credit age**.
 
 Let's say Alice, Bob, and Candace all have the same number of credit cards and credit age but not the same dollar amount of curent debt.
@@ -21,4 +21,4 @@ These graphs are called **partial depedence plots**!
 
 The partial dependence plot is calculated only after the model has been fit. The model is fit on the real data. In that real data, loans are given dependent on different feaures. But after the model is fit, we could start by taking all the characteristics of a loan and plotting them against the dependent variable **whilst keeping all of the other features the same** except for the one feature variable we want to test.
 
-We then use the model to predict the loan qualification but we change the debt dollar amount before making a prediction. We first predict the loan qualification for an example person by setting it to 20K. We then predict it again at $19K. Then predict again for $18K. And so on. We trace out how predicted probability of loan qualification (on the vertical axis) as we move from small values of debt dollar amount to large values (on the horizontal axis). This way we are able to see how a model's features affect the score without digging into the classifier feature weights.
+We then use the model to predict the loan qualification but we change the debt dollar amount before making a prediction. We first predict the loan qualification for an example person by setting it to 20K. We then predict it again at $19K. Then predict again for $18K. And so on. We trace out how predicted probability of loan qualification (on the vertical axis) as we move from small values of debt dollar amount to large values (on the horizontal axis). This way we are able to see how a model's features affect the score without digging into the classifier feature weights. -->

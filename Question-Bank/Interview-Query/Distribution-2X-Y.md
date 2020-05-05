@@ -1,7 +1,7 @@
 ## Problem
 Given X and Y are independent variables with normal distributions, what is the mean and variance of the distribution of 2X - Y when the corresponding distributions are X ~ N (3, 2²) and Y ~ N(1, 2²)?
 
-## Solution
+<!-- ## Solution
 Because the linear combination of the two independent normal random variables is a normal random variable, we can solve the first problem of the mean by just substituting the given values into the formula for the existing two means in the problem statement.
 
 For the two variables X and Y, the mean is calculated simply by:
@@ -18,4 +18,4 @@ where `𝐶𝑜𝑣(𝑋,𝑌)` is the covariance between X and Y. The covarianc
 𝑉𝑎𝑟(𝑎𝑋−𝑏𝑌) = 𝑎2 𝑉𝑎𝑟(𝑋) + 𝑏2 𝑉𝑎𝑟(𝑌) − 2𝑎𝑏 * 𝐶𝑜𝑣(𝑋,𝑌)
 = 4·𝑉𝑎𝑟(𝑋) + 𝑉𝑎𝑟(𝑌) − 0
 = 4·4 + 4 = 20
-```
+``` -->

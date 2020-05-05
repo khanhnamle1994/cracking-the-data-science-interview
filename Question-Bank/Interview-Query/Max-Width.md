@@ -19,7 +19,7 @@ Output =
 ]
 ```
 
-## Solution
+<!-- ## Solution
 Since extra spaces between words should be distributed as evenly as possible, we need to implement round robin logic. Round robin logic can be implemented by iterating over each value in the array, checking if it is over the max width, and then adding spaces to the existing line if it has reached capacity.
 
 The following line implements the round robin logic:
@@ -50,4 +50,4 @@ def fullJustify(self, words, maxWidth):
         cur += [w]
         num_of_letters += len(w)
     return res + [' '.join(cur).ljust(maxWidth)]
-```
+``` -->

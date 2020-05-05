@@ -22,7 +22,7 @@ Sample:
 |   456   | 2019-01-02 |    enter   |
 |   456   | 2019-01-02 |   cancel   |
 
-## Solution
+<!-- ## Solution
 Let's see if we can clearly define the metrics we want to calculate before just jumping into the problem. We want **post success rate for each day over the past week.**
 
 To get that metric let's assume post success rate means: **(total posts entered) / (total posts created)**. Additionally since the success rate must be broken down by day, we must make sure that a post that is entered **must be completed on the same day**.
@@ -66,4 +66,4 @@ LEFT JOIN post_events AS c2
 WHERE c1.event_name = 'enter'
     AND c1.created_at >= DATE_SUB(now(), INTERVAL 1 WEEK)
 GROUP BY 1
-```
+``` -->

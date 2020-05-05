@@ -1,7 +1,7 @@
 ## Problem
 You work as a data scientist for Lyft. A VP asks how you would evaluate whether a 50% rider discount promotion is a good or bad idea? How would you implement it? What metrics would you track?
 
-## Solution
+<!-- ## Solution
 This is a question with many paths and no correct right answer. Rather the interviewer is looking towards how you can explain your reasoning when facing a practical product question. Let's evaluate the proposal and make sure to state assumptions first. What questions would need to be brought up to make sure you and the interviewer were on the same page? Many times interviewers will have a personal clear idea of how to solve a problem and it requires probing and questions to figure out how they're thinking about the situation.
 
 **Assumptions**
@@ -23,4 +23,4 @@ If we were further this analysis we could also analyze changing the test to look
 Further considerations would be on user segmentation and scale. At Lyft's scale, we have to make assumption of if the launch is in new cities. Some questions we can dig into are:
 - Is there a existing ride-sharing market already in place?
 - Is this discount specific to a singular city?
-- Can the supply side marketplace of drivers limited if we run this test in a place without too many drivers?
+- Can the supply side marketplace of drivers limited if we run this test in a place without too many drivers? -->

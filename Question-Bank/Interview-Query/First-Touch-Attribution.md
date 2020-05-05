@@ -35,7 +35,7 @@ First touch attribution is defined as the channel to which the converted user wa
 |   173   |   email  |
 
 
-## Solution
+<!-- ## Solution
 First touch attribution is tricky because we have to look at the full span of the user's visits ONLY if they converted as a customer.
 
 Therefore we need to do two actions: subset all of the users that converted to customers and figure out their first session visit to attribute the actual channel.
@@ -90,4 +90,4 @@ JOIN first_session AS ft
 -- double join
     ON ft.created_at = attribution.created_at
         AND ft.user_id = us.user_id
-```
+``` -->

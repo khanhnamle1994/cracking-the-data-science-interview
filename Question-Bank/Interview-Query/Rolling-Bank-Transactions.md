@@ -37,7 +37,7 @@ Write a query to get the total three day rolling average for deposits by day.
 | 2019-01-03 |       30.00       |
 | 2019-01-04 |       23.33       |
 
-## Solution
+<!-- ## Solution
 Usually if the problem states to solve for a moving/rolling average, we're given the dataset in the form of a table with two columns, the date and the value. This problem however is taken one step further with a table of just transactions with values conditioned to filtering for only deposits. Which means we have to aggregate to a daily aggregation table first.
 
 ```
@@ -77,4 +77,4 @@ INNER JOIN valid_transactions AS vt2
     -- set conditions for max date threshold
         AND vt1.dt <= vt2.created_at
 GROUP BY 1
-```
+``` -->

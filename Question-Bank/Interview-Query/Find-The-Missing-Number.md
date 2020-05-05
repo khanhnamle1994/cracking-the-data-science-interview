@@ -10,7 +10,7 @@ missingNumber(nums) -> 3
 ```
 Complexity of O(N) required.
 
-## Solution
+<!-- ## Solution
 There are two ways we can solve this problem. One way through logical iteration and another through mathematical formulation. We can look at both as they both hold O(N) complexity.
 
 The first would be through general iteration through the array. We can pass in the array and create a set which will hold each value in the input array. Then we create a for loop that will span the range from 0 to n, and look to see if each number is in the set we just created. If it isn't, we return the missing number.
@@ -35,4 +35,4 @@ def missingNumber(nums):
     total = (n + 1)*(n + 2)/2
     sum_of_nums = sum(nums)
     return total - sum_of_nums
-```
+``` -->

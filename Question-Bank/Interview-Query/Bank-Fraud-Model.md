@@ -3,7 +3,7 @@ Let's say that you work at a bank that wants to build a model to detect fraud on
 1. What kind of model would need to be built?
 2. Given the scenario, if you were building the model, which model metrics would you be optimizing for?
 
-## Solution
+<!-- ## Solution
 1. **Binary classifier**. Given that fraud is binary, there either is a fraudulent transaction or there isn't.
 2. There are a lot of different ways to analyze model performance but let's take into account what's specified. We know that in binary classification problems there are precision versus recall trade-offs.
 
@@ -17,4 +17,4 @@ Recall is defined as the number of true positives divided by number of actual tr
 
 Given these two metrics for evaluating a binary classifier, which metric would a bank prefer to be higher? Low recall in a fraudulent case scenario would be a disaster. With low predictive power on false negatives, fraudulent purchases would go under the rug with consumers not even knowing they were being defrauded.
 
-Meanwhile if there was low precision, customers would think their accounts would be under fraud all the time. But since the question prompts for a text messaging service, this would be okay since the end customer would just have to approve or deny transactions that were false fraud transactions.
+Meanwhile if there was low precision, customers would think their accounts would be under fraud all the time. But since the question prompts for a text messaging service, this would be okay since the end customer would just have to approve or deny transactions that were false fraud transactions. -->

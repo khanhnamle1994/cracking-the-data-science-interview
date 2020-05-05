@@ -7,7 +7,7 @@ The company has been consistently growing new users in the city from January to 
 
 What are some reasons on why the average number of comments per user would be decreasing and what metrics would you look into?
 
-## Solution
+<!-- ## Solution
 Let's take an approach of investigating into a couple of different metrics. Many candidates like to randomly shoot in the dark and think about external factors. (Maybe there's a winter storm in Chicago and no one has power). Almost 100% of the time the answer is not related to external factors.
 
 Average comments per user is calculated by taking the total number of comments divided by the total number of users. So let's model out an example scenario.
@@ -34,4 +34,4 @@ This means that for the cohort of users that starts in January, by February ther
 
 This can explain a likely effect of why we see a decrease of comments per user even though the total user count is increasing linearly. Churn decreases the active user counts which is assumed to be directly correlated to how many comments will exist on a platform. Because **we have less active users on the platform, the denominator is in this case a fake proxy for actual platform engagement.**
 
-If we wanted to measure if active users will still commenting, we could then just look at **comments per active user**.
+If we wanted to measure if active users will still commenting, we could then just look at **comments per active user**. -->

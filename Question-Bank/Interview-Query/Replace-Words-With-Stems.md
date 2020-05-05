@@ -13,7 +13,7 @@ sentence = "the cattle was rattled by the battery"
 Output: "the cat was rat by the bat"
 ```
 
-## Solution
+<!-- ## Solution
 At first it simply looks like we can just loop through each word and check if the root exists in the word and if so, replace the word with the root. But since we are technically stemming the words we have to make sure that the roots are equivalent to the word at it's prefix rather than existing anywhere within the word.
 
 We're given a dictionary of roots with a sentence string. Given we have to check each word, let's try creating a function that takes a word and returns the existing word if it doesn't match a root, or return the root itself.
@@ -44,4 +44,4 @@ def replaceWords(roots, sentence):
     return " ".join(map(replace, sentence.split()))
 ```
 
-Given we've created the replace function, we can now just map it to splitting the sentence input and re-join the list back into a sentence.
+Given we've created the replace function, we can now just map it to splitting the sentence input and re-join the list back into a sentence. -->

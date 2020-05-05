@@ -5,7 +5,7 @@ We know that the product costs 100 dollars per month, averages 10% in monthly ch
 
 Calculate the formula for the average lifetime value.
 
-## Solution
+<!-- ## Solution
 This is a trick question given that the candidate is given multiple pieces of supposedly relevant information. Let's break it down by looking at just the essential pieces and zeroing in on what pieces of data we need for a calculation.
 
 The chief revenue officer wants to know the average lifetime value. Otherwise known as LTV, average lifetime value is defined by the **prediction of the net revenue attributed to the entire future relationship with all customers averaged**. Given that we don't know the future net revenue, we can estimate it by taking the total amount of revenue generated divided by the total number of customers acquired over the same period time.
@@ -26,4 +26,4 @@ And so the expected value drops down on the second month to:
 
 If N is the total number of months the company has been in business and will be in business, our calculation then becomes:
 
-`LTV = 100*.9^(0) + 100*.9^(1) + 100*.9^(2) + ..... + 100*.9^(N)`
+`LTV = 100*.9^(0) + 100*.9^(1) + 100*.9^(2) + ..... + 100*.9^(N)` -->

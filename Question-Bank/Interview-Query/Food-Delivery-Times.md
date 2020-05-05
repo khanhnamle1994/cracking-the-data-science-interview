@@ -5,7 +5,7 @@ Let's say that you work as a data scientist at a food delivery company. You are 
 
 What are some reasons why measuring bias would be important in building this particular model?
 
-## Solution
+<!-- ## Solution
 Let's add some more context to what is needed to build the model. The question takes a few assumptions into account here.
 
 The first assumption is knowledge about what kind of model would be used. Since we're measuring food cooking times, it's assumed the model would be a **regression model** as the prediction would be the time it takes from order placed to food readiness to be picked up.
@@ -30,4 +30,4 @@ Given this knowledge, if applied to food prep, there's a clear reason why calcul
 
 If the model predicts the time estimate as being three minutes earlier than it is, then the delivery person will arrive "earlier" and be waiting for three minutes before the food comes out. However if the time estimate is three minutes later than actual, the deliver person will arrive "late" and the food will be colder.
 
-Therefore bias matters in modeling out food prep times by the trade-off between either increasing food hot and readiness versus delivery person wait times. The trade-off is how we can use business decisions on **customer satisfaction in food delivery versus delivery person satisfaction** in determining the exact threshold that we want to set the bias in our model.
+Therefore bias matters in modeling out food prep times by the trade-off between either increasing food hot and readiness versus delivery person wait times. The trade-off is how we can use business decisions on **customer satisfaction in food delivery versus delivery person satisfaction** in determining the exact threshold that we want to set the bias in our model. -->

@@ -24,7 +24,7 @@ Output:
 stripped_paragraph = 'want figure out how can better data scientist'
 ```
 
-## Solution
+<!-- ## Solution
 Stripping stop words is pretty key in data science. Many times when creating word vectors or TFIDF vectors out of text, we have to make sure to isolate important words to understand the placement of non-stop words next to each other as bi-grams or trigrams.
 
 The solution is relatively straightforward and we could even use a lambda function to filter out the input string if we wanted to. However let's try to do it from scratch in order to understand all of the moving parts.
@@ -49,4 +49,4 @@ def stopwords_stripped(paragraph, stopwords):
         if word not in stopwords:
             new_string.append(word)
     return ' '.join(new_string)
-```
+``` -->

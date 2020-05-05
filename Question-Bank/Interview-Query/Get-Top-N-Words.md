@@ -23,7 +23,7 @@ output = [
 ]
 ```
 
-## Solution
+<!-- ## Solution
 
 1. Given we have a string that we need to split into word and then return some ranking of the top frequencies, we know implicitly that we'll have to store each individual word and the count in order to track word frequency rank.
 
@@ -59,4 +59,4 @@ def topN(posting, n):
 
 2. The run-time will be based on two parts, the writing time and retrieval time. Going through each word and storing it in the hashmap can be done in O(n) time where n is equal to the length of the posting.
 
-Retrieval however is the sort and return of the top N values. The fastest the sort can be done is in O(nlogn) time. So the run-time will be equivalent to O(nlogn).
+Retrieval however is the sort and return of the top N values. The fastest the sort can be done is in O(nlogn) time. So the run-time will be equivalent to O(nlogn). -->

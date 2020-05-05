@@ -25,7 +25,7 @@ This question was asked by: Microsoft
 
 Given three tables, user_dimension, account_dimension, and download_facts, find the average number of downloads for free vs paying customers broken out by day.
 
-## Solution
+<!-- ## Solution
 
 It's pretty clear here we have to join all three tables together. The `user_dimension` table represents the mapping between account ids and user ids while the `account_dimension` table holds the value if the customer is paying or not. Lastly the `download_facts` table has the date and number of downloads per user.
 
@@ -46,4 +46,4 @@ LEFT JOIN download_facts AS df
 GROUP BY 1,2
 ```
 
-One lingering question is, why doesn't the AVERAGE function work in this case? The user to account mapping provides an answer. Given that it's likely that an account has many users since the `user_dimension` is a mapping table, we can't run the AVERAGE function as it takes an **average grouped on the user level when we want it on the account level**.
+One lingering question is, why doesn't the AVERAGE function work in this case? The user to account mapping provides an answer. Given that it's likely that an account has many users since the `user_dimension` is a mapping table, we can't run the AVERAGE function as it takes an **average grouped on the user level when we want it on the account level**. -->
