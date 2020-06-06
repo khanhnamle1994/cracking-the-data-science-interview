@@ -57,3 +57,13 @@ Here are the sections:
 - Different ways of **framing** the same message can cause people to think of it in different ways. Play with alternative ways of framing the same information and see what differences emerge.
 
 [back to top](#ab-testing)
+
+## Fail Fast And Learn
+
+- What works for **returning users** may not work for new users, and vice-versa.
+- **Something that works on one page may not work on another**; something that works at one scale may not work at another.
+- What one type of user wants may not be what another type of user wants. A failed test, sometimes more than a successful test, may prompt a drill-down that reveals a **key difference between segments of users**.
+- Sometimes a variation may win against the original, but it may not **win by enough of a margin** to justify the implementation overhead or other drawbacks of the variation that are external to the test itself.
+- Any test that reveals that an initiative isn't performing is a blessing in disguise: it allows you to **free up resources** from things that aren't working and divert them to the things that are.
+
+[back to top](#ab-testing)
