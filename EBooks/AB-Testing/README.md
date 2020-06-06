@@ -2,8 +2,6 @@
 
 This is my notes from the book "[A/B Testing](https://www.amazon.com/Testing-Most-Powerful-Clicks-Customers/dp/1118792416)" written by Optimizely's co-founders, Dan Siroker and Pete Koomen.
 
-![](ab-testing.jpg)
-
 Here are the sections:
 
 * [What To Test](#what-to-test)
@@ -19,6 +17,8 @@ Here are the sections:
 * [Beyond The Page](#beyond-the-page)
 * [Personalize](#personalize)
 * [60 Things To AB Test](#60-things-to-ab-test)
+
+![](ab-testing.jpg)
 
 ## What To Test
 
@@ -65,5 +65,15 @@ Here are the sections:
 - What one type of user wants may not be what another type of user wants. A failed test, sometimes more than a successful test, may prompt a drill-down that reveals a **key difference between segments of users**.
 - Sometimes a variation may win against the original, but it may not **win by enough of a margin** to justify the implementation overhead or other drawbacks of the variation that are external to the test itself.
 - Any test that reveals that an initiative isn't performing is a blessing in disguise: it allows you to **free up resources** from things that aren't working and divert them to the things that are.
+
+[back to top](#ab-testing)
+
+## Choose The Right Solution
+
+- Building your own testing platform requires a significant and ongoing engineering investment, but can ultimately provide the greatest level of control and the **tighest integration** with your team and deployment cycles.
+- An **A/A test** is a helpful way to ensure that your solution is functioning, reporting, and analyzing correctly.
+- Many A/B testing SaaS platforms are easy to use **without requiring engineering support**: marketers and product people without a coding background can create and run variations in a visual "What You See Is What You Get" environment.
+- An agency can help your team with the **ideation** of tests, **execution** of tests, or both.
+- When picking the solution that best fits your company, consider making **key stakeholders** part of the exploration process. The earlier you bring others on board, the easier it will be to get buy-in.
 
 [back to top](#ab-testing)
