@@ -70,7 +70,7 @@ Here are the sections:
 
 ## Choose The Right Solution
 
-- Building your own testing platform requires a significant and ongoing engineering investment, but can ultimately provide the greatest level of control and the **tighest integration** with your team and deployment cycles.
+- Building your own testing platform requires a significant and ongoing engineering investment, but can ultimately provide the greatest level of control and the **tightest integration** with your team and deployment cycles.
 - An **A/A test** is a helpful way to ensure that your solution is functioning, reporting, and analyzing correctly.
 - Many A/B testing SaaS platforms are easy to use **without requiring engineering support**: marketers and product people without a coding background can create and run variations in a visual "What You See Is What You Get" environment.
 - An agency can help your team with the **ideation** of tests, **execution** of tests, or both.
@@ -85,5 +85,17 @@ Here are the sections:
 - In month one, run a test that is politically palatable and easy enough that it can show a **quick win.** Product pages can be a great place to start.
 - **Share wins** not only with your immediate boss but, if possible, with the company at large. Communication is key in getting people to care about testing.
 - Get creative with how you **introduce stakeholders and co-workers** to A/B testing.
+
+[back to top](#ab-testing)
+
+## The Dream Team
+
+- A/B testing is by nature **inter-disciplinary** and **cross-departmental**. Collaboration is key.
+- Some companies have a **centralized testing team** responsible for coordinating and executing all A/B tests company-wide.
+- Other organizations adopt a **decentralized** model, where each product owner/manager is responsible for testing within his or her product domain.
+- Regardless of which structure you adopt, make sure there is at least one **point person** within the organization whom people can come to about all things testing.
+- Ensure your point person or team maintains **allies across your organization** to ensure that testing is part of your planning process.
+- Make sure that your testers are enabled and **empowered to be creative**, and that the friction of running and iterating new tests is low.
+- **Maintain records** about who tested what and when, how the test was set up, and what the result was. This will enable your organization to work collaboratively to build up a set of collective wisdom and best practices.
 
 [back to top](#ab-testing)
