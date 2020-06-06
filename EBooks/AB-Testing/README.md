@@ -112,6 +112,25 @@ Here are the sections:
 
 - A/B testing can help even the smallest of organizations and sites, but it becomes more powerful the **more traffic** a site has. If your site is starved for traffic, A/B testing probably shouldn't be your first priority.
 - Testing will occasionally reveal a change that increases one metric but decreases another. **Don't push failure down the funnel.**
-- Consider whether you are willing to test a page variant that is in some way **off-brand** or one that you wouldn't necessarily be quick to roll out to all yor users should it "win" the test. 
+- Consider whether you are willing to test a page variant that is in some way **off-brand** or one that you wouldn't necessarily be quick to roll out to all yor users should it "win" the test.
+
+[back to top](#ab-testing)
+
+## Beyond The Page
+
+- Not only the **subject lines** but the **timing** can be critical in influencing open rates and click-through rates for email. Roll out large email campaigns gradually, test variations, and then send the winner on to the rest of your list.
+- **Price testing** can be one of the most important types of testing to conduct for your business, and there are a number of ways to do it.
+- The **last-minute discount** is a great technique for testing price without needing to deal with back-end integration or worrying about upsetting users.
+- **Anchoring** the price of a product into context with other prices can greatly affect how users react.
+- **Presentation** can be everything when it comes to pricing. For a quick-and-easy price test, try various breakdowns (e.g., monthly, yearly, or weekly) and see what works best.
+- **Serial testing** is one way to test prices without needing to show different users different prices at the same time; however, this advantage is offset by difficulties in ensuring the accuracy of its results.
+
+[back to top](#ab-testing)
+
+## Personalize
+
+[back to top](#ab-testing)
+
+## 60 Things To AB Test
 
 [back to top](#ab-testing)
