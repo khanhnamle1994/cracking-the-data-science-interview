@@ -129,6 +129,12 @@ Here are the sections:
 
 ## Personalize
 
+- **Segmentation** allows you to compare how different segments of users responded to the same experience. Differences that you observe between groups can be illuminating and give you an opportunity to go beyond the **average best experience** of the one-to-many web toward an improved one-to-few experience.
+- **Targeting** is deliberately providing different types of users with different experiences, and can be a powerful technique under many circumstances.
+- Consider how your user experience may or may not be optimized across different **platforms**, screen dimensions, touch input versus mouse input, and so on.
+- Sometimes **geo-targeting**, or tailoring users' experience based on their location, can be an extremely powerful way to optimize beyond the "average best."
+- While personalization is frequently a boon for your success metrics, occasionally a **universal** call to action works better than a targeted one. Test to make sure personalization is working for your key success metrics.
+
 [back to top](#ab-testing)
 
 ## 60 Things To AB Test
