@@ -150,4 +150,13 @@ Your website exists for visitors to take action: reading, purchasing, signing up
 5. Find out if CTAs with text, icons, or text plus icons convert more users on your site.
 6. Test different colors, shapes, and sizes for CTA buttons on your website.
 
+### Content
+
+Content fuels your online business, particularly if you're a B2B company. Testing how you position and advertise content on your site can uncover big conversion and engagement lifts.
+
+7. Test gated content against non-gated content. Find out if your users are willing to sign up or provide more information to access materials on your site.
+8. Do site visitors crave more information about your company before signing up or making a purchase? Test adding or removing "About" content on your home page.
+9. Content tone can make a big difference in keeping users on your site. See what your visitors prefer by testing various tones and styles.
+10. Test how your content is displayed. Do users prefer to scroll down the page or click through to another page to learn more?
+
 [back to top](#ab-testing)
