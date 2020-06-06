@@ -107,3 +107,11 @@ Here are the sections:
 - When working on a complex change like a site redesign, we recommend that you **move testing further up the process** so that it becomes something that happen *during* the design and rollout of the new site, rather than *after*.
 
 [back to top](#ab-testing)
+
+## How AB Tests Can Go Awry
+
+- A/B testing can help even the smallest of organizations and sites, but it becomes more powerful the **more traffic** a site has. If your site is starved for traffic, A/B testing probably shouldn't be your first priority.
+- Testing will occasionally reveal a change that increases one metric but decreases another. **Don't push failure down the funnel.**
+- Consider whether you are willing to test a page variant that is in some way **off-brand** or one that you wouldn't necessarily be quick to roll out to all yor users should it "win" the test. 
+
+[back to top](#ab-testing)
