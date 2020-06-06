@@ -39,3 +39,12 @@ Here are the sections:
 - If you're working on a major site redesign or overhaul, don't wait until the new design is live to A/B test it. **A/B test the redesign** itself.
 
 [back to top](#ab-testing)
+
+## Less Is More
+
+- More technologically or visually impressive pages don't necessarily lead to the user behavior you want. Experiment with **keeping it simple** and make any additional complexity earn its keep in your key success metrics.
+- Every form field that users have to fill out is one more point of resistance between them and their conversion. Consider **deleting optional fields** and seeing if that lifts conversion.
+- Giving visitors fewer distractions and fewer changes to leave the checkout funnel by **removing choices** can help boost conversion rates.
+- Long forms have high risk for conversion failure. **Breaking up a long form** with required fields into multiple pages can increase changes for conversion.
+
+[back to top](#ab-testing)
