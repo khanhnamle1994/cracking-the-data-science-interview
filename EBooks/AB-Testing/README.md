@@ -159,4 +159,15 @@ Content fuels your online business, particularly if you're a B2B company. Testin
 9. Content tone can make a big difference in keeping users on your site. See what your visitors prefer by testing various tones and styles.
 10. Test how your content is displayed. Do users prefer to scroll down the page or click through to another page to learn more?
 
+### Copy
+
+Copy is your direct line of communication with website visitors - it sets the tone and helps users understand what you're all about. Use these tests to make the copy on your site better resonate with your audience.
+
+11. Test different headline texts. Try variations that are straightforward against ones that are abstract, goofy, or creative.
+12. Find out if your site visitors prefer shorter versions of headlines, tag-lines, product descriptions, and other content on your site.
+13. Run a multivariate test. Test different combinations of headlines and tag-lines in combination with the visual imagery on your page to find the ultimate winning variation.
+14. Test paragraphs versus bulleted lists.
+15. Test how you frame your copy. Users may have different reactions to positive versus negative messaging.
+16. Try making your site easier to read with larger fonts, higher-contrast colors, and professional fonts. Studies show this increases trustworthiness and increases conversions.
+
 [back to top](#ab-testing)
