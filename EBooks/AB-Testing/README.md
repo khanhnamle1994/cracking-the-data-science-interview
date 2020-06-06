@@ -77,3 +77,13 @@ Here are the sections:
 - When picking the solution that best fits your company, consider making **key stakeholders** part of the exploration process. The earlier you bring others on board, the easier it will be to get buy-in.
 
 [back to top](#ab-testing)
+
+## The Cure For HIPPO Syndrome
+
+- In some workplaces, and to varying degrees, the **HiPPo Syndrome** holds sway, but often all it takes are a few humble tests and a curiosity and interest in testing begin to take root.
+- Allay the wary with the reassurance that you're not proposing sudden changes: it's "**just an experiment.**"
+- In month one, run a test that is politically palatable and easy enough that it can show a **quick win.** Product pages can be a great place to start.
+- **Share wins** not only with your immediate boss but, if possible, with the company at large. Communication is key in getting people to care about testing.
+- Get creative with how you **introduce stakeholders and co-workers** to A/B testing.
+
+[back to top](#ab-testing)
