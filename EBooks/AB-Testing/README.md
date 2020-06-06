@@ -139,4 +139,15 @@ Here are the sections:
 
 ## 60 Things To AB Test
 
+### Calls To Action
+
+Your website exists for visitors to take action: reading, purchasing, signing up, downloading, or sharing. Here are some ways to test CTA that can yield quick, easy and big wins.
+
+1. *Buy now?* *Purchase?* *Check out?* *Add to cart?* Change the call to action text on your buttons to see which word or phrase converts more visitors.
+2. Try varying the location of your CTA button, making some CTAs more prominent than others.
+3. Test multiple CTAs per page against one CTA per page.
+4. Change buttons to hyperlinks to find out which display your users prefer.
+5. Find out if CTAs with text, icons, or text plus icons convert more users on your site.
+6. Test different colors, shapes, and sizes for CTA buttons on your website.
+
 [back to top](#ab-testing)
