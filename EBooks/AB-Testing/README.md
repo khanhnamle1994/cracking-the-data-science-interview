@@ -99,3 +99,11 @@ Here are the sections:
 - **Maintain records** about who tested what and when, how the test was set up, and what the result was. This will enable your organization to work collaboratively to build up a set of collective wisdom and best practices.
 
 [back to top](#ab-testing)
+
+## Iterate
+
+- **Multivariate tests** are a powerful way to test a number of variables simultaneously, and can reveal **interaction effects** between them. However, they require more traffic and can be slower to achieve statistical significance.
+- We have found that the companies that have had the greatest success with A/B testing favor a nimbler, more **iterative approach** that tests a handful of different variants of a single variable at a time and incorporates the winner as they go on to the next test.
+- When working on a complex change like a site redesign, we recommend that you **move testing further up the process** so that it becomes something that happen *during* the design and rollout of the new site, rather than *after*.
+
+[back to top](#ab-testing)
