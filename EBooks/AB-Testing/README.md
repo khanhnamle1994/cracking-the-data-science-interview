@@ -48,3 +48,12 @@ Here are the sections:
 - Long forms have high risk for conversion failure. **Breaking up a long form** with required fields into multiple pages can increase changes for conversion.
 
 [back to top](#ab-testing)
+
+## Words Matter
+
+- There are endless word combinations to use on your website. Don't be afraid to **brainstorm and think broadly**: a testing platform **lowers the "barrier to entry"** of ideas, minimizes the risks of failure, and enables quick and potentially huge wins.
+- Decisions around messaging and verbiage can easily lead to contentious debates on a team. A/B testing is a way to **put opinions aside** and get concrete feedback on what works and what doesn't.
+- If you want someone to do something, **tell them to do it**.
+- Different ways of **framing** the same message can cause people to think of it in different ways. Play with alternative ways of framing the same information and see what differences emerge.
+
+[back to top](#ab-testing)
