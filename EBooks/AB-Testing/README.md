@@ -226,4 +226,13 @@ A/B testing increases the value of the money you're already spending on marketin
 41. Try changing up the display URL on your ads. This can impact how many visitors click the ad.
 42. The landing page each ad directs to is an excellent place for testing. You paid for that visitor to land there, so you want to do everything you can to convert that visitor.
 
+### Social
+
+The reasons someone would share your site are many - make it easy for them to do so. Here are a few tests to increase likes, re-tweets, and +1s on your content:
+
+43. Change the size and placement of social icons to see what compels users to share more often.
+44. Test standard social media icons against ones you've designed to match the look and feel of your site.
+45. Try finding your optimal Twitter voice. Tweet the same link with differe types of text at the same time two days in a row and see which tone of voic gets more engagement.
+46. Test different types of customer reviews on your site to see which are most compelling to your audience. Some examples include testimonials, Yelp reviews, and ResellerRatings.
+
 [back to top](#ab-testing)
