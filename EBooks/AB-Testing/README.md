@@ -235,4 +235,14 @@ The reasons someone would share your site are many - make it easy for them to do
 45. Try finding your optimal Twitter voice. Tweet the same link with differe types of text at the same time two days in a row and see which tone of voic gets more engagement.
 46. Test different types of customer reviews on your site to see which are most compelling to your audience. Some examples include testimonials, Yelp reviews, and ResellerRatings.
 
+### Email
+
+How do you make sure your marketing emails get opened and clicked? Here are some testable elements that can increase open rates and click-throughs:
+
+47. Test length and copy of your email subject lines.
+48. Test personalized versus un-personalized emails by using the recipient's name in the subject or email text.
+49. Find the optimal time to reach your audience by measuring open rates on different days of the week and at different times of the day.
+50. If you distribute a newsletter or email update, see how a weekly send stacks up against a monthly blast.
+51. Would readers prefer an email from your CEO, your marketing director, your broader team, or someone else? Test different "from" addresses to find out.
+
 [back to top](#ab-testing)
