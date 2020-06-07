@@ -182,6 +182,13 @@ Digital media have the power to greatly influence conversions and engagement on 
 22. Try different variations of your site's product demo: animated versus screencast.
 23. Test auto-play against click-to-play video.
 
+### Funnels
 
+If your goal is to get more people from one page to the next - like in a checkout funnel, signup flow, or lead nurture - then A/B testing is your best bet. Funnels are rife with low-hanging fruit to test.
+
+24. Test removing extraneous distractions - like product offers, promotions, or shipping information - from each page in the purchase flow. Often times, a simplified experience can drive more conversions.
+25. Test the number of pages in your funnel. How does packing more information on one page compare to spreading information across multiple pages?
+26. Test removing navigation to any pages outside the checkout funnel.
+27. Or try replacing certain steps within your funnel with modal boxes. For example, try making shipping options a modal box instead of a page.
 
 [back to top](#ab-testing)
