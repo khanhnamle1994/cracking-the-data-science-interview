@@ -201,6 +201,14 @@ From the moment a visitor lands on your site, the navigation menu sets a foundat
 31. Test out the title of your navigation items. A simple change, like "Why Use Us" to "How It Works," may have a significant impact.
 32. *Testing Tips*: If a test fails, try targeting the test to new versus returning visitors. Returning visitors are accustomed to seeing the site in a certain way - if a link or menu item is missing from the spot they normally go to in order to find it, they're not going to do the work to locate it.
 
+### Forms
 
+Any potential friction point on a website is prime for testing. Forms are frequently cumbersome areas of websites. Try these tests on the forms on your site:
+
+33. Test the length of signup forms. Try removing non-essential signup boxes or relocating them to a page further down the funnel.
+34. Try a special offer, discount, or promotion to increase sign-ups. People love free stuff.
+35. Spam is the worst. Try adding text that assures users you won't fill up their inboxes with unnecessary junk.
+36. Try making individual form fields larger. Larger fields feel more friendly.
+37. Try asking for different information in your form fields - for example, business email versus regular email, or work phone versus mobile phone.
 
 [back to top](#ab-testing)
