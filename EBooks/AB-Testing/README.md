@@ -191,4 +191,16 @@ If your goal is to get more people from one page to the next - like in a checkou
 26. Test removing navigation to any pages outside the checkout funnel.
 27. Or try replacing certain steps within your funnel with modal boxes. For example, try making shipping options a modal box instead of a page.
 
+### Site Navigation
+
+From the moment a visitor lands on your site, the navigation menu sets a foundation - it's how people maneuver your site's flow and prioritize what's important. Here are some ideas for how to make it better:
+
+28. Test the order of menu items in your site navigation.
+29. Test the display of your navigation bar. Do site visitors prefer a horizontal or vertical orientation?
+30. Or what about a fixed navigation bar that travels down the page as your site visitors scroll?
+31. Test out the title of your navigation items. A simple change, like "Why Use Us" to "How It Works," may have a significant impact.
+32. *Testing Tips*: If a test fails, try targeting the test to new versus returning visitors. Returning visitors are accustomed to seeing the site in a certain way - if a link or menu item is missing from the spot they normally go to in order to find it, they're not going to do the work to locate it.
+
+
+
 [back to top](#ab-testing)
