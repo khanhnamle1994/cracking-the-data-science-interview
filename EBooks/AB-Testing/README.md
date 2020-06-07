@@ -170,4 +170,18 @@ Copy is your direct line of communication with website visitors - it sets the to
 15. Test how you frame your copy. Users may have different reactions to positive versus negative messaging.
 16. Try making your site easier to read with larger fonts, higher-contrast colors, and professional fonts. Studies show this increases trustworthiness and increases conversions.
 
+### Visual Media
+
+Digital media have the power to greatly influence conversions and engagement on a website, and testing digital media is a great idea because the right media can subconsciously influence people to act in a way that's aligned with your testing goals.
+
+17. Test different types of images on your landing page. People versus products is a good place to start.
+18. And iterate from there! Try a static image versus a product video versus a 360 degree product image.
+19. See how a stock image stacks up against an image of your employees or customers in action.
+20. Test a rotating carousel on your homepage versus a static image or video.
+21. Test different voice-overs for the videos on your site. Test whether a male or a female voice leads to the most completed views.
+22. Try different variations of your site's product demo: animated versus screencast.
+23. Test auto-play against click-to-play video.
+
+
+
 [back to top](#ab-testing)
