@@ -218,4 +218,12 @@ The mobile web is pervasive. Improving your mobile website through testing will 
 38. Test the length of your mobile web pages. Are mobile users more willing to click to a new page or scroll down a page when browsing your site on their devices?
 39. Try different displays and navigation options. Blinds, buttons, and blocks are good places to start.
 
+### Advertising
+
+A/B testing increases the value of the money you're already spending on marketing programs, such as search engine marketing. To ensure you're getting the biggest bang for your buck out of each paid initiative, try these tests:
+
+40. Test the headlines on your paid campaigns to see which ones get the most clicks.
+41. Try changing up the display URL on your ads. This can impact how many visitors click the ad.
+42. The landing page each ad directs to is an excellent place for testing. You paid for that visitor to land there, so you want to do everything you can to convert that visitor.
+
 [back to top](#ab-testing)
