@@ -255,4 +255,13 @@ Today, we're more accustomed to web experiences that are custom-tailored to who 
 55. Test different page designs and messaging for new versus returning visitors.
 56. Test whether showing different landing pgaes for visitors coming from mobile devices versus desktop browsers performs better than having the same landing page for both.
 
+### Pricing and Shipping
+
+Finding the right pricing point can drive more visitors to make a purchase. Use these tests to maximize revenue from your site:
+
+57. Test offering a free trial versus a money-back guarantee to see which converts more users in the short term and in the long term.
+58. Test having checkboxes auto-selected as default.
+59. On your pricing page, test whether annual billings or monthly billing generates more subscriptions.
+60. Try anchoring customers high before showing them a lower price.
+
 [back to top](#ab-testing)
