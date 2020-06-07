@@ -211,4 +211,11 @@ Any potential friction point on a website is prime for testing. Forms are freque
 36. Try making individual form fields larger. Larger fields feel more friendly.
 37. Try asking for different information in your form fields - for example, business email versus regular email, or work phone versus mobile phone.
 
+### Mobile Site
+
+The mobile web is pervasive. Improving your mobile website through testing will help create an optimized experience that generates more click-throughs, revenue, and conversions.
+
+38. Test the length of your mobile web pages. Are mobile users more willing to click to a new page or scroll down a page when browsing your site on their devices?
+39. Try different displays and navigation options. Blinds, buttons, and blocks are good places to start.
+
 [back to top](#ab-testing)
