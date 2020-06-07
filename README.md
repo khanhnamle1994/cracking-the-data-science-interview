@@ -21,7 +21,6 @@ Here are the sections:
 * [Unsupervised Learning](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#unsupervised-learning)
 * [Computer Vision](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#computer-vision)
 * [Natural Language Processing](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#natural-language-processing)
-* [Software Engineering](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#software-engineering)
 * [Stanford Materials](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/Cheatsheets#stanford-materials)
 
 ## Data Science EBooks
@@ -34,6 +33,7 @@ Here are the sections:
 * [Doing Data Science - Straight Talk From The Front Line](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Doing-Data-Science-Straight-Talk-From-The-Front-Line)
 * [Machine Learning For Finance](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Machine-Learning-For-Finance)
 * [Practical Statistics for Data Science](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/Practical-Statistics-For-Data-Science)
+* [A/B Testing](https://github.com/khanhnamle1994/cracking-the-data-science-interview/tree/master/EBooks/AB-Testing)
 
 ## Data Science Question Bank
 
@@ -59,7 +59,7 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
 
 - ### Recommendation Systems
 
-    - [Transfer Rec](https://github.com/khanhnamle1994/transfer-rec): My ongoing research work to incorporate transfer learning into the design of recommendation systems.
+    - [Transfer Rec](https://github.com/khanhnamle1994/transfer-rec): My ongoing research work that intersects deep learning and recommendation systems.
 
     - [Movie Recommendation](https://github.com/khanhnamle1994/movielens): Designed 4 different models that recommend items on the MovieLens dataset.
 
