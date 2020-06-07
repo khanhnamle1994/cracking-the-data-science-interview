@@ -245,4 +245,14 @@ How do you make sure your marketing emails get opened and clicked? Here are some
 50. If you distribute a newsletter or email update, see how a weekly send stacks up against a monthly blast.
 51. Would readers prefer an email from your CEO, your marketing director, your broader team, or someone else? Test different "from" addresses to find out.
 
+### Personalize It
+
+Today, we're more accustomed to web experiences that are custom-tailored to who we are and the URLs we've come from. Try testing these personalization techniques and see if visitors convert better.
+
+52. Create seasonal or holiday-specific promotional offers and test them on visitors living in specific locations.
+53. Test auto-filling form fields related to a site visitor's location. Make things easier for your users.
+54. Test matching language-specific content to users coming from a certain country or region.
+55. Test different page designs and messaging for new versus returning visitors.
+56. Test whether showing different landing pgaes for visitors coming from mobile devices versus desktop browsers performs better than having the same landing page for both.
+
 [back to top](#ab-testing)
