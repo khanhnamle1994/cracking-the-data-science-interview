@@ -6,8 +6,8 @@ Here are the sections and chapters:
 
 **Section 1 - Stop Lying To Yourself**
 
-- [Chapter 1 - We Are All Liars](#chapter-1-we-are-all-liars)
-- [Chapter 2 - How To Keep Score](#chapter-2-how-to-keep-score)
+- Chapter 1: [We Are All Liars](#we-are-all-liars)
+- Chapter 2: [How To Keep Score](#how-to-keep-score)
 
 **Section 2 - Finding The Right Metric For Right Now**
 
@@ -15,18 +15,19 @@ Here are the sections and chapters:
 
 **Section 4 - Putting Lean Analytics To Work**
 
-## Chapter 1 - We Are All Liars
+## We Are All Liars
 
 - Instincts are experiments. Data is proof.
 - Lean analytical thinking is about asking the right questions and focusing on the one key metric that will produce the change you are after.
 
 [back to top](#lean-analytics)
 
-## Chapter 2 - How To Keep Score
+## How To Keep Score
 
-- [What Makes A Good Metric?](#what-makes-a-good-metric?)
+- [Good Metric](#good-metric)
+- [Testing](#testing)
 
-### What Makes A Good Metric?
+### Good Metric
 
 Rules of thumb for a good metric:
 - A good metric is comparative.
@@ -70,6 +71,16 @@ Avoid these 8 vanity metrics:
 - Correlation is good. Causality is great.
 - Sometimes, you may have to settle for the former - but you should always be trying to discover the latter.
 
-[back to chapter](#chapter-2-how-to-keep-score)
+[back to chapter](#how-to-keep-score)
+
+### Testing
+
+- Testing usually involves comparing two things against each other through segmentation, cohort analysis, or A/B testing.
+- A **segment** is simply a group that shares some common characteristic. Segmentation works for any industry and any form of marketing, not just for websites.
+- Each group of users is a **cohort** - participants in an experiment across their lifecycle. You can compare cohorts against one another to see if, on the whole, key metrics are getting better over time.
+- When we compare one attribute of a subject's experience and assume everything else is equal, we are doing **A/B testing**.
+- **Multivariate analysis** includes analyzing multiple tests at once to see which correlates strongly with an improvement in a key metric.
+
+[back to chapter](#how-to-keep-score)
 
 [back to top](#lean-analytics)
