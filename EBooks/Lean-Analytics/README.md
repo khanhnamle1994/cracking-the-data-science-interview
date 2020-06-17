@@ -129,3 +129,11 @@ The Lean Canvas is fantastic at identifying the areas of biggest risk and enforc
 [back to top](#lean-analytics)
 
 ## One Metric That Matters
+
+The One Metric That Matters is the one number you are completely focused on above everything else for your current stage.
+- It answers the most important question you have.
+- It forces you to draw a line in the sand and have clear goals.
+- It focuses the entire company.
+- It inspires a culture of experimentation.
+
+[back to top](#lean-analytics)
