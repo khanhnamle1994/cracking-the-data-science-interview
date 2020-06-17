@@ -9,8 +9,12 @@ Here are the sections and chapters:
 - Chapter 1: [We Are All Liars](#we-are-all-liars)
 - Chapter 2: [How To Keep Score](#how-to-keep-score)
 - Chapter 3: [What To Do With Your Life](#what-to-do-with-your-life)
+- Chapter 4: [Data Driven and Data Informed](#data-driven-and-data-informed)
 
 **Section 2 - Finding The Right Metric For Right Now**
+
+- Chapter 5: [Analytics Frameworks](#analytics-frameworks)
+- Chapter 6: [One Metric That Matters](#one-metric-that-matters)
 
 **Section 3 - Lines In The Sand**
 
@@ -74,8 +78,6 @@ Avoid these 8 vanity metrics:
 - Correlation is good. Causality is great.
 - Sometimes, you may have to settle for the former - but you should always be trying to discover the latter.
 
-[back to chapter](#how-to-keep-score)
-
 ### Testing
 
 - Testing usually involves comparing two things against each other through segmentation, cohort analysis, or A/B testing.
@@ -84,7 +86,7 @@ Avoid these 8 vanity metrics:
 - When we compare one attribute of a subject's experience and assume everything else is equal, we are doing **A/B testing**.
 - **Multivariate analysis** includes analyzing multiple tests at once to see which correlates strongly with an improvement in a key metric.
 
-[back to chapter](#how-to-keep-score)
+[back to top](#lean-analytics)
 
 ## What To Do With Your Life
 
@@ -101,8 +103,29 @@ The Lean Canvas is fantastic at identifying the areas of biggest risk and enforc
 8. **Metrics**: Do you know what numbers to track to understand if you're making progress?
 9. **Unfair advantage**: What is the "force multiplier" that will make your efforts have greater impact than your competitors?
 
-[back to chapter](#what-to-do-with-your-life)
-
-
+### What To Work On
+- If you want to do something and are good at it, but can't be paid to do it, *learn to monetize*.
+- If you are good at something and can be paid to do it, but don't like doing it, *learn to say no*.
+- If you like to do something and can be paid to do it, but aren't very good at it, *learn to do it well*.
 
 [back to top](#lean-analytics)
+
+## Data Driven and Data Informed
+
+- Lean Startup is focused on learning above everything else, and encourages broad thinking, exploration, and experimentation.
+- Lean Startup helps expand your vision, because you're encouraged to question everything.
+
+[back to top](#lean-analytics)
+
+## Analytics Frameworks
+
+1. **Empathy**: I've found a real, poorly met need a reachable market faces.
+2. **Stickiness**: I've figured out how to solve the problem in a way they will accept and pay for.
+3. **Virality**: I've built the right product/features/functionality that keeps users around.
+4. **Revenue**: The users and features fuel growth organically and artificially.
+5. **Scale**: I've found a sustainable, scalable business with the right margins in a healthy ecosystem.
+-> I can achieve a successful exit for the right terms.
+
+[back to top](#lean-analytics)
+
+## One Metric That Matters
