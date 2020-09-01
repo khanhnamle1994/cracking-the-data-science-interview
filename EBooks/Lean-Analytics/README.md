@@ -15,6 +15,7 @@ Here are the sections and chapters:
 
 - Chapter 5: [Analytics Frameworks](#analytics-frameworks)
 - Chapter 6: [One Metric That Matters](#one-metric-that-matters)
+- Chapter 7: [Business Models](#business-models)
 
 **Section 3 - Lines In The Sand**
 
@@ -135,5 +136,51 @@ The One Metric That Matters is the one number you are completely focused on abov
 - It forces you to draw a line in the sand and have clear goals.
 - It focuses the entire company.
 - It inspires a culture of experimentation.
+
+[back to top](#lean-analytics)
+
+## Business Models
+
+Business growth comes from improving one of these five "knobs":
+- **More stuff** means adding products or services, preferably those you know your customers want so you don't waste time building things they won't use or buy.
+- **More people** means adding users, ideally through virality or word of mouth, but also through paid advertising. The best way to add users is when it's an integral part of product use since this happens automatically and implies an endorsement from the inviting user.
+- **More often** means stickiness, reduced churn, and repeated use. Early on, stickiness tends to be a key knob on which to focus, because until your core early adopters find your product superb, it's unlikely you can achieve good viral marketing.
+- **More money** means upselling and maximizing the price users will pay, or the revenue from ad clicks, or the amount of content they create, or the number of in-game purchases they make.
+- **More efficiently**  means reducing the cost of delivering and supporting your service, but also lowering the cost of customer acquisition by doing less paid advertising and more word of mouth.
+
+The 5 aspects of any business model:
+1. **Acquisition channel**: How the visitor, customer, or user finds out about the startup.
+  - Paid advertising
+  - Search engine management
+  - Social media outreach
+  - Inherent and artificial virality
+  - Affiliate marketing
+  - Public relations
+  - App and ecosystem marketing
+2. **Selling tactic**: What the startup does to convince the visitor or user to become a paying customer.
+  - Simple purchases
+  - Discounts and incentives
+  - Free trial
+  - Freemium
+  - Pay-for-privacy
+  - Free-to-pay
+3. **Revenue model**: How the startup extracts money from its visitors, users, or customers.
+  - One-time transaction
+  - Recurring subscription
+  - Consumption charges
+  - Advertising clicks
+  - Resale of user data
+  - Donation
+4. **Product type**: What the startup does in return.
+  - Software
+  - Platform
+  - Merchandising
+  - User-generated content
+  - Marketplace
+  - Media/content
+  - Service
+5. **Delivery model**: How the product gets to the customer.
+  - Hosted service
+  - Digital/physical delivery
 
 [back to top](#lean-analytics)
