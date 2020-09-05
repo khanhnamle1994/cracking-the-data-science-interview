@@ -16,6 +16,7 @@ Here are the sections and chapters:
 - Chapter 5: [Analytics Frameworks](#analytics-frameworks)
 - Chapter 6: [One Metric That Matters](#one-metric-that-matters)
 - Chapter 7: [Business Models](#business-models)
+- Chapter 8: [Ecommerce](#ecommerce)
 
 **Section 3 - Lines In The Sand**
 
@@ -182,5 +183,65 @@ The 5 aspects of any business model:
 5. **Delivery model**: How the product gets to the customer.
   - Hosted service
   - Digital/physical delivery
+
+[back to top](#lean-analytics)
+
+## Ecommerce
+
+### Overview
+- In an e-commerce company, a visitor buys something from a web-based retailer. This is perhaps the most common kind of online business, and it's certainly the one that the majority of traditional analytics tools are aimed at.
+- Early e-commerce models consisted of a relatively simple "funnel": a visitor arrived at the site, navigated through a series of pages to get to a particular item, clicked "buy", provided some payment information, and completed a purchase.
+- But modern e-commerce is seldom this simple:
+  - The majority of buyers find what they're looking for through search rather than by navigating across a series of pages. Shoppers start with an external search and then bounce back and forth from sites they visit to their search results, seeking the scent of what they're after. Once they find it, on-site navigation becomes more important. This means on-site funnels are somewhat outdated; keywords are more important.
+  - Retailers use recommendation engines to anticipate what else a buyer might want, basing their suggestions on past buyers and other users with similar profiles. Few visitors see the same pages as one another.
+  - Retailers are always optimizing performance, which means that they're segmenting traffic. Mid- to large-size retailers segment their funnel by several tests that are being run to find the right products, offers, and prices.
+  - Purchases begin far from the website itself, in social networks, email inboxes, and online communities, making the buying process harder to track.
+
+### Key Metrics
+
+1. **Conversion Rate** is the percentage of visitors to your site who buy something.
+  - It's simple to calculate and experiment with. You'll slice conversion rate in many ways to see what makes people more likely to buy.
+  - Early on, conversion rate may even be more important than total revenue because your initial goal is to simply prove that someone will buy something.
+  - Conversion rate is highly dependent on your type of e-commerce business, and whether your success will be driven by loyalty, new customer acquisition, or a hybrid of the two.
+
+2. **Purchases Per Year** refer to the number of purchases made by each customer per year.
+  - If you look at the repurchase rate on a 90-day cycle, it becomes a very good leading indicator for what type of e-commerce site you have.
+  - It helps to know whether to focus more on loyalty or more on acquisition.
+
+3. **Shopping Cart Size** is the amount of money spent on a purchase.
+  - You may find that one campaign is more likely to make people buy, but another might make fewer people spend more money.
+  - You'll compare the total revenue you're generating to the way in which you acquired that revenue, in order to identify the most lucrative segments of your reachable audience.
+
+4. **Abandonment** is the percentage of people who begin to make a purchase, and then don't.
+  - The number of people who abandon a funnel at each of the stages is the abandonment rate.
+  - It's important to analyze it for each step in order to see which parts of the process are hurting you the most.
+
+5. **Cost of Customer Acquisition** is the money spent to get someone to buy something.
+  - You'll want to drive traffic to the site via ads, social media outreach, mailing lists, or affiliates.
+  - You can use analytics tools when there are myriad channels driving traffic to the site.
+
+6. **Revenue Per Customer** is the lifetime value of each customer.
+  - It is an aggregate metric of other key numbers, and represents a good, single measure of your e-commerce business's health.
+
+7. **Keywords and Search Terms** are terms that people look for and associate with the site.
+  - For paid search, you bid against others for popular keywords in search engines like Google.
+  - For unpaid search, you focus on good and compelling content that improves your ranking with search engines, and on writing copy that includes the desirable search terms your paying customers tend to use.
+
+8. **Recommendation Effectiveness** explains how likely a visitor will add a recommended product to the shopping cart.
+  - There are many different approaches to recommendations: past purchases and visitor attributes (geography, referral, clicked items, etc.)
+  - How much additional revenue generated through recommendations?
+
+9. **Virality** means of word-of-mouth sharing per visitor.
+  - It has the lowest cost of customer acquisition and the highest implied recommendation from someone the recipient trusts.
+
+10. **Mailing List Effectiveness** explains the CTRs and ability to make buyers return and buy.
+  - You calculate the email CTR by dividing the number of visits you get from a campaign by the number of messages you've sent. A more sophisticated analysis of email CTR will include a breakdown of the various places where things can go wrong and a look at the eventual outcome you're after.
+  - You also need to create a campaign contribution metric - basically, the added revenue from the campaign, minus the cost of the campaign and the loss due to unsubscribes.
+
+### Key Takeaways
+- It's vital to know if you're focused on loyalty or acquisition. This drives your whole marketing strategy and many of the features you build.
+- Searches, both off- and on-site, are an increasingly common way of finding something for purchase.
+- While conversion rates, repeat purchases, and transaction sizes are important, the ultimate metric is the product of the three of them: revenue per customer.
+- Don't overlook real-world considerations like shipping, warehouse logistics, and inventory.
 
 [back to top](#lean-analytics)
