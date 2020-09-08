@@ -19,6 +19,7 @@ Here are the sections and chapters:
 - Chapter 8: [Ecommerce](#ecommerce)
 - Chapter 9: [SaaS](#saas)
 - Chapter 10: [Free Mobile App](#free-mobile-app)
+- Chapter 11: [Media Site](#media-site)
 
 **Section 3 - Lines In The Sand**
 
@@ -329,5 +330,28 @@ The 5 aspects of any business model:
 
 - Mobile apps make their money in a variety of ways.
 - Most of the money comes from a small number of users; these should be segmented and analyzed as a distinct group. The key metric is average revenue per paying user.
+
+[back to top](#lean-analytics)
+
+## Media Site
+
+### Overview
+
+- It's easy to insert advertising into online content that for many companies, ad-based monetization is a fallback revenue source, which subsidizes a cheaply priced game or helps pay for the cost of operating a freemium product. if your business model most closely resembles a media site, then your primary focus is sharing advertisers' messages with viewers, and getting paid for impressions, click-throughs, or sales.
+- Media sites care most of all about click-through or display rates, because those are actual revenue, but they also need to maximize the time visitors spend on the site, the number of pages they see, and the number of unique visitors, because this represents inventory - chances to show ads to visitors - and a growing reach of new people in whom advertisers might be interested.
+
+### Key Metrics
+
+1. **Audience and Churn**: How many people visit the site and how loyal they are.
+2. **Ad Inventory**: The number of impressions that can be monetized.
+3. **Ad Rates**: Cost per engagement - how much a site can make from those impressions based on the content it covers and the people who visit.
+4. **Click-Through Rates**: How many of the impressions actually turn into money.
+5. **Content/Advertising Balance**: The balance of ad inventory rates and content that maximizes overall performance.
+
+### Key Takeaways
+
+- For media sites, ad revenue is everything - but advertising may include displays, pay-per-view, pay-per-click, and affiliate models, so tracking revenues is complex.
+- Media sites need inventory and desirability, which comes from content that attracts a demographic advertisers want.
+- It's hard to strike a balance between having good content and enough ads to pay the bills. 
 
 [back to top](#lean-analytics)
