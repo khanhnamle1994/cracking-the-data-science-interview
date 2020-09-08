@@ -18,6 +18,7 @@ Here are the sections and chapters:
 - Chapter 7: [Business Models](#business-models)
 - Chapter 8: [Ecommerce](#ecommerce)
 - Chapter 9: [SaaS](#saas)
+- Chapter 10: [Free Mobile App](#free-mobile-app)
 
 **Section 3 - Lines In The Sand**
 
@@ -292,5 +293,41 @@ The 5 aspects of any business model:
 - In SaaS, churn is everything. If you can build a group of loyal users faster than they erode, you'll thrive.
 - You need to measure user engagement long before the users become customers, and measure customer activity long before they vanish, to stay ahead of the game.
 - Many people equate SaaS models with subscription, but you can monetize on-demand software in many other ways, sometimes to great effect.
+
+[back to top](#lean-analytics)
+
+## Free Mobile App
+
+### Overview
+
+- When you derive revenue for your app from other sources, the model gets complex.
+- Unlike web apps, where it's easy to do A/B testing and continuous deployment, mobile apps go through the app store gatekeeper - which limits the number of iterations a company can undergo, and hampers experimentation.
+- Mobile app developers make money within their apps in several ways:
+  - Downloadable content (such as new maps or vehicles).
+  - Flair and customization of in-character appearance and gaming content.
+  - Advantages.
+  - Saving time.
+  - Elimination of countdown timers.
+  - Upselling to a paid version.
+  - In-game ads.
+
+### Key Metrics
+
+1. **Downloads**: How many people have downloaded the app, as well as related metrics such as app store placement and ratings.
+2. **Customer Acquisition Cost**: How much it costs to get a user and to get a paying customer.
+3. **Launch Rate**: The percentage of people who download the app, actually launch it, and create an account.
+4. **Percent of Active Users/Players**: The percentage of users who have launched the app and use it on a daily/monthly basis (DAU and MAU).
+5. **Percentage of Users Who Pay**: How many of your users ever pay for anything.
+6. **Time To First Purchase**: How long it takes after activation for a user to make a purchase.
+7. **Monthly Average Revenue Per User**: This is taken from both purchases and watched ads.
+8. **Ratings Click-Through**: The percentage of users who put a rating or a review in an app store.
+9. **Virality**: On average, how many other users a user invites.
+10. **Churn**: How many customers have un-installed the app, or haven't launched it in a certain time period.
+11. **Customer Lifetime Value**: How much a user is worth from cradle to grave.
+
+### Key Takeaways
+
+- Mobile apps make their money in a variety of ways.
+- Most of the money comes from a small number of users; these should be segmented and analyzed as a distinct group. The key metric is average revenue per paying user.
 
 [back to top](#lean-analytics)
