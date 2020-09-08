@@ -17,6 +17,7 @@ Here are the sections and chapters:
 - Chapter 6: [One Metric That Matters](#one-metric-that-matters)
 - Chapter 7: [Business Models](#business-models)
 - Chapter 8: [Ecommerce](#ecommerce)
+- Chapter 9: [SaaS](#saas)
 
 **Section 3 - Lines In The Sand**
 
@@ -243,5 +244,53 @@ The 5 aspects of any business model:
 - Searches, both off- and on-site, are an increasingly common way of finding something for purchase.
 - While conversion rates, repeat purchases, and transaction sizes are important, the ultimate metric is the product of the three of them: revenue per customer.
 - Don't overlook real-world considerations like shipping, warehouse logistics, and inventory.
+
+[back to top](#lean-analytics)
+
+## SaaS
+
+### Overview
+
+- A SaaS company offers software on an on-demand basis, usually delivered through a website it operates.
+- Most SaaS providers generate revenue from a monthly (or yearly) subscription that users pay.
+- Many SaaS providers offer a tiered model of their service, where the monthly fee varies depending on some dimension of the application. This might be the number of projects in a project management tool, or the number of customers in a customer relationship management application.
+- Because the incremental cost of adding another customer to a SaaS service is negligible, many SaaS providers use a freemium model of customer acquisition. Customers can start using a free version of the service that's constrained, in the hopes that they'll consume all the free capacity and pay for more.
+
+### Key Metrics
+
+1. **Attention** measures how effectively the business attracts visitors.
+2. **Enrollment** measures how many visitors become free or trial users.
+3. **Stickiness** measures how much the customers use the product.
+4. **Conversion** measures how many of the users become paying customers, and how many of those switch to a higher-paying tier.
+5. **Revenue Per Customer** measures how much money a customer brings in within a given time period.
+6. **Virality** measures how likely customers to invite others and spread the word, and how long it takes them do so.
+7. **Upselling** measures what makes customers increase their spending, and how often that happens.
+8. **Uptime and Reliability** measures how many complaints, problem escalations, or outages the company has.
+9. **Churn** measures how many users and customers leave in a given time period.
+10. **Lifetime value** measures how much customers are worth from cradle to grave.
+
+### Measuring Engagement
+
+- The ultimate metric for engagement is daily use.
+  - If your product isn't a daily use app, establishing a minimum baseline of engagement takes longer, and the time it takes to iterate through a cycle of learning is longer.
+  - It's also hard to demonstrate enough value, quickly enough, to keep people from churning.
+- When measuring engagement, don't just look at a coarse metric like visit frequency. Look for usage patterns throughout your application by analyzing data in two ways:
+  - To find ways you might improve things, segment users who do what you want from those who don't, and identify ways in which they're different.
+  - To decide whether a change worked, test the change on a subset of your users and compare that subset's results to others.
+
+### Churn
+
+- Churn is the percentage of people who abandon your service over time. This can be measured weekly, monthly, quarterly, etc., but you should pick a timespan for all your metrics and stick to it in order to make comparing them easier.
+- The simple formula for churn is: `(Number of churns during period) / (# of customers at beginning of period)`. However, this formula isn't normalized for behavior and size.
+- A more accurate formula averages out the number of customers in the period analyzed: `(Number of churns during period) / [(# of customers at beginning of period) + (# of customers at end of period)] / 2`
+- Ultimately, the math gets really complex. There are two ways to simplify it:
+  - Measure churn by cohort, so you compare new to churned users based on when they first became users.
+  - Measure churn each day. The shorter the time period you measure, the less that changes during that specific period will distort things.
+
+### Key Takeaways
+- While freemium gets a lot of visibility, it's actually a sales tactic, and one you need to use carefully.
+- In SaaS, churn is everything. If you can build a group of loyal users faster than they erode, you'll thrive.
+- You need to measure user engagement long before the users become customers, and measure customer activity long before they vanish, to stay ahead of the game.
+- Many people equate SaaS models with subscription, but you can monetize on-demand software in many other ways, sometimes to great effect.
 
 [back to top](#lean-analytics)
