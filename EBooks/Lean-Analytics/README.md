@@ -20,6 +20,7 @@ Here are the sections and chapters:
 - Chapter 9: [SaaS](#saas)
 - Chapter 10: [Free Mobile App](#free-mobile-app)
 - Chapter 11: [Media Site](#media-site)
+- Chapter 12: [User Generated Content](#user-generated-content)
 
 **Section 3 - Lines In The Sand**
 
@@ -352,6 +353,31 @@ The 5 aspects of any business model:
 
 - For media sites, ad revenue is everything - but advertising may include displays, pay-per-view, pay-per-click, and affiliate models, so tracking revenues is complex.
 - Media sites need inventory and desirability, which comes from content that attracts a demographic advertisers want.
-- It's hard to strike a balance between having good content and enough ads to pay the bills. 
+- It's hard to strike a balance between having good content and enough ads to pay the bills.
+
+[back to top](#lean-analytics)
+
+## User Generated Content
+
+### Overview
+
+- In this model, you're focused on the creation of good content, which means not only posts and uploads but also votes, comments, spam flagging, and other valuable activity.
+- UGC is about the amount of good content vs bad, and the percentage of users who are lurkers versus creators. This is an **engagement funnel**.
+
+### Key Metrics
+
+1. **Number of Engaged Visitors**: How often people come back, and how long they stick around.
+2. **Content Creation**: The percentage of visitors who interact with content in some way, from creating it to voting on it.
+3. **Engagement Funnel Changes**: How well the site moves people to more engaged levels of content over time.
+4. **Value of Created Content**: The business benefit of content, from donations to media clicks.
+5. **Content Sharing and Virality**: How content gets shared, and how this drives growth.
+6. **Notification Effectiveness**: The percentage of users who, when told something by push, email, or another means, act on it.
+
+### Key Takeaways
+
+- Visitor engagement is everything in UGC. You track visitors' involvement in an "engagement funnel."
+- Many users will lurk, some will contribute lightly, and others will become dedicated content creators. This 80/20 split exists throughout the activities you want your users to accomplish.
+- To keep users coming back and engaged, you'll need to notify them of activity through email and other forms of "interruption."
+- Fraud prevention is a significant amount of work for a UGC site.
 
 [back to top](#lean-analytics)
