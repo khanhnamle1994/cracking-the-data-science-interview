@@ -22,6 +22,7 @@ Here are the sections and chapters:
 - Chapter 11: [Media Site](#media-site)
 - Chapter 12: [User Generated Content](#user-generated-content)
 - Chapter 13: [Two Sided Marketplace](#two-sided-marketplace)
+- Chapter 14: [What Stage Are You At](#what-stage-are-you-at)
 
 **Section 3 - Lines In The Sand**
 
@@ -408,5 +409,25 @@ The 5 aspects of any business model:
 - Early on, the big challenge is solving the "chicken and egg" problem of finding enough buyers and sellers. It's usually good to focus on the people who have money to spend first.
 - Since sellers are inventory, you need to track the growth of that inventory and how well it fits what buyers are looking for.
 - While many marketplaces take a percentage of transactions, you may be able to make money in other ways, by helping sellers promote their products or charging a listing fee.
+
+[back to top](#lean-analytics)
+
+## What Stage Are You At
+
+1. First, you need **empathy**.
+  - You need to get inside your target market's head and be sure you're solving a problem people care about in a way someone will pay for.
+  - That means getting out of the building, interviewing people, and running surveys.
+2. Second, you need **stickiness**, which comes from a good product.
+  - You need to find out if you can build a solution to the problem you've discovered.
+  - There's no point in promoting something awful if your visitors will bounce right off it in disgust.
+3. Third, you need **virality**.
+  - Once you've got a product or service that's sticky, it's time to use word of mouth.
+  - That way, you'll test out your acquisition and on-boarding processes on new visitors who are motivated to try you, because you have an implied endorsement from an existing user.
+  - Virality is also a force multiplier for paid promotion, so you want to get it right before you start spending money on customer acquisition through inorganic methods like advertising.
+4. Fourth, you need **revenue**.
+  - You'll want to monetize things at this point. You're focused on maximizing and optimizing revenue.
+5. Fifth, you need **scale**.
+  - With revenues coming in, it's time to move from growing your business to growing your market. You need to acquire more customers from new verticals and geographies.
+  - You can invest in channels and distribution to help grow your user base, since direct interaction with individual customers is less critical - you're past product/market fit and you're analyzing things quantitatively.
 
 [back to top](#lean-analytics)
