@@ -21,6 +21,7 @@ Here are the sections and chapters:
 - Chapter 10: [Free Mobile App](#free-mobile-app)
 - Chapter 11: [Media Site](#media-site)
 - Chapter 12: [User Generated Content](#user-generated-content)
+- Chapter 13: [Two Sided Marketplace](#two-sided-marketplace)
 
 **Section 3 - Lines In The Sand**
 
@@ -379,5 +380,33 @@ The 5 aspects of any business model:
 - Many users will lurk, some will contribute lightly, and others will become dedicated content creators. This 80/20 split exists throughout the activities you want your users to accomplish.
 - To keep users coming back and engaged, you'll need to notify them of activity through email and other forms of "interruption."
 - Fraud prevention is a significant amount of work for a UGC site.
+
+[back to top](#lean-analytics)
+
+## Two Sided Marketplace
+
+### Overview
+
+- In this model, the company makes money when a buyer and seller come together to complete a transaction.
+  - The seller is responsible for listing and promoting the product.
+  - The marketplace owner has a "hands-off" approach to the individual transactions.
+  - The buyer and seller have competing interests. In most marketplace models, the seller wants to extract as much money as possible, while the buyer wants to spend as little as possible.
+- Two-sided marketplaces face a unique problem: they have to attract both buyers and sellers.
+
+### Key Metrics
+
+1. **Buyer and Seller Growth**: The rate at which you're adding new buyers and sellers, as measured by return visitors.
+2. **Inventory Growth**: The rate at which sellers are adding inventory - such as new listings - as well as completeness of those listings.
+3. **Search Effectiveness**: What buyers are searching for, and whether it matches the inventory you're building.
+4. **Conversion Funnels**: The conversion rates for items sold, and any segmentation that reveals what helps sell items.
+5. **Ratings and Signs of Fraud**: The ratings for buyers and sellers, signs of fraud, and tone of the comments.
+6. **Pricing Metrics**: If you have a bidding method in place, then you care whether sellers are setting prices too high or leaving money on the table.
+
+### Key Takeaways
+
+- Two-sided markets come in all shapes and sizes.
+- Early on, the big challenge is solving the "chicken and egg" problem of finding enough buyers and sellers. It's usually good to focus on the people who have money to spend first.
+- Since sellers are inventory, you need to track the growth of that inventory and how well it fits what buyers are looking for.
+- While many marketplaces take a percentage of transactions, you may be able to make money in other ways, by helping sellers promote their products or charging a listing fee.
 
 [back to top](#lean-analytics)
