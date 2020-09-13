@@ -24,6 +24,7 @@ Here are the sections and chapters:
 - Chapter 13: [Two Sided Marketplace](#two-sided-marketplace)
 - Chapter 14: [What Stage Are You At](#what-stage-are-you-at)
 - Chapter 15: [Empathy](#empathy)
+- Chapter 16: [Stickiness](#stickiness)
 
 **Section 3 - Lines In The Sand**
 
@@ -485,5 +486,44 @@ The 5 aspects of any business model:
   - Is their usage and behavior as expected or different?
 - Don't ignore qualitative analytics.
 - The narrowing of your focus and value proposition through the elimination of features should have an impact on how customers respond.
+
+[back to top](#lean-analytics)
+
+## Stickiness
+
+### MVP Stickiness
+
+- The focus now is squarely on retention and engagement. You want proof that your product is becoming an integral part of your users' lives, and that it'll be hard for them to switch.
+- Your top priority is to build a core set of features that gets used regularly and successfully, even by a small group of initial users.
+- You need to prove two things:
+  - Are people using the product as you expected? If they aren't, maybe you should switch to that new use case or market.
+  - Are people getting enough value out of it?
+
+### Iterate the MVP
+
+- Iterations are evolutionary, pivots are revolutionary. This is one of the reasons founders get frustrated and decide to pivot repeatedly in the hopes that something will accidentally engage their users. Resist that temptation.
+- As you iterate, your goal is to improve on the core metrics that you're tracking. Don't get caught tinkering and polishing. You're not fine-tuning at this point, you're searching for the right product and market.
+
+### How To Handle User Feedback
+
+- Plan tests ahead of time, and know what you want to learn before you get started.
+- Don't talk to just anybody.
+- Review results quickly as you collect data.
+
+### The Minimum Viable Vision
+
+- You're building a platform.
+- You have recurring ways to make money.
+- You've got naturally tiered pricing.
+- You're tied to a disruptive change.
+- Adopters automatically become advocates.
+- You can create a bidding war.
+- You're riding an environmental change.
+- You've got a sustainable unfair advantage.
+- Your marginal costs trend to 0.
+- There are inherent network effects in the model.
+- You have several ways to monetize.
+- You make money when your customers make money.
+- An ecosystem will form around you.
 
 [back to top](#lean-analytics)
