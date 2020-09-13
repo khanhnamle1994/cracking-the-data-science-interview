@@ -23,6 +23,7 @@ Here are the sections and chapters:
 - Chapter 12: [User Generated Content](#user-generated-content)
 - Chapter 13: [Two Sided Marketplace](#two-sided-marketplace)
 - Chapter 14: [What Stage Are You At](#what-stage-are-you-at)
+- Chapter 15: [Empathy](#empathy)
 
 **Section 3 - Lines In The Sand**
 
@@ -429,5 +430,60 @@ The 5 aspects of any business model:
 5. Fifth, you need **scale**.
   - With revenues coming in, it's time to move from growing your business to growing your market. You need to acquire more customers from new verticals and geographies.
   - You can invest in channels and distribution to help grow your user base, since direct interaction with individual customers is less critical - you're past product/market fit and you're analyzing things quantitatively.
+
+[back to top](#lean-analytics)
+
+## Empathy
+
+### Metrics
+
+- Focus on gathering qualitative feedback through problem and solution interviews.
+- Find a problem worth solving and a solution that's sufficiently good to garner early traction.
+- Get out of the building and speak to at least 15 people at each interviewing stage.
+
+### Find A Problem To Fix
+
+- The Problem Is Painful Enough:
+  - You want people to act in a way that helps your business. This requires enough discomfort with their situation that they actually do what you want.
+- Enough People Care:
+  - You need an addressable market. You want audiences that are homogeneous within and heterogeneous between.
+- They're Already Trying To Solve It:
+  - The current solution will be your biggest competitor at first, because it's the path of least resistance for people.
+
+### Convergent and Divergent Problem Interviews
+
+- Convergent Interviews:
+  - They are directed, focused, and intended to quantify the urgency and prevalence of the problems, so you can compare the many issues you've identified.
+  - They give you a clear course of action at the risk of focusing too narrowly on the problems that you think matter, rather than freeing interviewees to identify other problems that may be more important to them.
+- Divergent Interviews:
+  - They are much more speculative, intended to broaden your search for something useful you might go build.
+  - They run the risk of giving you too many problems, or not enough similar problems, and no clarity on what to do next.
+
+### Get Answers At Scale
+
+- This does several things:
+  - It forces you to formalize your discussions, moving from subjective to objective.
+  - It tests whether you can command the attention - at scale - that you'll need to thrive.
+  - It gives you quantitative information you can analyze and segment, which can reveal patterns you won't get from individual groups.
+  - The respondents may become your beta users and the base of your community.
+- Employ surveys and landing pages to reach a wider audience and build a stronger, data-driven case for the qualitative feedback you received during interviews.
+
+### Validate The Solution
+
+- Interview customers to get the qualitative feedback and confidence necessary to build a MVP.
+- Continue and expand on quantitative testing through surveys and landing pages.
+- Identify the riskiest aspects of the solution and what you need people to do with the solution in order to be successful.
+
+### Measure the MVP
+
+- Pick the One Metric That Matters.
+- Identify the riskiest parts of your business and de-risk them through a constant cycle of testing and learning.
+- The most important metrics will be around engagement:
+  - Are people using the product?
+  - How are they using the product?
+  - Are they using all of the product or only pieces of it?
+  - Is their usage and behavior as expected or different?
+- Don't ignore qualitative analytics.
+- The narrowing of your focus and value proposition through the elimination of features should have an impact on how customers respond.
 
 [back to top](#lean-analytics)
