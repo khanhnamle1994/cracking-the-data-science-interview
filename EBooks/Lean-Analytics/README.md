@@ -26,6 +26,7 @@ Here are the sections and chapters:
 - Chapter 15: [Empathy](#empathy)
 - Chapter 16: [Stickiness](#stickiness)
 - Chapter 17: [Virality](#virality)
+- Chapter 18: [Revenue](#revenue)
 
 **Section 3 - Lines In The Sand**
 
@@ -585,6 +586,46 @@ The 5 aspects of any business model:
 - If every user successfully invites more than one other user, your growth is almost assured. While this is seldom the case, any word of mouth adds to customer growth and reduces your overall customer acquisition costs.
 - Inherent virality happens naturally as users interact with your product. Artificial virality is incentivized and less genuine. And word of mouth, while hard to create and track, drives a lot of early adoption. You need to segment users who come from all three kinds of virality.
 - In addition to viral coefficient, you care about viral cycle time. The sooner each user invites another one, the faster you'll grow.
-- As you grow in the Virality and Revenue stages, you're trying to find leading indicators of future growth: metrics that can be measaured early in a user's lifecycle that predict or control what the future will be.
+- As you grow in the Virality and Revenue stages, you're trying to find leading indicators of future growth: metrics that can be measured early in a user's lifecycle that predict or control what the future will be.
+
+[back to top](#lean-analytics)
+
+## Revenue
+
+### Metrics
+
+- Revenue per customer is a good indicator of business health.
+- As a ratio, it helps you focus on making real decisions for your startup:
+  - You'll look at CTR and ad revenue, or conversion rate and shopping cart size, or subscriptions and customer lifetime value.
+  - You'll compare this to the cost of acquiring new users faster than they churn.
+  - You'll work hard to get pricing right, balance the highest price with the most paying customers.
+  - You'll experiment with bundles, subscription tiers, discounts, and other mechanisms to determine the best price.
+
+### Customer Lifetime Value > Customer Acquisition Cost
+
+- You want to spend only a fraction of revenue on acquisition if you are going to keep the lights on, hire in anticipation of growth, spend money on research, and generate a ROI.
+- Balancing acquisition, revenue, and cash flow is at the core of running many business models, particularly those that rely on subscription revenue and paying to gain customers. As you play with the numbers to strike that balance, there are really 4 variables to work on:
+  - The money in the bank at the outset.
+  - The amount of money spent on customer acquisition each month.
+  - The revenue you bring in from users.
+  - The rate of churn from users.
+
+### Market/Product Fit
+
+- When things are not going well, try pivoting into a new market. The product isn't the problem, it's the target customer.
+- Also try changing your business model, which is a completely reasonable approach to finding scale.
+  - Review old assumptions about the markets you were going after with the product.
+  - Understand the mechanics of various markets and business models helps you triangulate the combinations that work best.
+  - Speak with 10-15 prospects in each market to validate your assumptions around their problems.
+  - Look for important similarities between companies inside of a broadly defined market.
+
+### Summary
+
+- The core equation for the Revenue stage is the money a customer brings in minus the cost of acquiring that customer. This is the return on acquisition investment that drives your growth.
+- You're moving from proving you have the right product to proving you have a real business. As a result, your metrics shift from usage patterns to business ratios.
+- Think of a business as a machine that converts money into greater sums of money. The ratio of money in to money out, as well as the maximum amount of money you can put in, dictates the value of the business.
+- You're trying to figure out where to focus: more revenue per customer, more customers, more efficiencies, greater frequency, and so on.
+- If things aren't working, it may be easier to pivot your initial product to a new market rather than starting from scratch.
+- While your goal is to grow, you should also keep an eye on breakeven, because once you you can pay your own bills you can survive indefinitely.
 
 [back to top](#lean-analytics)
