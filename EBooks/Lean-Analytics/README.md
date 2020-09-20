@@ -27,6 +27,7 @@ Here are the sections and chapters:
 - Chapter 16: [Stickiness](#stickiness)
 - Chapter 17: [Virality](#virality)
 - Chapter 18: [Revenue](#revenue)
+- Chapter 19: [Scale](#scale)
 
 **Section 3 - Lines In The Sand**
 
@@ -627,5 +628,27 @@ The 5 aspects of any business model:
 - You're trying to figure out where to focus: more revenue per customer, more customers, more efficiencies, greater frequency, and so on.
 - If things aren't working, it may be easier to pivot your initial product to a new market rather than starting from scratch.
 - While your goal is to grow, you should also keep an eye on breakeven, because once you you can pay your own bills you can survive indefinitely.
+
+[back to top](#lean-analytics)
+
+## Scale
+
+### Metrics
+
+- In this stage, you're checking whether analysts, competitors, and distributors care about you as much as your core group of initial customers does. Getting attention at scale means your product or service can stand on its own, without your constant love and feeding.
+- Many of the metrics you've used to optimize a particular part of the business now become inputs into your accounting systems. Data like sales, margins, and customer support costs now help you project cash flow and understand how much investment you'll need.
+- Scaling is good if it brings in incremental revenue, but you have to watch for a decrease in engagement, a gradual saturation of the initial market, or a rising cost of customer acquisition. Changes in churn, segmented by channels, show whether you're growing your most important asset - your customers - or hemorrhaging attention as you scale.
+
+### Finding Discipline as You Scale
+
+- Know, clearly, what assumptions underpin your fundamental business model. Then, with the approval of stakeholders, change one of them. Hand that change to the executive team: which features do you think will improve that basic assumption?
+- Plan out your daily activities to test those features: have conversations with customers, run surveys, create a segment that tests the new code, try mockups. This combination of agility and methodical precision is what distinguishes great startups from stalled ones.
+
+### Summary
+
+- When you're scaling, you know your product and your market. Your metrics are now focused on the health of your ecosystem, and your ability to enter new markets.
+- You'll look at compensation, API traffic, channel relationships, and competitors at this stage - whereas before, these were distractions.
+- You need to understand if you're focused on efficiency or differentiation. Trying to do both as a way of scaling is difficult. If you're efficiency-focused, you're trying to reduce costs; if you're differentiation-focused, you're increasing margins.
+- As you grow, you'll need to have more than one metric at a time. Set up a hierarchy of metrics that keeps the strategy, the tactics, and the implementation aligned with a consistent set of goals. We call this the *three threes*.
 
 [back to top](#lean-analytics)
