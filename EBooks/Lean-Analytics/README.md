@@ -28,6 +28,7 @@ Here are the sections and chapters:
 - Chapter 17: [Virality](#virality)
 - Chapter 18: [Revenue](#revenue)
 - Chapter 19: [Scale](#scale)
+- Chapter 20: [Model and Stage Drives The Metric You Track](#model-and-stage-drives-the-metric-you-track)
 
 **Section 3 - Lines In The Sand**
 
@@ -650,5 +651,158 @@ The 5 aspects of any business model:
 - You'll look at compensation, API traffic, channel relationships, and competitors at this stage - whereas before, these were distractions.
 - You need to understand if you're focused on efficiency or differentiation. Trying to do both as a way of scaling is difficult. If you're efficiency-focused, you're trying to reduce costs; if you're differentiation-focused, you're increasing margins.
 - As you grow, you'll need to have more than one metric at a time. Set up a hierarchy of metrics that keeps the strategy, the tactics, and the implementation aligned with a consistent set of goals. We call this the *three threes*.
+
+[back to top](#lean-analytics)
+
+## Model and Stage Drives The Metric You Track
+
+### E-Commerce  
+
+- The Big Question: **Will they buy enough for enough money for you?**
+- Empathy Stage:
+  - How do buyers become aware of the need?
+  - How do they try to find a solution?
+  - What pain do they encounter as a result?
+  - What are their demographics and tech profiles?
+  - What competes with the product you're proposing?
+  - What's the price elasticity of the product or service?
+
+- Will It Grow: **Will they find you and tell others?**
+- Stickiness Stage:
+  - Conversion, shopping cart size.
+  - For acquisition: cost of finding new buyers.
+  - For loyalty: percent of buyers who return in 90 days.
+- Virality Stage:
+  - Acquisition mode: customer acquisition costs, volume of sharing.
+  - Loyalty mode: ability to reactivate, volume of buyers who return.
+
+- Primary Source of Money: **Transactions**
+- Revenue Stage:
+  - Transaction value, revenue per customer, ratio of acquisition cost to lifetime value, direct sales metrics.
+- Scale Stage:
+  - Affiliates, channels, white-label, product ratings, reviews, support costs, returns, RMAs and refunds, channel conflict.
+
+### Two-Sided Marketplace
+
+- The Big Question: **Will they buy enough for enough money for you?**
+- Empathy Stage:
+  - Do buyers need a place to sell?
+  - Do sellers need a place to buy?
+  - How do they transact today?
+  - How do they find items?
+  - What prevents them from buying through those channels?
+  - Will buyers share sales revenue, or go outside the market?
+  - What added-value features entitle you to a portion of the proceeds?
+  - Will you be able to generate listings?
+  - Will they come to the marketplace?
+
+- Will It Grow: **Will they find you and tell others?**
+- Stickiness Stage:
+  - Rate of inventory creation, search type and frequency, price elasticity, listing quality, fraud rates.
+- Virality Stage:
+  - Acquisition of sellers, acquisition of buyers, inherent and word-of-mouth sharing.
+  - Account creation and configuration.
+
+- Primary Source of Money: **Transactions**
+- Revenue Stage:
+  - Transactions, commissions, per-listing pricing, value-added services such as promotion, photography.
+- Scale Stage:
+  - Other verticals, related products.
+  - Bundling third-party offers.
+
+### Software as a Service
+
+- The Big Question: **Will it solve a pain they'll pay for?**
+- Empathy Stage:
+  - Do prospects have a known need they are pained to solve today?
+  - Can they do it with software?
+  - How do they learn about such solutions?
+  - What's the buying process?
+  - Will the features you're offering fit their processes and solve a pain well enough for them to part with money and tell their friends?
+
+- Will It Grow: **Will they sign up, stick around, and tell others?**
+- Stickiness Stage:
+  - Engagement, churn, visitor/user/customer funnel, capacity tiers, feature utilization (or neglect).
+- Virality Stage:
+  - Inherent virality, customer acquisition cost.
+
+- Primary Source of Money: **Active Users**
+- Revenue Stage:
+  - Upselling, customer acquisition cost, customer lifetime value, upselling path and roadmap.
+- Scale Stage:
+  - API traffic, Magic Number, app ecosystem, channels, resellers, support costs, compliance, on-premise/private versions.
+
+### Free Mobile App
+
+- The Big Question: **Will it solve a pain they'll pay for?**
+- Empathy Stage:
+  - What's your target market?
+  - What similar games and models have worked?
+  - Are there examples of similar pricing and gameplay habits?
+  - Does the basic game structure function?
+  - Do users like a basic MVP of core gameplay, as shown by user testing?
+
+- Will It Grow: **Will they sign up, stick around, and tell others?**
+- Stickiness Stage:
+  - Onboarding, adoption, ease of play, time to "hooks".
+  - Day-, week-, and month-long churn.
+  - Launches, abandonment, time player, regional testing.
+- Virality Stage:
+  - App store ratings, sharing, invites, rankings.
+
+- Primary Source of Money: **Active Users**
+- Revenue Stage:
+  - Download volumes, average revenue per player, average revenue per paying player, acquisition costs.
+- Scale Stage:
+  - Spinoffs, publisher and distribution deals, international versions.
+
+### Media
+
+- The Big Question: **Will they engage with content in a repeatable manner?**
+- Empathy Stage:
+  - Can you get enough attention around a subject?
+  - How do people consume information?
+  - Why will they consume your content?
+  - What tools, apps, and platforms deliver content to them today?
+
+- Will It Grow: **Can you grow traffic to a level that can be profitably monetized?**
+- Stickiness Stage:
+  - Traffic, visits, returns.
+  - Segmenting business metrics by topic, category, author.
+  - RSS, email, Twitter followers and click-throughs.
+- Virality Stage:
+  - Content, virality, search engine marketing and optimization.
+  - Promoting long time on page.
+
+- Primary Source of Money: **Ad Revenue**
+- Revenue Stage:
+  - Cost per engagement, affiliate revenues, click-through percentages, number of impressions.
+- Scale Stage:
+  - Syndication, licenses, media and event partnerships.
+
+### User-Generated Content
+
+- The Big Question: **Will they engage with content in a repeatable manner?**
+- Empathy Stage:
+  - Does a community exist?
+  - What makes it special and unique?
+  - How do others join it?
+  - How fast is it growing?
+  - Will the community come to you?
+  - Where does it convene today?
+  - How does it like to interact?
+  - What are its privacy needs, and its tolerance for sharing and advertising?
+
+- Will It Grow: **Can you grow traffic to a level that can be profitably monetized?**
+- Stickiness Stage:
+  - Content creation, engagement funnel, spam rates, content and word-of-mouth sharing, primary acquisition channels.
+- Virality Stage:
+  - Content invites, user invites, in-site messaging, off-site sharing.
+
+- Primary Source of Money: **Ad Revenue**
+- Revenue Stage:
+  - Ads, donations, user data licensing.
+- Scale Stage:
+  - Analytics, user data, private and third-party ad models, APIs.
 
 [back to top](#lean-analytics)
