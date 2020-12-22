@@ -32,6 +32,8 @@ Here are the sections and chapters:
 
 **Section 3 - Lines In The Sand**
 
+- Chapter 21: [Am I Good Enough](#am-i-good-enough)
+
 **Section 4 - Putting Lean Analytics To Work**
 
 ![](lean-analytics.jpg)
@@ -804,5 +806,53 @@ The 5 aspects of any business model:
   - Ads, donations, user data licensing.
 - Scale Stage:
   - Analytics, user data, private and third-party ad models, APIs.
+
+[back to top](#lean-analytics)
+
+## Am I Good Enough
+
+There are a few metric that apply to most business models:
+
+### Growth Rate
+
+- As you're validating your problem and solution, ask yourself whether there are enough people who really care enough to sustain a 5% growth rate - but don't strive for that rate of growth at the expense of really understanding your customers and building a meaningful solution.
+- When you're a pre-revenue startup at or near product/market fit, your line in the sand should be 5% growth for active users each week, and once you're generating revenues, they should grow at 5% a week.
+
+### Number of Engaged Visitors
+
+- Aim for 30% of your registered users to visit once a month, and 10% of them to come daily.
+- Figure out your reliable leading indicators of growth, and measure them against your business model predictions.
+
+### Pricing Metrics
+
+- Whatever your choice of pricing models, testing is key.
+- Understanding the right tiers of pricing and the price elasticity of your market is vital if you're going to balance revenues with adoption.
+- Once you find your revenue "sweet spot," aim about 10% lower to encourage growth of your user base.
+
+### Cost of Customer Acquisition
+
+- Unless you have a good reason to do otherwise, don't spend more than a third of the money you expect to gain from a customer (and the customers invited downstream) on acquiring that customer.
+
+### Virality
+
+- There's no "typical" virality for startups. If virality is below 1, it's helping lower your customer acquisition cost. If it's above 1, you'll grow. And if you're over 0.75, things are pretty good.
+- Try to build inherent virality into the product, and track it against your business model. Treat artificial virality the same way you would customer acquisition, and segment it by the value of the new users it brings in.
+
+### Mailing List Effectiveness
+
+- Open and CTR will vary significantly, but a well-run campaign should hit a 20-30% open rate and over 5% click-through.
+
+### Uptime and Reliability
+
+ - For a paid service that users rely on, you should have at least 99.5% uptime, and keep users updated about outages.
+
+### Site Engagement
+
+- An average engaged time on a page of one minute is normal, but there's a wide variance between sites and between pages on a site.
+
+### Web Performance
+
+- Site speed is something you can control, and it can give you a real advantage.
+- Get your pages to load for a first-time visitor in less than 5 seconds. After 10, you'll start to suffer.
 
 [back to top](#lean-analytics)
