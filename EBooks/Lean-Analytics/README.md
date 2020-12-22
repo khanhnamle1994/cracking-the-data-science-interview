@@ -33,6 +33,7 @@ Here are the sections and chapters:
 **Section 3 - Lines In The Sand**
 
 - Chapter 21: [Am I Good Enough](#am-i-good-enough)
+- Chapter 22: [Ecommerce Lines In The Sand](#ecommerce-lines-in-the-sand)
 
 **Section 4 - Putting Lean Analytics To Work**
 
@@ -854,5 +855,14 @@ There are a few metric that apply to most business models:
 
 - Site speed is something you can control, and it can give you a real advantage.
 - Get your pages to load for a first-time visitor in less than 5 seconds. After 10, you'll start to suffer.
+
+[back to top](#lean-analytics)
+
+## Ecommerce Lines In The Sand
+
+- Your mileage will depend on whether you're an acquisition- or a loyalty-focused e-commerce site; on whether your buyers are buying from a tablet, a phone, or a desktop; and on a variety of other important dimensions. The only way you can deal with this is to measure, learn, and segment properly.
+- If you're an online retailer, you'll get initial conversion rates of around 2%, which will vary by vertical, but if you can achieve 10%, you're doing incredibly well.
+- 65% of people who start down your purchase funnel will abandon their purchase before paying for it.
+- Think "search-first," and invest in instrumenting search metrics son your website and within your product to see what users are looking for and what they're not able to find.
 
 [back to top](#lean-analytics)
