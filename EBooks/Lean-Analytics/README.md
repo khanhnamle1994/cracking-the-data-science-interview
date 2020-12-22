@@ -34,6 +34,7 @@ Here are the sections and chapters:
 
 - Chapter 21: [Am I Good Enough](#am-i-good-enough)
 - Chapter 22: [Ecommerce Lines In The Sand](#ecommerce-lines-in-the-sand)
+- Chapter 23: [SaaS Lines In The Sand](#saas-lines-in-the-sand)
 
 **Section 4 - Putting Lean Analytics To Work**
 
@@ -864,5 +865,13 @@ There are a few metric that apply to most business models:
 - If you're an online retailer, you'll get initial conversion rates of around 2%, which will vary by vertical, but if you can achieve 10%, you're doing incredibly well.
 - 65% of people who start down your purchase funnel will abandon their purchase before paying for it.
 - Think "search-first," and invest in instrumenting search metrics son your website and within your product to see what users are looking for and what they're not able to find.
+
+[back to top](#lean-analytics)
+
+## SaaS Lines In The Sand
+
+- If you ask for a credit card upfront, expect just 2% of visitors to try your service, and 50% of them to use it. If you don't ask for a credit card, expect 10% to try, and up to 25% to buy - but if they're surprised by a payment, you'll lose them quickly.
+- Try to get 20% increase in customer revenue each year. And try to get 2% of your paying subscribers to increase what they pay each month.
+- Try to get down to 5% churn a month before looking at other things to optimize. If churn is higher than that, chances are you're not sticky enough. If you can get churn to around 2%, you're doing exceptionally well.
 
 [back to top](#lean-analytics)
