@@ -38,6 +38,7 @@ Here are the sections and chapters:
 - Chapter 24: [Mobile Lines In The Sand](#mobile-lines-in-the-sand)
 - Chapter 25: [Media Site Lines In The Sand](#media-site-lines-in-the-sand)
 - Chapter 26: [User Generated Content Lines In The Sand](#user-generated-content-lines-in-the-sand)
+- Chapter 27: [Two Sided Marketplace Lines In The Sand](#two-sided-marketplace-lines-in-the-sand)
 
 **Section 4 - Putting Lean Analytics To Work**
 
@@ -909,5 +910,12 @@ There are a few metric that apply to most business models:
 - You'll have a very good indicator of stickiness when site visitors are spending 17 minutes a day on your site.
 - Expect 25% of your visitors to lurk, 60-70% of your visitors to do things that are easy and central to the purpose of your product or service, and 5-15% of your users to engage and create content for you. Among those engaged users, expect 80% of your content to come from a small, hyperactive group of users, and expect 2.5% of users to interact casually with content and less than 1% to put some effort into interaction.
 - Expect to spend a significant among of time and money fighting spam as you become more popular. Start measuring what's good and bad, and which users are good at flagging bad content, early on - the key to effective algorithms is a body of data to train them. Content quality is a leading indicator of user satisfaction, so watch for a decline in quality and deal with it before it alienates your community.
+
+[back to top](#lean-analytics)
+
+## Two Sided Marketplace Lines In The Sand
+
+- Measure transaction size and conversion rates to understand your buyers' behavior. Then pass this information along to sellers.
+- You have insight into what is selling well. Encourage those sellers and find more like them.
 
 [back to top](#lean-analytics)
