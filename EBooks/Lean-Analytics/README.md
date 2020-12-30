@@ -37,6 +37,7 @@ Here are the sections and chapters:
 - Chapter 23: [SaaS Lines In The Sand](#saas-lines-in-the-sand)
 - Chapter 24: [Mobile Lines In The Sand](#mobile-lines-in-the-sand)
 - Chapter 25: [Media Site Lines In The Sand](#media-site-lines-in-the-sand)
+- Chapter 26: [User Generated Content Lines In The Sand](#user-generated-content-lines-in-the-sand)
 
 **Section 4 - Putting Lean Analytics To Work**
 
@@ -899,5 +900,14 @@ There are a few metric that apply to most business models:
 - You'll lose around 5% of clicks before the visitor ever gets to your site. Deal with it. If you're sticky enough, the visitor will try again.
 - Learn where your most beneficial traffic comes from, and what topics it's after, and spend time cultivating a following around those sources and topics. When you run experiments, segment them by platform: Facebook fans want a different kind of content from Twitter followers.
 - Media sites should aim for 90 seconds or more of engaged time on their content pages. Don't expect a higher engaged time on landing pages, though; you want people to find the content they want quickly and dig in further.
+
+[back to top](#lean-analytics)
+
+## User Generated Content Lines In The Sand
+
+- There's no clear number, if a content generation function is core to the use of your application, optimize it until all your users can do it, and track error conditions carefully to find out what's causing the problem.
+- You'll have a very good indicator of stickiness when site visitors are spending 17 minutes a day on your site.
+- Expect 25% of your visitors to lurk, 60-70% of your visitors to do things that are easy and central to the purpose of your product or service, and 5-15% of your users to engage and create content for you. Among those engaged users, expect 80% of your content to come from a small, hyperactive group of users, and expect 2.5% of users to interact casually with content and less than 1% to put some effort into interaction.
+- Expect to spend a significant among of time and money fighting spam as you become more popular. Start measuring what's good and bad, and which users are good at flagging bad content, early on - the key to effective algorithms is a body of data to train them. Content quality is a leading indicator of user satisfaction, so watch for a decline in quality and deal with it before it alienates your community.
 
 [back to top](#lean-analytics)
