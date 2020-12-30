@@ -36,6 +36,7 @@ Here are the sections and chapters:
 - Chapter 22: [Ecommerce Lines In The Sand](#ecommerce-lines-in-the-sand)
 - Chapter 23: [SaaS Lines In The Sand](#saas-lines-in-the-sand)
 - Chapter 24: [Mobile Lines In The Sand](#mobile-lines-in-the-sand)
+- Chapter 25: [Media Site Lines In The Sand](#media-site-lines-in-the-sand)
 
 **Section 4 - Putting Lean Analytics To Work**
 
@@ -888,6 +889,15 @@ There are a few metric that apply to most business models:
 - A good metric here is highly dependent on the type of game, but aim for an ARPDAU above $0.05 as a minimum.
 - Like customer acquisition costs, customer revenue comes from your business model and the margin targets you've set. Every vertical has its own value. But in the mobile app world, if you know your ARPDAU, the number of days a user sticks around, and your cost per install, you can do the math fairly quickly and decide if you have a viable business model.
 - Recognize that in a free-to-play multiplayer game, most users are just "fodder" for paying users. Early on in the user's lifecycle, identify a leading indicator in her behavior that suggests whether she's a non-player, minnow, dolphin, or whale. Then provide different kinds of in-game monetization for these four segments.
-- Expect less than 1.5% review rate for paid apps, and significantly less than 1% for free apps. 
+- Expect less than 1.5% review rate for paid apps, and significantly less than 1% for free apps.
+
+[back to top](#lean-analytics)
+
+## Media Site Lines In The Sand
+
+- Your ads will get 0.5 to 2% CTR for most kinds of on-page advertising. Below 0.08%, you're doing something horribly wrong.
+- You'll lose around 5% of clicks before the visitor ever gets to your site. Deal with it. If you're sticky enough, the visitor will try again.
+- Learn where your most beneficial traffic comes from, and what topics it's after, and spend time cultivating a following around those sources and topics. When you run experiments, segment them by platform: Facebook fans want a different kind of content from Twitter followers.
+- Media sites should aim for 90 seconds or more of engaged time on their content pages. Don't expect a higher engaged time on landing pages, though; you want people to find the content they want quickly and dig in further.
 
 [back to top](#lean-analytics)
