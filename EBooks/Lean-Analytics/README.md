@@ -35,6 +35,7 @@ Here are the sections and chapters:
 - Chapter 21: [Am I Good Enough](#am-i-good-enough)
 - Chapter 22: [Ecommerce Lines In The Sand](#ecommerce-lines-in-the-sand)
 - Chapter 23: [SaaS Lines In The Sand](#saas-lines-in-the-sand)
+- Chapter 24: [Mobile Lines In The Sand](#mobile-lines-in-the-sand)
 
 **Section 4 - Putting Lean Analytics To Work**
 
@@ -873,5 +874,20 @@ There are a few metric that apply to most business models:
 - If you ask for a credit card upfront, expect just 2% of visitors to try your service, and 50% of them to use it. If you don't ask for a credit card, expect 10% to try, and up to 25% to buy - but if they're surprised by a payment, you'll lose them quickly.
 - Try to get 20% increase in customer revenue each year. And try to get 2% of your paying subscribers to increase what they pay each month.
 - Try to get down to 5% churn a month before looking at other things to optimize. If churn is higher than that, chances are you're not sticky enough. If you can get churn to around 2%, you're doing exceptionally well.
+
+[back to top](#lean-analytics)
+
+## Mobile Lines In The Sand
+
+- Expect yourself to be at the mercy of promotions, marketing, and the whims of the app store environment. The app store battle can be demoralizing, but smart mobile developers use the abundance of information about competitors to see what's working, emulate their successes, and avoid their mistakes.
+- Keep your initial downloads small, and aim for less than 50MB to minimize download churn.
+- Pay around $0.5 for a paid install, and around $2.5 for a legitimate, organic one, but make sure that your overall acquisition cost is less than $0.75 per user. These costs are increasing, in part because large studios and publishers are getting more heavily into mobile and driving costs higher, and in part because of the crackdown on some marketing service tactics for delivering paid installs.
+- Expect a significant number of downloads to never launch your application, particularly if it's a free app.
+- Assume that a big chunk of the people who try your app once will never do so again - but after that initial cliff drop, you'll see a more gradual decline in engaged users. While the shape of this curve will vary by app, industry, and demographic, the curve always exists, so once you have a few data points, you may be able to predict churn and dis-engagement ahead of time.
+- For a freemium model, aim for a conversion from free to paid of 2%. For a mobile application or game with in-app purchases, assume that roughly 1.5% of users will buy something.
+- A good metric here is highly dependent on the type of game, but aim for an ARPDAU above $0.05 as a minimum.
+- Like customer acquisition costs, customer revenue comes from your business model and the margin targets you've set. Every vertical has its own value. But in the mobile app world, if you know your ARPDAU, the number of days a user sticks around, and your cost per install, you can do the math fairly quickly and decide if you have a viable business model.
+- Recognize that in a free-to-play multiplayer game, most users are just "fodder" for paying users. Early on in the user's lifecycle, identify a leading indicator in her behavior that suggests whether she's a non-player, minnow, dolphin, or whale. Then provide different kinds of in-game monetization for these four segments.
+- Expect less than 1.5% review rate for paid apps, and significantly less than 1% for free apps. 
 
 [back to top](#lean-analytics)
