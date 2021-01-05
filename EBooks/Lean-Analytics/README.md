@@ -42,6 +42,8 @@ Here are the sections and chapters:
 
 **Section 4 - Putting Lean Analytics To Work**
 
+- Chapter 28: [Selling Into Enterprise Markets](#selling-into-enterprise-markets)
+
 ![](lean-analytics.jpg)
 
 ## We Are All Liars
@@ -917,5 +919,81 @@ There are a few metric that apply to most business models:
 
 - Measure transaction size and conversion rates to understand your buyers' behavior. Then pass this information along to sellers.
 - You have insight into what is selling well. Encourage those sellers and find more like them.
+
+[back to top](#lean-analytics)
+
+## Selling Into Enterprise Markets
+
+### Why Are Enterprise Customers Different?
+- In most cases, enterprise sales involve bigger-ticker items, sold to fewer customers. That means more money from fewer sources. If you're selling a big-ticket item, this changes the game dramatically. For starters, you can afford to talk to every customer. The high sale price offsets the cost of a direct sales approach, particularly in the early stages of the sale.
+- Enterprise buyers tend to more regulated. Big companies are often public companies with checks and balances. The person who pays for the product (finance) isn't the person who uses it (the line of business). Understanding this dichotomy is critical for product development and sales.
+- Most orgs of any real size have developed their own software and processes, and they expect you to adapt to them. They won't change how they work: change is hard, and retraining is a cost. This can increase your deployment costs, because you have to integrate with what's already in place. It also means your products must be more configurable and adaptable, which translates into more complexity and less ease of use.
+- Incumbent vendors can stall your sale significantly if they get wind of what you're planning to do just by claiming that they're going to do it too.
+- Most B2B-focused startups consist of two people:
+  - A domain expert knows the industry and the problem domain. He acts as a proxy for customers in the early stages of product definition. Often this person is from the line of business, and has a marketing, sales, or biz dev role.
+  - A disruption expert knows the tech that will produce a change on which the startup can capitalize. She can see beyond the current model and understand what an industry will look after the shift, and brings the novel approach to the existing market. This is usually the technologist.
+
+### The Enterprise Startup Lifecycle
+
+**Empathy: Consulting and Segmentation**
+- Consulting is a good way to discover customer needs, and it helps pay the bills. It also gives you a way to test out your early ideas, because while every customer has needs, the only needs you can build a business on are those that are consistent across a reasonably large, addressable market.
+- Once you've found the problem you're going to fix, and have verified that the solution will work with your prospects and clients, you need to segment them. Not all clients are identical, so it's smart to pick a geographic region, a particular vertical, or customers who belong to just one of your sales teams. That way, you can give those early adopters better attention and limit the impact of failure.
+
+**Stickiness: Standardization and Integration**
+- Instead of an MVP, you may have a prototype, or a set of specs for which the prospect will commit to paying on delivery. This pipeline of conditional purchases reduces the cost of fundraising, because it increases the chances of success.
+- Managing the tension between customization and standardization is one of the biggest challenges of an early-stage enterprise startup. If you can't get the client's users to try the product, you're doomed. And while your tech might work, if it doesn't properly integrate with legacy systems, it'll be seen as your fault, not theirs.
+
+**Virality: Word of Mouth, Referrals, and References**
+- Because enterprises don't trust newcomers, you'll rely heavily on referrals and word-of-mouth marketing. You'll make case studies from early successes, and ask satisfied users to handle phone calls from new prospects.
+- Referrals and references are critical to this stage of growth. A couple of household names as customers are priceless. Enterprise-focused vendors will often provide discounts in exchange for case studies.
+
+**Revenue: Direct Sales and Support**
+- To know if you have a sustainable business, you'll also look at support costs, churn, trouble tickets, and other indicators of ongoing business costs to learn just how much a particular customer contributes to the bottom line.
+- Feedback from the sales team and the support group is critical at this point, because it indicates whether your initial success is genuine, or simply a case of prospects buying into the story you're telling.
+
+**Scale: Channel Sales, Efficiences, and Ecosystems**
+- You may have channel sales through value-added resellers and distributors.
+- You'll also have an ecosystem of analysts, developers, APIs and platforms, partners, and competitors that will define and refine the market.
+
+### What Metrics Matter?
+
+**Ease of Customer Engagement and Feedback**
+- If you plan to use a direct sales org later on, this is an early indicator of what it'll be like to sell the product.
+
+**Pipeline for Initial Releases, Betas, and PoC Trials**
+- It's important to articulate the stages of your sales funnel and the conversion rates at each point along the way. The sales cycle needs to be well documented, measured, and understood after the first few sales, to see if you can build a repeatable approach.
+
+**Stickiness and Usability**
+- The usability of a disruptive solution is "table stakes" for a new entrant in today's market.
+- Instrument the product to monitor user flows and be able to test new ideas in how to iteratively improve your product.
+
+**Integration Costs**
+- What's the true cost of pre- and post-sales support?
+- How much customization is required?
+- How much training, explaining, and troubleshooting are you doing in order to successfully deliver a product to a customer?
+
+**User Engagement**
+- Get baselines from your clients that apply to their real-world businesses before you deploy. Use this info to measure progress, helping your advocates to prove the ROI - and turning it into case studies you can share with other customers.
+
+**Disentanglement**
+- Put your high-touch customers that you acquired early on into a segment and compare them to the rest of your customers.
+  - How do they differ?
+  - Do they consume a fair proportion of your support resources?
+  - Do their feature requests match those of all your customers and prospects?
+
+**Support Costs**
+- You'll track support metrics like top-requested features, number of outstanding trouble tickets, post-sales support, call center hold time, and so on. This will indicate where you're losing money, and whether the product is standardized and stable enough to move into growth and scaling.
+
+**User Groups and Feedback**
+- Informal interaction with existing customers can be a boon to enterprise-focused startups, and resembles the problem and solution validation stages of the Lean Startup process - only rather than validating a solution, you're validating a roadmap.
+- Know what you're hoping to learn and invest in the conversations and experimental design needed to get real answers that you can turn into the right product roadmap.
+
+**Pitch Success**
+- Create marketing tools for your channel and then test them yourselves. Make cold calls with their scripts. Pitch them to new customers. Send out email form letters and test response rates.
+- If you make channel collateral, tag each piece of collateral with something that identifies the channel.
+
+**Barriers To Exit**
+- A vibrant developer ecosystem and a healthy API allow customers to integrate themselves with you, making you the incumbent vendor and helping you to counter threats from competitors and new entrants.
+- If you have an API, track its usage by clients. Those clients who have a lot of API activity are investing more in extending their relationship with you; those who are inactive could switch vendors more easily.
 
 [back to top](#lean-analytics)
