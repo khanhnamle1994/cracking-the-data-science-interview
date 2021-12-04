@@ -204,6 +204,9 @@ Here are the categories:
 
 [back to top](#data-science-cheatsheets)
 
+### 不同数据库的pros & cons:
+https://zhuanlan.zhihu.com/p/47471253
+
 ## Statistics and Probability
 
 * [Guidelines for AB Testing](#guidelines-for-ab-testing)
