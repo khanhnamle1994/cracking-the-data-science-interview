@@ -131,6 +131,8 @@ For a more visually pleasant experience for browsing the portfolio, check out [j
 
     - [6 Ways to Debug a Machine Learning Model](https://www.wandb.com/articles/debug-ml-model)
 
+    - [8 Machine Learning Career Paths to Pursue Today](https://www.scaler.com/blog/machine-learning-career/#machine-learning-career-paths-and-specializations)
+
 - ### Deep Learning
 
     - [The 10 Deep Learning Methods AI Practitioners Need to Apply](https://www.kdnuggets.com/2017/12/10-deep-learning-methods-ai-practitioners-need-apply.html)
