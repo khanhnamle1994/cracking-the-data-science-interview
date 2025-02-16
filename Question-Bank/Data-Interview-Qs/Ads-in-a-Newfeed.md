@@ -48,4 +48,4 @@ Pr(k; n, p) = Pr(0.04; 100, 0)
 = 0.01687
 ```
 
-There's about a 16.87% chance that there will be 0 ads shown -->
+There's about a 1.687% chance that there will be 0 ads shown -->
